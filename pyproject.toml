@@ -1,0 +1,22 @@
+[project]
+# >>> CONFIGURE: rename to your field, e.g. "machine-psychology-wiki"
+name = "research-wiki"
+version = "0.1.0"
+description = ">>> CONFIGURE: one-line description of this field wiki"
+requires-python = ">=3.11"
+# These dependencies are only needed for PDF -> markdown conversion (Marker).
+# If your sources are text/web-only, you can delete this block entirely.
+dependencies = [
+    "marker-pdf[full]>=1.10.0",
+    "pdfminer.six==20251230",
+    "pdfplumber==0.11.9",
+    "pdftext==0.6.3",
+    "pypdf==6.9.2",
+    "pypdfium2==4.30.0",
+    "surya-ocr==0.17.1",
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+]
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cu130"]

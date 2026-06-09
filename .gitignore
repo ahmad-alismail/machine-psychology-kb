@@ -1,0 +1,7 @@
+.obsidian/
+.venv/
+tools/.venv/
+__pycache__/
+*.pyc
+.env
+wiki/.meta/tmp-*
