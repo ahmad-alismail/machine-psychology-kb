@@ -32,7 +32,7 @@ CORE — the flagship demonstration of "AI psychometrics," establishing the meas
 
 ## Theories / Paradigms / Instruments Introduced
 - Paradigm: [[paradigms/psychometric-inventory-administration]]
-- Method: [[methods/zero-shot-nli-classification]]
+- Method: zero-shot NLI classification
 - Theories: [[theories/big-five-trait-theory]], [[theories/schwartz-theory-of-basic-values]], [[theories/moral-foundations-theory]]
 - Instruments: [[instruments/big-five-inventory]], [[instruments/short-dark-tetrad]], [[instruments/portrait-values-questionnaire]], [[instruments/moral-foundations-questionnaire]], [[instruments/gender-sex-diversity-beliefs-scale]]
 

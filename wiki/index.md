@@ -40,13 +40,9 @@ date_modified: 2026-06-10
 ## Instruments
 - [[instruments/big-five-inventory]] · [[instruments/short-dark-tetrad]] · [[instruments/portrait-values-questionnaire]] · [[instruments/moral-foundations-questionnaire]] · [[instruments/gender-sex-diversity-beliefs-scale]]
 
-## Methods
-- [[methods/zero-shot-nli-classification]] — entailment-based inventory scoring
-- [[methods/chain-of-thought-elicitation]] — capability elicitation (raises cap/propensity issue)
-- [[methods/behavioral-control-design]] — hypothesis-driven experimental controls
-
 ## Validity — rigor layer
 - [[validity/test-validity-requirements]] — the 7 requirements (R1–R5c) master page
+- [[validity/experimental-controls]] — hypothesis-driven controls (order shuffling, anti-contamination, prompt batteries)
 - [[validity/construct-validity-for-llms]] — does the test measure the construct?
 - [[validity/training-data-contamination]] — test leakage → memorization not capability
 - [[validity/reproducibility-in-machine-psychology]] — reporting & replicability

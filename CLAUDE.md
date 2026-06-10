@@ -56,8 +56,6 @@ wiki/
                   #   the paradigms that DETECT it. (Scaffolded; user fills content.)
   instruments/    # Concrete operationalizations: psychometric inventories
                   #   (Big Five, Dark Tetrad…) + benchmarks/scenarios.
-  methods/        # Eval & analysis methodology not big enough to be a paradigm
-                  #   (scoring, LLM-as-judge, behavior tagging, elicitation tricks).
   validity/       # ★ Rigor layer. Test requirements (construct validity,
                   #   reliability, contamination, reproducibility) + validity
                   #   assessments of contested evals.
@@ -74,11 +72,13 @@ wiki/
 ```
 
 > [!note] Deliberately excluded
-> No `concepts/`, `debates/`, `findings/`, `comparisons/`, `evidence/`, or
-> `pipelines/` directories. This KB is about experiments, not field sociology,
-> ephemeral results, or data-generation engineering. Empirical results live inline
-> on the relevant paradigm/instrument/validity page; methodological lessons live in
-> `validity/`; open gaps live in `questions/`.
+> No `concepts/`, `debates/`, `findings/`, `comparisons/`, `evidence/`,
+> `pipelines/`, or `methods/` directories. This KB is about experiments, not field
+> sociology, ephemeral results, or data-generation engineering. Empirical results
+> live inline on the relevant paradigm/instrument/validity page; **scoring &
+> elicitation** are described inline in each paradigm's "Scoring / Procedure"
+> section; **experimental controls** live in `validity/experimental-controls`;
+> methodological lessons live in `validity/`; open gaps live in `questions/`.
 
 ## Conventions
 
@@ -112,7 +112,7 @@ background; light analogies OK, minimal jargon), 2–4 sentences:
 
 ```yaml
 ---
-type: paradigm | theory | instrument | method | validity | safety-concept | source | entity | framework | question | crosswalk | index | log | overview
+type: paradigm | theory | instrument | validity | safety-concept | source | entity | framework | question | crosswalk | index | log | overview
 field: machine-psychology          # constant on every page (clean graph filtering)
 lens: psychological | game-theoretic | mixed | na   # paradigms & theories
 eval_axis: capability | propensity | both | na      # cap/propensity axis
@@ -209,8 +209,8 @@ How the experiment is run; the stimulus/scenario; what is observed.
 ## Instruments Used
 - [[instruments/...]]
 
-## Scoring
-- [[methods/...]] — how responses become measurements
+## Scoring / Procedure
+- how responses become measurements (describe inline); experimental controls → [[validity/experimental-controls]]
 
 ## Validity Concerns
 - [[validity/...]] — contamination, construct validity, confounds
@@ -275,14 +275,6 @@ What observable signs reveal this behavior.
 > [!info] In plain terms
 > ...
 ## What It Measures   ## Administration   ## Used In (paradigms)   ## Validity Notes   ## Sources
-```
-
-### Method (`wiki/methods/`)
-```markdown
-# [Method Name]
-> [!info] In plain terms
-> ...
-## Description   ## Used By   ## Strengths   ## Limitations   ## Sources
 ```
 
 ### Validity (`wiki/validity/`)

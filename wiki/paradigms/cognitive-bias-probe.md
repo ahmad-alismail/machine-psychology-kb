@@ -36,7 +36,7 @@ Present classic heuristics-and-biases items and content-effect reasoning tasks, 
 - **Conjunction fallacy:** Linda-style problems probing whether a conjunction is judged more probable than its conjunct.
 - **Content effects on logic:** matched logical syllogisms (e.g., Wason-style or modus-tollens problems) with believable vs. unbelievable vs. abstract content (Dasgupta et al. 2022), testing whether accuracy depends on semantic plausibility rather than logical form.
 
-Each item is paired with the hypothesis-driven control structure of [[methods/behavioral-control-design]] (if the model reasons normatively, expect Y; if it relies on the heuristic, expect Z). [[methods/chain-of-thought-elicitation]] is frequently added to test whether the bias is a surface artifact that disappears under explicit step-by-step reasoning — surfacing the performance–competence distinction.
+Each item is paired with the hypothesis-driven control structure of [[validity/experimental-controls]] (if the model reasons normatively, expect Y; if it relies on the heuristic, expect Z). chain-of-thought prompting is frequently added to test whether the bias is a surface artifact that disappears under explicit step-by-step reasoning — surfacing the performance–competence distinction.
 
 ## Instruments Used
 
@@ -44,7 +44,7 @@ None. Stimuli are individual reasoning vignettes drawn from the cognitive-psycho
 
 ## Scoring
 
-Scored via [[methods/behavioral-control-design]]: classify each response as bias-consistent vs. normatively correct, comparing matched conditions (e.g., believable vs. abstract content; gain vs. loss frame) to isolate the effect. Because outputs are highly sensitive to prompt wording, robust scoring demands batteries of varied phrasings, counterbalanced answer orders (to defeat recency bias), and multiple runs rather than single convenience prompts.
+Scored via [[validity/experimental-controls]]: classify each response as bias-consistent vs. normatively correct, comparing matched conditions (e.g., believable vs. abstract content; gain vs. loss frame) to isolate the effect. Because outputs are highly sensitive to prompt wording, robust scoring demands batteries of varied phrasings, counterbalanced answer orders (to defeat recency bias), and multiple runs rather than single convenience prompts.
 
 ## Validity Concerns
 

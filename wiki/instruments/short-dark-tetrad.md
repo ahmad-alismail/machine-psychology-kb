@@ -28,7 +28,7 @@ Two of the dark-tetrad traits map onto safety-relevant behaviors. **Machiavellia
 ## Administration
 The SD4 consists of **28 items** (seven per trait), each rated on a **5-point scale** ranging from *disagree strongly* to *agree strongly*.
 
-Pellert et al. administered the SD4 to LLMs through [[paradigms/psychometric-inventory-administration]] using [[methods/zero-shot-nli-classification]]: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into the four trait scores using standard scoring procedures.
+Pellert et al. administered the SD4 to LLMs through [[paradigms/psychometric-inventory-administration]] using zero-shot NLI classification: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into the four trait scores using standard scoring procedures.
 
 ## Used In
 - [[paradigms/psychometric-inventory-administration]]

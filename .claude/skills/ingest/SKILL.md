@@ -41,10 +41,9 @@ callout immediately after the `# Title`.**
 1. **Read `wiki/index.md`** to understand current state.
 2. **Create the source summary page** in `wiki/sources/` (Source Summary template; bibtex `TBD BY USER`; Relevance Tier; for SOURCE-METHOD the `## Relevance to Machine Psychology` section).
 3. **Theories** → create/update `wiki/theories/` for each grounding theory; include the theory→AI-experiment relevance bridge.
-4. **Paradigms** → create/update `wiki/paradigms/` for each experimental design. Link its theory, target [[safety-concepts/...]], capability/propensity callout, instruments, scoring methods, validity concerns. Game-theoretic paradigms fill the Formal Apparatus block.
+4. **Paradigms** → create/update `wiki/paradigms/` for each experimental design. Link its theory, target [[safety-concepts/...]], capability/propensity callout, instruments, validity concerns. Describe scoring/elicitation **inline** in the paradigm's "Scoring / Procedure" section (there is no methods/ directory). Game-theoretic paradigms fill the Formal Apparatus block.
 5. **Instruments** → create/update `wiki/instruments/` for inventories/benchmarks/scenarios used.
-6. **Methods** → create/update `wiki/methods/` for scoring/elicitation/analysis techniques.
-7. **Validity** → create/update `wiki/validity/` when the source bears on reliability, construct validity, contamination, reproducibility, or the cap–propensity confound.
+6. **Validity** → create/update `wiki/validity/` when the source bears on reliability, construct validity, contamination, reproducibility, experimental controls, or the cap–propensity confound.
 8. **Safety-concepts** → do NOT overwrite the user's content in `wiki/safety-concepts/`. You may update only the `## Detected By` back-link list when a new paradigm targets that behavior. If a brand-new behavior appears, create a fresh scaffold (empty content, structure only) and tell the user to fill it.
 9. **Entities** → create/update `wiki/entities/` for authors/labs (and `type: framework` orgs on override). Keep these thin — facts that help experiment design, not biography.
 10. **Questions** → create/update `wiki/questions/` for open research gaps surfaced (especially theory→new-experiment ideas).

@@ -35,7 +35,7 @@ Present a vignette in one of two classic formats:
 1. **Unexpected-transfer (Sally-Anne):** Agent A places an object in location X and leaves; agent B moves it to location Y; A returns. Probe: "Where will A look for the object?" / "Where does A *think* the object is?" The belief-tracking answer is X (the original location); the reality-tracking error is Y.
 2. **Unexpected-contents (Smarties):** A container with a misleading label (e.g., a crayon box) actually holds something else (e.g., candles). Probe what a naive agent *expects* to be inside before opening it.
 
-Following the hypothesis-driven logic of experimental psychology (if the model represents construct X — belief attribution — then we expect behavior Y), the design must include controls that rule out alternative explanations such as reciting a memorized story or defaulting to a salient location. To probe latent competence rather than surface performance, the vignette can be paired with [[methods/chain-of-thought-elicitation]] (e.g., "Let's think step by step"), keeping the performance–competence distinction in view.
+Following the hypothesis-driven logic of experimental psychology (if the model represents construct X — belief attribution — then we expect behavior Y), the design must include controls that rule out alternative explanations such as reciting a memorized story or defaulting to a salient location. To probe latent competence rather than surface performance, the vignette can be paired with chain-of-thought prompting (e.g., "Let's think step by step"), keeping the performance–competence distinction in view.
 
 ## Instruments Used
 
@@ -43,7 +43,7 @@ None. The stimulus is a short narrative vignette plus a comprehension question, 
 
 ## Scoring
 
-Scored with [[methods/behavioral-control-design]]: a response is correct only if it reports the agent's *belief-consistent* location/content rather than the true state of the world. Robust scoring requires varied wordings, agents, objects, and orderings (per [[sources/hagendorff-et-al-2024]]'s design recommendations) so that success cannot be attributed to memorized canonical items, and counterbalanced option orders to neutralize recency/position biases.
+Scored with [[validity/experimental-controls]]: a response is correct only if it reports the agent's *belief-consistent* location/content rather than the true state of the world. Robust scoring requires varied wordings, agents, objects, and orderings (per [[sources/hagendorff-et-al-2024]]'s design recommendations) so that success cannot be attributed to memorized canonical items, and counterbalanced option orders to neutralize recency/position biases.
 
 ## Validity Concerns
 

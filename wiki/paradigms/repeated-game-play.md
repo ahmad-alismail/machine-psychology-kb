@@ -30,7 +30,7 @@ This paradigm is grounded in [[theories/repeated-games-and-cooperation]] — the
 
 ## Setup / Elicitation
 
-Instantiate two or more LLM agents in an iterated game with an explicit payoff matrix, run it for many rounds with the interaction history made available to each agent each round, and record the sequence of choices (and any inter-agent messages). Vary opponent strategies, matrix parameters, framing, and agent roles to test robustness. Per [[methods/behavioral-control-design]], wordings, agent identities, and round orders should be varied to ensure observed strategies are systematic rather than memorized or framing-driven; procedural generation of game instances reduces contamination risk.
+Instantiate two or more LLM agents in an iterated game with an explicit payoff matrix, run it for many rounds with the interaction history made available to each agent each round, and record the sequence of choices (and any inter-agent messages). Vary opponent strategies, matrix parameters, framing, and agent roles to test robustness. Per [[validity/experimental-controls]], wordings, agent identities, and round orders should be varied to ensure observed strategies are systematic rather than memorized or framing-driven; procedural generation of game instances reduces contamination risk.
 
 ## Formal Apparatus
 
@@ -46,7 +46,7 @@ None. The apparatus is a game with a payoff matrix, not a psychometric inventory
 
 ## Scoring
 
-Scored via [[methods/behavioral-control-design]]: classify the realized strategy (cooperation rate, reciprocity/conditional-cooperation signatures, retaliation and forgiveness patterns) against the equilibrium predictions, comparing across opponent types and parameter settings. Robust conclusions require batteries of varied game instances and counterbalanced conditions rather than single runs.
+Scored via [[validity/experimental-controls]]: classify the realized strategy (cooperation rate, reciprocity/conditional-cooperation signatures, retaliation and forgiveness patterns) against the equilibrium predictions, comparing across opponent types and parameter settings. Robust conclusions require batteries of varied game instances and counterbalanced conditions rather than single runs.
 
 ## Validity Concerns
 

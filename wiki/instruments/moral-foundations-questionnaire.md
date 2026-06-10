@@ -27,7 +27,7 @@ In moral-foundations research, the care and fairness foundations are weighted re
 ## Administration
 The MFQ (Graham et al., 2009, 2013; Haidt, 2007) presents respondents with statements and judgments about moral relevance and agreement, scored onto the moral-foundation subscales using the inventory's standard scoring rules.
 
-Pellert et al. administered the MFQ to LLMs through [[paradigms/psychometric-inventory-administration]] using [[methods/zero-shot-nli-classification]]: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into foundation scores. Model scores were contrasted against a published human reference group — average, politically moderate Americans (Graham et al., 2011).
+Pellert et al. administered the MFQ to LLMs through [[paradigms/psychometric-inventory-administration]] using zero-shot NLI classification: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into foundation scores. Model scores were contrasted against a published human reference group — average, politically moderate Americans (Graham et al., 2011).
 
 ## Used In
 - [[paradigms/psychometric-inventory-administration]]

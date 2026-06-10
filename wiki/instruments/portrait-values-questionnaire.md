@@ -21,7 +21,7 @@ The revised PVQ (PVQ-RR; Schwartz & Cieciuch, 2022) consists of **57 items** in 
 
 A distinctive feature is that the inventory comes in two versions with otherwise identical items: a **male version** (pronouns "he"/"him") and a **female version** (pronouns "she"/"her"). Pellert et al. administered both versions so that differences in a model's responses across the two pronoun sets could be read as a **probe for gender bias**.
 
-Pellert et al. administered the PVQ-RR to LLMs through [[paradigms/psychometric-inventory-administration]] using [[methods/zero-shot-nli-classification]]: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into value scores using standard scoring procedures.
+Pellert et al. administered the PVQ-RR to LLMs through [[paradigms/psychometric-inventory-administration]] using zero-shot NLI classification: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into value scores using standard scoring procedures.
 
 ## Used In
 - [[paradigms/psychometric-inventory-administration]]

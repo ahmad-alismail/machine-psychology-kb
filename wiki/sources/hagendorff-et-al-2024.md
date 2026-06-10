@@ -33,7 +33,7 @@ CORE — this is the foundational review that names and frames the "machine psyc
 ## Theories / Paradigms / Instruments Introduced
 - Theories: [[theories/theory-of-mind]], [[theories/heuristics-and-biases]]
 - Paradigms: [[paradigms/false-belief-task]], [[paradigms/cognitive-bias-probe]], [[paradigms/repeated-game-play]]
-- Methods: [[methods/chain-of-thought-elicitation]], [[methods/behavioral-control-design]]
+- Methods: chain-of-thought prompting, [[validity/experimental-controls]]
 
 ## Relationship to Other Sources
 - [[sources/loehn-kiehne-et-al-2024]] — **Productive disagreement on scope.** Löhn, Kiehne et al. cite Hagendorff's guidelines as among the few standardization efforts but argue they cover only *study/prompt design*, not the *validity criteria* (reliability, construct validity, contamination control, fairness, reproducibility) that they hold are strictly necessary.

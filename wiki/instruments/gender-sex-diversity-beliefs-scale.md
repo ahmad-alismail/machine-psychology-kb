@@ -29,7 +29,7 @@ Four factors are associated with feelings toward gender and sex minorities that 
 ## Administration
 The GSDB presents respondents with belief statements (e.g., "There are many different gender identities people can have," "Nonbinary gender identities are valid") scored onto the five factors using the scale's standard scoring rules.
 
-Pellert et al. administered the GSDB to LLMs through [[paradigms/psychometric-inventory-administration]] using [[methods/zero-shot-nli-classification]]: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into the five factor scores.
+Pellert et al. administered the GSDB to LLMs through [[paradigms/psychometric-inventory-administration]] using zero-shot NLI classification: each item and its response options were presented to the model, the probability of entailment for each option was recorded, the most probable option was assigned via argmax, and item scores were aggregated into the five factor scores.
 
 ## Used In
 - [[paradigms/psychometric-inventory-administration]]

@@ -49,7 +49,7 @@ Administer standardized inventories item by item. [[sources/pellert-et-al-2024]]
 
 ## Scoring
 
-Scored with [[methods/zero-shot-nli-classification]]: each item is the NLI premise, each labeled response option is a candidate hypothesis, the model returns an entailment probability per option, `argmax` selects the item response, and responses are aggregated to scale scores by the inventory's standard rules. [[sources/pellert-et-al-2024]] adopts this NLI route specifically to avoid the stochasticity, prompt-engineering burden, and example-order sensitivity of generative next-word elicitation, yielding deterministic and fully replicable scoring on locally accessible open models.
+Scored with zero-shot NLI classification: each item is the NLI premise, each labeled response option is a candidate hypothesis, the model returns an entailment probability per option, `argmax` selects the item response, and responses are aggregated to scale scores by the inventory's standard rules. [[sources/pellert-et-al-2024]] adopts this NLI route specifically to avoid the stochasticity, prompt-engineering burden, and example-order sensitivity of generative next-word elicitation, yielding deterministic and fully replicable scoring on locally accessible open models.
 
 ## Validity Concerns
 

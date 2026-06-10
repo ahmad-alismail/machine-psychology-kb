@@ -27,9 +27,10 @@ capabilities** — and it insists on the **capability vs. propensity** distincti
 
 ## How the wiki is organized
 A [[theories|theory]] grounds a [[paradigms/false-belief-task|paradigm]]
-(experiment), which uses [[instruments/big-five-inventory|instruments]], is scored
-by [[methods/behavioral-control-design|methods]], and is judged by
-[[validity/test-validity-requirements|validity]] standards — in order to detect a
+(experiment), which uses [[instruments/big-five-inventory|instruments]] and
+documented scoring procedures, and is judged by
+[[validity/test-validity-requirements|validity]] standards (including
+[[validity/experimental-controls|experimental controls]]) — in order to detect a
 [[safety-concepts/deception|safety-concept]] (a dangerous behavior). The
 [[crosswalk/coverage-map]] shows which behaviors have experiments and which don't.
 

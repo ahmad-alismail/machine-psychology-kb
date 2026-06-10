@@ -30,7 +30,7 @@ The Ultimatum Game is a foundational bargaining paradigm and is treated here und
 
 ## Setup / Elicitation
 
-Assign the model the role of Proposer (elicit an offered division of a known stake) and/or Responder (elicit accept/reject for a given offer), with the stake size and rules stated explicitly. Sweep offer magnitudes (for the Responder) and observe the distribution of proposed splits (for the Proposer). Per [[methods/behavioral-control-design]], vary stake sizes, framings, and role wordings, counterbalance presentation order, and run batteries of prompts so that observed offer/acceptance patterns are systematic rather than artifacts of a single phrasing.
+Assign the model the role of Proposer (elicit an offered division of a known stake) and/or Responder (elicit accept/reject for a given offer), with the stake size and rules stated explicitly. Sweep offer magnitudes (for the Responder) and observe the distribution of proposed splits (for the Proposer). Per [[validity/experimental-controls]], vary stake sizes, framings, and role wordings, counterbalance presentation order, and run batteries of prompts so that observed offer/acceptance patterns are systematic rather than artifacts of a single phrasing.
 
 ## Formal Apparatus
 
@@ -46,7 +46,7 @@ None. The apparatus is a bargaining game, not a psychometric inventory.
 
 ## Scoring
 
-Scored via [[methods/behavioral-control-design]]: compare the model's offer distribution and acceptance threshold against (a) the subgame-perfect prediction and (b) human empirical norms, across stake and framing conditions. Reliable conclusions require multiple prompt variants and counterbalanced orders, not single runs.
+Scored via [[validity/experimental-controls]]: compare the model's offer distribution and acceptance threshold against (a) the subgame-perfect prediction and (b) human empirical norms, across stake and framing conditions. Reliable conclusions require multiple prompt variants and counterbalanced orders, not single runs.
 
 ## Validity Concerns
 
