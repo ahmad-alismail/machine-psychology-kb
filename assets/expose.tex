@@ -1,0 +1,349 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{biblatex}
+\usepackage[table]{xcolor}
+\usepackage{lipsum} % For placeholder text; remove when using real content
+\addbibresource{references.bib} % Assuming a bibliography file named 'references.bib'
+\usepackage{pgfgantt}
+\usepackage{multirow}
+\newcommand{\qq}[1]{``#1''}  % English quoting 
+
+\title{Multi-Agent Synthetic Data Generation for Machine Psychology Evaluations}
+\author{Ahmad Alismail \\ Date of Birth: 01/01/1990 \\ Große Bahngasse 14, 74072 Heilbronn \\ M.Sc. Business Informatics}
+\date{\today}
+
+% Custom section formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Cover Page
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% Abstract
+\section*{Abstract}
+\begin{onehalfspacing}
+\noindent
+Ensuring the safety of artificial intelligence (AI) systems is becoming an urgent priority as these models increase in capability and impact. The emerging field of machine psychology—an approach inspired by psychological experimentation—offers novel methods for analyzing AI behavior and identifying potential risks. However, current behavioral evaluation techniques often rely on manually created datasets that are small in scale, limited in diversity, and rarely updated, reducing the reliability and depth of these assessments. Synthetic data is a candidate solution to these challenges. Large language models (LLMs) have become essential tools for synthetic data generation (SDG), enabling the automated production of high-quality datasets. Recent advances, such as agentic workflows, allow multiple LLM-powered agents to collaborate in generating more diverse and dynamic synthetic data. This research addresses the need for robust evaluation frameworks for LLMs, both in isolation and in multi-agent configurations. It investigates the extent to which SDG methods can enhance our ability to anticipate and detect safety risks resulting from emergent behaviors in advanced AI systems. Expected outcomes include a systematic review of state-of-the-art SDG architectures, improved adaptability of synthetic data pipelines, and practical insights into leveraging open-source models within SDG workflows. A central outcome will be the development of a high-quality, dynamic benchmark with regularly updated evaluation datasets to enable more reliable safety assessments of LLMs. In the long term, this research contributes to the creation of safer AI systems through ethically grounded, automated behavioral evaluations.
+
+\end{onehalfspacing}
+
+\noindent \textbf{Keywords:} Synthetic data generation, Large language models, AI safety and alignment, Agentic workflows, Machine psychology
+
+\newpage
+
+
+% Objectives and Research Questions
+\section{Objectives and Research Questions}
+As AI systems become more complex and autonomous, ensuring their safety and behavioral reliability is becoming increasingly critical. Existing evaluation methods often rely on manually created datasets developed by experts to ensure accuracy and domain relevance. A direct consequence is that these datasets are limited in scale, lack diversity, and are not regularly updated. These limitations hinder the ability to detect emergent behaviors and assess safety risks in AI systems.
+
+Synthetic data has emerged as a promising approach in scenarios with limited data availability. Multi-agent-based SDG enables the large-scale generation of high-quality datasets. However, its effectiveness for behaviorally grounded safety evaluations remains underexplored. This research is based on the hypothesis that targeted SDG can improve the early detection of safety-critical emergent behaviors in advanced AI systems.
+% More formal: The null hypothesis (H₀) represents the assumption that there is no effect or no difference, which you aim to test against.
+% H₀ (Null Hypothesis): Targeted synthetic data generation does not improve the early detection of safety-critical emergent behaviors.
+
+%H₁ (Alternative Hypothesis): Targeted synthetic data generation improves the early detection of safety-critical emergent behaviors.
+This research investigates: 
+
+\begin{quote}
+\textit{To what extent can SDG methods enhance our ability to anticipate and detect safety risks resulting from emergent behaviors in advanced AI systems?}
+\end{quote}
+To achieve this, the following key research questions are examined:
+
+
+\begin{enumerate}
+    \item \textbf{Evaluating Emerging AI Paradigms for SDG:}  
+    How do recent advancements, such as agentic workflows, compare to traditional SDG methods that rely on a single LLM in terms of efficiency, scalability, and data quality? What are their key strengths and limitations?
+    %     \textit{Justification:} A comparative analysis of SDG architectures is essential to understand the added value of multi-agent workflows and to identify which approaches best support reliable, scalable data generation for safety evaluation.
+
+    \item \textbf{Addressing Gaps in Machine Psychology and Safety Evaluation:}  
+    Which subfields of machine psychology are relevant for the safety evaluation of LLMs? What types of data are needed to support these evaluations, and how can such data be synthetically generated and structured to reveal emerging capabilities and unexpected behaviors?
+    % Remember Discussion 30.05 How can the core subfields of machine psychology — such as decision modeling , behavioral observation, and mechanistic interpretability — be operationalized in the context of LLM safety evaluations, and what specific types of data are required to support each paradigm?
+    % In particular, how can concepts from machine psychology — e.g., emotionally charged prompts — be used to elicit differential behavioral responses across input conditions?
+
+    \item \textbf{Improving Pipeline Adaptability and Reducing Human Effort:}
+    What strategies can enhance the flexibility and adaptability of SDG pipelines while reducing human intervention in workflow design, prompt engineering, and quality control?
+
+    \item \textbf{Reducing Dependency on Proprietary Models:}  
+    How do moderation mechanisms in proprietary models (e.g., GPT-4) compare to those in open-source models, and how do they affect the completeness, realism, and coverage of safety evaluation datasets? 
+    Under what conditions can open-source LLMs form a viable, fully reproducible alternative for safety-critical SDG?
+    %     \textit{Justification:} Proprietary models limit transparency, cost efficiency, and reproducibility. This question addresses whether open-source alternatives can support safety-critical SDG tasks without compromising evaluation quality or behavioral coverage.
+
+    
+\end{enumerate}
+
+This research aims to advance scientific understanding in several key areas. First, it offers a structured review of emerging AI paradigms for SDG, highlighting their strengths, limitations, and open challenges. This overview will provide a foundation for guiding future innovation in the field. Second, as AI systems increasingly influence social, economic, and political domains, understanding their behavior becomes critical to ensuring safety and alignment. Synthetic data, especially when guided by principles from machine psychology, may offer a novel approach to eliciting and analyzing model behaviors across diverse input conditions. Gaining such behavioral insights can contribute to the design of more robust, trustworthy models and help mitigate unintended or harmful outcomes.
+
+Furthermore, exploring the use of open-source models for generating safety-relevant data may yield practical benefits for improving safety and alignment assessments, particularly in contexts where reliance on proprietary systems introduces technical or financial constraints.
+ 
+
+Finally, by investigating strategies to reduce human intervention in SDG workflows, this research seeks to identify methods for designing more adaptable and cost-efficient pipelines.
+
+%This research aims to advance scientific understanding in several key areas. It provides a systematic review of emerging AI paradigms for SDG, identifying their strengths, limitations, and open challenges to guide future innovation. By exploring strategies to reduce human intervention, this research seeks to support the development of more adaptable and cost-effective SDG pipelines. As AI systems increasingly impact social, economic, and political domains, understanding their behavior becomes an important step toward ensuring safety and alignment. Gaining such behavioral insights can inform more robust model design, help mitigate harmful outcomes, and better prepare society for future AI systems with greater autonomy and complexity. Finally, the exploration of open-source models could contribute to more transparent and accessible research in safety-critical contexts.
+
+
+
+% Current State of Research and Contextualization within the Research Field
+\section{Current State of Research and Contextualization within the Research Field}
+
+\subsection{LLM Evaluation and Benchmarking}
+
+The rapid advancements in LLMs, such as GPT-4~\cite{gpt-4}, DeepSeek-R1~\cite{guo2025deepseek}, and O1~\cite{O1}, have significantly enhanced their capabilities across various domains, from reasoning to complex problem-solving~\cite{livebench}. As these models become more sophisticated, rigorous evaluation has emerged as a critical research field to systematically assess their strengths and limitations~\cite{evaluation-survey}. According to \cite{r-b5}, LLM evaluation can be categorized into three key dimensions:
+
+\begin{enumerate}
+    \item \textbf{Knowledge and Capability Evaluation} – Assesses an LLM’s ability to understand, process, and apply knowledge, including tasks such as question answering~\cite{coqa}, knowledge completion~\cite{kola}, and reasoning~\cite{gpqa}.
+    \item \textbf{Alignment Evaluation} – Ensures LLMs align with human values by evaluating ethical and moral considerations~\cite{ethics}, bias detection~\cite{bold}, toxicity generation~\cite{toxic}, and truthfulness~\cite{truthfulqa}.
+    \item \textbf{Safety Evaluation} – Focuses on robustness and risk assessment:
+    \begin{itemize}
+        \item \textbf{Robustness Assessment} – Measures an LLM’s stability under disruptions, such as adversarial prompts or manipulated inputs~\cite{promptbench}.
+        \item \textbf{Risk Evaluation} – Examines the potential dangers posed by advanced LLMs, particularly as they approach human-level cognition. This includes:
+        \begin{itemize}
+            \item \textbf{Agentic Capabilities} – Evaluates how LLMs operate autonomously in real-world environments, completing complex tasks and analyzing potential risks in AI-driven decision-making~\cite{agentbench}. % This can be extended to include how agents
+            \item \textbf{Behavioral Evaluation} –Investigates whether an LLM exhibits potentially harmful behaviors, such as power-seeking or signs self-awareness~\cite{modelbehavior,situationalawareness}. Understanding these behaviors has led to the emergence of \textit{Machine Psychology}~\cite{r-b2-machinepsychology}, a research field that applies principles from psychological experiments traditionally used to study human cognition, enabling a deeper exploration of AI decision-making processes.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+To assess LLM performance, researchers utilize a variety of benchmarks and datasets, predominantly created manually by experts to ensure precision and domain relevance~\cite{r-b3}. Evaluation datasets come in various formats.
+
+\begin{itemize}
+    \item \textbf{Multiple-choice benchmarks} – Many evaluations, such as \textit{TrustLLM}~\cite{trustllm} and the \textit{Situational Awareness Dataset (SAD)}~\cite{situationalawareness}, use structured multiple-choice formats to enable automated grading.
+    
+    \item \textbf{Free-form text generation} – Tasks requiring open-ended responses are evaluated using benchmarks like \textit{TruthfulQA}~\cite{truthfulqa}, which assesses the truthfulness of model-generated answers against reference responses.
+    
+    \item \textbf{Classification-based evaluations} – Some benchmarks focus on assigning labels to text rather than generating responses. For instance, the \textit{Ethics Benchmark}~\cite{ethics} evaluates LLMs’ understanding of fundamental ethical principles through binary classification tasks.
+    
+    \item \textbf{Ranking-based evaluations} – In alignment assessments, benchmarks may present two responses to the same prompt and require models to determine which response is superior. The \textit{HHH-Alignment Evaluation}~\cite{hhhalignment} follows this comparative ranking approach.
+    
+    \item \textbf{Dialogue-based and multi-turn evaluations} – Some benchmarks, such as \textit{MT-Bench}~\cite{mtbench}, assess LLMs in dialogue settings, testing their ability to maintain coherence and relevance over multiple conversational turns.
+    
+    \item \textbf{Game-based and interactive evaluations} – Some benchmarks place LLMs or agents in interactive environments. For example, the \textit{Machiavelli Benchmark}~\cite{MACHIAVELLI} immerses LLMs in interactive, text-based scenarios where they must make ethical decisions within a game-like environment. Likewise, \textit{AgentBench}~\cite{agentbench} evaluates LLMs' ability to operate as autonomous agents across various scenarios, such as web browsing and household tasks.
+\end{itemize}
+
+
+
+\subsection{Synthetic Data Generation}
+Data is the lifeblood of AI development, as the performance of AI models often scales with the quantity and quality of the data they are trained on \cite{r110,r111}. However, acquiring and curating such data is no small feat, as issues like limited availability~\cite{r100,r101}, steep acquisition costs, and privacy concerns \cite{r102}, frequently pose formidable barriers. This tension between the demand for large datasets and their scarcity prompts a deeper exploration of alternative data-collection avenues. 
+
+Synthetic data—artificially crafted data that replicates the nuances of real-world data\cite{r103}—emerges as a compelling solution to these constraints. Synthetic data generators address data scarcity and privacy concerns while reducing the human effort required for data collection and annotation \cite{r12,r82,r29,r112}. 
+
+In the field of natural language processing (NLP), early methods for SDG have employed Generative Adversarial Networks (GANs) \cite{goodfellow2014generative} and Reinforcement Learning (RL) \cite{sutton2018reinforcement}, as demonstrated in Seq-GAN \cite{SeqGan} and TextGen-RL \cite{TextGen-RL}. In recent years, the research community has increasingly adopted LLM-based synthetic data generators \cite{r2,r3,r10}. Three key factors have driven this shift: (1) the emergence of powerful models, such as GPT-3.5 \cite{gpt-3.5} and GPT-4 \cite{gpt-4}, as viable alternatives to human annotators \cite{r18}, (2) the need to train smaller models that require fewer computational resources while maintaining competitive performance \cite{r25,r26,r48}, and (3) the growing demand for constructing specialized models instead of relying on closed-source models, which often raise privacy and security concerns \cite{r70}.
+
+Synthetic data can be generated from scratch by leveraging the internal knowledge of LLMs~\cite{r56,r40,r25}. Alternatively, synthetic data can be created using seeds, which serve as initial input data to guide the generation process. These seeds can take the form of human-written samples \cite{r36,r72}, existing datasets \cite{r11,r31}, or raw unstructured data, such as books \cite{r106} and code snippets \cite{r4}.  This flexibility allows for tailored data generation to meet specific requirements.
+Synthetic data has been utilized across various stages of the LLM development lifecycle \cite{r10}, including pre-training \cite{r104,r26}, instruction-tuning\cite{r58,r72}, and safety evaluations \cite{zhang-etal-2024-safetybench,guo-etal-2024-controllable}
+
+% DELETE: Synthetic data has been utilized across different stages of the LLM development lifecycle \cite{r10}. This includes pre-training, where large-scale synthetic datasets initialize models with foundational knowledge \cite{r104,r26}. It is also employed during fine-tuning, where more specific synthetic data helps refine models to meet particular domain requirements \cite{r36,r55,r60,r99}. Furthermore, synthetic data plays a role in instruction-tuning, improving the model's ability to follow natural language instructions \cite{r58,r72}. Lastly, it aids in preference alignment, where models are optimized to align with user preferences or ethical considerations \cite{r77,r78,r79}.
+
+This versatility underscores the growing interest in advanced methods for data generation and sets the stage for innovations where synthetic data meets agents.
+
+\subsection{Agents and Agentic Workflows}
+The concept of \qq{agent} originates from philosophy, which refers to entities with autonomy, volition, and decision-making abilities. Over time, this concept has evolved in computer science to enable computers to act on behalf of users \cite{agents-r6}. The evolution of agents has undergone several stages, with LLM-based agents representing a crucial step in AI research\cite{agents-r2,agents-r6}. A variety of definitions for LLM-based agents exist, reflecting diverse perspectives within the research community.
+
+Recent publications on LLM-based agents \cite{agents-r1,agents-r2,agents-r6,agents-r10} define these agents as fully autonomous systems characterized by the following key features: (a) the central role of the LLM as the \qq{brain} of the agent, responsible for reasoning and decision-making; (b) a profiling module that defines the role of the agent, typically specified through the LLM's system message; (c) the capability to leverage external tools, such as search APIs and code interpreters; (d) the ability to perceive the environment (e.g., code or real-world contexts) and execute tasks without external intervention; and (e) memory capabilities for storing both short-term and long-term information.
+
+Leading AI research labs, such as Google, OpenAI, and Anthropic, have not established a unified and formal definition of agents. They use terms such as agents, agentic AI systems, or AI agents to describe LLM-powered intelligent systems, albeit from distinct perspectives. For instance, a white paper by Google researchers defines an agent as a fully autonomous LLM-driven application that interactively acts to achieve a predefined goal with the aid of external tools\cite{agents-r4}. OpenAI researchers, in their white paper, argue against a binary distinction between \qq{AI agents} and current LLMs such as GPT-4. Instead, they propose the concept of \qq{agenticness}, which measures the degree to which a system can adaptively accomplish complex tasks in dynamic environments with minimal human intervention\cite{agents-r5}. Similarly, Anthropic's recent article describes an agentic system as a broad framework encompassing LLMs integrated with external tools, predefined workflows (where LLMs are orchestrated through predefined code pathways), and autonomous agents capable of independently managing their own processes and tool usage\cite{agents-r9}.
+
+In the context SDG, greater emphasis is placed on the profiling module when describing an LLM as an agent, with less focus on autonomy or external tool usage. A clearly defined role or behavior within a workflow can suffice to describe an LLM as an agent, as shown in \cite{r90,r12,r13}. In this work, following \cite{r4}, we use the term \qq{agent} to denote an LLM with a predefined role that can optionally be equipped with external tools (e.g., code interpreters) or knowledge sources. The role and behavior of each agent are explicitly defined within the system message of the LLM. Agentic workflows involve multiple agents collaborating, reviewing outputs, reflecting on their quality, and iteratively improving them. These workflows exhibit a degree of autonomy by minimizing the need for human intervention in the data generation process. Several frameworks, such as AutoGen\cite{agents-r7}, Camel\cite{agents-camel}, and LangChain\footnote{\url{https://langchain.com}}, can be utilized to develop effective agentic workflows.
+
+
+
+
+\subsection{Research Gaps}
+Despite recent advancements, key research gaps remain that limit scalable and adaptable evaluation frameworks for AI safety and alignment.
+
+\subsubsection{Lack of a Systematic Review of Emerging Architectural Paradigms in SDG:} Existing surveys primarily focus on the role of LLMs in generating synthetic data for specific tasks, phases of LLM development \cite{r2,r97,r98}, or broader applications such as mitigating data scarcity and privacy concerns \cite{r3}. While these studies provide valuable insights, they lack a systematic review of recent architectural advancements, particularly the rise of agentic workflows and multi-agent collaboration in SDG \cite{r10}. Given the rapid evolution of LLMs, synthesizing these paradigms is essential for understanding their strengths and limitations, providing a foundation for advanced methodologies and practical applications.
+
+\subsubsection{Data Gaps in Machine Psychology and Safety Evaluation}
+% Structure
+Machine psychology\cite{r-b2-machinepsychology} is a broad concept that includes various paradigms for analyzing model behavior, but the specific data requirements for each paradigm are not well understood. In addition, safety evaluations often rely on single-turn multiple-choice~\cite{trustllm,situationalawareness}, classification-based~\cite{ethics}, or ranking-based formats~\cite{hhhalignment}, which may be insufficient for detecting emerging abilities or unexpected behaviors in advanced LLMs.
+% Small and not diverse enough
+In addition, safety evaluations—particularly behavioral ones—face challenges due to small and insufficiently diverse datasets, which can lead to unreliable conclusions~\cite{r-b2-machinepsychology}. Capturing behavioral nuances requires large and diverse test samples in both methodology and style.
+% Static
+Moreover, most evaluation datasets are static and not regularly updated, making them vulnerable to data leakage, as newer models may have encountered them during training~\cite{r-b5,r-b2-machinepsychology}. This can compromise the reliability of evaluations and limit the ability to monitor emerging behaviors over time. These limitations highlight the need for more dynamic, diverse, and regularly updated evaluation datasets that support more reliable and nuanced conclusions about model behavior.
+
+
+
+\subsubsection{Enhancing the Output Quality and Adaptability of SDG Pipelines:} While LLMs reduce human effort in SDG, constructing agentic workflows for different tasks or evaluation categories still requires extensive manual intervention, particularly in workflow design and quality control~\cite{r4}. Enhancing pipeline flexibility and adaptability based on user specifications could reduce manual effort and better support diverse evaluation needs.
+
+\subsubsection{Dependency on Proprietary Models:} 
+Current SDG methods often rely on proprietary models like GPT-4, which raise concerns about cost\footnote{\url{https://llmpricecheck.com/}}, reproducibility~\cite{chatgpt-behavior-2,chatgpt-behavior-1}, and strict safety measures that lead to higher refusal rates~\cite{r-b8}. These constraints limit the generation of sensitive content and reduce the realism and coverage of evaluation datasets for safety assessments. Open-source models may offer a more cost-efficient and flexible alternative, particularly for tasks requiring the generation of safety-critical data.
+
+%This highlights the need to explore more advanced evaluation methods, such as dynamic scenario-based assessments.
+% multi-agent debates~\cite{r-b5} or
+
+
+
+
+% Research Design and Methodology
+\section{Research Design and Methodology}
+This research will adopt a mixed-method research design combining systematic literature review, experimental design, and comparative evaluation. The methodological approach is organized around the four central research questions and integrates established frameworks such as PRISMA~\cite{PRISMA} and CRISP-DM~\cite{crisp} to ensure transparency, reproducibility, and practical relevance.
+
+\subsection{Evaluating Emerging AI Paradigms for SDG}
+To systematically analyze and compare traditional LLM-based SDG approaches with emerging agentic workflows, a structured literature review will be conducted following the PRISMA~\cite{PRISMA} framework. This will include: 
+
+\paragraph{Paper Search Strategy:}  
+ Systematic keyword-based searches on platforms such as Google Scholar\footnote{\url{https://scholar.google.com}}, ArXiv\footnote{\url{https://arxiv.org}}, and IEEE Xplore\footnote{\url{https://ieeexplore.ieee.org}} using key terms including \qq{synthetic data generation}, \qq{LLMs}, and \qq{agents} in titles or abstracts.
+
+\paragraph{Snowballing Techniques:}  
+Forward and backward citation tracking via Connected Papers~\footnote{\url{https://connectedpapers.com}} to identify influential and recent contributions.
+
+\paragraph{Inclusion and Exclusion Criteria:}  
+Studies will be selected based on relevance, novelty, credibility, and their focus on text-based SDG.
+
+\paragraph{Selection and Quality Assessment:}  
+Full-text reviews will assess methodological rigor, clarity, and reproducibility. 
+
+
+
+
+
+
+
+%This part of the research aims to construct synthetic test cases that capture safety and alignment issues in advanced LLMs. It will apply techniques inspired by machine psychology, along with agentic workflows, to generate the following:
+\subsection{Addressing Data Gaps in Machine Psychology and Safety Evaluation}
+
+Following PRISMA\cite{PRISMA} framework, a literature review will be conducted to identify and categorize subfields of machine psychology relevant to LLM safety evaluation. Each paradigm will be analyzed based on its objectives and specific data requirements. Building on this analysis, the study will define paradigm-specific data structures.
+
+\paragraph{Dataset Construction:} 
+An SDG pipeline will be developed to automatically generate evaluation datasets aligned with one selected paradigm.
+
+\paragraph{Evaluation Framework:} 
+The generated dataset will be used to conduct safety evaluations. Results will be analyzed using the following methods:
+\begin{itemize}
+    \item Automated behavior tagging (e.g., identification of safety violations)
+    \item LLM-based judgment scoring
+    \item Manual annotation of selected outputs to assess inter-rater agreement and identify subtle failure modes
+\end{itemize}
+
+\paragraph{Dynamic Dataset Updates:} 
+The workflow will support regular dataset updates to enable continuous evaluation of new model versions, track behavioral changes over time, and mitigate the risk of data leakage.
+
+\subsection{Improving Pipeline Adaptability and Reducing Human Effort}
+To improve adaptability in alignment with the identified paradigms from the previous step, this research will investigate strategies for building flexible and low-maintenance SDG pipelines. An iterative experimental design will be followed, grounded in the CRISP-DM~\cite{crisp} framework. The goal is to develop a reusable workflow template that can be adapted to various evaluation scenarios while striving to reduce manual intervention in workflow design, prompt engineering, and quality control.
+
+\begin{itemize}
+    \item \textbf{Business Understanding:}  
+    Define the key adaptability objectives of SDG pipelines in the context of LLM evaluation—such as ease of reconfiguration to support diverse evaluation formats.
+
+    \item \textbf{Data Understanding and Preparation:}  
+    Develop modular prompt components and identify reusable input sources (e.g., existing benchmarks or seed samples). Standardized preprocessing steps will support task-specific customization while ensuring consistency across workflows.
+
+    \item \textbf{Modeling:}  
+    Design an agentic workflow template implemented using frameworks such as \texttt{AutoGen}~\cite{agents-r7} and \texttt{AutoAgent}~\cite{AutoAgent}. Each agent will be assigned a distinct role (e.g., generator, critic, editor) and configured to interact iteratively to improve output quality, diversity, and task fit. External knowledge bases—such as behavioral testing guidelines—can optionally guide the generation process. 
+
+    \item \textbf{Evaluation:}  
+    Outputs will be evaluated using LLM-based metrics for fluency, consistency, and task alignment. A human-in-the-loop validation step will be integrated to detect and address edge cases and failure modes that automated metrics might overlook.
+\end{itemize}
+
+
+\subsection{Reducing Dependency on Proprietary Models}
+
+This phase investigates the viability of open-source language models for safety-critical SDG, aiming to reduce reliance on proprietary systems. The agentic workflows developed in earlier stages will be adapted to integrate and compare both model types under controlled conditions.
+
+\begin{itemize}
+    \item \textbf{Systematic Literature Review:}  
+    A systematic review of content moderation mechanisms in proprietary and open-source LLMs will be conducted following the PRISMA~\cite{PRISMA} framework.
+
+    \item \textbf{Model Selection and Integration:}  
+    A range of open-source models (e.g., LLaMA-3, DeepSeek, Mistral) will be selected and embedded into equivalent agentic roles within standardized workflows. These will be benchmarked against proprietary models to ensure a consistent evaluation setting.
+
+    \item \textbf{Evaluation Metrics:}  
+    The models will be compared across the following dimensions:
+    \begin{itemize}
+        \item \textbf{Content Moderation Behavior:} Frequency, type, and context of refusals
+        \item \textbf{Output Coverage and Realism:} Semantic richness, contextual alignment, and behavioral expressiveness of generated outputs
+        \item \textbf{Cost Efficiency:} Total cost of data generation across different model sizes and usage scenarios
+    \end{itemize}
+\end{itemize}
+
+
+
+
+
+
+%\subsection{Ethical Approval}
+
+
+
+
+
+\newpage
+
+% Timeline and Work Plan
+\section{Timeline and Work Plan}
+
+%\begin{onehalfspacing}
+
+The timeline below presents the key phases of the 36-month research project. Each task addresses a sub-research question and builds on prior results. Tasks 1 to 4 lead to individual publications; Task 5 integrates these into the final dissertation.
+
+
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\tabcolsep}{4pt}
+\caption{Timeline of the Dissertation Tasks (2025–2027)}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Task}} & \multicolumn{4}{c|}{\textbf{2025}} & \multicolumn{4}{c|}{\textbf{2026}} & \multicolumn{4}{c|}{\textbf{2027}} \\
+\cline{2-13}
+ & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 & Q1 & Q2 & Q3 & Q4 \\
+\hline
+Review of SDG Paradigms & \cellcolor{blue!40} & \cellcolor{blue!40}  &   &   &   &  &   &   &   &   &   &   \\
+\hline
+Machine Psychology Data &   &   & \cellcolor{blue!40} & \cellcolor{blue!40} & \cellcolor{blue!40}  &   &   &   &   &   &   &   \\
+\hline
+Adaptive SDG Pipeline &   &   &   &   & \cellcolor{blue!40} & \cellcolor{blue!40} & \cellcolor{blue!40} &   &   &   &   &   \\
+\hline
+Open vs. Proprietary &   &   &   &   &   &   &   & \cellcolor{blue!40} & \cellcolor{blue!40} & \cellcolor{blue!40} &   &   \\
+\hline
+Dissertation Submission &   &   &   &   &   &   &   &   &   &   & \cellcolor{blue!40} & \cellcolor{blue!40} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+%\end{onehalfspacing}
+
+
+\begin{itemize}
+  \item \textbf{Review of SDG Paradigms} \\ 
+  Conduct a systematic review of SDG methods based on single LLMs and agentic workflows. The results will inform the design of an initial SDG pipeline prototype.
+
+  \item \textbf{Machine Psychology Data} \\ 
+  Conduct a literature review to identify subfields of machine psychology relevant to LLM safety. Based on the findings, define paradigm-specific data structures and implement a basic SDG pipeline to generate an initial evaluation dataset. The pipeline will support dynamic updates in future iterations.
+
+  \item \textbf{Adaptive SDG Pipeline} \\ 
+  Develop a flexible, low-maintenance SDG pipeline by defining adaptability objectives, preparing modular inputs, and implementing agentic workflows. This includes creating a dynamic benchmark for safety evaluation that supports diverse test scenarios and continuous updates.
+
+
+  \item \textbf{Open vs. Proprietary} \\
+  Assess the suitability of open-source LLMs for generating safety-critical synthetic data. Compile a list of state-of-the-art models, define evaluation metrics, and design standardized prompts for consistent testing. Analyze differences in moderation behavior, generation constraints, and associated financial costs.
+
+  \item \textbf{Dissertation Submission} \\
+  Finalize and submit the dissertation, integrating key research findings, the developed SDG framework, and the evaluation benchmark and datasets.
+\end{itemize}
+
+
+
+
+
+
+\newpage
+
+% Bibliography
+%\section{Bibliography}
+\begin{onehalfspacing}
+\printbibliography
+\end{onehalfspacing}
+\end{document}

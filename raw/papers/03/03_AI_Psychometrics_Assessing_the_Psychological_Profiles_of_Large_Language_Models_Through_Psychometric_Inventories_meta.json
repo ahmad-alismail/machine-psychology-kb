@@ -1,0 +1,1341 @@
+{
+  "table_of_contents": [
+    {
+      "title": "AI Psychometrics: Assessing the\nPsychological Profiles of Large Language\nModels Through Psychometric Inventories",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          45.75,
+          100.93359375
+        ],
+        [
+          416.25,
+          100.93359375
+        ],
+        [
+          416.25,
+          159.046875
+        ],
+        [
+          45.75,
+          159.046875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          46.22607421875,
+          288.2724609375
+        ],
+        [
+          88.5,
+          288.2724609375
+        ],
+        [
+          88.5,
+          297.0
+        ],
+        [
+          46.22607421875,
+          297.0
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          47.109375,
+          474.75
+        ],
+        [
+          96.75,
+          474.75
+        ],
+        [
+          96.75,
+          484.40478515625
+        ],
+        [
+          47.109375,
+          484.40478515625
+        ]
+      ]
+    },
+    {
+      "title": "Corresponding Author:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          309.0,
+          680.91943359375
+        ],
+        [
+          401.31298828125,
+          680.91943359375
+        ],
+        [
+          401.31298828125,
+          689.33056640625
+        ],
+        [
+          309.0,
+          689.33056640625
+        ]
+      ]
+    },
+    {
+      "title": "A Very Brief History of Psychometrics \nand AI",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          309.1552734375,
+          418.6847839355469
+        ],
+        [
+          533.9759521484375,
+          418.6847839355469
+        ],
+        [
+          533.9759521484375,
+          444.68878173828125
+        ],
+        [
+          309.1552734375,
+          444.68878173828125
+        ]
+      ]
+    },
+    {
+      "title": "The Rise of Large Language Models",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          47.109375,
+          504.6847839355469
+        ],
+        [
+          252.5159912109375,
+          504.6847839355469
+        ],
+        [
+          252.5159912109375,
+          516.6847839355469
+        ],
+        [
+          47.109375,
+          516.6847839355469
+        ]
+      ]
+    },
+    {
+      "title": "Opportunities for Psychometric Assessment",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          307.9775390625,
+          648.6847686767578
+        ],
+        [
+          554.6279907226562,
+          648.6847686767578
+        ],
+        [
+          554.6279907226562,
+          660.6847686767578
+        ],
+        [
+          307.9775390625,
+          660.6847686767578
+        ]
+      ]
+    },
+    {
+      "title": "Demonstrations of AI Psychometrics",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          47.109375,
+          407.93994140625
+        ],
+        [
+          258.45599365234375,
+          407.93994140625
+        ],
+        [
+          258.45599365234375,
+          420.6847839355469
+        ],
+        [
+          47.109375,
+          420.6847839355469
+        ]
+      ]
+    },
+    {
+      "title": "Assessing personality",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          309.1552734375,
+          264.71087646484375
+        ],
+        [
+          435.1728515625,
+          264.71087646484375
+        ],
+        [
+          435.1728515625,
+          276.71087646484375
+        ],
+        [
+          309.1552734375,
+          276.71087646484375
+        ]
+      ]
+    },
+    {
+      "title": "Assessing value orientations",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          308.56640625,
+          628.15869140625
+        ],
+        [
+          476.30401611328125,
+          628.15869140625
+        ],
+        [
+          476.30401611328125,
+          640.6108551025391
+        ],
+        [
+          308.56640625,
+          640.6108551025391
+        ]
+      ]
+    },
+    {
+      "title": "Assessing moral norms",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          46.81494140625,
+          493.0108642578125
+        ],
+        [
+          182.0880126953125,
+          493.0108642578125
+        ],
+        [
+          182.0880126953125,
+          505.0108642578125
+        ],
+        [
+          46.81494140625,
+          505.0108642578125
+        ]
+      ]
+    },
+    {
+      "title": "Assessing beliefs about gender",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          309.1552734375,
+          649.0108642578125
+        ],
+        [
+          487.3320007324219,
+          649.0108642578125
+        ],
+        [
+          487.3320007324219,
+          661.0108642578125
+        ],
+        [
+          309.1552734375,
+          661.0108642578125
+        ]
+      ]
+    },
+    {
+      "title": "Open Challenges and Conclusions",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          47.6982421875,
+          132.66650390625
+        ],
+        [
+          243.34799194335938,
+          132.66650390625
+        ],
+        [
+          243.34799194335938,
+          144.6846923828125
+        ],
+        [
+          47.6982421875,
+          144.6846923828125
+        ]
+      ]
+    },
+    {
+      "title": "Reliability and validity of \npsychometric assessments of AI",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          47.109375,
+          275.65576171875
+        ],
+        [
+          228.48046875,
+          275.65576171875
+        ],
+        [
+          228.48046875,
+          302.7148742675781
+        ],
+        [
+          47.109375,
+          302.7148742675781
+        ]
+      ]
+    },
+    {
+      "title": "Stability of psychometric profiles",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          308.56640625,
+          134.7108154296875
+        ],
+        [
+          502.0559997558594,
+          134.7108154296875
+        ],
+        [
+          502.0559997558594,
+          146.7108154296875
+        ],
+        [
+          308.56640625,
+          146.7108154296875
+        ]
+      ]
+    },
+    {
+      "title": "Engineering psychometric properties \nof AI",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          306.7998046875,
+          384.6181640625
+        ],
+        [
+          526.7879638671875,
+          384.6181640625
+        ],
+        [
+          526.7879638671875,
+          410.7148742675781
+        ],
+        [
+          306.7998046875,
+          410.7148742675781
+        ]
+      ]
+    },
+    {
+      "title": "Multimodal psychometric assessments \nof AI",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          308.56640625,
+          647.27490234375
+        ],
+        [
+          534.5880126953125,
+          647.27490234375
+        ],
+        [
+          534.5880126953125,
+          674.7148590087891
+        ],
+        [
+          308.56640625,
+          674.7148590087891
+        ]
+      ]
+    },
+    {
+      "title": "Lifelong monitoring of psychometric \nproperties of AI",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          45.931640625,
+          190.7108154296875
+        ],
+        [
+          263.4599914550781,
+          190.7108154296875
+        ],
+        [
+          263.4599914550781,
+          216.71484375
+        ],
+        [
+          45.931640625,
+          216.71484375
+        ]
+      ]
+    },
+    {
+      "title": "Consequences of psychometric profiles \nof AI",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          47.6982421875,
+          478.71087646484375
+        ],
+        [
+          273.56402587890625,
+          478.71087646484375
+        ],
+        [
+          273.56402587890625,
+          505.4326171875
+        ],
+        [
+          47.6982421875,
+          505.4326171875
+        ]
+      ]
+    },
+    {
+      "title": "Conclusions",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          310.5,
+          468.71087646484375
+        ],
+        [
+          381.1080017089844,
+          468.71087646484375
+        ],
+        [
+          381.1080017089844,
+          480.71087646484375
+        ],
+        [
+          310.5,
+          480.71087646484375
+        ]
+      ]
+    },
+    {
+      "title": "Appendix",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          46.5205078125,
+          651.86279296875
+        ],
+        [
+          103.56000518798828,
+          651.86279296875
+        ],
+        [
+          103.56000518798828,
+          664.6847686767578
+        ],
+        [
+          46.5205078125,
+          664.6847686767578
+        ]
+      ]
+    },
+    {
+      "title": "Methods for model assessments",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          46.5205078125,
+          669.44970703125
+        ],
+        [
+          229.0693359375,
+          669.44970703125
+        ],
+        [
+          229.0693359375,
+          684.7148590087891
+        ],
+        [
+          46.5205078125,
+          684.7148590087891
+        ]
+      ]
+    },
+    {
+      "title": "Transparency",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          309.44970703125,
+          584.9424285888672
+        ],
+        [
+          375.2399597167969,
+          584.9424285888672
+        ],
+        [
+          375.2399597167969,
+          594.9424285888672
+        ],
+        [
+          309.44970703125,
+          594.9424285888672
+        ]
+      ]
+    },
+    {
+      "title": "Declaration of Conflicting Interests",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          47.6982421875,
+          66.90673828125
+        ],
+        [
+          190.2041015625,
+          66.90673828125
+        ],
+        [
+          190.2041015625,
+          77.35577392578125
+        ],
+        [
+          47.6982421875,
+          77.35577392578125
+        ]
+      ]
+    },
+    {
+      "title": "Open Practices",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          48.0,
+          112.02099609375
+        ],
+        [
+          108.3515625,
+          112.02099609375
+        ],
+        [
+          108.3515625,
+          121.3477783203125
+        ],
+        [
+          48.0,
+          121.3477783203125
+        ]
+      ]
+    },
+    {
+      "title": "ORCID iDs",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          46.81494140625,
+          169.539306640625
+        ],
+        [
+          100.86000061035156,
+          169.539306640625
+        ],
+        [
+          100.86000061035156,
+          179.539306640625
+        ],
+        [
+          46.81494140625,
+          179.539306640625
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          46.81494140625,
+          243.158203125
+        ],
+        [
+          136.0500030517578,
+          243.158203125
+        ],
+        [
+          136.0500030517578,
+          253.539306640625
+        ],
+        [
+          46.81494140625,
+          253.539306640625
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          47.109375,
+          327.539306640625
+        ],
+        [
+          100.04000091552734,
+          327.539306640625
+        ],
+        [
+          100.04000091552734,
+          337.539306640625
+        ],
+        [
+          47.109375,
+          337.539306640625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          83
+        ],
+        [
+          "Span",
+          19
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Picture",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          192
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          193
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          198
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          218
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          124
+        ],
+        [
+          "Line",
+          52
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          241
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          162
+        ],
+        [
+          "Line",
+          72
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          158
+        ],
+        [
+          "Line",
+          72
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          186
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          190
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          213
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          7
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          131
+        ],
+        [
+          "Line",
+          70
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          235
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "TableCell",
+          40
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          276
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "ListItem",
+          18
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          319
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "ListItem",
+          26
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          307
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "ListItem",
+          24
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          304
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "ListItem",
+          26
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\03_AI_Psychometrics_Assessing_the_Psychological_Profiles_of_Large_Language_Models_Through_Psychometric_Inventories"
+}

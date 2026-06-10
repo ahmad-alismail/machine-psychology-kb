@@ -1,0 +1,943 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Is Machine Psychology here? On Requirements for Using\nHuman Psychological Tests on Large Language Models",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          122.11399841308594,
+          78.85003662109375
+        ],
+        [
+          473.7734375,
+          78.85003662109375
+        ],
+        [
+          473.7734375,
+          109.13623046875
+        ],
+        [
+          122.11399841308594,
+          109.13623046875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          157.1484375,
+          221.189453125
+        ],
+        [
+          202.2432861328125,
+          221.189453125
+        ],
+        [
+          202.2432861328125,
+          233.75537109375
+        ],
+        [
+          157.1484375,
+          233.75537109375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.716796875,
+          633.5556640625
+        ],
+        [
+          153.947265625,
+          633.5556640625
+        ],
+        [
+          153.947265625,
+          646.5803527832031
+        ],
+        [
+          70.716796875,
+          646.5803527832031
+        ]
+      ]
+    },
+    {
+      "title": "2 Background",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          69.26171875,
+          72.7591552734375
+        ],
+        [
+          151.6951141357422,
+          72.7591552734375
+        ],
+        [
+          151.6951141357422,
+          84.71435546875
+        ],
+        [
+          69.26171875,
+          84.71435546875
+        ]
+      ]
+    },
+    {
+      "title": "3 Requirements for Machine Psychology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          306.14202880859375,
+          334.6571350097656
+        ],
+        [
+          522.08203125,
+          334.6571350097656
+        ],
+        [
+          522.08203125,
+          346.6123352050781
+        ],
+        [
+          306.14202880859375,
+          346.6123352050781
+        ]
+      ]
+    },
+    {
+      "title": "3.1 (R1) Reliability for the Intended Use",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.26171875,
+          72.7705078125
+        ],
+        [
+          265.12432861328125,
+          72.7705078125
+        ],
+        [
+          265.12432861328125,
+          84.47113037109375
+        ],
+        [
+          69.26171875,
+          84.47113037109375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 (R2) Validity for the Intended Use",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.26171875,
+          622.7020568847656
+        ],
+        [
+          253.21160888671875,
+          622.7020568847656
+        ],
+        [
+          253.21160888671875,
+          633.6111450195312
+        ],
+        [
+          69.26171875,
+          633.6111450195312
+        ]
+      ]
+    },
+    {
+      "title": "Research Association et al., 2014).",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          305.56640625,
+          73.5927734375
+        ],
+        [
+          458.05859375,
+          73.5927734375
+        ],
+        [
+          458.05859375,
+          84.57073974609375
+        ],
+        [
+          305.56640625,
+          84.57073974609375
+        ]
+      ]
+    },
+    {
+      "title": "3.3 (R3) Suitability for Test Takers",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          306.1419982910156,
+          516.5620422363281
+        ],
+        [
+          476.1015625,
+          516.5620422363281
+        ],
+        [
+          476.1015625,
+          527.4833984375
+        ],
+        [
+          306.1419982910156,
+          527.4833984375
+        ]
+      ]
+    },
+    {
+      "title": "3.4 (R4) Non-Disclosure of Test Materials",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          303.8203125,
+          692.6360626220703
+        ],
+        [
+          506.4222412109375,
+          692.6360626220703
+        ],
+        [
+          506.4222412109375,
+          703.5451507568359
+        ],
+        [
+          303.8203125,
+          703.5451507568359
+        ]
+      ]
+    },
+    {
+      "title": "3.5 (R5) Fairness",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          69.552734375,
+          327.551025390625
+        ],
+        [
+          157.69151306152344,
+          327.551025390625
+        ],
+        [
+          157.69151306152344,
+          338.46014404296875
+        ],
+        [
+          69.552734375,
+          338.46014404296875
+        ]
+      ]
+    },
+    {
+      "title": "4 Analysis of Machine Psychology Studies",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          305.56640625,
+          326.7041015625
+        ],
+        [
+          524.4315795898438,
+          326.7041015625
+        ],
+        [
+          524.4315795898438,
+          338.65936279296875
+        ],
+        [
+          305.56640625,
+          338.65936279296875
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Overview of the Literature",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.984375,
+          626.9775390625
+        ],
+        [
+          455.389404296875,
+          626.9775390625
+        ],
+        [
+          455.389404296875,
+          638.8351440429688
+        ],
+        [
+          304.984375,
+          638.8351440429688
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Assessing Machine Psychology\nRequirements",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          69.84375,
+          123.7509765625
+        ],
+        [
+          237.8406524658203,
+          123.7509765625
+        ],
+        [
+          237.8406524658203,
+          148.54815673828125
+        ],
+        [
+          69.84375,
+          148.54815673828125
+        ]
+      ]
+    },
+    {
+      "title": "5 Open Problems in Machine Psychology",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          304.984375,
+          537.5261535644531
+        ],
+        [
+          523.828125,
+          537.5261535644531
+        ],
+        [
+          523.828125,
+          549.4813537597656
+        ],
+        [
+          304.984375,
+          549.4813537597656
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          69.84375,
+          71.1259765625
+        ],
+        [
+          145.93270874023438,
+          71.1259765625
+        ],
+        [
+          145.93270874023438,
+          84.71435546875
+        ],
+        [
+          69.84375,
+          84.71435546875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          69.552734375,
+          525.0166015625
+        ],
+        [
+          126.40985870361328,
+          525.0166015625
+        ],
+        [
+          126.40985870361328,
+          538.15234375
+        ],
+        [
+          69.552734375,
+          538.15234375
+        ]
+      ]
+    },
+    {
+      "title": "Appendix",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          70.86599731445312,
+          72.7591552734375
+        ],
+        [
+          120.39639282226562,
+          72.7591552734375
+        ],
+        [
+          120.39639282226562,
+          84.71435546875
+        ],
+        [
+          70.86599731445312,
+          84.71435546875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          261
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          202
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          224
+        ],
+        [
+          "Line",
+          38
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          291
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          229
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          211
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          255
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "ListItem",
+          15
+        ],
+        [
+          "Reference",
+          15
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          300
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "Reference",
+          22
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          277
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "ListItem",
+          21
+        ],
+        [
+          "Reference",
+          21
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          268
+        ],
+        [
+          "TableCell",
+          60
+        ],
+        [
+          "Line",
+          52
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          205
+        ],
+        [
+          "TableCell",
+          80
+        ],
+        [
+          "Line",
+          62
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\02_Is_Machine_Psychology_Here_On_Requirements_for_Using_Human_Psychological_Tests_on_Large_Language_Models"
+}

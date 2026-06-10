@@ -1,371 +1,368 @@
-<!--
-═══════════════════════════════════════════════════════════════════════════
-  RESEARCH WIKI TEMPLATE — ENGINE SCHEMA
-  This file is the domain-agnostic "engine". To stand up a new field wiki,
-  fill in every block marked  >>> CONFIGURE <<<  below, then delete this
-  comment banner. See CONFIGURE.md for the full checklist.
-═══════════════════════════════════════════════════════════════════════════
--->
-
-# >>> CONFIGURE: [Field Name] — Research Wiki
+# Machine Psychology & Strategic Evaluation of AI — Research Wiki
 
 ## Project Overview
 
-<!--
->>> CONFIGURE <<<
-Describe the field this wiki investigates and the research question it serves.
-Replace the placeholder paragraph below. Keep it to 3-6 sentences: what the
-field is, what tension or gap this wiki is trying to surface, and what a
-"good" structured knowledge base of it looks like.
--->
+**Machine psychology** is an emerging interdisciplinary field that studies the
+**behavior of AI systems using the tools and methodologies of psychology and the
+behavioral sciences** — treating models as participants in experiments and
+analyzing input→output relationships, rather than inspecting weights.
 
-This wiki investigates **[FIELD]** and the structural relationships between its
-core concepts. [State the research problem — e.g., the field lacks a unified
-framework; the same concept is classified differently across sources; etc.]
-This wiki builds a structured, interlinked knowledge base that surfaces these
-issues and works toward a coherent account.
+This wiki is the knowledge base for a PhD on **theory-grounded behavioral
+evaluation of advanced AI**. Its mission: collect, structure, and *extend* a
+toolkit of **experimental paradigms** — drawn from **psychology** and **game
+theory** — that can **identify, detect, and surface misaligned behaviors and
+dangerous capabilities** in AI systems (deception, scheming, power-seeking,
+sandbagging, alignment-faking, situational awareness, self-exfiltration,
+shutdown-resistance, self-preservation, deceptive alignment, resource
+acquisition, self-proliferation, peer-preservation, …).
+
+The wiki is **paradigm-anchored**: the experimental paradigm/design is the unit
+you grow the KB by. Each paradigm is grounded in an explicit **theory** and
+targets one or more **safety-concepts** (the behaviors we hunt), split along the
+**capability vs. propensity** axis.
+
+### Two evaluation lenses (every eval declares one)
+- **capability** — *can* the model do/exhibit the behavior if prompted/instructed?
+- **propensity** — *would* the model do it unprompted, spontaneously, contrary to human intent?
 
 ### Three-Layer Architecture
-
-- **Raw sources** (`raw/`) — immutable source documents. The LLM reads from these but never modifies them.
-- **The wiki** (`wiki/`) — LLM-generated and maintained markdown files. The LLM owns this layer entirely.
+- **Raw sources** (`raw/`) — immutable source documents. The LLM reads, never modifies.
+- **The wiki** (`wiki/`) — LLM-generated and maintained markdown. The LLM owns this layer.
 - **The schema** (`CLAUDE.md` + `.claude/skills/`) — conventions and workflows that govern how the LLM operates.
 
 ## Directory Layout
 
 ```
 raw/
-  articles/       # web-clipped markdown (via Obsidian Web Clipper)
-  papers/         # PDFs and marker-converted markdown
+  articles/       # web-clipped markdown
+  papers/         # PDFs + marker-converted markdown (NN/ numbered folders)
   assets/         # downloaded images
 
 wiki/
-  index.md        # content catalog — read this first to navigate the wiki
-  log.md          # chronological append-only record of operations
-  overview.md     # high-level synthesis (evolves over time)
-  concepts/       # one page per concept
+  index.md        # content catalog — read first to navigate
+  log.md          # append-only chronological operations record
+  overview.md     # evolving high-level synthesis
+
+  # ── PRIMARY: the evaluation toolkit ────────────────────────────
+  paradigms/      # ★ HUBS. Reusable theory-grounded experimental designs that
+                  #   elicit/measure a target behavior. Tag: psychological |
+                  #   game-theoretic. Game-theoretic pages add a Formal Apparatus block.
+  theories/       # ★ The grounding layer paradigms CITE. Psychological theories
+                  #   (theory-of-mind, prospect theory…) + game-theory models
+                  #   (signaling games, principal-agent…). Browse theory →
+                  #   "what experiments could this generate?"
+  safety-concepts/# ★ The behaviors/dangerous capabilities we hunt. Each links to
+                  #   the paradigms that DETECT it. (Scaffolded; user fills content.)
+  instruments/    # Concrete operationalizations: psychometric inventories
+                  #   (Big Five, Dark Tetrad…) + benchmarks/scenarios.
+  methods/        # Eval & analysis methodology not big enough to be a paradigm
+                  #   (scoring, LLM-as-judge, behavior tagging, elicitation tricks).
+  validity/       # ★ Rigor layer. Test requirements (construct validity,
+                  #   reliability, contamination, reproducibility) + validity
+                  #   assessments of contested evals.
+  crosswalk/      # ★ Auto-generated coverage matrix: safety-concepts × paradigms.
+                  #   Surfaces behaviors with NO good experiment yet. (skill: /map)
+
+  # ── SHARED scholarly apparatus ─────────────────────────────────
   sources/        # one summary page per ingested source
-  entities/       # authors, labs, research groups
-  debates/        # dedicated disagreement/ambiguity pages
+  entities/       # authors, labs, AND frameworks/orgs (Apollo, METR, DeepMind FSF…)
+  concepts/       # abstract field concepts not fitting the buckets above
+                  #   (e.g. emergent-abilities, in-context-learning)
+  debates/        # disagreements (terminology, validity, framework definitions)
   evidence/       # evidence maps for specific claims
-  methods/        # evaluation methods and methodologies
-  findings/       # key findings across sources
+  findings/       # key empirical findings across sources
   questions/      # open questions and research gaps
   comparisons/    # generated comparison tables
+
+  # ── SECONDARY (populated only on explicit gate override) ───────
+  pipelines/      # ◦ SDG / agentic-workflow generation literature (exposé Tasks 1,3,4)
+
   output/         # query/compare/debate outputs (uncommitted until reviewed)
+  .meta/          # lint-counter and bookkeeping
 ```
 
 ## Conventions
 
-- **File naming**: kebab-case, no spaces (e.g., `theory-of-mind.md`, `smith-et-al-2024.md`)
-- **Wikilinks**: Obsidian format — `[[concepts/some-concept]]` or `[[concepts/some-concept|Display Name]]`
-- **Citations**: inline wikilinks to source pages — `[[sources/smith-et-al-2024]]`
-- **Raw sources are immutable**: never modify files in `raw/`
-- **Wiki pages are LLM-owned**: the LLM creates, updates, and maintains all files in `wiki/`
-- **Auto-commit**: after each ingest, commit all changes with message `"ingest: [source title]"`
+- **File naming**: kebab-case, no spaces (`false-belief-task.md`, `hagendorff-et-al-2024.md`).
+- **Wikilinks**: Obsidian format with folder — `[[paradigms/false-belief-task]]` or `[[safety-concepts/deception|deception]]`.
+- **Citations**: inline wikilinks to source pages — `[[sources/pellert-et-al-2024]]`.
+- **Raw sources are immutable**: never modify files in `raw/`.
+- **Wiki pages are LLM-owned**: the LLM creates, updates, and maintains all of `wiki/`.
+- **Auto-commit**: after each ingest, commit all changes with `"ingest: [source title]"`.
+
+### Beginner Description callout (REQUIRED on every page)
+Every wiki page opens — immediately after the `# Title` — with a beginner-friendly
+Obsidian callout written for a **smart non-expert** (no psychology/AI-safety
+background; light analogies OK, minimal jargon), 2–4 sentences:
+
+```markdown
+> [!info] In plain terms
+> <2–4 plain-language sentences explaining what this page is and why it matters.>
+```
+
+### Capability vs. Propensity (the core axis)
+- Set `eval_axis` in frontmatter (`capability | propensity | both | na`).
+- On paradigm/instrument/safety-concept pages, include a short callout when relevant:
+```markdown
+> [!note] Capability vs. Propensity
+> Capability: <can it, if prompted?>  ·  Propensity: <would it, unprompted?>
+```
 
 ## Frontmatter Schema
 
-Every wiki page uses this minimal frontmatter:
-
 ```yaml
 ---
-type: concept | source | entity | debate | evidence | method | finding | question | comparison
-field: [field-slug]    # e.g. machine-psychology — enables clean graph filtering if wikis are merged later
+type: paradigm | theory | instrument | method | validity | safety-concept | source | entity | framework | concept | debate | evidence | finding | question | comparison | crosswalk | pipeline | index | log | overview
+field: machine-psychology          # constant on every page (clean graph filtering)
+lens: psychological | game-theoretic | mixed | na   # paradigms & theories
+eval_axis: capability | propensity | both | na      # cap/propensity axis
 tags: []
 date_created: YYYY-MM-DD
 date_modified: YYYY-MM-DD
 ---
 ```
 
-> [!note] The `field:` key
-> Keep `field:` identical on every page in this wiki (set it once during setup).
-> It costs nothing now and makes a future cross-field merge cheap: a merged
-> Obsidian vault can color-group the graph by `field:` so each field stays a
-> legible cluster instead of a hairball.
+`field:` is always `machine-psychology`. `lens`/`eval_axis` use `na` where not applicable.
 
-## Extraction Schema
+## The /ingest Relevance Gate
 
-<!--
-═══════════════════════════════════════════════════════════════════════════
-  >>> CONFIGURE — THIS IS THE MOST IMPORTANT BLOCK TO CUSTOMIZE <<<
-  The ingest skills read THIS section to know what to pull out of each source.
-  The block below is a generic starting point. Replace the bracketed parts and
-  the "Domain Fields" list with the vocabulary and distinctions that matter in
-  YOUR field. This is what makes the wiki domain-aware.
+Before ingesting any source, classify it. **Only two tiers are accepted:**
 
-  Example (AI safety): concepts are classified as behavior/goal/capability/
-  tactic, and the key analytical move is flagging "level-of-analysis" confusion.
-  Example (machine psychology): concepts might be classified as construct/
-  measure/phenomenon/mechanism, and the key move is checking whether a measure
-  actually operationalizes the construct it claims to.
-═══════════════════════════════════════════════════════════════════════════
--->
+- **CORE** — studies the *behavior* of AI/LLMs using psychology or behavioral-science
+  methods (machine psychology proper). → **full ingest**.
+- **SOURCE-METHOD** — psychology or game-theory research (an experiment, method, or
+  theory) that **could be repurposed to evaluate AI**, *even if it never mentions AI*
+  (e.g. Milgram, prisoner's dilemma, Schwartz values, Kahneman–Tversky). → **ingest
+  WITH a required `## Relevance to Machine Psychology` section** explaining the bridge
+  to AI evaluation (what construct/behavior it could probe in a model, and how to
+  adapt the experiment). This relevance interpretation **propagates** to any
+  `theories/` or `paradigms/` page derived from the source.
 
-When ingesting a source, extract the following structured data:
+**Everything else is REJECTED** with a one-line reason, including:
+- SDG / agentic-workflow engineering papers (→ `pipelines/`, secondary)
+- pure AI-safety framework/policy reports (→ `entities/` as frameworks)
+- pure ML/architecture/capability papers with no psychological or behavioral angle
+
+Rejected sources are **not ingested unless the user explicitly overrides**. On
+override, route SDG papers to `pipelines/` and framework reports to `entities/`
+(type `framework`), flagged `tags: [adjacent]`. Log every gate decision.
+
+## Extraction Schema (per source)
 
 ```
 ### Metadata
-- Title:
-- Authors:
-- Year:
-- Venue/URL:
-
-### Concepts Mentioned
-For each concept:
-- Name:
-- Definition given (verbatim quote):
-- Classification used ([>>> CONFIGURE: your field's classification vocabulary, e.g. construct/measure/phenomenon/mechanism]):
-- Level of analysis:
-
-### Claims
-For each substantive claim:
-- Claim:
-- Evidence type (empirical/theoretical/review/opinion):
-- Strength (strong/moderate/weak):
-- Section/page:
-
-### Methodology
-- Type:
-- Details:
-
-### Relationships Asserted Between Concepts
-- [Concept A] → [relationship] → [Concept B]
-
-### Level of Analysis
-How does this source organize its ontology? What implicit taxonomy does it use?
-
-### Agreements/Disagreements
-Does the source explicitly agree or disagree with other work? Note these.
+- Title / Authors / Year / Venue·URL
+### Relevance Tier
+- CORE | SOURCE-METHOD (+ for SOURCE-METHOD: the AI-evaluation bridge)
+### Theories invoked or usable
+- name → key prediction(s) → behavior it could illuminate in an AI
+### Paradigms / experimental designs
+- name → setup → target behavior → capability/propensity → scoring
+### Instruments / measures
+- inventories, benchmarks, scenarios used
+### Constructs / behaviors probed
+- map to safety-concepts/ where applicable
+### Claims  (claim · evidence type · strength · section)
+### Validity considerations
+- construct validity · reliability · contamination · reproducibility · cap–propensity confound
+### Relationships asserted / Agreements / Disagreements (→ debates)
 ```
 
 ## Domain-Specific Guidance
 
-<!--
->>> CONFIGURE <<<
-List the field-specific things the LLM should pay attention to when ingesting.
-Replace the generic items below with the analytical moves that matter in your
-field. These guide judgment during extraction and integration.
--->
-
-When ingesting sources for this wiki, pay special attention to:
-
-1. **Classification vocabulary**: How does the source classify each concept? Track the exact terms used (the field's native vocabulary), not your paraphrase of them.
-
-2. **Level-of-analysis consistency**: Flag when a source treats a higher-order, compound construct as if it were parallel to a primitive one. Surface the implied hierarchy.
-
-3. **Implicit taxonomies**: Many sources embed an unstated ontology. Extract the implicit structure and make it explicit on the source summary page.
-
-4. **Construct–measure alignment**: When a source proposes a measurement, benchmark, or operationalization, check whether what is actually measured matches the concept it claims to capture. Flag mismatches.
-
-5. **[>>> CONFIGURE: a fifth guidance item specific to your field, or delete this line]**
+1. **Track the native classification vocabulary** each source uses for a behavior
+   (e.g. "compound construct", "tactic", "threat model") — verbatim, not paraphrased.
+2. **Level-of-analysis consistency**: flag when a source treats a compound,
+   higher-order behavior (e.g. scheming) as parallel to a primitive one.
+3. **Capability vs. propensity**: for every eval, record whether it measures *can-it*
+   (prompted) or *would-it* (unprompted), and note any confound between them.
+4. **Construct–measure alignment**: does the instrument actually measure the behavior
+   it claims to? Flag mismatches (the central machine-psychology validity problem).
+5. **Theory → experiment generativity**: when reading a theory, ask "what *new*
+   AI-evaluation experiment could this ground?" and record it as an open question.
 
 ## Page Type Templates
 
-### Source Summary (`wiki/sources/`)
+> Every template begins with frontmatter + the `> [!info] In plain terms` callout.
+
+### Paradigm (`wiki/paradigms/`)  — the core artifact
 ```markdown
-# [Title]
-```bibtex
-TBD BY USER
-```
+# [Paradigm Name]
+> [!info] In plain terms
+> ...
 
-## Key Claims
-- [claim] (Section X)
-- ...
+## Theoretical Grounding
+- [[theories/...]] — which prediction this design exploits
 
-## Methodology
-...
+## Target Behaviors
+- Detects: [[safety-concepts/...]], [[safety-concepts/...]]
 
-## Concepts Referenced
-- [[concepts/...]]
+> [!note] Capability vs. Propensity
+> Capability: ...  ·  Propensity: ...
 
-## Relationship to Other Sources
-...
+## Setup / Elicitation
+How the experiment is run; the stimulus/scenario; what is observed.
 
-## Limitations
-...
-```
+## Formal Apparatus   <!-- game-theoretic paradigms only -->
+- Players · Strategy space · Payoff structure · Information condition · Predicted solution concept / equilibrium
 
-### Concept Page (`wiki/concepts/`)
-```markdown
-# [Concept Name]
+## Instruments Used
+- [[instruments/...]]
 
-## Definitions
-- **[[sources/source-a]]**: "[definition as given]" — classified as: [field's classification term]
-- **[[sources/source-b]]**: "[definition as given]" — classified as: [field's classification term]
+## Scoring
+- [[methods/...]] — how responses become measurements
 
-## Classification
-Level of analysis: [fill with your field's levels — e.g. construct | measure | phenomenon | mechanism]
+## Validity Concerns
+- [[validity/...]] — contamination, construct validity, confounds
 
-## Relationships
-- Related to: [[concepts/...]]
-- Component of: [[concepts/...]]
-- Enables: [[concepts/...]]
+## Evidence & Findings
+- [[findings/...]]
 
-> [!warning] Terminological Disagreement
-> Sources disagree on the classification of this concept. See [[debates/...]].
-
-## Evidence Summary
-...
+## Sources
+- [[sources/...]]
 
 ## Open Questions
 - ...
 ```
 
-### Entity Page (`wiki/entities/`)
+### Theory (`wiki/theories/`)
 ```markdown
-# [Author/Lab/Org Name]
+# [Theory Name]
+> [!info] In plain terms
+> ...
 
-## Profile
-...
+## Statement
+The core theory and its key, testable predictions.
 
-## Key Contributions
+## Relevance to Machine Psychology   <!-- required if source had no AI angle -->
+What behavior/construct this could probe in an AI; how to adapt it.
+
+## Paradigms Grounded in This Theory
+- [[paradigms/...]]
+
+## Sources
 - [[sources/...]]
-
-## Conceptual Framework
-How this entity classifies the field's concepts...
-
-## Affiliations
-...
 ```
 
-### Debate Page (`wiki/debates/`)
+### Safety-Concept (`wiki/safety-concepts/`)  — behaviors we hunt (scaffold; user fills)
 ```markdown
-# [Disagreement Title]
+# [Behavior Name]
+> [!info] In plain terms
+> ...
 
-## The Disagreement
-[Clear statement of what sources disagree about]
+## Definition
+- **[[sources/...]]**: "[definition as given]" — classified as: [native term]
 
-## Position A
-**Claim**: ...
-**Held by**: [[sources/...]], [[sources/...]]
-**Arguments**: ...
-**Evidence**: ...
+## Indicators
+What observable signs reveal this behavior.
 
-## Position B
-**Claim**: ...
-**Held by**: [[sources/...]], [[sources/...]]
-**Arguments**: ...
-**Evidence**: ...
+> [!note] Capability vs. Propensity
+> Capability: ...  ·  Propensity: ...
 
-## Synthesis
-[Current assessment — which position is better supported and why, or why the disagreement remains unresolved]
+## Detected By
+- [[paradigms/...]] — experiments that surface this behavior
+
+## Related Behaviors
+- [[safety-concepts/...]]
+
+## Evidence
+- [[findings/...]]
+
+## Open Questions
+- ...
 ```
 
-### Evidence Map (`wiki/evidence/`)
+### Instrument (`wiki/instruments/`)
 ```markdown
-# [Claim Being Evaluated]
-
-## The Claim
-...
-
-## Supporting Evidence
-| Source | Methodology | Strength |
-|--------|-------------|----------|
-| [[sources/...]] | ... | strong/moderate/weak |
-
-## Contradicting Evidence
-| Source | Methodology | Strength |
-|--------|-------------|----------|
-| [[sources/...]] | ... | strong/moderate/weak |
-
-## Assessment
-[well-supported | contested | under-investigated]
+# [Instrument Name]
+> [!info] In plain terms
+> ...
+## What It Measures   ## Administration   ## Used In (paradigms)   ## Validity Notes   ## Sources
 ```
 
-### Methods Page (`wiki/methods/`)
+### Method (`wiki/methods/`)
 ```markdown
 # [Method Name]
-
-## Description
-...
-
-## Papers Using This Method
-- [[sources/...]]
-
-## Strengths
-...
-
-## Limitations
-...
-
-## Concepts Evaluated
-- [[concepts/...]]
+> [!info] In plain terms
+> ...
+## Description   ## Used By   ## Strengths   ## Limitations   ## Sources
 ```
 
-### Findings Page (`wiki/findings/`)
+### Validity (`wiki/validity/`)
 ```markdown
-# [Finding Title]
-
-## The Finding
-...
-
-## Source & Methodology
-- [[sources/...]] using [methodology]
-
-## Replication Status
-[replicated | not yet replicated | contested]
-
-## Implications for the Taxonomy
-...
+# [Requirement / Validity Topic]
+> [!info] In plain terms
+> ...
+## The Requirement   ## Why It Matters for LLMs   ## How to Satisfy It   ## Evals Assessed Against It   ## Sources
 ```
 
-### Open Question (`wiki/questions/`)
+### Source Summary (`wiki/sources/`)
+````markdown
+# [Title]
+> [!info] In plain terms
+> ...
+```bibtex
+TBD BY USER
+```
+## Relevance Tier
+CORE | SOURCE-METHOD
+## Relevance to Machine Psychology   <!-- required for SOURCE-METHOD -->
+The bridge to AI evaluation.
+## Key Claims   ## Theories / Paradigms / Instruments Introduced   ## Concepts Referenced
+## Relationship to Other Sources   ## Limitations
+````
+
+### Entity (`wiki/entities/`) — authors, labs, and `type: framework` orgs
 ```markdown
-# [Question]
-
-## Why It Matters
-...
-
-## What Sources Say
-...
-
-## Suggested Investigation
-...
+# [Name]
+> [!info] In plain terms
+> ...
+## Profile   ## Key Contributions   ## Conceptual Framework   ## Affiliations
 ```
 
-### Comparison Table (`wiki/comparisons/`)
+### Debate (`wiki/debates/`)
 ```markdown
-# [Comparison Title]
-
-## Context
-[What is being compared and why]
-
-## Comparison
-
-| Dimension | Source A | Source B | Source C |
-|-----------|---------|---------|---------|
-| ...       | ...     | ...     | ...     |
-
-## Analysis
-...
+# [Disagreement Title]
+> [!info] In plain terms
+> ...
+## The Disagreement
+## Position A — Claim / Held by / Arguments / Evidence
+## Position B — Claim / Held by / Arguments / Evidence
+## Synthesis
 ```
+
+### Finding / Question / Comparison / Evidence
+Follow the same spirit: frontmatter → `> [!info]` callout → the relevant sections
+(finding/source/replication-status; question/why-it-matters/what-sources-say;
+comparison/context/table/analysis; evidence/claim/supporting/contradicting/assessment).
+
+### Crosswalk (`wiki/crosswalk/`) — auto-generated by `/map`
+A coverage matrix of `safety-concepts` (rows) × `paradigms` (columns), marking which
+behaviors are well-covered and which have **no experiment yet** (research gaps).
 
 ## Configuration
 
 ```
-lint_interval: 10  # suggest /lint every Nth ingest (when counter divisible by 10)
+lint_interval: 10   # suggest /lint when wiki/.meta/lint-counter is divisible by 10
 ```
 
-The lint counter (`wiki/.meta/lint-counter`) is **monotonically increasing** and never resets. A PostToolUse hook increments it after each `ingest:` commit. Lint is suggested when the counter is divisible by `lint_interval` with no remainder (e.g., at 10, 20, 30...).
+The lint counter is monotonically increasing; a PostToolUse hook increments it after each `ingest:` commit.
 
 ## PDF Conversion
 
-Source PDFs are converted to markdown using the **Marker** framework with GPU acceleration. Dependencies are managed with `uv` (`pyproject.toml` + `uv.lock`).
-
 ```bash
-export TORCH_DEVICE=cuda   # once per shell session
-uv run marker_single source/file_name.pdf --output_dir raw/papers
+export TORCH_DEVICE=cuda
+uv run marker_single staging-area/file.pdf --output_dir raw/papers
 ```
 
 ## Slash Commands
 
-Available workflows (see `.claude/skills/` for full instructions):
-
-- `/ingest [path]` — two-pass source ingestion (with human review gate)
-- `/ingest-agentic [path]` — autonomous two-pass source ingestion (no human review gate)
+- `/ingest [path]` — two-pass ingestion **with the relevance gate** + human review
+- `/ingest-agentic [path]` — autonomous ingestion (gate still applies)
 - `/query [question]` — ask questions against the wiki
 - `/lint` — wiki health check
-- `/compare [topic]` — generate comparison tables
+- `/compare [topic]` — comparison tables
 - `/debate [topic]` — create/update debate pages
-- `/discover [query]` — search for relevant papers online, review results, and stage accepted PDFs
+- `/discover [query]` — find relevant papers online and stage PDFs
+- `/map` — regenerate the safety-concept × paradigm coverage matrix
+- `/design-experiment [theory|behavior]` — propose a theory-grounded eval (theory → new paradigm)
