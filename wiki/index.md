@@ -51,9 +51,6 @@ date_modified: 2026-06-10
 - [[validity/training-data-contamination]] — test leakage → memorization not capability
 - [[validity/reproducibility-in-machine-psychology]] — reporting & replicability
 
-## Concepts (abstract)
-- [[concepts/emergent-abilities]] · [[concepts/in-context-learning]] · [[concepts/performance-competence-distinction]]
-
 ## Sources
 - [[sources/hagendorff-et-al-2024]] — Hagendorff et al. 2024, foundational "Machine Psychology" review
 - [[sources/loehn-kiehne-et-al-2024]] — Löhn, Kiehne et al. 2024, validity requirements & 25-study audit
@@ -62,23 +59,5 @@ date_modified: 2026-06-10
 ## Entities
 - [[entities/thilo-hagendorff]] · [[entities/niklas-kiehne]] · [[entities/max-pellert]]
 
-## Debates
-- [[debates/machine-psychology-terminology]] — machine psychology vs AI psychometrics vs machine behavior
-- [[debates/theory-of-mind-in-llms]] — Kosinski vs Ullman
-- [[debates/test-validity-sufficiency]] — design guidance vs validity criteria
-
-## Findings
-- [[findings/llm-personality-profiles-homogeneous]] · [[findings/llm-conservative-moral-leaning]]
-- [[findings/no-llm-study-meets-validity-requirements]] · [[findings/self-report-prompt-sensitivity]]
-
 ## Questions
 - [[questions/distinct-constructs-for-llms]] · [[questions/capability-propensity-confound]] · [[questions/contamination-resistant-dynamic-evals]]
-
-## Evidence
-<!-- evidence maps for specific claims -->
-
-## Comparisons
-<!-- generated comparison tables -->
-
-## Pipelines (secondary — SDG/agentic generation; gate-override only)
-<!-- empty until a SDG/agentic source is ingested via gate override -->

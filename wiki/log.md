@@ -27,3 +27,6 @@ Inventory-based profiling. Created instruments (big-five-inventory, short-dark-t
 
 ## [2026-06-10] map | Built coverage-map + 3 debates
 Created [[crosswalk/coverage-map]] (11/14 behaviors have no paradigm yet) and debates (machine-psychology-terminology, theory-of-mind-in-llms, test-validity-sufficiency). Wired safety-concept "Detected By" back-links for deception, peer-preservation, power-seeking.
+
+## [2026-06-11] prune | Stripped to experiment-focused structure
+Audited the KB (3-agent team) for redundant/unnecessary directories. **Deleted** `comparisons/ pipelines/ evidence/` (empty/off-mission) and `debates/ findings/ concepts/` (information, not experiments). Folded the theory-of-mind perturbation lesson (Kosinski vs Ullman) into [[validity/training-data-contamination]] before deleting debates. Re-pointed all dangling wikilinks (~50 occurrences across 16 files). Updated CLAUDE.md (removed dropped types/dirs/templates; SDG now fully rejected, no pipelines home), index.md, overview.md, and the /ingest skill. Removed orphaned `/compare` and `/debate` skills. Result: 11 wiki dirs — paradigms, theories, instruments, methods, validity, safety-concepts, crosswalk, sources, entities, questions, output.

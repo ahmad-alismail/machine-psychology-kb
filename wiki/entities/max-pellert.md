@@ -21,7 +21,7 @@ Researcher affiliated with the Business School at the University of Mannheim, GE
 - Empirical findings that LLM personality profiles are notably homogeneous and that models lean toward conservative-associated moral foundations.
 
 ## Conceptual Framework
-Pellert classifies the work as **psychometric measurement / trait profiling**, not psychology experimentation. LLMs are framed as having metaphorically "acquired" traits sedimented in their training corpora, which can be elicited as scale scores having "no ground truth" (paralleling the human distinction between abilities and traits). Crucially, he does **not** use the term "machine psychology"; he positions AI psychometrics within Rahwan et al.'s **"machine behavior"** research program. This measurement-and-trait emphasis distinguishes him from the experiment-and-process framing of [[entities/thilo-hagendorff]]. See [[debates/machine-psychology-terminology]].
+Pellert classifies the work as **psychometric measurement / trait profiling**, not psychology experimentation. LLMs are framed as having metaphorically "acquired" traits sedimented in their training corpora, which can be elicited as scale scores having "no ground truth" (paralleling the human distinction between abilities and traits). Crucially, he does **not** use the term "machine psychology"; he positions AI psychometrics within Rahwan et al.'s **"machine behavior"** research program. This measurement-and-trait emphasis distinguishes him from the experiment-and-process framing of [[entities/thilo-hagendorff]].
 
 ## Affiliations
 - University of Mannheim (Business School)

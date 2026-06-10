@@ -35,7 +35,7 @@ Pellert et al. administered the BFI to LLMs through [[paradigms/psychometric-inv
 ## Validity Notes
 See [[validity/construct-validity-for-llms]]. Pellert et al. caution that, unlike performance benchmarks, inventory items have **no ground truth** — there is no "correct" answer a model should give, only a response that is then aggregated. They stress that any "personality" surfaced this way is **mimicked, not possessed**: the models are prediction machines reflecting the personalities sedimented in their training text, and reading the results in human terms risks anthropomorphism.
 
-Pellert's key empirical finding with the BFI was that the model "personalities" were **surprisingly homogeneous** — all six English models scored relatively high on agreeableness and extraversion and low on neuroticism, yielding balanced, well-adapted profiles with no extreme accentuation. See [[findings/llm-personality-profiles-homogeneous]].
+Pellert's key empirical finding with the BFI was that the model "personalities" were **surprisingly homogeneous** — all six English models scored relatively high on agreeableness and extraversion and low on neuroticism, yielding balanced, well-adapted profiles with no extreme accentuation.
 
 ## Sources
 - [[sources/pellert-et-al-2024]]

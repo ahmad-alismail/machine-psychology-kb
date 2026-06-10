@@ -16,10 +16,11 @@ sandbagging, alignment-faking, situational awareness, self-exfiltration,
 shutdown-resistance, self-preservation, deceptive alignment, resource
 acquisition, self-proliferation, peer-preservation, …).
 
-The wiki is **paradigm-anchored**: the experimental paradigm/design is the unit
-you grow the KB by. Each paradigm is grounded in an explicit **theory** and
-targets one or more **safety-concepts** (the behaviors we hunt), split along the
-**capability vs. propensity** axis.
+The wiki is **paradigm-anchored and experiment-focused**: the experimental
+paradigm/design is the unit you grow the KB by. Each paradigm is grounded in an
+explicit **theory** and targets one or more **safety-concepts** (the behaviors we
+hunt), split along the **capability vs. propensity** axis. Keep the wiki about
+*experiments and how to run/validate them* — not extensive field commentary.
 
 ### Two evaluation lenses (every eval declares one)
 - **capability** — *can* the model do/exhibit the behavior if prompted/instructed?
@@ -43,7 +44,7 @@ wiki/
   log.md          # append-only chronological operations record
   overview.md     # evolving high-level synthesis
 
-  # ── PRIMARY: the evaluation toolkit ────────────────────────────
+  # ── PRIMARY: the experiment toolkit ────────────────────────────
   paradigms/      # ★ HUBS. Reusable theory-grounded experimental designs that
                   #   elicit/measure a target behavior. Tag: psychological |
                   #   game-theoretic. Game-theoretic pages add a Formal Apparatus block.
@@ -63,23 +64,21 @@ wiki/
   crosswalk/      # ★ Auto-generated coverage matrix: safety-concepts × paradigms.
                   #   Surfaces behaviors with NO good experiment yet. (skill: /map)
 
-  # ── SHARED scholarly apparatus ─────────────────────────────────
+  # ── THIN supporting apparatus (keep lean) ──────────────────────
   sources/        # one summary page per ingested source
   entities/       # authors, labs, AND frameworks/orgs (Apollo, METR, DeepMind FSF…)
-  concepts/       # abstract field concepts not fitting the buckets above
-                  #   (e.g. emergent-abilities, in-context-learning)
-  debates/        # disagreements (terminology, validity, framework definitions)
-  evidence/       # evidence maps for specific claims
-  findings/       # key empirical findings across sources
-  questions/      # open questions and research gaps
-  comparisons/    # generated comparison tables
+  questions/      # open research gaps that drive new experiment design
 
-  # ── SECONDARY (populated only on explicit gate override) ───────
-  pipelines/      # ◦ SDG / agentic-workflow generation literature (exposé Tasks 1,3,4)
-
-  output/         # query/compare/debate outputs (uncommitted until reviewed)
+  output/         # query outputs (uncommitted until reviewed)
   .meta/          # lint-counter and bookkeeping
 ```
+
+> [!note] Deliberately excluded
+> No `concepts/`, `debates/`, `findings/`, `comparisons/`, `evidence/`, or
+> `pipelines/` directories. This KB is about experiments, not field sociology,
+> ephemeral results, or data-generation engineering. Empirical results live inline
+> on the relevant paradigm/instrument/validity page; methodological lessons live in
+> `validity/`; open gaps live in `questions/`.
 
 ## Conventions
 
@@ -88,6 +87,7 @@ wiki/
 - **Citations**: inline wikilinks to source pages — `[[sources/pellert-et-al-2024]]`.
 - **Raw sources are immutable**: never modify files in `raw/`.
 - **Wiki pages are LLM-owned**: the LLM creates, updates, and maintains all of `wiki/`.
+- **One owner per fact**: state a result/definition once on its home page; elsewhere link, don't restate.
 - **Auto-commit**: after each ingest, commit all changes with `"ingest: [source title]"`.
 
 ### Beginner Description callout (REQUIRED on every page)
@@ -112,7 +112,7 @@ background; light analogies OK, minimal jargon), 2–4 sentences:
 
 ```yaml
 ---
-type: paradigm | theory | instrument | method | validity | safety-concept | source | entity | framework | concept | debate | evidence | finding | question | comparison | crosswalk | pipeline | index | log | overview
+type: paradigm | theory | instrument | method | validity | safety-concept | source | entity | framework | question | crosswalk | index | log | overview
 field: machine-psychology          # constant on every page (clean graph filtering)
 lens: psychological | game-theoretic | mixed | na   # paradigms & theories
 eval_axis: capability | propensity | both | na      # cap/propensity axis
@@ -139,13 +139,13 @@ Before ingesting any source, classify it. **Only two tiers are accepted:**
   `theories/` or `paradigms/` page derived from the source.
 
 **Everything else is REJECTED** with a one-line reason, including:
-- SDG / agentic-workflow engineering papers (→ `pipelines/`, secondary)
-- pure AI-safety framework/policy reports (→ `entities/` as frameworks)
+- SDG / agentic-workflow engineering papers (off-mission: data generation, not experiments)
+- pure AI-safety framework/policy reports
 - pure ML/architecture/capability papers with no psychological or behavioral angle
 
 Rejected sources are **not ingested unless the user explicitly overrides**. On
-override, route SDG papers to `pipelines/` and framework reports to `entities/`
-(type `framework`), flagged `tags: [adjacent]`. Log every gate decision.
+override, a framework/org report may become an `entities/` page (type `framework`,
+`tags: [adjacent]`). Log every gate decision.
 
 ## Extraction Schema (per source)
 
@@ -165,7 +165,7 @@ override, route SDG papers to `pipelines/` and framework reports to `entities/`
 ### Claims  (claim · evidence type · strength · section)
 ### Validity considerations
 - construct validity · reliability · contamination · reproducibility · cap–propensity confound
-### Relationships asserted / Agreements / Disagreements (→ debates)
+### Open questions / research gaps surfaced
 ```
 
 ## Domain-Specific Guidance
@@ -179,7 +179,7 @@ override, route SDG papers to `pipelines/` and framework reports to `entities/`
 4. **Construct–measure alignment**: does the instrument actually measure the behavior
    it claims to? Flag mismatches (the central machine-psychology validity problem).
 5. **Theory → experiment generativity**: when reading a theory, ask "what *new*
-   AI-evaluation experiment could this ground?" and record it as an open question.
+   AI-evaluation experiment could this ground?" and record it in `questions/`.
 
 ## Page Type Templates
 
@@ -215,14 +215,11 @@ How the experiment is run; the stimulus/scenario; what is observed.
 ## Validity Concerns
 - [[validity/...]] — contamination, construct validity, confounds
 
-## Evidence & Findings
-- [[findings/...]]
-
-## Sources
-- [[sources/...]]
+## Evidence
+- key results stated inline, citing [[sources/...]]
 
 ## Open Questions
-- ...
+- [[questions/...]]
 ```
 
 ### Theory (`wiki/theories/`)
@@ -266,10 +263,10 @@ What observable signs reveal this behavior.
 - [[safety-concepts/...]]
 
 ## Evidence
-- [[findings/...]]
+- results / [[validity/...]] / [[sources/...]]
 
 ## Open Questions
-- ...
+- [[questions/...]]
 ```
 
 ### Instrument (`wiki/instruments/`)
@@ -308,7 +305,7 @@ TBD BY USER
 CORE | SOURCE-METHOD
 ## Relevance to Machine Psychology   <!-- required for SOURCE-METHOD -->
 The bridge to AI evaluation.
-## Key Claims   ## Theories / Paradigms / Instruments Introduced   ## Concepts Referenced
+## Key Claims   ## Theories / Paradigms / Instruments Introduced
 ## Relationship to Other Sources   ## Limitations
 ````
 
@@ -320,23 +317,15 @@ The bridge to AI evaluation.
 ## Profile   ## Key Contributions   ## Conceptual Framework   ## Affiliations
 ```
 
-### Debate (`wiki/debates/`)
+### Question (`wiki/questions/`) — open research gaps
 ```markdown
-# [Disagreement Title]
+# [Question]
 > [!info] In plain terms
 > ...
-## The Disagreement
-## Position A — Claim / Held by / Arguments / Evidence
-## Position B — Claim / Held by / Arguments / Evidence
-## Synthesis
+## Why It Matters   ## What Sources Say   ## Suggested Investigation (toward a new paradigm)
 ```
 
-### Finding / Question / Comparison / Evidence
-Follow the same spirit: frontmatter → `> [!info]` callout → the relevant sections
-(finding/source/replication-status; question/why-it-matters/what-sources-say;
-comparison/context/table/analysis; evidence/claim/supporting/contradicting/assessment).
-
-### Crosswalk (`wiki/crosswalk/`) — auto-generated by `/map`
+### Crosswalk (`wiki/crosswalk/`) — maintained by `/map`
 A coverage matrix of `safety-concepts` (rows) × `paradigms` (columns), marking which
 behaviors are well-covered and which have **no experiment yet** (research gaps).
 
@@ -361,8 +350,6 @@ uv run marker_single staging-area/file.pdf --output_dir raw/papers
 - `/ingest-agentic [path]` — autonomous ingestion (gate still applies)
 - `/query [question]` — ask questions against the wiki
 - `/lint` — wiki health check
-- `/compare [topic]` — comparison tables
-- `/debate [topic]` — create/update debate pages
 - `/discover [query]` — find relevant papers online and stage PDFs
 - `/map` — regenerate the safety-concept × paradigm coverage matrix
 - `/design-experiment [theory|behavior]` — propose a theory-grounded eval (theory → new paradigm)

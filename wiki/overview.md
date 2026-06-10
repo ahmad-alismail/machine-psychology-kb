@@ -47,9 +47,6 @@ Two threads dominate the three foundational sources:
    not possessed, and there is no ground truth.
 
 ## Open Tensions
-- [[debates/machine-psychology-terminology]] — is it "machine psychology", "AI psychometrics", or "machine behavior"?
-- [[debates/theory-of-mind-in-llms]] — does GPT-4 really have theory of mind? (Kosinski vs Ullman)
-- [[debates/test-validity-sufficiency]] — is careful study design enough, or are formal validity criteria required?
 - [[questions/capability-propensity-confound]] — separating *can* from *would*.
 
 ## Current Thesis (evolving)

@@ -35,14 +35,9 @@ CORE — this is the foundational review that names and frames the "machine psyc
 - Paradigms: [[paradigms/false-belief-task]], [[paradigms/cognitive-bias-probe]], [[paradigms/repeated-game-play]]
 - Methods: [[methods/chain-of-thought-elicitation]], [[methods/behavioral-control-design]]
 
-## Concepts Referenced
-- [[concepts/emergent-abilities]]
-- [[concepts/in-context-learning]]
-- [[concepts/performance-competence-distinction]]
-
 ## Relationship to Other Sources
-- [[sources/loehn-kiehne-et-al-2024]] — **Productive disagreement on scope.** Löhn, Kiehne et al. cite Hagendorff's guidelines as among the few standardization efforts but argue they cover only *study/prompt design*, not the *validity criteria* (reliability, construct validity, contamination control, fairness, reproducibility) that they hold are strictly necessary. See [[debates/test-validity-sufficiency]].
-- [[sources/pellert-et-al-2024]] — **Partial overlap, different emphasis.** Both treat LLM "behavior"/traits as worth diagnosing rather than scored for performance. Hagendorff favors process-oriented, hypothesis-driven experiments; Pellert favors trait/inventory measurement and avoids the term "machine psychology" (aligning instead with "machine behavior"). See [[debates/machine-psychology-terminology]]. Hagendorff shares Pellert's caution that self-report/inventory results are prompt-sensitive and should be read contextually.
+- [[sources/loehn-kiehne-et-al-2024]] — **Productive disagreement on scope.** Löhn, Kiehne et al. cite Hagendorff's guidelines as among the few standardization efforts but argue they cover only *study/prompt design*, not the *validity criteria* (reliability, construct validity, contamination control, fairness, reproducibility) that they hold are strictly necessary.
+- [[sources/pellert-et-al-2024]] — **Partial overlap, different emphasis.** Both treat LLM "behavior"/traits as worth diagnosing rather than scored for performance. Hagendorff favors process-oriented, hypothesis-driven experiments; Pellert favors trait/inventory measurement and avoids the term "machine psychology" (aligning instead with "machine behavior"). Hagendorff shares Pellert's caution that self-report/inventory results are prompt-sensitive and should be read contextually.
 
 ## Limitations
 - A review/position piece: it synthesizes best practices and charts directions but contributes no new empirical study.

@@ -55,7 +55,7 @@ inventory-based paradigms — these need **game-theoretic and agentic-scenario
 designs** (the kind `/design-experiment` should help generate):
 
 - [[safety-concepts/scheming]] · [[safety-concepts/deceptive-alignment]] · [[safety-concepts/alignment-faking]]
-- [[safety-concepts/sandbagging]] (see [[concepts/performance-competence-distinction]], [[questions/capability-propensity-confound]])
+- [[safety-concepts/sandbagging]] (see [[questions/capability-propensity-confound]])
 - [[safety-concepts/situational-awareness]]
 - [[safety-concepts/shutdown-resistance]] · [[safety-concepts/self-preservation]]
 - [[safety-concepts/self-exfiltration]] · [[safety-concepts/self-proliferation]] · [[safety-concepts/resource-acquisition]]

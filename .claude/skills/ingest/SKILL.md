@@ -46,14 +46,12 @@ callout immediately after the `# Title`.**
 6. **Methods** → create/update `wiki/methods/` for scoring/elicitation/analysis techniques.
 7. **Validity** → create/update `wiki/validity/` when the source bears on reliability, construct validity, contamination, reproducibility, or the cap–propensity confound.
 8. **Safety-concepts** → do NOT overwrite the user's content in `wiki/safety-concepts/`. You may update only the `## Detected By` back-link list when a new paradigm targets that behavior. If a brand-new behavior appears, create a fresh scaffold (empty content, structure only) and tell the user to fill it.
-9. **Entities** → create/update `wiki/entities/` for authors/labs (and `type: framework` orgs on override).
-10. **Concepts** → create/update `wiki/concepts/` for abstract field concepts.
-11. **Findings** → add to `wiki/findings/` for novel empirical/theoretical results.
-12. **Debates** → if a definition/classification contradicts an existing page, add a `> [!warning]` callout linking a debate page and create/update it in `wiki/debates/`.
-13. **Questions** → create/update `wiki/questions/` for open questions surfaced.
-14. **Refresh the coverage map** → if any paradigm was added or re-targeted, update `wiki/crosswalk/coverage-map.md` (or note that `/map` should be run).
-15. **Update `wiki/index.md`** — add/modify catalog entries.
-16. **Append to `wiki/log.md`** (newest at bottom):
+9. **Entities** → create/update `wiki/entities/` for authors/labs (and `type: framework` orgs on override). Keep these thin — facts that help experiment design, not biography.
+10. **Questions** → create/update `wiki/questions/` for open research gaps surfaced (especially theory→new-experiment ideas).
+11. **Empirical results & methodological lessons** → do NOT create separate findings/debates/concepts pages (those directories are intentionally excluded). State a result inline on its home paradigm/instrument page (citing the source); record a methodological lesson on the relevant `wiki/validity/` page; capture a disagreement as a `> [!warning]` callout on the affected page plus a `questions/` entry if it's an open issue.
+12. **Refresh the coverage map** → if any paradigm was added or re-targeted, update `wiki/crosswalk/coverage-map.md` (or note that `/map` should be run).
+13. **Update `wiki/index.md`** — add/modify catalog entries.
+14. **Append to `wiki/log.md`** (newest at bottom):
     ```
     ## [YYYY-MM-DD] ingest | [Source Title]
     - Gate: CORE | SOURCE-METHOD (+ bridge) | OVERRIDE

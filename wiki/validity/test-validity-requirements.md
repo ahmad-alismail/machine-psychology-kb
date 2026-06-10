@@ -38,7 +38,7 @@ See [[validity/construct-validity-for-llms]] for how these transfer to LLMs.
 
 ## Why It Matters for LLMs
 
-LLMs differ fundamentally from humans in their internal operations and external representations, so requirements designed for human examinees do not transfer automatically and must be re-derived. Some human requirements (e.g., test-taker data privacy) drop out; others (contamination, reproducibility) sharpen because LLMs memorize training data and proprietary models change silently. Without these requirements, contradictory results proliferate — the canonical example being the [[debates/theory-of-mind-in-llms|theory-of-mind dispute]], where trivial item changes flip conclusions, a symptom of missing standardization.
+LLMs differ fundamentally from humans in their internal operations and external representations, so requirements designed for human examinees do not transfer automatically and must be re-derived. Some human requirements (e.g., test-taker data privacy) drop out; others (contamination, reproducibility) sharpen because LLMs memorize training data and proprietary models change silently. Without these requirements, contradictory results proliferate — the canonical example being the [[validity/training-data-contamination|theory-of-mind dispute]], where trivial item changes flip conclusions, a symptom of missing standardization.
 
 ## How to Satisfy It
 
@@ -50,7 +50,7 @@ LLMs differ fundamentally from humans in their internal operations and external 
 
 ## Evals Assessed Against It
 
-[[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al. (2024)]] audited 25 machine-psychology studies (June 2022–September 2023; 12 constructs, 34 tests) against R1–R5c under deliberately lenient grading. **Not one study satisfied all seven requirements.** See [[findings/no-llm-study-meets-validity-requirements]]. Whether satisfying these seven requirements is even *sufficient* for valid LLM assessment — or whether deeper problems (e.g., constructs not transferring at all) remain — is treated in [[debates/test-validity-sufficiency]].
+[[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al. (2024)]] audited 25 machine-psychology studies (June 2022–September 2023; 12 constructs, 34 tests) against R1–R5c under deliberately lenient grading. **Not one study satisfied all seven requirements.**
 
 ## Sources
 

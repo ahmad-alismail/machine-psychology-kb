@@ -36,7 +36,7 @@ _TODO_
 _TODO_
 
 ## Evidence
-<!-- [[findings/...]] -->
+<!-- link [[validity/...]] or [[paradigms/...]] -->
 _TODO_
 
 ## Open Questions

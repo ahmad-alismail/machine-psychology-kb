@@ -35,7 +35,7 @@ Pellert et al. administered the MFQ to LLMs through [[paradigms/psychometric-inv
 ## Validity Notes
 See [[validity/construct-validity-for-llms]]. Pellert et al. caution that inventory items have **no ground truth** — there is no correct response a model should give — and that the moral beliefs surfaced this way are **mimicked, not possessed**; reading them as a model's own morality risks anthropomorphism.
 
-Pellert's finding: across models, the LLMs placed **stronger emphasis on authority/respect, in-group loyalty, and purity/sanctity** than the politically moderate human reference group did — that is, they deviated in the direction of the moral foundations associated with **conservative** political orientation. See [[findings/llm-conservative-moral-leaning]].
+Pellert's finding: across models, the LLMs placed **stronger emphasis on authority/respect, in-group loyalty, and purity/sanctity** than the politically moderate human reference group did — that is, they deviated in the direction of the moral foundations associated with **conservative** political orientation.
 
 ## Sources
 - [[sources/pellert-et-al-2024]]

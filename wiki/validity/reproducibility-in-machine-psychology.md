@@ -39,7 +39,7 @@ Two LLM-specific obstacles make reproducibility fragile:
 
 ## Evals Assessed Against It
 
-In the 25-study audit by [[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al.]], most studies made reasonable efforts toward transparency, but **only 2 of 25 fully satisfied R5c** — largely because they investigated proprietary models whose exact version could not be guaranteed to persist. Non-reproducibility was identified as one of the three pervasive failings of the field, alongside missing reliability/validity evidence and unaddressed contamination (see [[findings/no-llm-study-meets-validity-requirements]]).
+In the 25-study audit by [[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al.]], most studies made reasonable efforts toward transparency, but **only 2 of 25 fully satisfied R5c** — largely because they investigated proprietary models whose exact version could not be guaranteed to persist. Non-reproducibility was identified as one of the three pervasive failings of the field, alongside missing reliability/validity evidence and unaddressed contamination.
 
 ## Sources
 

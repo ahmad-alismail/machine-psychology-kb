@@ -37,14 +37,10 @@ CORE — the central critical/normative counterweight, establishing the validity
 - Validity framework: [[validity/test-validity-requirements]], [[validity/construct-validity-for-llms]], [[validity/training-data-contamination]], [[validity/reproducibility-in-machine-psychology]]
 - Theory: [[theories/psychometric-test-theory]]
 
-## Concepts Referenced
-- [[concepts/performance-competence-distinction]]
-- [[concepts/emergent-abilities]]
-
 ## Relationship to Other Sources
-- [[sources/hagendorff-et-al-2024]] — **Productive scope dispute.** Adopts Hagendorff's "machine psychology" umbrella term and acknowledges his guidelines, but argues they (and Frank 2023) address only the practical *design* of studies/prompts, not the necessary *validity criteria* for a test to be a meaningful instrument. See [[debates/test-validity-sufficiency]].
+- [[sources/hagendorff-et-al-2024]] — **Productive scope dispute.** Adopts Hagendorff's "machine psychology" umbrella term and acknowledges his guidelines, but argues they (and Frank 2023) address only the practical *design* of studies/prompts, not the necessary *validity criteria* for a test to be a meaningful instrument.
 - [[sources/pellert-et-al-2024]] — **Cited as a data point in the audit.** Pellert et al. is one of the 25 studies graded (notably praised for using already-validated translations under R5b, but not addressing R4 contamination). Shares Pellert's "redefine for LLMs / machine behavior" sensibility about not over-transferring human constructs.
-- Uses the **Kosinski (2023) vs. Ullman (2023)** theory-of-mind contradiction as the canonical illustration of what a lack of standardization produces. See [[debates/theory-of-mind-in-llms]].
+- Uses the **Kosinski (2023) vs. Ullman (2023)** theory-of-mind contradiction as the canonical illustration of what a lack of standardization produces.
 
 ## Limitations
 - The seven requirements are explicitly "not intended to be exhaustive" — a first normative framework, scratching the surface of traditional test theory.

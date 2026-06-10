@@ -21,7 +21,7 @@ Researcher at the Institute for Information Systems, TU Braunschweig (Braunschwe
 - Argues that psychological constructs may need to be **redefined specifically for LLMs** rather than borrowed wholesale from human psychology.
 
 ## Conceptual Framework
-Kiehne classifies the field through the lens of **psychometric test theory**: a measurement is only meaningful if its reliability and construct validity are established for the population being tested — and LLMs are a distinct population. He foregrounds construct-irrelevant threats (training-data contamination, prompt/decoding sensitivity) and reproducibility, and treats the unresolved question "can a human-validated test validly measure the same construct in an LLM?" as foundational. This validity-first, critical stance positions him as the principal counterweight to the more permissive, design-focused guidance of [[entities/thilo-hagendorff]]. See [[debates/test-validity-sufficiency]].
+Kiehne classifies the field through the lens of **psychometric test theory**: a measurement is only meaningful if its reliability and construct validity are established for the population being tested — and LLMs are a distinct population. He foregrounds construct-irrelevant threats (training-data contamination, prompt/decoding sensitivity) and reproducibility, and treats the unresolved question "can a human-validated test validly measure the same construct in an LLM?" as foundational. This validity-first, critical stance positions him as the principal counterweight to the more permissive, design-focused guidance of [[entities/thilo-hagendorff]].
 
 ## Affiliations
 - Institute for Information Systems, TU Braunschweig

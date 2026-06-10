@@ -15,7 +15,7 @@ date_modified: 2026-06-10
 
 ## Why It Matters
 
-If human construct definitions do not transfer to LLMs, then borrowing human tests measures something undefined, and comparing LLM scores to human scores compares different things. [[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al. (2024)]] argue this is the **fundamental question** of machine psychology: can a test validated as a measure of a construct *for humans* also be a valid measure of that *same* construct for LLMs? Their 25-study audit ([[findings/no-llm-study-meets-validity-requirements]]) found this question simply unaddressed in most work. The answer governs whether construct validity ([[validity/construct-validity-for-llms]]) is even attainable with borrowed instruments.
+If human construct definitions do not transfer to LLMs, then borrowing human tests measures something undefined, and comparing LLM scores to human scores compares different things. [[sources/loehn-kiehne-et-al-2024|Löhn, Kiehne et al. (2024)]] argue this is the **fundamental question** of machine psychology: can a test validated as a measure of a construct *for humans* also be a valid measure of that *same* construct for LLMs? Their 25-study audit ([[validity/test-validity-requirements|25-study audit]]) found this question simply unaddressed in most work. The answer governs whether construct validity ([[validity/construct-validity-for-llms]]) is even attainable with borrowed instruments.
 
 ## What Sources Say
 
