@@ -26,6 +26,7 @@ date_modified: 2026-06-11
 - [[paradigms/flipit-stealthy-takeover]] — stealthy-takeover security game for strategic resource control (game-theoretic)
 - [[paradigms/certainty-equivalent-cpt-estimation]] — eliciting LLM certainty equivalents to fit cumulative-prospect-theory risk parameters (psychological)
 - [[paradigms/personality-intervention-risk-propensity]] — inducing Big-Five personas and measuring the shift in CPT risk parameters (psychological)
+- [[paradigms/cogbench-cognitive-phenotyping]] — seven cognitive-psychology tasks → ten human-normalized behavioral metrics phenotyping LLMs (psychological)
 
 ## Theories — grounding layer
 
@@ -42,6 +43,13 @@ date_modified: 2026-06-11
 - [[theories/cumulative-prospect-theory]] — how agents distort gains, losses, and probabilities under risk (the risk-measurement model)
 - [[theories/big-five-personality]] — the OCEAN five-factor personality model and its trait→risk correlations
 - [[theories/operant-conditioning]] — behavior shaped by consequences (Law of Effect); the behavioral grounding of RLHF
+- [[theories/bayesian-belief-updating]] — combining priors and likelihoods; "system neglect" = underweighting both
+- [[theories/directed-and-random-exploration]] — two strategies for the explore–exploit dilemma
+- [[theories/metacognition]] — assessing the quality of one's own cognition (confidence calibration)
+- [[theories/model-based-vs-model-free-rl]] — planful vs. habitual control; the two-step task
+- [[theories/reinforcement-learning-optimism-bias]] — asymmetric learning rates (α⁺ vs. α⁻) → optimism bias
+- [[theories/temporal-discounting]] — preference for sooner-smaller over later-larger rewards
+- [[theories/computational-phenotyping]] — describing an agent by fitted cognitive-model parameters
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -68,6 +76,7 @@ date_modified: 2026-06-11
 - [[sources/lulla-et-al-2025]] — CORE; Dark Triad "model organisms of misalignment" induced in LLMs by narrow fine-tuning
 - [[sources/hartley-et-al-2024]] — CORE; CPT risk-propensity of GPT-4o + Big-Five personality interventions on risk-taking
 - [[sources/liu-et-al-2025]] — SOURCE-METHOD; survey of psychological theories across the LLM lifecycle (theory→evaluation index + validity-debate catalog)
+- [[sources/coda-forno-et-al-2024]] — CORE; CogBench — seven cognitive-psychology tasks phenotype 35 LLMs (RLHF→human-like; size→model-based; open-source less risky)
 
 ## Entities
 
@@ -77,6 +86,8 @@ date_modified: 2026-06-11
 - [[entities/roshni-lulla]] — lead author, Dark Triad "model organisms", USC
 - [[entities/john-hartley]] — lead author, LLM risk-taking & personality interventions, NatWest AI Research
 - [[entities/julia-hirschberg]] — senior author, "The Mind in the Machine" survey, Columbia NLP
+- [[entities/julian-coda-forno]] — lead author, CogBench, Max Planck / Helmholtz Munich
+- [[entities/eric-schulz]] — senior author, CogBench; lead of the Computational Principles of Intelligence Lab
 
 ## Questions
 
@@ -89,6 +100,7 @@ date_modified: 2026-06-11
 - [[questions/does-safety-training-suppress-misalignment]] — does alignment remove dark structures or just mask them?
 - [[questions/how-much-darkness-is-desirable]] — which "dark" behaviors are actually misaligned vs. useful?
 - [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] — does apparent LLM ToM reflect real mental-state reasoning or surface pattern-matching?
+- [[questions/cognitive-task-external-validity-for-llms]] — do human-validated cognitive tasks measure the same constructs (and predict behavior) in an LLM?
 
 ## Crosswalk
 

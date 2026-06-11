@@ -14,6 +14,18 @@ date_modified: 2026-06-11
 
 <!-- new entries prepended above the older ones, newest at the top -->
 
+## [2026-06-11] ingest-agentic | CogBench: a large language model walks into a psychology lab (Coda-Forno et al. 2024)
+- Gate: CORE — applies seven canonical cognitive-psychology experiments to 35 LLMs to phenotype *behavior* (not just performance) via computational cognitive modeling + multilevel regression.
+- Review: agent-approved (pass 1). Notes incorporated: BART scoring deviation documented on the paradigm page (CogBench reports average inflation attempts incl. popped balloons, not canonical "adjusted risk", because some LLMs always inflate); finer protocol details added (instrumental learning 96 trials/bandit; two-step 70% transition / 20-day horizon); existing instruments/cogbench ENRICHED not recreated; treated as ONE composite paradigm (not seven pages); no AI bridge written (CORE, paper is itself the AI application).
+- Pages created: sources/coda-forno-et-al-2024, paradigms/cogbench-cognitive-phenotyping,
+  theories/bayesian-belief-updating, theories/directed-and-random-exploration, theories/metacognition,
+  theories/model-based-vs-model-free-rl, theories/reinforcement-learning-optimism-bias,
+  theories/temporal-discounting, theories/computational-phenotyping,
+  entities/julian-coda-forno, entities/eric-schulz,
+  questions/cognitive-task-external-validity-for-llms
+- Pages updated: instruments/cogbench (survey-depth → primary-source enrichment: ten-metric table, administration, primary citation, paradigm relink), safety-concepts/risk-taking (Detected By += CogBench BART), index.md
+- Notes: citation_key = 07-coda-forno-et-al-2024 (first author "Julian Coda-Forno" → hyphenated single token "coda-forno", confirmed correct; numeric prefix 07 fixed). BibTeX provided verbatim by user (arXiv 2402.18225). Seven NEW theory pages created (the grounding each CogBench task exploits); the seven sub-tasks documented INLINE on the single composite paradigm. Only risk-taking maps to an existing safety-concept (via BART); other constructs (exploration, metacognition, model-basedness, temporal discounting, optimism bias, probabilistic reasoning) are general behavioral characterization with no dangerous-capability target → no new safety-concept scaffolds. Paradigm added → coverage map should be refreshed (run /map; still ungenerated).
+
 ## [2026-06-11] ingest-agentic | The Mind in the Machine: A Survey of Incorporating Psychological Theories in LLMs (Liu et al. 2025)
 - Gate: SOURCE-METHOD (+ bridge) — a SURVEY (no primary experiment), so not CORE; it is a theory-mapping/method source that foregrounds psychological theories repurposable for behavioral evaluation of LLMs. Bridge written: theory→evaluation-paradigm index (§5) + ready-made validity catalog (§6.3).
 - Review: agent-approved (pass 1). Notes incorporated: operant-conditioning definition cited to Thorndike/Skinner with the Law-of-Effect recurrence framing per Lambert et al. 2023; Frisch & Giulianelli (2024) added as the survey's primary personality-consistency citation on big-five; manipulation/adversarial-social-influence logged as a future safety-concept candidate (not scaffolded this pass).

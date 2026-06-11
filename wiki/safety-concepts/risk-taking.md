@@ -36,6 +36,8 @@ _TBD by user._
   the model is a risk-neutral rational agent.
 - [[paradigms/personality-intervention-risk-propensity]] — measures how induced personality shifts
   risk-propensity.
+- [[paradigms/cogbench-cognitive-phenotyping]] — measures risk-taking behaviorally via the BART
+  sub-task (average balloon-inflation attempts).
 
 ## Related Behaviors
 
