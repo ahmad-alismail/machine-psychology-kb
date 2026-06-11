@@ -47,6 +47,14 @@ honesty and helpfulness" — both feeding [[safety-concepts/deception]].
 
 ## Key Claims
 
+The paper's **methodological charter**: study LLM behavior with hypothesis-driven
+experiments ("if the agent has construct X, we expect behavior Y, otherwise Z"), using
+controls that rule out alternative explanations. Two interpretive guardrails recur
+throughout: results are contextual to the specific prompt and model (self-reports
+especially), and a negative result does not prove an ability is absent
+([[theories/performance-competence-distinction]]). The bullets below elaborate, with the
+source's own wording.
+
 - **Behavioral evaluation complements mechanistic interpretability.** Studying
   input→output relationships scales gracefully with model size, captures behavior "at
   the interface of the model, where human users interact," and works on closed-source
@@ -64,8 +72,9 @@ honesty and helpfulness" — both feeding [[safety-concepts/deception]].
 - **Theory-of-mind performance improved across generations** (GPT-3 struggled; later
   models "demonstrate an increasing ability to reliably infer unobservable mental states
   in others") but test setups are fragile to "distracting alterations" (Ullman 2023).
-- **Interpretation requires the performance–competence distinction** — see
-  [[theories/performance-competence-distinction]].
+- **A negative result does not prove an ability is absent** — interpretation requires
+  the performance–competence distinction (see
+  [[theories/performance-competence-distinction]]).
 - **Methodological program** (the "Design and analysis" section): avoid training-data
   contamination by rewording or procedurally generating stimuli; use batteries of varied
   prompts rather than convenience samples; control for recency, common-token, and

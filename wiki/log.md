@@ -14,6 +14,15 @@ date_modified: 2026-06-11
 
 <!-- new entries prepended above the older ones, newest at the top -->
 
+## [2026-06-11] ingest-agentic | How Personality Traits Shape LLM Risk-Taking Behaviour (Hartley et al. 2024)
+- Gate: CORE — measures GPT-4o/GPT-4-Turbo risk-propensity with cumulative prospect theory and tests Big-Five personality interventions on risk-taking; paper self-identifies as "machine psychology" (Sec 2.2). No SOURCE-METHOD bridge needed.
+- Review: agent-approved (pass 1). Notes incorporated: follow the body (GPT-4-Turbo does NOT globally generalise) over the Introduction's contradictory contribution #6 typo, flagged on the source/paradigm pages; disambiguated run counts (15 runs for CE elicitation, 10 for CPT-parameter figures); scaffolded a new risk-taking safety-concept.
+- Pages created: sources/hartley-et-al-2024, theories/cumulative-prospect-theory, theories/big-five-personality,
+  paradigms/certainty-equivalent-cpt-estimation, paradigms/personality-intervention-risk-propensity,
+  instruments/ipip-neo-300, entities/john-hartley, safety-concepts/risk-taking
+- Pages updated: index.md, questions/traits-predict-downstream-behavior (added interventional/manipulation-check evidence)
+- Notes: 2 NEW paradigms + 1 NEW safety-concept (risk-taking) → run /map to (re)generate the crosswalk (still ungenerated). BibTeX left as TBD BY USER (manually-dropped PDF, no entry provided). citation_key = 05-hartley-et-al-2024. IPIP-NEO-300 kept distinct from existing BFI-44. Serapio-García prompting templates and prospect datasets D_A/D_B documented inline, not as separate pages.
+
 ## [2026-06-11] ingest-agentic | "Dark Triad" Model Organisms of Misalignment: Narrow Fine-Tuning Mirrors Human Antisocial Behavior (Lulla et al. 2025)
 - Gate: CORE — fine-tunes seven frontier LLMs on human psychometric instruments and evaluates LLM behavior with psychology/game-theory paradigms; supporting human study (N=318) establishes the behavioral profile.
 - Review: agent-approved (pass 1); two non-blocking notes incorporated — η²=.28–.83 attributed as the overall ANOVA range (SD3 rows ≈ .52–.68), and the deception game's "Message Task" alias noted.

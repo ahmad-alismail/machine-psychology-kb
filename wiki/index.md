@@ -24,6 +24,8 @@ date_modified: 2026-06-11
 - [[paradigms/process-dissociation-moral-dilemmas]] — congruent vs. incongruent harm dilemmas separating moral flexibility from utilitarianism (psychological)
 - [[paradigms/sender-receiver-deception-game]] — economic game measuring self-serving deception vs. prosocial honesty (game-theoretic)
 - [[paradigms/flipit-stealthy-takeover]] — stealthy-takeover security game for strategic resource control (game-theoretic)
+- [[paradigms/certainty-equivalent-cpt-estimation]] — eliciting LLM certainty equivalents to fit cumulative-prospect-theory risk parameters (psychological)
+- [[paradigms/personality-intervention-risk-propensity]] — inducing Big-Five personas and measuring the shift in CPT risk parameters (psychological)
 
 ## Theories — grounding layer
 
@@ -37,10 +39,13 @@ date_modified: 2026-06-11
 - [[theories/moral-foundations-theory]] — morality rests on foundations weighted differently by political ideology
 - [[theories/dark-triad]] — narcissism/psychopathy/Machiavellianism share a "dark core" with affective dissonance at its center
 - [[theories/emergent-misalignment]] — narrow fine-tuning → broad misalignment via out-of-context reasoning
+- [[theories/cumulative-prospect-theory]] — how agents distort gains, losses, and probabilities under risk (the risk-measurement model)
+- [[theories/big-five-personality]] — the OCEAN five-factor personality model and its trait→risk correlations
 
 ## Safety-Concepts — behaviors we hunt
 
 - [[safety-concepts/deception]] — scaffold, content TBD by user
+- [[safety-concepts/risk-taking]] — scaffold, content TBD by user
 
 ## Instruments
 
@@ -52,6 +57,7 @@ date_modified: 2026-06-11
 - [[instruments/portrait-values-questionnaire]] — PVQ-RR Schwartz values; male/female pronoun versions
 - [[instruments/moral-foundations-questionnaire]] — MFQ moral foundations
 - [[instruments/gender-sex-diversity-beliefs-scale]] — GSDB beliefs about gender/sex diversity
+- [[instruments/ipip-neo-300]] — IPIP-NEO-300 Big Five inventory (300 items, facet-level)
 
 ## Sources
 
@@ -59,6 +65,7 @@ date_modified: 2026-06-11
 - [[sources/loehn-et-al-2024]] — CORE; seven requirements for valid LLM psychological testing + audit of 25 studies
 - [[sources/pellert-et-al-2024]] — CORE; "AI psychometrics" — human inventories on LLMs via zero-shot NLI
 - [[sources/lulla-et-al-2025]] — CORE; Dark Triad "model organisms of misalignment" induced in LLMs by narrow fine-tuning
+- [[sources/hartley-et-al-2024]] — CORE; CPT risk-propensity of GPT-4o + Big-Five personality interventions on risk-taking
 
 ## Entities
 
@@ -66,6 +73,7 @@ date_modified: 2026-06-11
 - [[entities/ishita-dasgupta]] — co-lead author, Google DeepMind
 - [[entities/max-pellert]] — lead author, "AI psychometrics", Univ. Mannheim
 - [[entities/roshni-lulla]] — lead author, Dark Triad "model organisms", USC
+- [[entities/john-hartley]] — lead author, LLM risk-taking & personality interventions, NatWest AI Research
 
 ## Questions
 

@@ -31,6 +31,14 @@ an early-warning instrument rather than a personality parlor trick.
   influence their behavior in downstream tasks." It sketches candidate tests — e.g. whether
   risk-averse traits predict a model's choice among external tools/search engines (Schick et
   al. 2023), or behavior in LLM-driven robotics planning.
+- [[sources/hartley-et-al-2024]] provides **positive interventional evidence** for the arrow:
+  inducing Big-Five traits via prompting *causally shifts* GPT-4o's behaviourally-measured
+  risk-propensity (CPT parameters), with Openness the strongest lever (r = 0.63 with gain
+  sensitivity), mirroring human patterns — a manipulation-check style demonstration via
+  [[paradigms/personality-intervention-risk-propensity]]. Caveats remain: the effect is
+  *relative* (prompting cannot induce absolute risk-seeking/aversion), and GPT-4-Turbo
+  generalizes the relationship only locally, so the trait→behaviour mapping is not uniform
+  across models.
 
 ## Suggested Investigation (toward a new paradigm)
 
