@@ -52,6 +52,9 @@ argument from the presence of one." This is the load-bearing grounding of
 - [[paradigms/llm-as-computational-model]] — its existence-proof inference *is* the
   asymmetric version of this distinction; [[paradigms/gpt-ology]] inherits the same
   caveat on negative capability results.
+- [[paradigms/adversarial-vignette-perturbation]] — operationalizes the principle: a perturbed
+  twin that preserves the construct but changes the surface form separates memorized *performance*
+  from underlying *competence*.
 - Cross-cutting: it constrains interpretation of *all* paradigms rather than generating
   designs of its own; each paradigm page records the resulting elicitation controls in
   its Validity Concerns section.
@@ -60,3 +63,5 @@ argument from the presence of one." This is the load-bearing grounding of
 
 - [[hagendorff-et-al-2024]]
 - [[sources/ong-2024]] — the asymmetric existence-proof sharpening
+- [[sources/binz-schulz-2022]] — demonstrates the principle empirically: GPT-3's vignette
+  *performance* "crucially depend[s] on how a prompt is presented."

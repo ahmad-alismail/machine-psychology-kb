@@ -17,9 +17,10 @@ date_modified: 2026-06-11
 > reasoning gains, or the model has simply memorized the famous puzzles.
 
 > [!note] Survey-depth page
-> Grounded only in the review [[hagendorff-et-al-2024]];
-> enrich from primary sources (Binz & Schulz 2023; Hagendorff et al. 2023; Coda-Forno et
-> al. 2024) when ingested.
+> Grounded in the review [[hagendorff-et-al-2024]] and now enriched from the primary source
+> [[sources/binz-schulz-2022]]; further enrich from Hagendorff et al. 2023 when ingested. The
+> paired contamination-control method is split out into
+> [[paradigms/adversarial-vignette-perturbation]].
 
 ## Theoretical Grounding
 
@@ -38,9 +39,12 @@ date_modified: 2026-06-11
 
 Classic cognitive-bias vignettes and decision tasks from the human literature are
 administered as prompts, and responses are compared against both the normative answer
-and the documented human bias pattern. Binz & Schulz (2023) "were among the first to use
+and the documented human bias pattern. [[sources/binz-schulz-2022]] "were among the first to use
 this paradigm to better understand the decision-making processes of LLMs," finding GPT-3
-"displays some of the same cognitive biases observed in people."
+"displays some of the same cognitive biases observed in people." Beyond single vignettes, the
+battery can scale to large benchmarks: Binz & Schulz administered 13,000+ description-based gambles
+(Peterson et al. 2021) and replicated Kahneman & Tversky's six-bias contrast analysis on the choice
+probabilities (see Evidence).
 
 ## Scoring / Procedure
 
@@ -70,8 +74,13 @@ this paradigm to better understand the decision-making processes of LLMs," findi
 
 ## Evidence
 
-- GPT-3 displayed "some of the same cognitive biases observed in people" (Binz & Schulz
-  2023, via [[hagendorff-et-al-2024]]).
+- GPT-3 displayed "some of the same cognitive biases observed in people"
+  ([[sources/binz-schulz-2022]]): it fell for the conjunction fallacy (Linda) and sample-size
+  insensitivity (hospital) like people, but avoided the base-rate fallacy (cab). On 13,000+ gambles,
+  only the largest model ("Davinci") solved them above chance (*t*(29134) = −16.85, *p* < .001) yet
+  remained below human performance (*t*(29134) = −11.50, *p* < .001); the contrast analysis found 3
+  of 6 prospect-theory biases (framing, certainty, small-probability overweighting). See
+  [[theories/cumulative-prospect-theory]].
 - "While the previous generation of models frequently exhibited human-like heuristics
   and biases, they have largely disappeared in the latest generation of LLMs" (Chen et
   al. 2023; Hagendorff et al. 2023, via the same review).

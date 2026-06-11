@@ -33,15 +33,21 @@ choices) horizon and equal- vs. unequal-information conditions.
 
 ## Relevance to Machine Psychology
 
-[[sources/coda-forno-et-al-2024]] uses the horizon task to phenotype LLM exploration, finding most
-models achieve "super-human performance" yet "still lack exploration" — i.e. they win by
-exploitation without the human-like exploratory strategies, a dissociation a performance score alone
-would hide.
+[[sources/binz-schulz-2022]] is the primary machine-psychology application: a text-based horizon
+task given to GPT-3, which achieved *lower* overall regret than humans (*M* = 2.72 vs. 3.24,
+*t*(38878) = −5.03, *p* < .001) yet showed only **rudimentary random exploration** (reward-difference
+effect β = 0.18 ± 0.01, *p* < .001), with **no strategic** random exploration (reward × horizon
+interaction *p* = .14) and **no directed exploration** (β = −0.15 ± 0.27, *p* = .58) — plus a strong
+perseveration/repeat bias. The same dissociation (win by exploitation, lack human exploratory
+strategy) recurs in [[sources/coda-forno-et-al-2024]], which finds most models reach "super-human
+performance" yet "still lack exploration" — a gap a performance score alone would hide. (Human
+horizon baseline: Zaller et al. 2021.)
 
 ## Paradigms Grounded in This Theory
 
-- [[paradigms/cogbench-cognitive-phenotyping]] — horizon sub-task.
+- [[paradigms/cogbench-cognitive-phenotyping]] — horizon sub-task (reuses the Binz & Schulz protocol).
 
 ## Sources
 
+- [[sources/binz-schulz-2022]] — primary GPT-3 horizon-task application.
 - [[sources/coda-forno-et-al-2024]]

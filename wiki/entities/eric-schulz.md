@@ -22,10 +22,11 @@ Cybernetics (Tübingen) / Helmholtz Munich; senior author of [[sources/coda-forn
 ## Key Contributions
 
 - Senior author of **CogBench** ([[paradigms/cogbench-cognitive-phenotyping]]).
-- Co-author of foundational machine-psychology work cited across this wiki, notably **Binz & Schulz
-  (2023), "Using cognitive psychology to understand GPT-3"** — among the first to run
-  heuristics-and-biases probes on an LLM (see [[paradigms/heuristics-and-biases-battery]]) — and the
-  horizon/two-step prompting protocols CogBench reuses.
+- Senior author of [[sources/binz-schulz-2022]], **"Using cognitive psychology to understand
+  GPT-3"** — among the first to run heuristics-and-biases probes on an LLM (see
+  [[paradigms/heuristics-and-biases-battery]]) and the source of the horizon/two-step prompting
+  protocols CogBench reuses, as well as the contamination + surface-form critique
+  ([[paradigms/adversarial-vignette-perturbation]]).
 
 ## Conceptual Framework
 

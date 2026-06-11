@@ -29,6 +29,11 @@ behavior.
 
 ## What Sources Say
 
+- [[sources/binz-schulz-2022]] raises the precursor concern: even where GPT-3 *matched* a human
+  metric (e.g. super-human horizon-task regret, or normative interventional inference in the
+  common-cause condition) the match did not reflect the human mechanism — it lacked directed
+  exploration entirely, and its causal success was judged "likely purely accidental" once it failed
+  to differentiate the causal-chain condition. Matching a score is not sharing the construct.
 - [[sources/coda-forno-et-al-2024]] states the gap explicitly: "while cognitive science studies have
   demonstrated the external validity of the investigated tasks, it is yet to be shown for LLMs"
   (Sec 7), and lists establishing it as primary future work. The paper also shows the *construct* can

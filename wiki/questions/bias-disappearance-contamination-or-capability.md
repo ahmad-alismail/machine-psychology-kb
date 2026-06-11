@@ -30,6 +30,13 @@ Hagendorff et al. 2023), but the review immediately offers two deflationary read
 the stimuli "possibly no longer challenge the growing reasoning abilities in LLMs," and
 "this could also be due to leakage into the training set."
 
+[[sources/binz-schulz-2022]] is the **early empirical demonstration** of the contamination /
+surface-form mechanism: GPT-3's canonical-vignette successes "might have been part of its training
+set," and minimal adversarial edits ("just by marginally changing the vignettes") flipped its
+answers — direct evidence that a clean canonical score need not reflect reasoning. The paired
+canonical-vs-perturbed control it introduces is the prototype remedy
+([[paradigms/adversarial-vignette-perturbation]]).
+
 [[sources/ong-2024]] poses the **cross-model** version of the same puzzle (Outstanding
 Issue 2): "What should we make of contexts when 'smaller models' fail at a certain task,
 while 'bigger/better models' succeed" — GPT-4 yes, GPT-3 no? His pessimistic verdict is

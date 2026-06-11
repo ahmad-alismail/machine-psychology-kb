@@ -36,15 +36,21 @@ them, only behavior can.
 
 ## Relevance to Machine Psychology
 
-[[sources/coda-forno-et-al-2024]] uses the two-step task to measure LLM model-basedness, finding it
-rises with model size (β = 0.481, z = 4.2, p < 0.001) — GPT-4 surpasses human levels — and is
-strongly boosted by take-a-step-back prompting (+118.59%), suggesting abstraction prompts promote
-planful control.
+[[sources/binz-schulz-2022]] is the primary machine-psychology application of the two-step task: over
+200 simulations, GPT-3's stay probability *decreased* after receiving treasures via a *rare*
+transition (*t*(1982) = −6.16, *p* < .001) — the model-based signature — leading the authors to
+conclude GPT-3 "relies on a deliberate model-based approach." Notably this is "at odds" with GPT-3's
+failure on all three CRT items ([[instruments/cognitive-reflection-test]]), so "whether GPT-3 engages
+in deliberate reasoning might be more nuanced than initially thought." Building on this,
+[[sources/coda-forno-et-al-2024]] measures LLM model-basedness at scale, finding it rises with model
+size (β = 0.481, z = 4.2, p < 0.001) — GPT-4 surpasses human levels — and is strongly boosted by
+take-a-step-back prompting (+118.59%).
 
 ## Paradigms Grounded in This Theory
 
-- [[paradigms/cogbench-cognitive-phenotyping]] — two-step sub-task.
+- [[paradigms/cogbench-cognitive-phenotyping]] — two-step sub-task (reuses the Binz & Schulz protocol).
 
 ## Sources
 
+- [[sources/binz-schulz-2022]] — primary GPT-3 two-step-task application.
 - [[sources/coda-forno-et-al-2024]]

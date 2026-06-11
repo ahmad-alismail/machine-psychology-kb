@@ -47,9 +47,11 @@ indifferent to the gamble — is the empirical quantity from which θ is recover
 [[sources/hartley-et-al-2024]] uses CPT as the measurement model for an LLM's risk-propensity:
 by eliciting an LLM's certainty equivalents and fitting θ, one reads off whether the model is a
 risk-neutral rational agent (it finds GPT-4o is) or exhibits human-like distortions — and how
-those parameters move under personality interventions. Earlier machine-psychology work
-(Binz & Schulz 2023; Ross et al. 2024) used the same lens to track the certainty, overweighting,
-and framing effects across model generations.
+those parameters move under personality interventions. Earlier machine-psychology work used the same
+lens: [[sources/binz-schulz-2022]] replicated Kahneman & Tversky's six-bias contrast analysis on
+GPT-3's gamble choices and found **three of the six** biases present — a **framing effect**, a
+**certainty effect**, and **overweighting** of small-probability differences (the other three
+absent). (See also Ross et al. 2024 for the cross-generation tracking.)
 
 ## Paradigms Grounded in This Theory
 
@@ -58,4 +60,5 @@ and framing effects across model generations.
 
 ## Sources
 
+- [[sources/binz-schulz-2022]] — GPT-3 prospect-theory bias replication (decisions from descriptions).
 - [[sources/hartley-et-al-2024]]

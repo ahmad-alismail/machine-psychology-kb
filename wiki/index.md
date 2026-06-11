@@ -34,6 +34,8 @@ date_modified: 2026-06-11
 - [[paradigms/silicon-sampling]] — inference lens: condition an LLM with backstories to simulate human subpopulations (psychological)
 - [[paradigms/psychometric-scale-reliability-stress-test]] — 5-factor × 2,500-configuration perturbation battery measuring whether a psychometric scale yields *reliable* scores on an LLM (psychological)
 - [[paradigms/personality-steering-interventions]] — three increasingly directive prompt strategies (environment / assigned personality / embodied character) that shift an LLM's measured trait distribution (psychological)
+- [[paradigms/adversarial-vignette-perturbation]] — canonical vignettes paired with minimally-perturbed "adversarial" twins as a contamination / surface-form-robustness control (psychological)
+- [[paradigms/interventional-causal-inference-task]] — common-cause vs. causal-chain intervene-vs-observe inference (seeing ≠ doing; do-operator) (psychological)
 
 ## Theories — grounding layer
 
@@ -59,6 +61,7 @@ date_modified: 2026-06-11
 - [[theories/computational-phenotyping]] — describing an agent by fitted cognitive-model parameters
 - [[theories/cognitive-consistency-theory]] — individuals seek consistency; inconsistency → "state of tension" (cognitive dissonance)
 - [[theories/self-perception-theory]] — people infer attitudes from their own prior behavior; grounds Foot-in-the-Door
+- [[theories/interventionist-causal-inference]] — observing ≠ doing; Pearl's do-operator deletes arrows into an intervened variable
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -78,6 +81,7 @@ date_modified: 2026-06-11
 - [[instruments/gender-sex-diversity-beliefs-scale]] — GSDB beliefs about gender/sex diversity
 - [[instruments/ipip-neo-300]] — IPIP-NEO-300 Big Five inventory (300 items, facet-level)
 - [[instruments/refined-advbench]] — 60-question / 6-category jailbreak test set (refined AdvBench) + GPT-4 judge
+- [[instruments/cognitive-reflection-test]] — CRT 3-item intuitive-vs-reflective deliberation probe
 
 ## Sources
 
@@ -91,6 +95,7 @@ date_modified: 2026-06-11
 - [[sources/wang-et-al-2024]] — CORE; Foot-in-the-Door — cognitive-psychology account of LLM jailbreaking + recursive incremental-compliance attack (avg ASR 83.9% on 8 LLMs)
 - [[sources/ong-2024]] — CORE; typology of three LLM cognitive-science paradigms (GPT-ology / computational-model / silicon-sampling) + Outstanding Issues on validity & reproducibility
 - [[sources/huang-et-al-2024]] — CORE; reliability stress-test of the BFI on 4 LLMs across 2,500 perturbed settings (reliable, not random) + persona steering; stresses reliability ≠ validity
+- [[sources/binz-schulz-2022]] — CORE; foundational cognitive-psychology probing of GPT-3 (decision-making/exploration/two-step/causal) + the contamination & surface-form critique; precursor to CogBench
 
 ## Entities
 
@@ -105,6 +110,7 @@ date_modified: 2026-06-11
 - [[entities/zhenhua-wang]] — lead author, Foot-in-the-Door jailbreaking, National University of Defense Technology
 - [[entities/desmond-ong]] — sole author, LLM-paradigm typology, UT Austin (Psychology)
 - [[entities/jen-tse-huang]] — lead author, reliability of psychological scales on LLMs, CUHK / Tencent AI Lab
+- [[entities/marcel-binz]] — lead author, "Using cognitive psychology to understand GPT-3"; co-author CogBench, MPI Tübingen / Helmholtz Munich
 
 ## Questions
 
@@ -120,6 +126,7 @@ date_modified: 2026-06-11
 - [[questions/cognitive-task-external-validity-for-llms]] — do human-validated cognitive tasks measure the same constructs (and predict behavior) in an LLM?
 - [[questions/incremental-compliance-pressure-generalization]] — does foot-in-the-door escalation generalize beyond jailbreaking to other gradual-compliance failures?
 - [[questions/yoking-science-to-proprietary-models]] — should behavioral AI science depend on closed, mutable commercial models?
+- [[questions/active-interaction-for-causal-and-directed-exploration]] — are causal reasoning & directed exploration gaps a consequence of passive text training?
 
 ## Crosswalk
 
