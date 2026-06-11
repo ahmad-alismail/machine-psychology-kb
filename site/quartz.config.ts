@@ -26,32 +26,34 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Spectral",
-        body: "Inter",
-        code: "JetBrains Mono",
+        header: "IBM Plex Mono",
+        body: "IBM Plex Sans",
+        code: "IBM Plex Mono",
       },
+      // Dark Terminal — dark mode is the default (see darkmode.inline.ts);
+      // the light palette is the toggle alternative.
       colors: {
         lightMode: {
-          light: "#faf9f6", // page background — warm paper
-          lightgray: "#e6e3dc", // borders
-          gray: "#9c958a", // muted text / graph links
-          darkgray: "#3a3a42", // body text
-          dark: "#1f1d2b", // headers
-          secondary: "#5b3fb5", // links / primary accent (indigo-violet)
-          tertiary: "#c97b4a", // hover / graph accent (terracotta)
-          highlight: "rgba(91, 63, 181, 0.10)", // internal-link & search bg
-          textHighlight: "#b39ddb88", // ==highlighted== text
+          light: "#f6f8fa", // page background
+          lightgray: "#d0d7de", // borders
+          gray: "#8b949e", // muted text / graph links
+          darkgray: "#1f2328", // body text
+          dark: "#0d1117", // headers
+          secondary: "#1f7a6d", // links / primary accent (teal)
+          tertiary: "#2f9e8f", // hover / graph accent
+          highlight: "rgba(31, 122, 109, 0.10)", // internal-link & search bg
+          textHighlight: "#1f7a6d33", // ==highlighted== text
         },
         darkMode: {
-          light: "#161620", // page background
-          lightgray: "#2c2a3a", // borders
-          gray: "#6e6a82", // muted text / graph links
-          darkgray: "#cfcad8", // body text
-          dark: "#f2f0f7", // headers
-          secondary: "#a78bfa", // links / primary accent (light violet)
-          tertiary: "#e0986b", // hover / graph accent (light terracotta)
-          highlight: "rgba(167, 139, 250, 0.12)",
-          textHighlight: "#b39ddb55",
+          light: "#0d1117", // page background (terminal black)
+          lightgray: "#21262d", // borders
+          gray: "#6e7681", // muted text / graph links
+          darkgray: "#c9d1d9", // body text
+          dark: "#e6edf3", // headers
+          secondary: "#2f9e8f", // links / primary accent (teal)
+          tertiary: "#3fc7b4", // hover / graph accent (bright teal)
+          highlight: "rgba(47, 158, 143, 0.15)",
+          textHighlight: "#2f9e8f44",
         },
       },
     },

@@ -31,7 +31,7 @@ and which don't.
 
 ## Synthesis
 
-The field's charter is [[sources/hagendorff-et-al-2024-machine-psychology]]: study LLM
+The field's charter is [[hagendorff-et-al-2024]]: study LLM
 behavior with hypothesis-driven experiments ("if the agent has construct X, we expect
 behavior Y, otherwise Z"), with controls that rule out alternative explanations. Two
 interpretive guardrails recur everywhere: results are contextual to prompt and model

@@ -37,7 +37,7 @@ date_modified: 2026-06-11
 
 ## Sources
 
-- [[sources/hagendorff-et-al-2024-machine-psychology]] — CORE; field-defining review
+- [[hagendorff-et-al-2024]] — CORE; field-defining review
 
 ## Entities
 

@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 > reasoning gains, or the model has simply memorized the famous puzzles.
 
 > [!note] Survey-depth page
-> Grounded only in the review [[sources/hagendorff-et-al-2024-machine-psychology]];
+> Grounded only in the review [[hagendorff-et-al-2024]];
 > enrich from primary sources (Binz & Schulz 2023; Hagendorff et al. 2023; Coda-Forno et
 > al. 2024) when ingested.
 
@@ -71,7 +71,7 @@ this paradigm to better understand the decision-making processes of LLMs," findi
 ## Evidence
 
 - GPT-3 displayed "some of the same cognitive biases observed in people" (Binz & Schulz
-  2023, via [[sources/hagendorff-et-al-2024-machine-psychology]]).
+  2023, via [[hagendorff-et-al-2024]]).
 - "While the previous generation of models frequently exhibited human-like heuristics
   and biases, they have largely disappeared in the latest generation of LLMs" (Chen et
   al. 2023; Hagendorff et al. 2023, via the same review).

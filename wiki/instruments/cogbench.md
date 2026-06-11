@@ -16,7 +16,7 @@ date_modified: 2026-06-11
 > memorized the answers from its training data.
 
 > [!note] Survey-depth page
-> Known here only via [[sources/hagendorff-et-al-2024-machine-psychology]]; enrich from
+> Known here only via [[hagendorff-et-al-2024]]; enrich from
 > the primary source (Coda-Forno et al. 2024) when ingested.
 
 ## What It Measures
@@ -42,4 +42,4 @@ a static dataset)."
 
 ## Sources
 
-- [[sources/hagendorff-et-al-2024-machine-psychology]]
+- [[hagendorff-et-al-2024]]

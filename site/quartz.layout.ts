@@ -47,8 +47,12 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     // Full-network graph (depth -1) embedded on the landing page only.
+    // showTags: false — no nodes for tags/hashes.
     Component.ConditionalRender({
-      component: Component.Graph({ localGraph: { depth: -1 } }),
+      component: Component.Graph({
+        localGraph: { depth: -1, showTags: false },
+        globalGraph: { showTags: false },
+      }),
       condition: isHome,
     }),
   ],
@@ -90,7 +94,10 @@ export const defaultContentPageLayout: PageLayout = {
   // embedded full-network graph in afterBody instead).
   right: [
     Component.ConditionalRender({
-      component: Component.Graph(),
+      component: Component.Graph({
+        localGraph: { showTags: false },
+        globalGraph: { showTags: false },
+      }),
       condition: notHome,
     }),
     Component.ConditionalRender({

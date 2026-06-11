@@ -27,7 +27,7 @@ elicitation conditions) have been ruled out.
 
 ## Relevance to Machine Psychology
 
-[[sources/hagendorff-et-al-2024-machine-psychology]] flags this as one of two key
+[[hagendorff-et-al-2024]] flags this as one of two key
 interpretive principles for LLM experiments (citing Firestone 2020; Lampinen 2022):
 "does the absence of behavior Y indicate the absence of the construct X?" In practice,
 omitting elicitation scaffolds such as chain-of-thought or few-shot examples "can lead
@@ -43,4 +43,4 @@ gap.
 
 ## Sources
 
-- [[sources/hagendorff-et-al-2024-machine-psychology]]
+- [[hagendorff-et-al-2024]]

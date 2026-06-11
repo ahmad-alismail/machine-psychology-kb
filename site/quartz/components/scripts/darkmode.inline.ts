@@ -1,4 +1,6 @@
-const userPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
+// Dark-first site: default to dark regardless of system preference.
+// An explicit choice (the toggle) is saved to localStorage and still wins.
+const userPref = "dark"
 const currentTheme = localStorage.getItem("theme") ?? userPref
 document.documentElement.setAttribute("saved-theme", currentTheme)
 
