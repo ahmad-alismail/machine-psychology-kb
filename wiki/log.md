@@ -9,38 +9,25 @@ date_modified: 2026-06-11
 
 # Operations Log
 
-> Append-only chronological record of operations (ingests, queries, lint passes).
+> Chronological record of operations (ingests, queries, lint passes), **newest first**.
 > Each entry starts with `## [YYYY-MM-DD] <op> | <title>`.
 
-<!-- entries appended below, newest at the bottom -->
+<!-- new entries prepended above the older ones, newest at the top -->
 
-## [2026-06-11] ingest | Machine Psychology (Hagendorff, Dasgupta, et al. 2024)
-- Gate: CORE
-- Pages created: sources/hagendorff-et-al-2024-machine-psychology,
-  theories/heuristics-and-biases, theories/theory-of-mind,
-  theories/performance-competence-distinction, theories/ecological-rationality,
-  paradigms/heuristics-and-biases-battery, paradigms/content-effects-on-reasoning,
-  paradigms/false-belief-task, paradigms/repeated-games, instruments/cogbench,
-  safety-concepts/deception (scaffold — user to fill), entities/thilo-hagendorff,
-  entities/ishita-dasgupta, questions/longitudinal-behavioral-trends,
-  questions/bias-disappearance-contamination-or-capability
-- Pages updated: index.md, overview.md (synthesis seeded)
-- Notes: psycholinguistic and ICL/generalization paradigms surveyed by the source were
-  deliberately not given pages (low safety relevance); crosswalk not yet generated —
-  run /map.
-
-## [2026-06-11] ingest-agentic | Is Machine Psychology Here? On Requirements for Using Human Psychological Tests on LLMs (Löhn, Kiehne, et al. 2024)
-- Gate: CORE — machine-psychology methodology paper; derives seven psychometric requirements for testing LLMs and audits 25 studies. No SOURCE-METHOD bridge needed (source draws the AI connection itself).
-- Review: agent-approved (pass 1)
-- Pages created: sources/loehn-et-al-2024, theories/psychometric-test-standards,
-  questions/redefine-constructs-for-llms, questions/llm-individual-or-population
-- Pages updated: paradigms/false-belief-task (Kosinski-vs-Ullman non-standardization
-  citation + grounding link), index.md
-- Notes: no new paradigm introduced (paper is a meta-audit) → crosswalk unaffected, no
-  /map needed. Deliberately skipped: instrument pages for the 34 surveyed tests (surveyed,
-  not used) and author entity pages (kept lean). Review notes folded into source page
-  (machine-psychology vs machine-behavior/AI-psychometrics terminology; positions against
-  Hagendorff-2023 & Frank-2023 standardization efforts).
+## [2026-06-11] ingest-agentic | "Dark Triad" Model Organisms of Misalignment: Narrow Fine-Tuning Mirrors Human Antisocial Behavior (Lulla et al. 2025)
+- Gate: CORE — fine-tunes seven frontier LLMs on human psychometric instruments and evaluates LLM behavior with psychology/game-theory paradigms; supporting human study (N=318) establishes the behavioral profile.
+- Review: agent-approved (pass 1); two non-blocking notes incorporated — η²=.28–.83 attributed as the overall ANOVA range (SD3 rows ≈ .52–.68), and the deception game's "Message Task" alias noted.
+- Pages created: sources/lulla-et-al-2025, theories/dark-triad, theories/emergent-misalignment,
+  paradigms/narrow-psychometric-fine-tuning, paradigms/process-dissociation-moral-dilemmas,
+  paradigms/sender-receiver-deception-game, paradigms/flipit-stealthy-takeover,
+  instruments/short-dark-triad, instruments/acme, entities/roshni-lulla,
+  questions/does-safety-training-suppress-misalignment, questions/how-much-darkness-is-desirable
+- Pages updated: entities/thilo-hagendorff (co-author), safety-concepts/deception (Detected By back-links), index.md
+- Notes: 4 NEW paradigms added → run /map to (re)generate the crosswalk. SD3 kept distinct from
+  existing instruments/short-dark-tetrad (SD4 + sadism). Fine-tuning answer-keys (MACH-IV, MPS,
+  NPI, SRP-III) and human-only risk tasks (BART, CGT) documented inline, not as separate pages.
+  Behaviors surfaced with no safety-concept home yet (flagged for user): manipulation,
+  reward-seeking, moral-flexibility/harm-endorsement, emergent-misalignment.
 
 ## [2026-06-11] ingest-agentic | AI Psychometrics: Assessing the Psychological Profiles of LLMs Through Psychometric Inventories (Pellert et al. 2024)
 - Gate: CORE — administers human psychometric inventories to LLMs and reads off psychological profiles; source draws the AI connection itself (no SOURCE-METHOD bridge needed).
@@ -61,3 +48,31 @@ date_modified: 2026-06-11
   psychometric-test-standards (this study class is the target of that standards critique).
   NO new safety-concept pages auto-created — bias / dark-traits have no concept page yet;
   FLAGGED FOR USER to decide whether to scaffold them.
+
+## [2026-06-11] ingest-agentic | Is Machine Psychology Here? On Requirements for Using Human Psychological Tests on LLMs (Löhn, Kiehne, et al. 2024)
+- Gate: CORE — machine-psychology methodology paper; derives seven psychometric requirements for testing LLMs and audits 25 studies. No SOURCE-METHOD bridge needed (source draws the AI connection itself).
+- Review: agent-approved (pass 1)
+- Pages created: sources/loehn-et-al-2024, theories/psychometric-test-standards,
+  questions/redefine-constructs-for-llms, questions/llm-individual-or-population
+- Pages updated: paradigms/false-belief-task (Kosinski-vs-Ullman non-standardization
+  citation + grounding link), index.md
+- Notes: no new paradigm introduced (paper is a meta-audit) → crosswalk unaffected, no
+  /map needed. Deliberately skipped: instrument pages for the 34 surveyed tests (surveyed,
+  not used) and author entity pages (kept lean). Review notes folded into source page
+  (machine-psychology vs machine-behavior/AI-psychometrics terminology; positions against
+  Hagendorff-2023 & Frank-2023 standardization efforts).
+
+## [2026-06-11] ingest | Machine Psychology (Hagendorff, Dasgupta, et al. 2024)
+- Gate: CORE
+- Pages created: sources/hagendorff-et-al-2024-machine-psychology,
+  theories/heuristics-and-biases, theories/theory-of-mind,
+  theories/performance-competence-distinction, theories/ecological-rationality,
+  paradigms/heuristics-and-biases-battery, paradigms/content-effects-on-reasoning,
+  paradigms/false-belief-task, paradigms/repeated-games, instruments/cogbench,
+  safety-concepts/deception (scaffold — user to fill), entities/thilo-hagendorff,
+  entities/ishita-dasgupta, questions/longitudinal-behavioral-trends,
+  questions/bias-disappearance-contamination-or-capability
+- Pages updated: index.md, overview.md (synthesis seeded)
+- Notes: psycholinguistic and ICL/generalization paradigms surveyed by the source were
+  deliberately not given pages (low safety relevance); crosswalk not yet generated —
+  run /map.

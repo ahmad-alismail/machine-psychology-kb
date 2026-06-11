@@ -100,7 +100,7 @@ After any fix, update `wiki/index.md` if affected.
 
 ## Logging (always, even with 0 fixes)
 
-1. **Append to `wiki/log.md`:**
+1. **Prepend to `wiki/log.md`** (newest first — insert directly below the header comment):
    ```
    ## [YYYY-MM-DD] lint | [N] issues found, [M] fixed
    ```

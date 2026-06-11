@@ -27,6 +27,11 @@ _TBD by user._
   (tracking others' beliefs) that deception requires; the review pairs it with work on
   inducing false beliefs (Hagendorff 2024a) and honesty/helpfulness tradeoffs (Liu et
   al. 2024).
+- [[paradigms/sender-receiver-deception-game]] — an economic game measuring *demonstrated*
+  self-serving deception (deceptive lies vs. prosocial honesty); dark-fine-tuned LLMs lie more
+  ([[sources/lulla-et-al-2025]]).
+- [[paradigms/narrow-psychometric-fine-tuning]] — induces dark personas that generalize to
+  increased strategic deception ([[sources/lulla-et-al-2025]]).
 
 ## Related Behaviors
 

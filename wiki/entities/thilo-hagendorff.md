@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 ## Profile
 
 University of Stuttgart; shared first author of
-[[hagendorff-et-al-2024]].
+[[hagendorff-et-al-2024]]; co-author of [[sources/lulla-et-al-2025]].
 
 ## Key Contributions
 
@@ -26,6 +26,9 @@ University of Stuttgart; shared first author of
 - Empirical work on heuristics/biases in LLMs (Hagendorff et al. 2023) and on LLMs'
   capability "to induce false beliefs in other agents" (Hagendorff 2024a) — directly
   relevant to [[safety-concepts/deception]].
+- Co-author on the Dark Triad "model organisms of misalignment" work
+  ([[sources/lulla-et-al-2025]]), inducing antisocial personas in LLMs via
+  [[paradigms/narrow-psychometric-fine-tuning]].
 
 ## Conceptual Framework
 

@@ -52,7 +52,7 @@ callout immediately after the `# Title`.**
 9. **Empirical results & methodological lessons** → state a result inline on its home paradigm/instrument page (citing the source); record a methodological lesson inline in that paradigm's "Validity Concerns" section; capture a disagreement as a `> [!warning]` callout on the affected page plus a `questions/` entry if it's an open issue.
 10. **Refresh the coverage map** → if any paradigm was added or re-targeted, update `wiki/crosswalk/coverage-map.md` (or note that `/map` should be run).
 11. **Update `wiki/index.md`** — add/modify catalog entries.
-12. **Append to `wiki/log.md`** (newest at bottom):
+12. **Prepend to `wiki/log.md`** (newest first — insert directly below the header comment, above the previous newest entry):
     ```
     ## [YYYY-MM-DD] ingest | [Source Title]
     - Gate: CORE | SOURCE-METHOD (+ bridge) | OVERRIDE

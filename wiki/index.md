@@ -20,6 +20,10 @@ date_modified: 2026-06-11
 - [[paradigms/false-belief-task]] — theory-of-mind tests incl. higher-order and perturbed variants (psychological)
 - [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
 - [[paradigms/psychometric-inventory-administration]] — human trait/value/morality inventories given to LLMs via zero-shot NLI (psychological)
+- [[paradigms/narrow-psychometric-fine-tuning]] — fine-tune LLMs on inventory answer-keys to induce "dark" personas (psychological)
+- [[paradigms/process-dissociation-moral-dilemmas]] — congruent vs. incongruent harm dilemmas separating moral flexibility from utilitarianism (psychological)
+- [[paradigms/sender-receiver-deception-game]] — economic game measuring self-serving deception vs. prosocial honesty (game-theoretic)
+- [[paradigms/flipit-stealthy-takeover]] — stealthy-takeover security game for strategic resource control (game-theoretic)
 
 ## Theories — grounding layer
 
@@ -31,6 +35,8 @@ date_modified: 2026-06-11
 - [[theories/ai-psychometrics]] — LLMs "sediment" human traits from training text; inventories bring them to light
 - [[theories/schwartz-basic-values]] — 10/19 cross-cultural basic human values
 - [[theories/moral-foundations-theory]] — morality rests on foundations weighted differently by political ideology
+- [[theories/dark-triad]] — narcissism/psychopathy/Machiavellianism share a "dark core" with affective dissonance at its center
+- [[theories/emergent-misalignment]] — narrow fine-tuning → broad misalignment via out-of-context reasoning
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -41,6 +47,8 @@ date_modified: 2026-06-11
 - [[instruments/cogbench]] — procedurally generated psychology-task battery
 - [[instruments/big-five-inventory]] — BFI-44 personality (O/C/E/A/N)
 - [[instruments/short-dark-tetrad]] — SD4 Machiavellianism/narcissism/psychopathy/sadism
+- [[instruments/short-dark-triad]] — SD3 Machiavellianism/narcissism/psychopathy (memorization-control eval instrument)
+- [[instruments/acme]] — Affective and Cognitive Measure of Empathy (cognitive / affective resonance / affective dissonance)
 - [[instruments/portrait-values-questionnaire]] — PVQ-RR Schwartz values; male/female pronoun versions
 - [[instruments/moral-foundations-questionnaire]] — MFQ moral foundations
 - [[instruments/gender-sex-diversity-beliefs-scale]] — GSDB beliefs about gender/sex diversity
@@ -50,12 +58,14 @@ date_modified: 2026-06-11
 - [[hagendorff-et-al-2024]] — CORE; field-defining review
 - [[sources/loehn-et-al-2024]] — CORE; seven requirements for valid LLM psychological testing + audit of 25 studies
 - [[sources/pellert-et-al-2024]] — CORE; "AI psychometrics" — human inventories on LLMs via zero-shot NLI
+- [[sources/lulla-et-al-2025]] — CORE; Dark Triad "model organisms of misalignment" induced in LLMs by narrow fine-tuning
 
 ## Entities
 
 - [[entities/thilo-hagendorff]] — co-lead author, Univ. Stuttgart
 - [[entities/ishita-dasgupta]] — co-lead author, Google DeepMind
 - [[entities/max-pellert]] — lead author, "AI psychometrics", Univ. Mannheim
+- [[entities/roshni-lulla]] — lead author, Dark Triad "model organisms", USC
 
 ## Questions
 
@@ -65,6 +75,8 @@ date_modified: 2026-06-11
 - [[questions/llm-individual-or-population]] — is a model one test taker or a crowd?
 - [[questions/traits-predict-downstream-behavior]] — do elicited profiles predict what a model does?
 - [[questions/training-data-shapes-traits]] — does corpus provenance shape the profile?
+- [[questions/does-safety-training-suppress-misalignment]] — does alignment remove dark structures or just mask them?
+- [[questions/how-much-darkness-is-desirable]] — which "dark" behaviors are actually misaligned vs. useful?
 
 ## Crosswalk
 
