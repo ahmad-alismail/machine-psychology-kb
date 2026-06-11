@@ -7,24 +7,20 @@
 behavioral sciences** — treating models as participants in experiments and
 analyzing input→output relationships, rather than inspecting weights.
 
-This wiki is the knowledge base for a PhD on **theory-grounded behavioral
-evaluation of advanced AI**. Its mission: collect, structure, and *extend* a
-toolkit of **experimental paradigms** — drawn from **psychology** and **game
-theory** — that can **identify, detect, and surface misaligned behaviors and
-dangerous capabilities** in AI systems (deception, scheming, power-seeking,
-sandbagging, alignment-faking, situational awareness, self-exfiltration,
-shutdown-resistance, self-preservation, deceptive alignment, resource
-acquisition, self-proliferation, peer-preservation, …).
+This wiki is a knowledge base for **theory-grounded behavioral evaluation of
+advanced AI**. Its mission: **collect and structure experimental paradigms** —
+drawn from **psychology** and **game theory** — that help AI researchers
+**understand and apply** them in AI safety to **detect and evaluate misaligned
+behaviors and dangerous capabilities** (power-seeking, self-preservation,
+situational awareness, shutdown-resistance, resource acquisition,
+self-proliferation, peer-preservation, self-exfiltration, sandbagging, evaluation
+faking, strategic deception).
 
 The wiki is **paradigm-anchored and experiment-focused**: the experimental
 paradigm/design is the unit you grow the KB by. Each paradigm is grounded in an
 explicit **theory** and targets one or more **safety-concepts** (the behaviors we
-hunt), split along the **capability vs. propensity** axis. Keep the wiki about
+hunt). Keep the wiki about
 *experiments and how to run/validate them* — not extensive field commentary.
-
-### Two evaluation lenses (every eval declares one)
-- **capability** — *can* the model do/exhibit the behavior if prompted/instructed?
-- **propensity** — *would* the model do it unprompted, spontaneously, contrary to human intent?
 
 ### Three-Layer Architecture
 - **Raw sources** (`raw/`) — immutable source documents. The LLM reads, never modifies.
@@ -46,8 +42,8 @@ wiki/
 
   # ── PRIMARY: the experiment toolkit ────────────────────────────
   paradigms/      # ★ HUBS. Reusable theory-grounded experimental designs that
-                  #   elicit/measure a target behavior. Tag: psychological |
-                  #   game-theoretic. Game-theoretic pages add a Formal Apparatus block.
+                  #   elicit/measure a target behavior. Set `lens` in frontmatter.
+                  #   Game-theoretic pages add a Formal Apparatus block.
   theories/       # ★ The grounding layer paradigms CITE. Psychological theories
                   #   (theory-of-mind, prospect theory…) + game-theory models
                   #   (signaling games, principal-agent…). Browse theory →
@@ -56,9 +52,6 @@ wiki/
                   #   the paradigms that DETECT it. (Scaffolded; user fills content.)
   instruments/    # Concrete operationalizations: psychometric inventories
                   #   (Big Five, Dark Tetrad…) + benchmarks/scenarios.
-  validity/       # ★ Rigor layer. Test requirements (construct validity,
-                  #   reliability, contamination, reproducibility) + validity
-                  #   assessments of contested evals.
   crosswalk/      # ★ Auto-generated coverage matrix: safety-concepts × paradigms.
                   #   Surfaces behaviors with NO good experiment yet. (skill: /map)
 
@@ -71,14 +64,6 @@ wiki/
   .meta/          # lint-counter and bookkeeping
 ```
 
-> [!note] Deliberately excluded
-> No `concepts/`, `debates/`, `findings/`, `comparisons/`, `evidence/`,
-> `pipelines/`, or `methods/` directories. This KB is about experiments, not field
-> sociology, ephemeral results, or data-generation engineering. Empirical results
-> live inline on the relevant paradigm/instrument/validity page; **scoring &
-> elicitation** are described inline in each paradigm's "Scoring / Procedure"
-> section; **experimental controls** live in `validity/experimental-controls`;
-> methodological lessons live in `validity/`; open gaps live in `questions/`.
 
 ## Conventions
 
@@ -100,86 +85,32 @@ background; light analogies OK, minimal jargon), 2–4 sentences:
 > <2–4 plain-language sentences explaining what this page is and why it matters.>
 ```
 
-### Capability vs. Propensity (the core axis)
-- Set `eval_axis` in frontmatter (`capability | propensity | both | na`).
-- On paradigm/instrument/safety-concept pages, include a short callout when relevant:
-```markdown
-> [!note] Capability vs. Propensity
-> Capability: <can it, if prompted?>  ·  Propensity: <would it, unprompted?>
-```
-
 ## Frontmatter Schema
 
 ```yaml
 ---
-type: paradigm | theory | instrument | validity | safety-concept | source | entity | framework | question | crosswalk | index | log | overview
+type: paradigm | theory | instrument | safety-concept | source | entity | framework | question | crosswalk | index | log | overview
 field: machine-psychology          # constant on every page (clean graph filtering)
-lens: psychological | game-theoretic | mixed | na   # paradigms & theories
-eval_axis: capability | propensity | both | na      # cap/propensity axis
+lens: psychological | game-theoretic | mixed | na   # required on ALL pages; na where not applicable
 tags: []
 date_created: YYYY-MM-DD
 date_modified: YYYY-MM-DD
 ---
 ```
 
-`field:` is always `machine-psychology`. `lens`/`eval_axis` use `na` where not applicable.
-
-## The /ingest Relevance Gate
-
-Before ingesting any source, classify it. **Only two tiers are accepted:**
-
-- **CORE** — studies the *behavior* of AI/LLMs using psychology or behavioral-science
-  methods (machine psychology proper). → **full ingest**.
-- **SOURCE-METHOD** — psychology or game-theory research (an experiment, method, or
-  theory) that **could be repurposed to evaluate AI**, *even if it never mentions AI*
-  (e.g. Milgram, prisoner's dilemma, Schwartz values, Kahneman–Tversky). → **ingest
-  WITH a required `## Relevance to Machine Psychology` section** explaining the bridge
-  to AI evaluation (what construct/behavior it could probe in a model, and how to
-  adapt the experiment). This relevance interpretation **propagates** to any
-  `theories/` or `paradigms/` page derived from the source.
-
-**Everything else is REJECTED** with a one-line reason, including:
-- SDG / agentic-workflow engineering papers (off-mission: data generation, not experiments)
-- pure AI-safety framework/policy reports
-- pure ML/architecture/capability papers with no psychological or behavioral angle
-
-Rejected sources are **not ingested unless the user explicitly overrides**. On
-override, a framework/org report may become an `entities/` page (type `framework`,
-`tags: [adjacent]`). Log every gate decision.
-
-## Extraction Schema (per source)
-
-```
-### Metadata
-- Title / Authors / Year / Venue·URL
-### Relevance Tier
-- CORE | SOURCE-METHOD (+ for SOURCE-METHOD: the AI-evaluation bridge)
-### Theories invoked or usable
-- name → key prediction(s) → behavior it could illuminate in an AI
-### Paradigms / experimental designs
-- name → setup → target behavior → capability/propensity → scoring
-### Instruments / measures
-- inventories, benchmarks, scenarios used
-### Constructs / behaviors probed
-- map to safety-concepts/ where applicable
-### Claims  (claim · evidence type · strength · section)
-### Validity considerations
-- construct validity · reliability · contamination · reproducibility · cap–propensity confound
-### Open questions / research gaps surfaced
-```
+`field:` is always `machine-psychology`. `lens` is required on every page —
+substantive values (`psychological | game-theoretic | mixed`) on paradigms and
+theories, `na` where not applicable.
 
 ## Domain-Specific Guidance
 
-1. **Track the native classification vocabulary** each source uses for a behavior
-   (e.g. "compound construct", "tactic", "threat model") — verbatim, not paraphrased.
-2. **Level-of-analysis consistency**: flag when a source treats a compound,
-   higher-order behavior (e.g. scheming) as parallel to a primitive one.
-3. **Capability vs. propensity**: for every eval, record whether it measures *can-it*
-   (prompted) or *would-it* (unprompted), and note any confound between them.
-4. **Construct–measure alignment**: does the instrument actually measure the behavior
-   it claims to? Flag mismatches (the central machine-psychology validity problem).
-5. **Theory → experiment generativity**: when reading a theory, ask "what *new*
-   AI-evaluation experiment could this ground?" and record it in `questions/`.
+When ingesting a source, **understand the experiment faithfully on its own terms**:
+
+1. **Use the source's own vocabulary.** Name each construct/behavior with the exact term
+   the source uses (quote, don't paraphrase) so the wiki stays faithful to the literature.
+2. **Make it understandable to a non-expert.** Write the `> [!info] In plain terms`
+   callout for a smart non-specialist and gloss any psychology/game-theory jargon, so a
+   reader without that background can grasp the experiment.
 
 ## Page Type Templates
 
@@ -197,9 +128,6 @@ override, a framework/org report may become an `entities/` page (type `framework
 ## Target Behaviors
 - Detects: [[safety-concepts/...]], [[safety-concepts/...]]
 
-> [!note] Capability vs. Propensity
-> Capability: ...  ·  Propensity: ...
-
 ## Setup / Elicitation
 How the experiment is run; the stimulus/scenario; what is observed.
 
@@ -210,10 +138,13 @@ How the experiment is run; the stimulus/scenario; what is observed.
 - [[instruments/...]]
 
 ## Scoring / Procedure
-- how responses become measurements (describe inline); experimental controls → [[validity/experimental-controls]]
+- how responses become measurements (describe inline); note the experimental controls
+  the design requires (varied wordings, counterbalanced order, baseline conditions).
 
 ## Validity Concerns
-- [[validity/...]] — contamination, construct validity, confounds
+Self-contained — state inline whichever apply: contamination of canonical items,
+construct validity (does the stimulus measure the named construct?),
+surface-form/robustness sensitivity, reproducibility.
 
 ## Evidence
 - key results stated inline, citing [[sources/...]]
@@ -231,8 +162,8 @@ How the experiment is run; the stimulus/scenario; what is observed.
 ## Statement
 The core theory and its key, testable predictions.
 
-## Relevance to Machine Psychology   <!-- required if source had no AI angle -->
-What behavior/construct this could probe in an AI; how to adapt it.
+## Relevance to Machine Psychology   <!-- optional: include only if the source itself draws the AI connection -->
+What behavior/construct the source applies this to in an AI.
 
 ## Paradigms Grounded in This Theory
 - [[paradigms/...]]
@@ -253,9 +184,6 @@ What behavior/construct this could probe in an AI; how to adapt it.
 ## Indicators
 What observable signs reveal this behavior.
 
-> [!note] Capability vs. Propensity
-> Capability: ...  ·  Propensity: ...
-
 ## Detected By
 - [[paradigms/...]] — experiments that surface this behavior
 
@@ -263,7 +191,7 @@ What observable signs reveal this behavior.
 - [[safety-concepts/...]]
 
 ## Evidence
-- results / [[validity/...]] / [[sources/...]]
+- results / [[sources/...]]
 
 ## Open Questions
 - [[questions/...]]
@@ -277,14 +205,6 @@ What observable signs reveal this behavior.
 ## What It Measures   ## Administration   ## Used In (paradigms)   ## Validity Notes   ## Sources
 ```
 
-### Validity (`wiki/validity/`)
-```markdown
-# [Requirement / Validity Topic]
-> [!info] In plain terms
-> ...
-## The Requirement   ## Why It Matters for LLMs   ## How to Satisfy It   ## Evals Assessed Against It   ## Sources
-```
-
 ### Source Summary (`wiki/sources/`)
 ````markdown
 # [Title]
@@ -295,8 +215,10 @@ TBD BY USER
 ```
 ## Relevance Tier
 CORE | SOURCE-METHOD
-## Relevance to Machine Psychology   <!-- required for SOURCE-METHOD -->
-The bridge to AI evaluation.
+## Relevance to Machine Psychology   <!-- REQUIRED for SOURCE-METHOD: the LLM writes the bridge to AI evaluation. Optional for CORE (include only if the source itself draws the connection). -->
+For SOURCE-METHOD: how this experiment/method/theory could be repurposed to evaluate
+AI behavior (the bridge — written by the LLM, clearly marked as wiki interpretation).
+For CORE: what the source itself says about applying this to AI evaluation.
 ## Key Claims   ## Theories / Paradigms / Instruments Introduced
 ## Relationship to Other Sources   ## Limitations
 ````
@@ -338,10 +260,11 @@ uv run marker_single staging-area/file.pdf --output_dir raw/papers
 
 ## Slash Commands
 
-- `/ingest [path]` — two-pass ingestion **with the relevance gate** + human review
-- `/ingest-agentic [path]` — autonomous ingestion (gate still applies)
+- `/ingest [path]` — two-pass ingestion + human review
+- `/ingest-agentic [path]` — autonomous ingestion
 - `/query [question]` — ask questions against the wiki
 - `/lint` — wiki health check
 - `/discover [query]` — find relevant papers online and stage PDFs
 - `/map` — regenerate the safety-concept × paradigm coverage matrix
-- `/design-experiment [theory|behavior]` — propose a theory-grounded eval (theory → new paradigm)
+- `/conform [path]` — reorganize one page to match its page-type template (no content changes)
+- `/design-experiment [theory|behavior]` — propose a theory-grounded eval (theory → new paradigm) *(planned — skill not yet implemented)*

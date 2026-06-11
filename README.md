@@ -1,48 +1,74 @@
-# Research Wiki Template
+# Machine Psychology & Strategic Evaluation of AI — Research Wiki
 
-A reusable template for building an **LLM-maintained research knowledge base** for any field. You bring the sources and the questions; an LLM agent (Claude Code) reads each source and incrementally builds a structured, interlinked Obsidian wiki — concept pages, source summaries, debates, evidence maps, findings, and more.
+An **LLM-maintained knowledge base** for *theory-grounded behavioral evaluation of
+advanced AI*. **Machine psychology** studies the **behavior** of AI systems with the
+tools of psychology and the behavioral sciences — treating a model as a participant in
+an experiment and reading its input→output behavior, rather than inspecting its weights.
 
-It is a domain-agnostic instantiation of the pattern described in [`llm-wiki.md`](llm-wiki.md). One field per repo: spin up a fresh wiki from this template for machine psychology, a second for AI safety, a third for whatever you're going deep on — each with a clean graph of its own.
+The wiki **collects and structures** a toolkit of **experimental paradigms** (drawn
+from **psychology** and **game theory**) that help AI researchers **understand and
+apply** them to **detect and evaluate misaligned behaviors and dangerous capabilities**
+in AI — power-seeking, self-preservation, situational awareness, shutdown-resistance,
+resource acquisition, self-proliferation, peer-preservation, self-exfiltration,
+sandbagging, evaluation faking, strategic deception.
 
-## What's in the box
+## How it's organized
+
+The KB is **paradigm-anchored**: the experimental design is the unit you grow it by.
+See `CLAUDE.md` for the full schema, page templates, and conventions.
 
 ```
-CLAUDE.md            # the "engine" schema — conventions, page templates, the
-                     #   extraction schema (the parts you customize are marked
-                     #   >>> CONFIGURE <<<)
-CONFIGURE.md         # step-by-step checklist to configure this for a new field
-llm-wiki.md          # the underlying pattern (read this to understand the idea)
+raw/        immutable source documents (articles/, papers/, assets/) — read, never modified
+wiki/       the LLM-owned knowledge base:
+  index.md         content catalog — read first to navigate
+  overview.md      evolving high-level synthesis
+  crosswalk/       coverage matrix: safety-concepts × paradigms (the research-gap finder)
+  paradigms/       ★ reusable, theory-grounded experimental designs (the hubs)
+  theories/        ★ the grounding layer paradigms cite (psychology + game theory)
+  safety-concepts/ ★ the behaviors/dangerous capabilities we hunt
+  instruments/     concrete inventories, benchmarks, scenarios
+  sources/ entities/ questions/   thin supporting apparatus
+  output/          query outputs (uncommitted until reviewed)
+CLAUDE.md   the schema — conventions, page templates, domain guidance
 .claude/
-  skills/            # /ingest /ingest-agentic /query /lint /discover /compare /debate /conform
-  hooks/             # lint-counter hook (suggests /lint every 10 ingests)
-  settings.json      # wires up the hook
-pyproject.toml       # optional: Marker deps for PDF -> markdown (delete if text-only)
-raw/                 # immutable source documents (articles/, papers/, assets/)
-wiki/                # the LLM-owned knowledge base (seeded index/log/overview)
+  skills/   the slash commands below (+ _shared/ holds the ingestion extraction schema)
+  hooks/    lint-counter hook (suggests /lint every 10 ingests)
 ```
 
-The skills, conventions, and page templates are **field-agnostic**. The only field-specific things are the **Extraction Schema** and **Domain-Specific Guidance** sections of `CLAUDE.md`, plus a handful of placeholders — all marked `>>> CONFIGURE <<<`.
+> The KB is about experiments — not field commentary, ephemeral results, or
+> data-generation engineering. Empirical results and validity concerns live inline on
+> the relevant paradigm/instrument page; open gaps live in `questions/`.
 
-## How to use this as a GitHub template
+## Slash commands
 
-1. Push this repo to GitHub.
-2. On GitHub: **Settings → General → check "Template repository"**.
-3. For each new field, click **"Use this template" → "Create a new repository"** (e.g. `machine-psychology-wiki`). You get a fresh repo with clean history.
-4. Clone it, then follow **[`CONFIGURE.md`](CONFIGURE.md)** to fill in the field-specific blocks.
-5. Open the repo as an Obsidian vault and launch Claude Code from the repo root. Start ingesting with `/ingest <path>` or `/discover`.
-
-> **Tip:** the fastest way to configure a new field is to open the new repo in Claude Code and say: *"Configure this template for [field] — walk through CONFIGURE.md with me."* The agent will interview you and fill in the placeholders.
-
-## Workflow at a glance
-
+- `/ingest <path>` — two-pass ingestion **with the relevance gate** + human review
+- `/ingest-agentic <path>` — autonomous ingestion (an LLM review agent replaces the human gate)
 - `/discover [query]` — find relevant papers online, stage PDFs into `staging-area/`
-- `/ingest <path>` — two-pass ingest with a human review gate
-- `/ingest-agentic <path>` — autonomous ingest with an LLM review agent instead
 - `/query <question>` — answer a question from the wiki, filed back into `wiki/output/`
-- `/compare <topic>` / `/debate <topic>` — generate comparison / debate pages
-- `/lint` — health-check the wiki (orphans, broken links, missing definitions, ...)
-- `/conform <path>` — reorganize one page to match its template
+- `/map` — regenerate the safety-concept × paradigm coverage matrix
+- `/lint` — health-check the wiki (orphans, broken links, missing callouts, schema drift, …)
+- `/conform <path>` — reorganize one page to match its page-type template (no content changes)
 
-## Merging fields later
+## The relevance gate
 
-Each field is its own repo and Obsidian vault — kept separate so each graph stays legible. If you later want cross-field links (a concept that appears in two fields), you can merge two wikis: relocate each under `wiki/<field>/`, rewrite the wikilinks, and color-group the merged Obsidian graph by the `field:` frontmatter key (which every page carries). Defer this until you actually have connections to draw — that's the only real reason to merge.
+Before ingesting, every source is classified. Only two tiers are accepted:
+
+- **CORE** — studies AI/LLM *behavior* using psychology/behavioral-science methods → full ingest.
+- **SOURCE-METHOD** — a psychology or game-theory experiment/method/theory that could be
+  *repurposed* to evaluate AI, even with no AI mention → ingested **with** a required
+  `## Relevance to Machine Psychology` section bridging it to AI evaluation.
+
+Everything else (SDG/agentic-engineering, pure policy reports, pure ML/architecture
+papers) is rejected unless the user explicitly overrides. See the `/ingest` skill for details.
+
+## Getting started
+
+Open the repo as an Obsidian vault and launch Claude Code from the repo root. Start with
+`/discover` to scout sources, or `/ingest raw/papers/NN/...` to ingest one you already have.
+
+## PDF conversion
+
+```bash
+export TORCH_DEVICE=cuda
+uv run marker_single staging-area/file.pdf --output_dir raw/papers
+```
