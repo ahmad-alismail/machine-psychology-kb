@@ -107,8 +107,16 @@ section of each paradigm page — most directly:
   Sally–Anne contamination), R1 (alternate-forms / perturbation robustness); the
   Kosinski 2023 vs. Ullman 2023 contradiction is the paper's motivating example of
   non-standardization.
+- [[paradigms/psychometric-scale-reliability-stress-test]] — an empirical realization of the
+  **R1 (reliability)** requirement: test–retest (biweekly across model versions), alternate-forms
+  (item rephrasing), and internal consistency (perturbation robustness, low-variance distributions)
+  on the BFI. It explicitly leaves **R2 (validity)** unmet, illustrating "reliability is necessary
+  but insufficient for validity."
 
 ## Sources
 
 - [[sources/loehn-et-al-2024]] — derives the seven requirements and audits 25 studies
   against them.
+- [[sources/huang-et-al-2024]] — empirically demonstrates a reliability assessment (R1) of the BFI
+  on four LLMs; defers validity (R2). Uses Internal Consistency Reliability (Cronbach 1951) and
+  Test-Retest Reliability (Guttman 1945); notes its perturbations preclude Cronbach's alpha.

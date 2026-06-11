@@ -33,6 +33,9 @@ Administered to LLMs via the zero-shot NLI scheme of
 ## Used In (paradigms)
 
 - [[paradigms/psychometric-inventory-administration]]
+- [[paradigms/psychometric-scale-reliability-stress-test]] — the scale whose reliability is
+  stress-tested across 2,500 perturbed configurations.
+- [[paradigms/personality-steering-interventions]] — re-administered after persona interventions.
 
 ## Validity Notes
 
@@ -41,7 +44,13 @@ Administered to LLMs via the zero-shot NLI scheme of
   homogeneous" (high A/E, low N), which may reflect genuine similarity, a social-desirability
   pull in the training text, or limited instrument sensitivity in the NLI setup — not
   disentangled.
+- [[sources/huang-et-al-2024]] establishes the BFI is **reliable** (consistent, low-variance) on
+  GPT-3.5-Turbo / GPT-4-Turbo / Gemini-1.0-Pro but more decentralized on LLaMA-3.1-8B — while
+  cautioning that reliability does **not** establish validity. It tests both ascending and
+  **descending** choice-order labelings as a perturbation; the canonical 5-point administration
+  above (1 = disagree strongly) is the default, not the descending variant.
 
 ## Sources
 
 - [[sources/pellert-et-al-2024]]
+- [[sources/huang-et-al-2024]]

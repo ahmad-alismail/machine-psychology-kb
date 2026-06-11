@@ -31,6 +31,14 @@ behavioral potentials in LLMs." Tension the same source documents: reusing ident
 tasks across generations invites training-data contamination, and stimuli "designed to
 be challenging for human study participants" saturate as capabilities grow.
 
+[[sources/huang-et-al-2024]] supplies a small **worked instance** of the longitudinal idea:
+it called the GPT-3.5-Turbo API **biweekly from mid-September 2023 to late-January 2024**,
+spanning two model versions (0613, 1106), and found "no variation attributable to model
+updates" on the BFI (its *Test-Retest Reliability* check, Fig. 2 / Table 2). This is exactly
+the same-test-over-time design — though over months and two versions, not generations — and
+shows the method is tractable; the open problem is scaling it across frontier releases without
+contamination.
+
 [[sources/ong-2024]] frames the **inverse worry** (Outstanding Issue 6, "Generalizability
 and longevity of Results"): because most inferences are "based on the capabilities of
 currently-released LLM models," and those models "will be updated and perhaps made

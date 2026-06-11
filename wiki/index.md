@@ -32,6 +32,8 @@ date_modified: 2026-06-11
 - [[paradigms/gpt-ology]] — inference lens: read an LLM experiment as a claim about the *model's* capabilities (psychological)
 - [[paradigms/llm-as-computational-model]] — inference lens: use the LLM as a computational model of human cognition; asymmetric existence-proof logic (psychological)
 - [[paradigms/silicon-sampling]] — inference lens: condition an LLM with backstories to simulate human subpopulations (psychological)
+- [[paradigms/psychometric-scale-reliability-stress-test]] — 5-factor × 2,500-configuration perturbation battery measuring whether a psychometric scale yields *reliable* scores on an LLM (psychological)
+- [[paradigms/personality-steering-interventions]] — three increasingly directive prompt strategies (environment / assigned personality / embodied character) that shift an LLM's measured trait distribution (psychological)
 
 ## Theories — grounding layer
 
@@ -88,6 +90,7 @@ date_modified: 2026-06-11
 - [[sources/coda-forno-et-al-2024]] — CORE; CogBench — seven cognitive-psychology tasks phenotype 35 LLMs (RLHF→human-like; size→model-based; open-source less risky)
 - [[sources/wang-et-al-2024]] — CORE; Foot-in-the-Door — cognitive-psychology account of LLM jailbreaking + recursive incremental-compliance attack (avg ASR 83.9% on 8 LLMs)
 - [[sources/ong-2024]] — CORE; typology of three LLM cognitive-science paradigms (GPT-ology / computational-model / silicon-sampling) + Outstanding Issues on validity & reproducibility
+- [[sources/huang-et-al-2024]] — CORE; reliability stress-test of the BFI on 4 LLMs across 2,500 perturbed settings (reliable, not random) + persona steering; stresses reliability ≠ validity
 
 ## Entities
 
@@ -101,6 +104,7 @@ date_modified: 2026-06-11
 - [[entities/eric-schulz]] — senior author, CogBench; lead of the Computational Principles of Intelligence Lab
 - [[entities/zhenhua-wang]] — lead author, Foot-in-the-Door jailbreaking, National University of Defense Technology
 - [[entities/desmond-ong]] — sole author, LLM-paradigm typology, UT Austin (Psychology)
+- [[entities/jen-tse-huang]] — lead author, reliability of psychological scales on LLMs, CUHK / Tencent AI Lab
 
 ## Questions
 

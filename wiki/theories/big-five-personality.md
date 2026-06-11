@@ -67,8 +67,16 @@ Giulianelli 2024), that language switching alters GPT-4o's traits on the EPQ-R (
 ## Paradigms Grounded in This Theory
 
 - [[paradigms/personality-intervention-risk-propensity]]
+- [[paradigms/psychometric-scale-reliability-stress-test]] — tests whether the OCEAN scale yields
+  *reliable* scores on LLMs under input perturbation.
+- [[paradigms/personality-steering-interventions]] — pushes single OCEAN dimensions via prompting
+  and checks the model places opposite poles at opposite ends.
 
 ## Sources
 
 - [[sources/hartley-et-al-2024]]
 - [[sources/liu-et-al-2025]]
+- [[sources/huang-et-al-2024]] — finds GPT-3.5-Turbo holds a stable, low-variance OCEAN profile
+  across 2,500 perturbations and can be steered to opposite poles of each dimension; bears directly
+  on the "inherent traits vs. mimicked personas" warning above (it lands on the *stable* side for
+  the larger models, against Song et al. 2023 / Gupta et al. 2023 / Shu et al. 2024).

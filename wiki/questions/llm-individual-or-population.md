@@ -45,6 +45,15 @@ considered population separately") and the meaning of any reported result.
   studies but shift under prompt conditions in others (Gupta et al. 2024; Shu et al. 2024;
   Tseng et al. 2024) — is exactly the symptom expected if the prompt, not a fixed individual, is
   selecting which slice of the trained-on population answers.
+- [[sources/huang-et-al-2024]] takes the **population** reading as a goal rather than a problem:
+  its §4 ("Representing Diverse Groups") asks whether GPT-3.5-Turbo can be steered to "represent
+  various groups" so that LLMs might substitute for human participants in social-science studies.
+  Its finding — that assigned personalities and villain characters diverge from the default while
+  the un-steered model sits in one tight region — is the operational face of this question: a
+  *default* model behaves like a single low-variance individual, but conditioning it on a persona
+  makes it sample a different slice of the trained-on population. Whether that licenses treating
+  the model as a stand-in population (à la silicon sampling) or just a re-posed individual is left
+  open.
 - [[sources/ong-2024]] frames the same split as a choice between two conceptualizations that "are
   distinct and will affect experimental design and inferences": an LLM's output as **samples from
   an underlying distribution** that approximates real human distributions, versus output as a

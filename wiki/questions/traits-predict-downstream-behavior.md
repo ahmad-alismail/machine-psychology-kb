@@ -45,6 +45,15 @@ an early-warning instrument rather than a personality parlor trick.
   inherent vs. mimicked personas (Tseng et al. 2024)" — if the profile is a prompt artifact, its
   predictive validity is moot until stability is established (see
   [[questions/llm-individual-or-population]]).
+- [[sources/huang-et-al-2024]] frames the arrow as the **reliability → validity** gap and partly
+  settles the *prior* caveat: it demonstrates the trait scores are **reliable** (consistent,
+  low-variance, steerable to opposite poles) on GPT-3.5/GPT-4-Turbo/Gemini — so for these models
+  the profile is *not* merely a prompt artifact. But it is explicit that this "is not sufficient
+  for validity… the models can respond consistently to the scales but might behave
+  inconsistently," and leaves the behavioral side untested. It thus brackets the question with
+  [[sources/hartley-et-al-2024]]: huang verifies the persona registers on the *scale*, hartley
+  shows a persona shifts a *behavioural* parameter — neither alone closes the trait → behavior
+  arrow.
 
 ## Suggested Investigation (toward a new paradigm)
 
