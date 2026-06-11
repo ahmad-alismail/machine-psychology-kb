@@ -11,29 +11,44 @@ date_modified: 2026-06-11
 
 > [!info] In plain terms
 > This is the catalog of the wiki — start here to navigate. It lists every page grouped
-> by type. The wiki was reset to a clean structure and is currently empty, pending
-> re-ingestion of the sources in `raw/papers/`.
+> by type.
 
 ## Paradigms — experimental designs (the hubs)
-_none yet_
+
+- [[paradigms/heuristics-and-biases-battery]] — cognitive-bias vignettes as decision-process probes (psychological)
+- [[paradigms/content-effects-on-reasoning]] — same logic, varied semantic content (psychological)
+- [[paradigms/false-belief-task]] — theory-of-mind tests incl. higher-order and perturbed variants (psychological)
+- [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
 
 ## Theories — grounding layer
-_none yet_
+
+- [[theories/heuristics-and-biases]] — mental shortcuts predict systematic errors
+- [[theories/theory-of-mind]] — inferring others' unobservable mental states
+- [[theories/performance-competence-distinction]] — performance ≠ competence (interpretation principle)
+- [[theories/ecological-rationality]] — heuristics mirror the training environment
 
 ## Safety-Concepts — behaviors we hunt
-_none yet_
+
+- [[safety-concepts/deception]] — scaffold, content TBD by user
 
 ## Instruments
-_none yet_
+
+- [[instruments/cogbench]] — procedurally generated psychology-task battery
 
 ## Sources
-_none yet_
+
+- [[sources/hagendorff-et-al-2024-machine-psychology]] — CORE; field-defining review
 
 ## Entities
-_none yet_
+
+- [[entities/thilo-hagendorff]] — co-lead author, Univ. Stuttgart
+- [[entities/ishita-dasgupta]] — co-lead author, Google DeepMind
 
 ## Questions
-_none yet_
+
+- [[questions/longitudinal-behavioral-trends]] — same tests across generations → safety forecasting?
+- [[questions/bias-disappearance-contamination-or-capability]] — real gains or stale instruments?
 
 ## Crosswalk
-_none yet — run `/map` after the first paradigms are ingested._
+
+_not yet generated — run `/map` now that the first paradigms exist._

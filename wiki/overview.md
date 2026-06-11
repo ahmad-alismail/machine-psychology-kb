@@ -30,5 +30,21 @@ dangerous behavior). The crosswalk coverage map shows which behaviors have exper
 and which don't.
 
 ## Synthesis
-_The wiki was reset to a clean structure and is currently empty. This synthesis will be
-rebuilt as the sources in `raw/papers/` are re-ingested._
+
+The field's charter is [[sources/hagendorff-et-al-2024-machine-psychology]]: study LLM
+behavior with hypothesis-driven experiments ("if the agent has construct X, we expect
+behavior Y, otherwise Z"), with controls that rule out alternative explanations. Two
+interpretive guardrails recur everywhere: results are contextual to prompt and model
+(self-reports especially), and a negative result does not prove an ability is absent
+([[theories/performance-competence-distinction]]).
+
+The current toolkit spans both lenses: psychological paradigms probing decision shortcuts
+([[paradigms/heuristics-and-biases-battery]],
+[[paradigms/content-effects-on-reasoning]]) and social cognition
+([[paradigms/false-belief-task]] — the capability substrate for
+[[safety-concepts/deception]]), plus a game-theoretic paradigm for strategic behavior
+([[paradigms/repeated-games]]). The dominant methodological threat across all of them is
+training-data contamination of canonical stimuli; the recommended antidote is procedural
+generation (cf. [[instruments/cogbench]]). The headline open problem is whether a stable,
+contamination-resistant battery applied across model generations could *forecast*
+dangerous behavioral potentials ([[questions/longitudinal-behavioral-trends]]).
