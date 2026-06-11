@@ -17,7 +17,15 @@ date_modified: 2026-06-11
 > not by opening up the machinery.
 
 ```bibtex
-TBD BY USER
+@misc{01-hagendorff-et-al-2024,
+      title={Machine Psychology}, 
+      author={Thilo Hagendorff and Ishita Dasgupta and Marcel Binz and Stephanie C. Y. Chan and Andrew Lampinen and Jane X. Wang and Zeynep Akata and Eric Schulz},
+      year={2024},
+      eprint={2303.13988},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2303.13988}, 
+}
 ```
 
 ## Relevance Tier
