@@ -29,6 +29,9 @@ date_modified: 2026-06-11
 - [[paradigms/cogbench-cognitive-phenotyping]] — seven cognitive-psychology tasks → ten human-normalized behavioral metrics phenotyping LLMs (psychological)
 - [[paradigms/foot-in-the-door-jailbreak]] — recursive incremental-compliance black-box jailbreak (self-perception escalation) (psychological)
 - [[paradigms/jailbreak-tactic-taxonomy]] — known jailbreaks classified as cognitive-dissonance-reduction tactics (psychological)
+- [[paradigms/gpt-ology]] — inference lens: read an LLM experiment as a claim about the *model's* capabilities (psychological)
+- [[paradigms/llm-as-computational-model]] — inference lens: use the LLM as a computational model of human cognition; asymmetric existence-proof logic (psychological)
+- [[paradigms/silicon-sampling]] — inference lens: condition an LLM with backstories to simulate human subpopulations (psychological)
 
 ## Theories — grounding layer
 
@@ -84,6 +87,7 @@ date_modified: 2026-06-11
 - [[sources/liu-et-al-2025]] — SOURCE-METHOD; survey of psychological theories across the LLM lifecycle (theory→evaluation index + validity-debate catalog)
 - [[sources/coda-forno-et-al-2024]] — CORE; CogBench — seven cognitive-psychology tasks phenotype 35 LLMs (RLHF→human-like; size→model-based; open-source less risky)
 - [[sources/wang-et-al-2024]] — CORE; Foot-in-the-Door — cognitive-psychology account of LLM jailbreaking + recursive incremental-compliance attack (avg ASR 83.9% on 8 LLMs)
+- [[sources/ong-2024]] — CORE; typology of three LLM cognitive-science paradigms (GPT-ology / computational-model / silicon-sampling) + Outstanding Issues on validity & reproducibility
 
 ## Entities
 
@@ -96,6 +100,7 @@ date_modified: 2026-06-11
 - [[entities/julian-coda-forno]] — lead author, CogBench, Max Planck / Helmholtz Munich
 - [[entities/eric-schulz]] — senior author, CogBench; lead of the Computational Principles of Intelligence Lab
 - [[entities/zhenhua-wang]] — lead author, Foot-in-the-Door jailbreaking, National University of Defense Technology
+- [[entities/desmond-ong]] — sole author, LLM-paradigm typology, UT Austin (Psychology)
 
 ## Questions
 
@@ -110,6 +115,7 @@ date_modified: 2026-06-11
 - [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] — does apparent LLM ToM reflect real mental-state reasoning or surface pattern-matching?
 - [[questions/cognitive-task-external-validity-for-llms]] — do human-validated cognitive tasks measure the same constructs (and predict behavior) in an LLM?
 - [[questions/incremental-compliance-pressure-generalization]] — does foot-in-the-door escalation generalize beyond jailbreaking to other gradual-compliance failures?
+- [[questions/yoking-science-to-proprietary-models]] — should behavioral AI science depend on closed, mutable commercial models?
 
 ## Crosswalk
 

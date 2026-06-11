@@ -45,6 +45,14 @@ considered population separately") and the meaning of any reported result.
   studies but shift under prompt conditions in others (Gupta et al. 2024; Shu et al. 2024;
   Tseng et al. 2024) — is exactly the symptom expected if the prompt, not a fixed individual, is
   selecting which slice of the trained-on population answers.
+- [[sources/ong-2024]] frames the same split as a choice between two conceptualizations that "are
+  distinct and will affect experimental design and inferences": an LLM's output as **samples from
+  an underlying distribution** that approximates real human distributions, versus output as a
+  **population average / "aggregate" summary of human knowledge** — "a cultural technology like a
+  library" (Yiu et al. 2023). His Bayesian analogy: probability-matching (sampling the posterior)
+  vs. the maximum-a-posteriori (MAP) estimate. The danger he names is treating a population average
+  *as if* it were an individual, which "might lead to biases in the inferences drawn." This is the
+  theoretical crux of [[paradigms/silicon-sampling]].
 
 ## Suggested Investigation (toward a new paradigm)
 

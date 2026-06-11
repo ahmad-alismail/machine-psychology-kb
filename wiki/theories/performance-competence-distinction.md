@@ -35,8 +35,23 @@ to underestimations of the model's capabilities" — every negative finding inhe
 caveat. See [[questions/longitudinal-behavioral-trends]] for the related interpretive
 gap.
 
+[[sources/ong-2024]] sharpens this into an **asymmetric existence-proof logic**. A model
+that *can* "do X" licenses a claim about the **sufficient** (not necessary) conditions
+for a capability to emerge; but a model that *cannot* "do X" cannot ground a
+**necessary**-conditions claim, because the failure "could easily be falsified with a
+newer and more capable model." Concretely, an LLM failing the Winograd Schema does not
+show that world/commonsense knowledge is necessary, nor that "statistical learning from
+language co-occurences by itself is insufficient." Hence such null results "do not yet
+lend themselves well to lasting scientific inferences, if all it takes is an engineering
+counterproof" — and "Arguing from a lack of ability is less scientifically sound than an
+argument from the presence of one." This is the load-bearing grounding of
+[[paradigms/llm-as-computational-model]].
+
 ## Paradigms Grounded in This Theory
 
+- [[paradigms/llm-as-computational-model]] — its existence-proof inference *is* the
+  asymmetric version of this distinction; [[paradigms/gpt-ology]] inherits the same
+  caveat on negative capability results.
 - Cross-cutting: it constrains interpretation of *all* paradigms rather than generating
   designs of its own; each paradigm page records the resulting elicitation controls in
   its Validity Concerns section.
@@ -44,3 +59,4 @@ gap.
 ## Sources
 
 - [[hagendorff-et-al-2024]]
+- [[sources/ong-2024]] — the asymmetric existence-proof sharpening

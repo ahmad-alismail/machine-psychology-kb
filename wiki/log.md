@@ -14,6 +14,18 @@ date_modified: 2026-06-11
 
 <!-- new entries prepended above the older ones, newest at the top -->
 
+## [2026-06-11] ingest-agentic | GPT-ology, Computational Models, Silicon Sampling: How should we think about LLMs in Cognitive Science? (Ong 2024)
+- Gate: CORE — meta-review of research paradigms for studying LLM *behavior* with cognitive-science methods; Ong draws the AI framing himself throughout (parallel to hagendorff-et-al-2024). No SOURCE-METHOD bridge required (optional CORE "Relevance to Machine Psychology" included).
+- Review: agent-approved (pass 1). Notes incorporated: (a) the three typology entries rendered as PARADIGM pages but explicitly framed as **inference frameworks** (Setup = shared base experiment; distinguishing feature = the inference drawn), with a "Inference-framework paradigm" note callout so they aren't mistaken for malformed stimulus designs; (b) created only ONE new question (proprietary-models) and folded Outstanding Issue 1 (which-LLMs) into it rather than a second page; (c) enriched existing questions for Issues 2/4/6 instead of new pages; (d) added the omitted "Other uses of LLMs" (neurosymbolic building blocks; stimulus generation/annotation tooling) and the BERT-ology etymology inline on the source/gpt-ology pages.
+- Pages created: sources/ong-2024, paradigms/gpt-ology, paradigms/llm-as-computational-model,
+  paradigms/silicon-sampling, entities/desmond-ong, questions/yoking-science-to-proprietary-models
+- Pages updated: theories/performance-competence-distinction (asymmetric existence-proof sharpening + ong source + paradigm links),
+  questions/llm-individual-or-population (distribution-vs-aggregate / cultural-technology / probability-matching-vs-MAP framing),
+  questions/bias-disappearance-contamination-or-capability (cross-model GPT-4-yes/GPT-3-no inconsistency, Issue 2),
+  questions/longitudinal-behavioral-trends (Issue 6 longevity/staleness inverse-worry framing),
+  index.md
+- Notes: citation_key = 09-ong-2024 (sole author; numeric prefix 09 fixed). BibTeX provided verbatim by user (arXiv 2406.09464, cs.AI). 3 NEW paradigms added (inference-framework type) → coverage map should be refreshed (run /map; still ungenerated). No new instruments (all named-by-reference: World Values Survey, empathy/autism scales, Winograd Schema, Sally-Anne, K-T items). No new safety-concepts — `bias` (cultural/political/social-identity) surfaced by GPT-ology and silicon-sampling but has no concept page yet; FLAGGED for user as a future scaffold candidate (consistent with prior ingests). The three inference paradigms target no dangerous-capability safety-concept directly (general behavioral characterization / scientific-inference frameworks).
+
 ## [2026-06-11] ingest-agentic | Foot In The Door: Understanding Large Language Model Jailbreaking via Cognitive Psychology (Wang et al. 2024)
 - Gate: CORE — studies LLM *behavior* (susceptibility to jailbreak / harmful compliance) via cognitive-psychology theory (cognitive consistency, self-perception) and an active compliance-induction attack; explicitly invokes Hagendorff's "machine psychology."
 - Review: agent-approved (pass 1). Notes incorporated: new `jailbreaking` safety-concept scaffold created (distinct from the paper's content-category "Deception" and from the wiki's strategic-`deception` concept); Appendix D Table 4 labels (Hate/Harassment/Hack/Deception/Illegal/Violence) treated as canonical for the instrument; FITD paradigm grounded in self-perception theory per the paper's own §4 title; refined-AdvBench + GPT-4-judge captured as the instrument; lens `psychological` on the new theory/paradigm pages.

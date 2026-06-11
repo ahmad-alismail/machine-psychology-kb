@@ -31,6 +31,14 @@ behavioral potentials in LLMs." Tension the same source documents: reusing ident
 tasks across generations invites training-data contamination, and stimuli "designed to
 be challenging for human study participants" saturate as capabilities grow.
 
+[[sources/ong-2024]] frames the **inverse worry** (Outstanding Issue 6, "Generalizability
+and longevity of Results"): because most inferences are "based on the capabilities of
+currently-released LLM models," and those models "will be updated and perhaps made
+obsolete in a matter of months," the corresponding results may go stale just as fast.
+This is the case *for* longitudinal batteries — and for "prioritizing research paradigms
+and agendas that produce more generalizable, lasting knowledge that will last more than a
+few months."
+
 ## Suggested Investigation (toward a new paradigm)
 
 Design a longitudinal battery that is **procedurally generated** (contamination-resistant

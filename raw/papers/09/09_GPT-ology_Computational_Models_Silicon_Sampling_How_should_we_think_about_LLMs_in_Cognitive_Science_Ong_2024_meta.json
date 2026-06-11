@@ -1,0 +1,709 @@
+{
+  "table_of_contents": [
+    {
+      "title": "GPT-ology, Computational Models, Silicon Sampling:\nHow should we think about LLMs in Cognitive Science?",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          106.9110107421875,
+          70.75091552734375
+        ],
+        [
+          504.8601379394531,
+          70.75091552734375
+        ],
+        [
+          504.8601379394531,
+          102.03314208984375
+        ],
+        [
+          106.9110107421875,
+          102.03314208984375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          153.298828125,
+          215.7890625
+        ],
+        [
+          197.38754272460938,
+          215.7890625
+        ],
+        [
+          197.38754272460938,
+          225.87139892578125
+        ],
+        [
+          153.298828125,
+          225.87139892578125
+        ]
+      ]
+    },
+    {
+      "title": "Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          138.4929962158203,
+          413.40234375
+        ],
+        [
+          212.47177124023438,
+          413.40234375
+        ],
+        [
+          212.47177124023438,
+          426.05078125
+        ],
+        [
+          138.4929962158203,
+          426.05078125
+        ]
+      ]
+    },
+    {
+      "title": "A typology of research paradigms",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          335.8828125,
+          576.3954467773438
+        ],
+        [
+          535.5411376953125,
+          576.3954467773438
+        ],
+        [
+          535.5411376953125,
+          588.3506469726562
+        ],
+        [
+          335.8828125,
+          588.3506469726562
+        ]
+      ]
+    },
+    {
+      "title": "GPT-ology: Making inferences about LLMs",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          53.7890625,
+          299.70703125
+        ],
+        [
+          294.763916015625,
+          299.70703125
+        ],
+        [
+          294.763916015625,
+          310.75238037109375
+        ],
+        [
+          53.7890625,
+          310.75238037109375
+        ]
+      ]
+    },
+    {
+      "title": "LLMs as computational models",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          52.59375,
+          128.69915771484375
+        ],
+        [
+          226.06922912597656,
+          128.69915771484375
+        ],
+        [
+          226.06922912597656,
+          139.6082763671875
+        ],
+        [
+          52.59375,
+          139.6082763671875
+        ]
+      ]
+    },
+    {
+      "title": "Silicon Sampling: LLMs simulating humans",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.99609375,
+          121.81640625
+        ],
+        [
+          293.07293701171875,
+          121.81640625
+        ],
+        [
+          293.07293701171875,
+          133.78326416015625
+        ],
+        [
+          51.99609375,
+          133.78326416015625
+        ]
+      ]
+    },
+    {
+      "title": "Other uses of LLMs",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.76953125,
+          72.703125
+        ],
+        [
+          424.3200988769531,
+          72.703125
+        ],
+        [
+          424.3200988769531,
+          84.34619140625
+        ],
+        [
+          313.76953125,
+          84.34619140625
+        ]
+      ]
+    },
+    {
+      "title": "Outstanding issues",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          380.70703125,
+          256.5986328125
+        ],
+        [
+          491.6582946777344,
+          256.5986328125
+        ],
+        [
+          491.6582946777344,
+          268.5538330078125
+        ],
+        [
+          380.70703125,
+          268.5538330078125
+        ]
+      ]
+    },
+    {
+      "title": "1. Which LLMs should we use?",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.171875,
+          282.90020751953125
+        ],
+        [
+          488.16015625,
+          282.90020751953125
+        ],
+        [
+          488.16015625,
+          293.809326171875
+        ],
+        [
+          313.171875,
+          293.809326171875
+        ]
+      ]
+    },
+    {
+      "title": "2. What inferences should we make if one\nLLM, but not others, can \"do X\"?",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          311.9765625,
+          486.10546875
+        ],
+        [
+          545.3456420898438,
+          486.10546875
+        ],
+        [
+          545.3456420898438,
+          512.6581726074219
+        ],
+        [
+          311.9765625,
+          512.6581726074219
+        ]
+      ]
+    },
+    {
+      "title": "3. LLMs are proprietary commercial\nproducts updated by companies.",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.99609375,
+          73.4371337890625
+        ],
+        [
+          255.57835388183594,
+          73.4371337890625
+        ],
+        [
+          255.57835388183594,
+          97.83984375
+        ],
+        [
+          51.99609375,
+          97.83984375
+        ]
+      ]
+    },
+    {
+      "title": "4. Training Data",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          52.892578125,
+          651.62109375
+        ],
+        [
+          146.29100036621094,
+          651.62109375
+        ],
+        [
+          146.29100036621094,
+          663.4941253662109
+        ],
+        [
+          52.892578125,
+          663.4941253662109
+        ]
+      ]
+    },
+    {
+      "title": "5. Reproducibility in LLM research",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.0,
+          462.90234375
+        ],
+        [
+          510.99609375,
+          462.90234375
+        ],
+        [
+          510.99609375,
+          474.3641052246094
+        ],
+        [
+          315.0,
+          474.3641052246094
+        ]
+      ]
+    },
+    {
+      "title": "6. Generalizability and longevity of Results",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          53.7890625,
+          666.6951370239258
+        ],
+        [
+          293.2474670410156,
+          666.6951370239258
+        ],
+        [
+          293.2474670410156,
+          677.6042327880859
+        ],
+        [
+          53.7890625,
+          677.6042327880859
+        ]
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          403.41796875,
+          201.48046875
+        ],
+        [
+          468.6280517578125,
+          201.48046875
+        ],
+        [
+          468.6280517578125,
+          213.5498046875
+        ],
+        [
+          403.41796875,
+          213.5498046875
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          383.77801513671875,
+          488.9744567871094
+        ],
+        [
+          490.078125,
+          488.9744567871094
+        ],
+        [
+          490.078125,
+          500.9296569824219
+        ],
+        [
+          383.77801513671875,
+          500.9296569824219
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          403.716796875,
+          549.140625
+        ],
+        [
+          467.92828369140625,
+          549.140625
+        ],
+        [
+          467.92828369140625,
+          561.1626434326172
+        ],
+        [
+          403.716796875,
+          561.1626434326172
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          214
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          225
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "TableCell",
+          18
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          246
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          223
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          5
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          226
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          226
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          312
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "ListItem",
+          29
+        ],
+        [
+          "Reference",
+          28
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          299
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "ListItem",
+          28
+        ],
+        [
+          "Reference",
+          27
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\09_GPT-ology_Computational_Models_Silicon_Sampling_How_should_we_think_about_LLMs_in_Cognitive_Science_Ong_2024"
+}

@@ -30,6 +30,17 @@ Hagendorff et al. 2023), but the review immediately offers two deflationary read
 the stimuli "possibly no longer challenge the growing reasoning abilities in LLMs," and
 "this could also be due to leakage into the training set."
 
+[[sources/ong-2024]] poses the **cross-model** version of the same puzzle (Outstanding
+Issue 2): "What should we make of contexts when 'smaller models' fail at a certain task,
+while 'bigger/better models' succeed" — GPT-4 yes, GPT-3 no? His pessimistic verdict is
+that "those questions seem like they would yield engineering answers, rather than
+cognitive insights," and that even a per-model idiosyncrasy (an ability "restricted to
+one particular model … but not shared by other models of similar specifications") is a
+meta-scientific problem the field has not resolved. He also supplies the mechanism behind
+the contamination reading: trivial alterations to canonical items "like word order or
+changing names can break LLM performance," consistent with memorized — not genuinely
+reasoned — successes.
+
 ## Suggested Investigation (toward a new paradigm)
 
 Re-test the disappeared biases with procedurally generated, structure-matched items that
