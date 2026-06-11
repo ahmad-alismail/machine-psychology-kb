@@ -1,0 +1,9 @@
+{
+  // Use the TypeScript pinned in site/node_modules (5.9.3) for the editor,
+  // so editor diagnostics match `npx tsc` in site/. VS Code's bundled TS is
+  // newer and emits a node10 `moduleResolution` deprecation (recommending
+  // ignoreDeprecations "6.0") that the pinned 5.9.3 compiler neither raises
+  // nor accepts. Pinning the editor TS removes that spurious warning.
+  "typescript.tsdk": "site/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

@@ -47,7 +47,16 @@ const DATE_FIELD_MAP = [
 
 const yamlQuote = (s) => `"${s.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`
 
-function projectMarkdown(text) {
+// Page identity stays consistent with the wiki: Quartz titles a page by its
+// filename when frontmatter has no `title`, so we deliberately do NOT derive a
+// title from the H1 — the site shows the same kebab filenames the wiki uses
+// (e.g. `hagendorff-et-al-2024`). The leading H1 is dropped so the filename
+// heading (ArticleTitle) isn't duplicated by the page's own H1.
+//
+// `titleOverride` is set only for the two remapped pages (home/catalog): their
+// file is renamed (overview.md→index.md, index.md→browse.md), so we re-assert
+// the original wiki filename as the title to keep names matching the wiki.
+function projectMarkdown(text, titleOverride) {
   const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n)?/)
   if (!fm) return text
   const block = fm[1]
@@ -61,28 +70,28 @@ function projectMarkdown(text) {
     if (m) additions.push(`${quartzKey}: ${m[1].trim()}`)
   }
 
-  // KB pages carry no frontmatter `title` (Quartz would fall back to the kebab
-  // filename). Derive it from the first H1 and drop that H1 from the body so the
-  // title isn't rendered twice — Quartz draws the heading from frontmatter.
-  if (!/^title\s*:/m.test(block)) {
-    const h1 = body.match(/^[^\S\r\n]*#[^\S\r\n]+(.+?)[^\S\r\n]*$/m)
-    if (h1) {
-      additions.push(`title: ${yamlQuote(h1[1].trim())}`)
-      body = body.replace(h1[0] + "\n", "").replace(h1[0], "")
-    }
+  // Drop the first H1 so it isn't shown twice (the heading comes from the filename).
+  const h1 = body.match(/^[^\S\r\n]*#[^\S\r\n]+.+?[^\S\r\n]*$/m)
+  if (h1) body = body.replace(h1[0] + "\n", "").replace(h1[0], "")
+
+  if (titleOverride && !/^title\s*:/m.test(block)) {
+    additions.push(`title: ${yamlQuote(titleOverride)}`)
   }
 
-  if (additions.length === 0) return text
-  return `---\n${block}\n${additions.join("\n")}\n---\n${body}`
+  const newBlock = additions.length ? `${block}\n${additions.join("\n")}` : block
+  return `---\n${newBlock}\n---\n${body}`
 }
 
-function projectFile(src, dest) {
+function projectFile(src, dest, titleOverride) {
   if (src.toLowerCase().endsWith(".md")) {
-    fs.writeFileSync(dest, projectMarkdown(fs.readFileSync(src, "utf8")))
+    fs.writeFileSync(dest, projectMarkdown(fs.readFileSync(src, "utf8"), titleOverride))
   } else {
     fs.copyFileSync(src, dest)
   }
 }
+
+// Strip the ".md" extension to recover the original wiki filename (page name).
+const stem = (relPath) => relPath.replace(/\.md$/i, "")
 
 function walk(dir, baseDir, out = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -120,20 +129,26 @@ function main() {
       continue
     }
 
-    // 3. Resolve destination, applying landing/catalog remaps.
+    // 3. Resolve destination, applying landing/catalog remaps. Remapped pages
+    //    keep their ORIGINAL wiki filename as the title (see projectMarkdown).
     let destRel = rel
+    let titleOverride = null
     if (rel === LANDING_PAGE && landingExists) {
       destRel = "index.md"
+      titleOverride = stem(LANDING_PAGE) // e.g. "overview"
       remaps.push(`${LANDING_PAGE} → index.md  (/)`)
     } else if (rel === CATALOG_PAGE) {
       destRel = landingExists ? "browse.md" : "index.md"
-      if (landingExists) remaps.push(`${CATALOG_PAGE} → browse.md  (/browse)`)
+      if (landingExists) {
+        titleOverride = stem(CATALOG_PAGE) // e.g. "index"
+        remaps.push(`${CATALOG_PAGE} → browse.md  (/browse)`)
+      }
     }
 
     const src = path.join(KB_DIR, ...rel.split("/"))
     const dest = path.join(CONTENT_DIR, ...destRel.split("/"))
     fs.mkdirSync(path.dirname(dest), { recursive: true })
-    projectFile(src, dest)
+    projectFile(src, dest, titleOverride)
     copied++
   }
 
