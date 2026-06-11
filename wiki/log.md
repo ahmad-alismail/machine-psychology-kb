@@ -28,3 +28,36 @@ date_modified: 2026-06-11
 - Notes: psycholinguistic and ICL/generalization paradigms surveyed by the source were
   deliberately not given pages (low safety relevance); crosswalk not yet generated —
   run /map.
+
+## [2026-06-11] ingest-agentic | Is Machine Psychology Here? On Requirements for Using Human Psychological Tests on LLMs (Löhn, Kiehne, et al. 2024)
+- Gate: CORE — machine-psychology methodology paper; derives seven psychometric requirements for testing LLMs and audits 25 studies. No SOURCE-METHOD bridge needed (source draws the AI connection itself).
+- Review: agent-approved (pass 1)
+- Pages created: sources/loehn-et-al-2024, theories/psychometric-test-standards,
+  questions/redefine-constructs-for-llms, questions/llm-individual-or-population
+- Pages updated: paradigms/false-belief-task (Kosinski-vs-Ullman non-standardization
+  citation + grounding link), index.md
+- Notes: no new paradigm introduced (paper is a meta-audit) → crosswalk unaffected, no
+  /map needed. Deliberately skipped: instrument pages for the 34 surveyed tests (surveyed,
+  not used) and author entity pages (kept lean). Review notes folded into source page
+  (machine-psychology vs machine-behavior/AI-psychometrics terminology; positions against
+  Hagendorff-2023 & Frank-2023 standardization efforts).
+
+## [2026-06-11] ingest-agentic | AI Psychometrics: Assessing the Psychological Profiles of LLMs Through Psychometric Inventories (Pellert et al. 2024)
+- Gate: CORE — administers human psychometric inventories to LLMs and reads off psychological profiles; source draws the AI connection itself (no SOURCE-METHOD bridge needed).
+- Review: agent-approved (pass 1)
+- Pages created: sources/pellert-et-al-2024, theories/ai-psychometrics,
+  theories/schwartz-basic-values, theories/moral-foundations-theory,
+  paradigms/psychometric-inventory-administration, instruments/big-five-inventory,
+  instruments/short-dark-tetrad, instruments/portrait-values-questionnaire,
+  instruments/moral-foundations-questionnaire, instruments/gender-sex-diversity-beliefs-scale,
+  entities/max-pellert, questions/traits-predict-downstream-behavior,
+  questions/training-data-shapes-traits
+- Pages updated: index.md
+- Notes: NEW paradigm added → run /map to refresh the crosswalk. Big Five and Dark Tetrad
+  taxonomies captured at instrument level (not separate theory pages) to avoid bloat. Gender
+  pronoun-swap is a control condition inside the inventory paradigm, not a separate paradigm.
+  Per review notes: no deception link asserted (SD4 Machiavellianism = self-reported
+  disposition, not behavior); warning callout added to the paradigm citing loehn-et-al-2024 +
+  psychometric-test-standards (this study class is the target of that standards critique).
+  NO new safety-concept pages auto-created — bias / dark-traits have no concept page yet;
+  FLAGGED FOR USER to decide whether to scaffold them.

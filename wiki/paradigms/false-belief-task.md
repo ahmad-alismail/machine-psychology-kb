@@ -57,6 +57,13 @@ alterations in the tasks" (Ullman 2023).
 
 ## Validity Concerns
 
+These concerns instantiate the psychometric requirements catalogued in
+[[theories/psychometric-test-standards]]; [[sources/loehn-et-al-2024]] uses this very
+paradigm — the Kosinski (2023) vs. Ullman (2023) contradiction, where trivial item
+changes flip the Theory-of-Mind verdict — as its motivating example that the field's
+results are "symptomatic of a general lack of standardization" (engaging R1
+alternate-forms reliability, R3 apparatus→text suitability, and R4 contamination).
+
 - **Contamination**: Sally–Anne-style stories are canonical and saturate training
   corpora; verbatim or near-verbatim items measure memorization, not mentalizing.
 - **Robustness / surface-form sensitivity**: Ullman (2023) showed ToM successes degrade
