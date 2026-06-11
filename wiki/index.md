@@ -41,6 +41,7 @@ date_modified: 2026-06-11
 - [[theories/emergent-misalignment]] — narrow fine-tuning → broad misalignment via out-of-context reasoning
 - [[theories/cumulative-prospect-theory]] — how agents distort gains, losses, and probabilities under risk (the risk-measurement model)
 - [[theories/big-five-personality]] — the OCEAN five-factor personality model and its trait→risk correlations
+- [[theories/operant-conditioning]] — behavior shaped by consequences (Law of Effect); the behavioral grounding of RLHF
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -66,6 +67,7 @@ date_modified: 2026-06-11
 - [[sources/pellert-et-al-2024]] — CORE; "AI psychometrics" — human inventories on LLMs via zero-shot NLI
 - [[sources/lulla-et-al-2025]] — CORE; Dark Triad "model organisms of misalignment" induced in LLMs by narrow fine-tuning
 - [[sources/hartley-et-al-2024]] — CORE; CPT risk-propensity of GPT-4o + Big-Five personality interventions on risk-taking
+- [[sources/liu-et-al-2025]] — SOURCE-METHOD; survey of psychological theories across the LLM lifecycle (theory→evaluation index + validity-debate catalog)
 
 ## Entities
 
@@ -74,6 +76,7 @@ date_modified: 2026-06-11
 - [[entities/max-pellert]] — lead author, "AI psychometrics", Univ. Mannheim
 - [[entities/roshni-lulla]] — lead author, Dark Triad "model organisms", USC
 - [[entities/john-hartley]] — lead author, LLM risk-taking & personality interventions, NatWest AI Research
+- [[entities/julia-hirschberg]] — senior author, "The Mind in the Machine" survey, Columbia NLP
 
 ## Questions
 
@@ -85,6 +88,7 @@ date_modified: 2026-06-11
 - [[questions/training-data-shapes-traits]] — does corpus provenance shape the profile?
 - [[questions/does-safety-training-suppress-misalignment]] — does alignment remove dark structures or just mask them?
 - [[questions/how-much-darkness-is-desirable]] — which "dark" behaviors are actually misaligned vs. useful?
+- [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] — does apparent LLM ToM reflect real mental-state reasoning or surface pattern-matching?
 
 ## Crosswalk
 

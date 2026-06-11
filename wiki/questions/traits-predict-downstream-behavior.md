@@ -39,6 +39,12 @@ an early-warning instrument rather than a personality parlor trick.
   *relative* (prompting cannot induce absolute risk-seeking/aversion), and GPT-4-Turbo
   generalizes the relationship only locally, so the trait→behaviour mapping is not uniform
   across models.
+- [[sources/liu-et-al-2025]] adds a **prior** caveat to the whole arrow: the trait scores
+  themselves may be unstable. Its §6.3 records that simulated personality is "stable" in some
+  studies but "variable under different prompt conditions" in others, "raising questions about
+  inherent vs. mimicked personas (Tseng et al. 2024)" — if the profile is a prompt artifact, its
+  predictive validity is moot until stability is established (see
+  [[questions/llm-individual-or-population]]).
 
 ## Suggested Investigation (toward a new paradigm)
 

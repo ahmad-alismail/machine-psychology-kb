@@ -33,6 +33,19 @@ probe of LLM social intelligence: deployed chat agents "should become versed in 
 human communicators." Safety edge: the same capacity underwrites the "emerging capability
 of LLMs to induce false beliefs in other agents" — i.e., [[safety-concepts/deception]].
 
+[[sources/liu-et-al-2025]] names ToM as its primary social-cognition evaluation theory and
+catalogs the benchmark family built on it — **ToMBench** (Chen et al. 2024c), **OpenToM** (Xu
+et al. 2024a), **HI-TOM** (Wu et al. 2023), and **FANToM** (Kim et al. 2023) — "each probing
+distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spoken dialogue.
+
+> [!warning] Emergent reasoning or pattern-matching?
+> The survey ([[sources/liu-et-al-2025]] §6.3) records the central validity debate: "GPT-4
+> solves around 75% of false-belief tasks, matching a 6-year-old's performance (Kosinski 2024;
+> Strachan et al. 2024); some see emergent *ToM*-like reasoning, but others argue it may be
+> pattern matching, noting that minor prompt changes can derail results (Shapira et al. 2024)."
+> This is the same fragility that drives the contamination and robustness concerns on
+> [[paradigms/false-belief-task]]; see [[questions/llm-theory-of-mind-genuine-or-pattern-matching]].
+
 ## Paradigms Grounded in This Theory
 
 - [[paradigms/false-belief-task]]
@@ -40,3 +53,4 @@ of LLMs to induce false beliefs in other agents" — i.e., [[safety-concepts/dec
 ## Sources
 
 - [[hagendorff-et-al-2024]]
+- [[sources/liu-et-al-2025]]

@@ -40,6 +40,11 @@ considered population separately") and the meaning of any reported result.
   collapses to a *singular answer* on others — a pattern more like an individual. The
   paper concludes it "remains unclear whether an LLM can truly be understood as an
   individual."
+- [[sources/liu-et-al-2025]] supplies an empirical face of the same problem from the NLP side:
+  the "inherent vs. mimicked personas" debate (§6.3) — simulated traits that look stable in some
+  studies but shift under prompt conditions in others (Gupta et al. 2024; Shu et al. 2024;
+  Tseng et al. 2024) — is exactly the symptom expected if the prompt, not a fixed individual, is
+  selecting which slice of the trained-on population answers.
 
 ## Suggested Investigation (toward a new paradigm)
 

@@ -14,6 +14,19 @@ date_modified: 2026-06-11
 
 <!-- new entries prepended above the older ones, newest at the top -->
 
+## [2026-06-11] ingest-agentic | The Mind in the Machine: A Survey of Incorporating Psychological Theories in LLMs (Liu et al. 2025)
+- Gate: SOURCE-METHOD (+ bridge) — a SURVEY (no primary experiment), so not CORE; it is a theory-mapping/method source that foregrounds psychological theories repurposable for behavioral evaluation of LLMs. Bridge written: theory→evaluation-paradigm index (§5) + ready-made validity catalog (§6.3).
+- Review: agent-approved (pass 1). Notes incorporated: operant-conditioning definition cited to Thorndike/Skinner with the Law-of-Effect recurrence framing per Lambert et al. 2023; Frisch & Giulianelli (2024) added as the survey's primary personality-consistency citation on big-five; manipulation/adversarial-social-influence logged as a future safety-concept candidate (not scaffolded this pass).
+- Pages created: sources/liu-et-al-2025, theories/operant-conditioning, entities/julia-hirschberg,
+  questions/llm-theory-of-mind-genuine-or-pattern-matching
+- Pages updated: theories/theory-of-mind (ToM benchmark battery + emergent-vs-pattern-matching debate),
+  theories/big-five-personality (consistency / inherent-vs-mimicked debate + MBTI-invalid flag),
+  paradigms/false-belief-task (survey corroboration + new open-question link),
+  questions/traits-predict-downstream-behavior (trait-stability caveat),
+  questions/llm-individual-or-population (inherent-vs-mimicked as the NLP-side symptom),
+  index.md
+- Notes: SELECTIVE ingest of a ~175-paper survey per instruction — only 1 NEW theory (operant-conditioning, the load-bearing RLHF grounding) created; named benchmarks (ToMBench/OpenToM/HI-TOM/FANToM, PSYDIAL/PERSONA/RAIDEN/RoleLLM, EPQ-R, MBTI) documented inline, NOT given instrument pages; conformity / social-identity / dual-process / working-memory / predictive-coding / schema-theory mentioned but NOT created (no grounded eval paradigm yet). No new paradigm (survey introduces none). BibTeX left TBD BY USER (manually-dropped PDF, no machine-readable export). citation_key = 06-liu-et-al-2025. FUTURE: a "manipulation / adversarial social influence" safety-concept (Kumarage et al. 2025; Zeng et al. 2024a; operant-conditioning manipulative-design risk) is a scaffold candidate. No paradigm added/re-targeted → coverage map needs no refresh (still ungenerated; run /map when ready).
+
 ## [2026-06-11] ingest-agentic | How Personality Traits Shape LLM Risk-Taking Behaviour (Hartley et al. 2024)
 - Gate: CORE — measures GPT-4o/GPT-4-Turbo risk-propensity with cumulative prospect theory and tests Big-Five personality interventions on risk-taking; paper self-identifies as "machine psychology" (Sec 2.2). No SOURCE-METHOD bridge needed.
 - Review: agent-approved (pass 1). Notes incorporated: follow the body (GPT-4-Turbo does NOT globally generalise) over the Introduction's contradictory contribution #6 typo, flagged on the source/paradigm pages; disambiguated run counts (15 runs for CE elicitation, 10 for CPT-parameter figures); scaffolded a new risk-taking safety-concept.

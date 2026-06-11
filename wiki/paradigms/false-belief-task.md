@@ -85,10 +85,16 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   [[hagendorff-et-al-2024]].
 - Robustness caveat: setups are fragile to task alterations (Ullman 2023, via the same
   review).
+- Corroborating the generational-pass result and the fragility caveat together,
+  [[sources/liu-et-al-2025]] reports "GPT-4 solves around 75% of false-belief tasks, matching a
+  6-year-old's performance (Kosinski 2024; Strachan et al. 2024)" while "minor prompt changes
+  can derail results (Shapira et al. 2024)" — and consolidates the dedicated benchmark family
+  (ToMBench, OpenToM, HI-TOM, FANToM) that operationalizes this paradigm at scale.
 
 ## Open Questions
 
 - [[questions/longitudinal-behavioral-trends]]
+- [[questions/llm-theory-of-mind-genuine-or-pattern-matching]]
 - Does passing false-belief tasks predict the capacity to *induce* false beliefs
   (deception), or are detection and production dissociable in LLMs? (Surfaced by the
   review's juxtaposition of ToM tests with Hagendorff 2024a.)
