@@ -14,6 +14,16 @@ date_modified: 2026-06-11
 
 <!-- new entries prepended above the older ones, newest at the top -->
 
+## [2026-06-11] ingest-agentic | Foot In The Door: Understanding Large Language Model Jailbreaking via Cognitive Psychology (Wang et al. 2024)
+- Gate: CORE — studies LLM *behavior* (susceptibility to jailbreak / harmful compliance) via cognitive-psychology theory (cognitive consistency, self-perception) and an active compliance-induction attack; explicitly invokes Hagendorff's "machine psychology."
+- Review: agent-approved (pass 1). Notes incorporated: new `jailbreaking` safety-concept scaffold created (distinct from the paper's content-category "Deception" and from the wiki's strategic-`deception` concept); Appendix D Table 4 labels (Hate/Harassment/Hack/Deception/Illegal/Violence) treated as canonical for the instrument; FITD paradigm grounded in self-perception theory per the paper's own §4 title; refined-AdvBench + GPT-4-judge captured as the instrument; lens `psychological` on the new theory/paradigm pages.
+- Pages created: sources/wang-et-al-2024, paradigms/foot-in-the-door-jailbreak, paradigms/jailbreak-tactic-taxonomy,
+  theories/cognitive-consistency-theory, theories/self-perception-theory,
+  instruments/refined-advbench, safety-concepts/jailbreaking (scaffold — content TBD by user),
+  entities/zhenhua-wang, questions/incremental-compliance-pressure-generalization
+- Pages updated: index.md
+- Notes: citation_key = 08-wang-et-al-2024 (all simple surnames; numeric prefix 08 fixed). BibTeX provided verbatim by user (arXiv 2402.15690; note the BibTeX author list omits "Francis Song" who appears on the PDF byline — kept verbatim per instruction). Two paradigms added (one active attack, one taxonomy) → coverage map should be refreshed (run /map; still ungenerated). New safety-concept `jailbreaking` is a fresh scaffold for the user to fill.
+
 ## [2026-06-11] ingest-agentic | CogBench: a large language model walks into a psychology lab (Coda-Forno et al. 2024)
 - Gate: CORE — applies seven canonical cognitive-psychology experiments to 35 LLMs to phenotype *behavior* (not just performance) via computational cognitive modeling + multilevel regression.
 - Review: agent-approved (pass 1). Notes incorporated: BART scoring deviation documented on the paradigm page (CogBench reports average inflation attempts incl. popped balloons, not canonical "adjusted risk", because some LLMs always inflate); finer protocol details added (instrumental learning 96 trials/bandit; two-step 70% transition / 20-day horizon); existing instruments/cogbench ENRICHED not recreated; treated as ONE composite paradigm (not seven pages); no AI bridge written (CORE, paper is itself the AI application).

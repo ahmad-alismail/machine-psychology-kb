@@ -27,6 +27,8 @@ date_modified: 2026-06-11
 - [[paradigms/certainty-equivalent-cpt-estimation]] — eliciting LLM certainty equivalents to fit cumulative-prospect-theory risk parameters (psychological)
 - [[paradigms/personality-intervention-risk-propensity]] — inducing Big-Five personas and measuring the shift in CPT risk parameters (psychological)
 - [[paradigms/cogbench-cognitive-phenotyping]] — seven cognitive-psychology tasks → ten human-normalized behavioral metrics phenotyping LLMs (psychological)
+- [[paradigms/foot-in-the-door-jailbreak]] — recursive incremental-compliance black-box jailbreak (self-perception escalation) (psychological)
+- [[paradigms/jailbreak-tactic-taxonomy]] — known jailbreaks classified as cognitive-dissonance-reduction tactics (psychological)
 
 ## Theories — grounding layer
 
@@ -50,11 +52,14 @@ date_modified: 2026-06-11
 - [[theories/reinforcement-learning-optimism-bias]] — asymmetric learning rates (α⁺ vs. α⁻) → optimism bias
 - [[theories/temporal-discounting]] — preference for sooner-smaller over later-larger rewards
 - [[theories/computational-phenotyping]] — describing an agent by fitted cognitive-model parameters
+- [[theories/cognitive-consistency-theory]] — individuals seek consistency; inconsistency → "state of tension" (cognitive dissonance)
+- [[theories/self-perception-theory]] — people infer attitudes from their own prior behavior; grounds Foot-in-the-Door
 
 ## Safety-Concepts — behaviors we hunt
 
 - [[safety-concepts/deception]] — scaffold, content TBD by user
 - [[safety-concepts/risk-taking]] — scaffold, content TBD by user
+- [[safety-concepts/jailbreaking]] — scaffold, content TBD by user
 
 ## Instruments
 
@@ -67,6 +72,7 @@ date_modified: 2026-06-11
 - [[instruments/moral-foundations-questionnaire]] — MFQ moral foundations
 - [[instruments/gender-sex-diversity-beliefs-scale]] — GSDB beliefs about gender/sex diversity
 - [[instruments/ipip-neo-300]] — IPIP-NEO-300 Big Five inventory (300 items, facet-level)
+- [[instruments/refined-advbench]] — 60-question / 6-category jailbreak test set (refined AdvBench) + GPT-4 judge
 
 ## Sources
 
@@ -77,6 +83,7 @@ date_modified: 2026-06-11
 - [[sources/hartley-et-al-2024]] — CORE; CPT risk-propensity of GPT-4o + Big-Five personality interventions on risk-taking
 - [[sources/liu-et-al-2025]] — SOURCE-METHOD; survey of psychological theories across the LLM lifecycle (theory→evaluation index + validity-debate catalog)
 - [[sources/coda-forno-et-al-2024]] — CORE; CogBench — seven cognitive-psychology tasks phenotype 35 LLMs (RLHF→human-like; size→model-based; open-source less risky)
+- [[sources/wang-et-al-2024]] — CORE; Foot-in-the-Door — cognitive-psychology account of LLM jailbreaking + recursive incremental-compliance attack (avg ASR 83.9% on 8 LLMs)
 
 ## Entities
 
@@ -88,6 +95,7 @@ date_modified: 2026-06-11
 - [[entities/julia-hirschberg]] — senior author, "The Mind in the Machine" survey, Columbia NLP
 - [[entities/julian-coda-forno]] — lead author, CogBench, Max Planck / Helmholtz Munich
 - [[entities/eric-schulz]] — senior author, CogBench; lead of the Computational Principles of Intelligence Lab
+- [[entities/zhenhua-wang]] — lead author, Foot-in-the-Door jailbreaking, National University of Defense Technology
 
 ## Questions
 
@@ -101,6 +109,7 @@ date_modified: 2026-06-11
 - [[questions/how-much-darkness-is-desirable]] — which "dark" behaviors are actually misaligned vs. useful?
 - [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] — does apparent LLM ToM reflect real mental-state reasoning or surface pattern-matching?
 - [[questions/cognitive-task-external-validity-for-llms]] — do human-validated cognitive tasks measure the same constructs (and predict behavior) in an LLM?
+- [[questions/incremental-compliance-pressure-generalization]] — does foot-in-the-door escalation generalize beyond jailbreaking to other gradual-compliance failures?
 
 ## Crosswalk
 
