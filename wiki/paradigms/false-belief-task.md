@@ -108,6 +108,14 @@ Other variants surveyed by the review: comparisons against children aged 7–10 
 al. 2023) and "higher-order theory of mind tasks requiring recursive reasoning about
 multiple mental states" (Street et al. 2024).
 
+**The intervention variant** ([[sources/wilf-et-al-2024]]): rather than scoring an LLM on these
+Sally–Anne items as-is, SimToM ([[paradigms/simtom-perspective-taking-prompting]]) operationalizes
+the templated benchmarks [[instruments/tomi]] and [[instruments/bigtom]] as the substrate for a
+two-stage *perspective-taking* prompt — filtering each story to what the protagonist knows before
+asking the belief question. It targets the characteristic false-belief failure mode (answering
+about the *world state* rather than the protagonist's *mental state*) and substantially improves
+accuracy; the related design choices live on the paradigm page.
+
 ## Scoring / Procedure
 
 - Score the predicted action/expectation against the belief-consistent answer (vs. the

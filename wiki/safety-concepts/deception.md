@@ -15,7 +15,7 @@ date_modified: 2026-06-11
 
 ## Definition
 
-_TBD by user._
+Deception is the systematic production of outputs that induce or maintain false beliefs in recipients. 
 
 ## Indicators
 
@@ -31,6 +31,10 @@ _TBD by user._
   (faux pas, irony, hinting, strange stories): representing what another agent does/doesn't know
   and how an utterance will land is the machinery for inducing false beliefs
   ([[sources/strachan-et-al-2024]]).
+- [[paradigms/simtom-perspective-taking-prompting]] — a prompting intervention that *elicits and
+  improves* the same mentalizing substrate (tracking what a character knows vs. doesn't); a
+  perspective-taking step that reconstructs another agent's limited knowledge is precisely the
+  capability that inducing a false belief would weaponize ([[sources/wilf-et-al-2024]]).
 - [[paradigms/sender-receiver-deception-game]] — an economic game measuring *demonstrated*
   self-serving deception (deceptive lies vs. prosocial honesty); dark-fine-tuned LLMs lie more
   ([[sources/lulla-et-al-2025]]).

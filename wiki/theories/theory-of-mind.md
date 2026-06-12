@@ -55,6 +55,17 @@ catalogs the benchmark family built on it — **ToMBench** (Chen et al. 2024c), 
 et al. 2024a), **HI-TOM** (Wu et al. 2023), and **FANToM** (Kim et al. 2023) — "each probing
 distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spoken dialogue.
 
+[[sources/wilf-et-al-2024]] is the primary study that *intervenes* on this construct rather than
+only measuring it: it grounds ToM in a specific cognitive-science theory of mind-reading —
+[[theories/simulation-theory]] — and shows that prompting an LLM to **take the character's
+perspective first, then answer** ([[paradigms/simtom-perspective-taking-prompting]]) substantially
+improves false-belief accuracy with no training. The key finding for the construct: LLMs are
+"surprisingly capable of perspective-taking when prompted," and *oracle* (human-annotated)
+perspective-taking nearly *solves* the ToMI/BigTOM benchmarks — so a large part of an LLM's
+apparent ToM deficit is a perspective-taking deficit, surfaced only when the two ST processes are
+prompted separately. This reinforces [[theories/performance-competence-distinction]]: a single
+inference pass *understates* ToM competence.
+
 > [!warning] Emergent reasoning or pattern-matching?
 > The survey ([[sources/liu-et-al-2025]] §6.3) records the central validity debate: "GPT-4
 > solves around 75% of false-belief tasks, matching a 6-year-old's performance (Kosinski 2024;
@@ -75,11 +86,14 @@ distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spok
 - [[paradigms/false-belief-task]]
 - [[paradigms/theory-of-mind-battery]] — the multi-test battery (irony, faux pas, hinting, strange
   stories) extending the construct beyond false belief
+- [[paradigms/simtom-perspective-taking-prompting]] — a prompting *intervention* (grounded in
+  [[theories/simulation-theory]]) that elicits and improves ToM via separate perspective-taking
 
 ## Sources
 
 - [[sources/ullman-2023]]
 - [[sources/kosinski-2024]]
 - [[sources/strachan-et-al-2024]]
+- [[sources/wilf-et-al-2024]]
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]

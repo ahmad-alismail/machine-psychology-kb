@@ -55,6 +55,11 @@ argument from the presence of one." This is the load-bearing grounding of
   answers perfectly, so the default yes/no failure reflects an "overly conservative approach" to
   commitment (hyperconservatism), not an inability to compute the inference. The authors name the
   result a "dissociation between competence and performance."
+- [[paradigms/simtom-perspective-taking-prompting]] — the complementary *elicitation* instance:
+  [[sources/wilf-et-al-2024]] shows that a single-inference-pass probe *understates* theory-of-mind
+  competence, and that prompting perspective-taking in a separate pass recovers it (oracle
+  perspective-taking nearly *solves* the benchmarks). A negative ToM result thus reflects the
+  *elicitation condition*, not absent competence — the same caveat the distinction warns of.
 - [[paradigms/llm-as-computational-model]] — its existence-proof inference *is* the
   asymmetric version of this distinction; [[paradigms/gpt-ology]] inherits the same
   caveat on negative capability results.
@@ -79,6 +84,9 @@ argument from the presence of one." This is the load-bearing grounding of
   *performance* (epistemic caution about committing), not absent *competence*; reframing the probe
   as a likelihood question recovers perfect performance. Coins the "dissociation between competence
   and performance" reading and the **hyperconservatism** account.
+- [[sources/wilf-et-al-2024]] — the elicitation-side instance: separating perspective-taking from
+  question-answering (and the oracle-perspective ceiling) shows single-pass probing *understates*
+  ToM competence; a better-elicited perspective nearly solves the benchmarks.
 - [[sources/ullman-2023]] — the inverse application: argues *averaged successes* are mere
   *performance* while an *outlying failure* on a novel input exposes missing *competence* (the
   multiplication analogy — "5\*5=25" a hundred times but failing "213\*261" shows no general

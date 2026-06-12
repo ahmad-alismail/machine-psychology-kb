@@ -1,0 +1,2155 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Think Twice: Perspective-Taking Improves Large Language Models' Theory-of-Mind Capabilities",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          86.32241813602015,
+          78.72662511130899
+        ],
+        [
+          510.42821158690174,
+          78.72662511130899
+        ],
+        [
+          510.42821158690174,
+          108.1279296875
+        ],
+        [
+          86.32241813602015,
+          108.1279296875
+        ]
+      ]
+    },
+    {
+      "title": "Alex Wilf, Sihyun Shawn Lee, Paul Pu Liang, Louis-Philippe Morency",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          117.5703125,
+          131.9608192341941
+        ],
+        [
+          479.65239294710324,
+          131.9608192341941
+        ],
+        [
+          479.65239294710324,
+          143.896484375
+        ],
+        [
+          117.5703125,
+          143.896484375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          156.857421875,
+          214.43633125556545
+        ],
+        [
+          203.42065491183877,
+          214.43633125556545
+        ],
+        [
+          203.42065491183877,
+          223.43365983971503
+        ],
+        [
+          156.857421875,
+          223.43365983971503
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.42578125,
+          605.820124666073
+        ],
+        [
+          154.62972292191435,
+          605.820124666073
+        ],
+        [
+          154.62972292191435,
+          616.2880859375
+        ],
+        [
+          70.42578125,
+          616.2880859375
+        ]
+      ]
+    },
+    {
+      "title": "2 Background",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          70.42578125,
+          553.5439147949219
+        ],
+        [
+          151.689697265625,
+          553.5439147949219
+        ],
+        [
+          151.689697265625,
+          565.4997253417969
+        ],
+        [
+          70.42578125,
+          565.4997253417969
+        ]
+      ]
+    },
+    {
+      "title": "2.1 \"Simulation\" Theory of Mind",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          70.85653686523438,
+          579.5561218261719
+        ],
+        [
+          233.9765625,
+          579.5561218261719
+        ],
+        [
+          233.9765625,
+          590.4657745361328
+        ],
+        [
+          70.85653686523438,
+          590.4657745361328
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Are LLMs Capable of ToM?",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          305.56640625,
+          320.68359375
+        ],
+        [
+          463.4286804199219,
+          320.68359375
+        ],
+        [
+          463.4286804199219,
+          333.3039245605469
+        ],
+        [
+          305.56640625,
+          333.3039245605469
+        ]
+      ]
+    },
+    {
+      "title": "3 Benchmarking Theory-of-Mind\nCapabilities",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.26171875,
+          71.9482421875
+        ],
+        [
+          250.52825927734375,
+          71.9482421875
+        ],
+        [
+          250.52825927734375,
+          98.99737548828125
+        ],
+        [
+          69.26171875,
+          98.99737548828125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 ToMI",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.84375,
+          442.7900390625
+        ],
+        [
+          121.67364501953125,
+          442.7900390625
+        ],
+        [
+          121.67364501953125,
+          455.8450927734375
+        ],
+        [
+          69.84375,
+          455.8450927734375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 BigTOM",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.26171875,
+          580.9306640625
+        ],
+        [
+          137.03443908691406,
+          580.9306640625
+        ],
+        [
+          137.03443908691406,
+          592.0498352050781
+        ],
+        [
+          69.26171875,
+          592.0498352050781
+        ]
+      ]
+    },
+    {
+      "title": "4 SIMTOM: SIMULATED Theory of Mind",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          304.40234375,
+          109.7724609375
+        ],
+        [
+          524.4976196289062,
+          109.7724609375
+        ],
+        [
+          524.4976196289062,
+          122.54962158203125
+        ],
+        [
+          304.40234375,
+          122.54962158203125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Motivation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          306.1443176269531,
+          180.8984375
+        ],
+        [
+          382.103515625,
+          180.8984375
+        ],
+        [
+          382.103515625,
+          192.9898681640625
+        ],
+        [
+          306.1443176269531,
+          192.9898681640625
+        ]
+      ]
+    },
+    {
+      "title": "CoT Prompting",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.751953125,
+          424.6460876464844
+        ],
+        [
+          392.6478271484375,
+          424.6460876464844
+        ],
+        [
+          392.6478271484375,
+          436.2119140625
+        ],
+        [
+          315.751953125,
+          436.2119140625
+        ]
+      ]
+    },
+    {
+      "title": "1. Perspective-Taking: understand what the\nwoman knows",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.296875,
+          711.9890594482422
+        ],
+        [
+          524.4192504882812,
+          711.9890594482422
+        ],
+        [
+          524.4192504882812,
+          736.6166763305664
+        ],
+        [
+          314.296875,
+          736.6166763305664
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Perspective-Taking",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          69.05793450881612,
+          435.6206589492431
+        ],
+        [
+          186.15617128463475,
+          435.6206589492431
+        ],
+        [
+          186.15617128463475,
+          445.2568359375
+        ],
+        [
+          69.05793450881612,
+          445.2568359375
+        ]
+      ]
+    },
+    {
+      "title": "SimToM Step #1: Perspective-Taking\n\nThe following is a sequence of events:\n{story}\nWhich events does {character_name} know about?",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          71.0078125,
+          566.1298828125
+        ],
+        [
+          287.5234375,
+          566.1298828125
+        ],
+        [
+          287.5234375,
+          637.6669921875
+        ],
+        [
+          71.0078125,
+          637.6669921875
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Question-Answering",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          69.05793450881612,
+          650.0009765625
+        ],
+        [
+          192.911838790932,
+          650.0009765625
+        ],
+        [
+          192.911838790932,
+          660.5538735529831
+        ],
+        [
+          69.05793450881612,
+          660.5538735529831
+        ]
+      ]
+    },
+    {
+      "title": "5 Experimental Details",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.693359375,
+          607.2431640625
+        ],
+        [
+          433.1133501259446,
+          607.2431640625
+        ],
+        [
+          433.1133501259446,
+          617.8165627782724
+        ],
+        [
+          304.693359375,
+          617.8165627782724
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Prompting",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          304.7556675062972,
+          731.7827248441674
+        ],
+        [
+          382.8211586901763,
+          731.7827248441674
+        ],
+        [
+          382.8211586901763,
+          741.5298308103295
+        ],
+        [
+          304.7556675062972,
+          741.5298308103295
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Evaluation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.42578125,
+          534.8837890625
+        ],
+        [
+          146.22036743164062,
+          534.8837890625
+        ],
+        [
+          146.22036743164062,
+          548.5936889648438
+        ],
+        [
+          70.42578125,
+          548.5936889648438
+        ]
+      ]
+    },
+    {
+      "title": "6 Results and Discussion",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          69.84375,
+          193.4669189453125
+        ],
+        [
+          205.04843139648438,
+          193.4669189453125
+        ],
+        [
+          205.04843139648438,
+          205.42266845703125
+        ],
+        [
+          69.84375,
+          205.42266845703125
+        ]
+      ]
+    },
+    {
+      "title": "7 Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          304.40234375,
+          313.6943359375
+        ],
+        [
+          367.2623596191406,
+          313.6943359375
+        ],
+        [
+          367.2623596191406,
+          326.3616943359375
+        ],
+        [
+          304.40234375,
+          326.3616943359375
+        ]
+      ]
+    },
+    {
+      "title": "7.1 Ablation Study: Single-Prompt SIMTOM",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          306.1443176269531,
+          399.62109375
+        ],
+        [
+          523.6253662109375,
+          399.62109375
+        ],
+        [
+          523.6253662109375,
+          411.3208312988281
+        ],
+        [
+          306.1443176269531,
+          411.3208312988281
+        ]
+      ]
+    },
+    {
+      "title": "SimToM-Single",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          319.53515625,
+          603.1399993896484
+        ],
+        [
+          392.87109375,
+          603.1399993896484
+        ],
+        [
+          392.87109375,
+          614.0496368408203
+        ],
+        [
+          319.53515625,
+          614.0496368408203
+        ]
+      ]
+    },
+    {
+      "title": "7.2 Oracle Perspective-Taking",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          69.552734375,
+          731.1226959228516
+        ],
+        [
+          218.4967498779297,
+          731.1226959228516
+        ],
+        [
+          218.4967498779297,
+          742.032341003418
+        ],
+        [
+          69.552734375,
+          742.032341003418
+        ]
+      ]
+    },
+    {
+      "title": "7.3 Domain-Specific Perspective-Taking\nStrategies",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.84375,
+          135.2626953125
+        ],
+        [
+          263.35723876953125,
+          135.2626953125
+        ],
+        [
+          263.35723876953125,
+          160.45623779296875
+        ],
+        [
+          69.84375,
+          160.45623779296875
+        ]
+      ]
+    },
+    {
+      "title": "SimToM-Domain\nStory:\n1 Jackson is wearing the pajamas\n2 Logan entered the dining room\n...\nWhich events does Logan know about?\nLogan knows about the following events:\n2 Logan entered the dining room\n...",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          71.58984375,
+          307.1162109375
+        ],
+        [
+          286.94140625,
+          307.1162109375
+        ],
+        [
+          286.94140625,
+          416.4775390625
+        ],
+        [
+          71.58984375,
+          416.4775390625
+        ]
+      ]
+    },
+    {
+      "title": "7.4 Extension to Complex Theory-of-Mind\nScenarios",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.42578125,
+          715.7822265625
+        ],
+        [
+          276.46484375,
+          715.7822265625
+        ],
+        [
+          276.46484375,
+          742.9803924560547
+        ],
+        [
+          70.42578125,
+          742.9803924560547
+        ]
+      ]
+    },
+    {
+      "title": "8 Related Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          303.8203125,
+          574.3525390625
+        ],
+        [
+          395.2389221191406,
+          574.3525390625
+        ],
+        [
+          395.2389221191406,
+          588.0178375244141
+        ],
+        [
+          303.8203125,
+          588.0178375244141
+        ]
+      ]
+    },
+    {
+      "title": "9 Conclusion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          69.26171875,
+          525.0166015625
+        ],
+        [
+          145.927001953125,
+          525.0166015625
+        ],
+        [
+          145.927001953125,
+          537.6943359375
+        ],
+        [
+          69.26171875,
+          537.6943359375
+        ]
+      ]
+    },
+    {
+      "title": "10 Future Work",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          306.144287109375,
+          71.9482421875
+        ],
+        [
+          397.0202941894531,
+          71.9482421875
+        ],
+        [
+          397.0202941894531,
+          85.04876708984375
+        ],
+        [
+          306.144287109375,
+          85.04876708984375
+        ]
+      ]
+    },
+    {
+      "title": "Limitations",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          306.1443176269531,
+          265.34759521484375
+        ],
+        [
+          365.2657470703125,
+          265.34759521484375
+        ],
+        [
+          365.2657470703125,
+          277.3033447265625
+        ],
+        [
+          306.1443176269531,
+          277.3033447265625
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          306.1443176269531,
+          593.1008911132812
+        ],
+        [
+          405.67578125,
+          593.1008911132812
+        ],
+        [
+          405.67578125,
+          605.0566864013672
+        ],
+        [
+          306.1443176269531,
+          605.0566864013672
+        ]
+      ]
+    },
+    {
+      "title": "Ethics",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.42578125,
+          71.1259765625
+        ],
+        [
+          102.74264526367188,
+          71.1259765625
+        ],
+        [
+          102.74264526367188,
+          85.0487060546875
+        ],
+        [
+          70.42578125,
+          85.0487060546875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          69.552734375,
+          446.0791015625
+        ],
+        [
+          126.40316772460938,
+          446.0791015625
+        ],
+        [
+          126.40316772460938,
+          460.1524963378906
+        ],
+        [
+          69.552734375,
+          460.1524963378906
+        ]
+      ]
+    },
+    {
+      "title": "A A Further Discussion of Cognitive\nScience Perspectives on Simulation\nTheory",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          67.515625,
+          72.359375
+        ],
+        [
+          269.2989807128906,
+          72.359375
+        ],
+        [
+          269.2989807128906,
+          112.94610595703125
+        ],
+        [
+          67.515625,
+          112.94610595703125
+        ]
+      ]
+    },
+    {
+      "title": "B SIMTOM Prompts",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          70.42578125,
+          673.0244140625
+        ],
+        [
+          186.8752899169922,
+          673.0244140625
+        ],
+        [
+          186.8752899169922,
+          685.7697296142578
+        ],
+        [
+          70.42578125,
+          685.7697296142578
+        ]
+      ]
+    },
+    {
+      "title": "B.1 ToMI Prompts",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          306.1443176269531,
+          230.234375
+        ],
+        [
+          401.3091735839844,
+          230.234375
+        ],
+        [
+          401.3091735839844,
+          241.2744140625
+        ],
+        [
+          306.1443176269531,
+          241.2744140625
+        ]
+      ]
+    },
+    {
+      "title": "B.1.1 Perspective Taking",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          306.1443176269531,
+          262.58233642578125
+        ],
+        [
+          429.5390625,
+          262.58233642578125
+        ],
+        [
+          429.5390625,
+          273.49200439453125
+        ],
+        [
+          306.1443176269531,
+          273.49200439453125
+        ]
+      ]
+    },
+    {
+      "title": "GPT/Llama-2-chat",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          318.37109375,
+          293.72357177734375
+        ],
+        [
+          409.0122985839844,
+          293.72357177734375
+        ],
+        [
+          409.0122985839844,
+          304.63323974609375
+        ],
+        [
+          318.37109375,
+          304.63323974609375
+        ]
+      ]
+    },
+    {
+      "title": "B.1.2 Simulation",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          305.275390625,
+          623.0253295898438
+        ],
+        [
+          391.62139892578125,
+          623.0253295898438
+        ],
+        [
+          391.62139892578125,
+          633.9349670410156
+        ],
+        [
+          305.275390625,
+          633.9349670410156
+        ]
+      ]
+    },
+    {
+      "title": "GPT",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          318.953125,
+          650.0009765625
+        ],
+        [
+          338.0995788574219,
+          650.0009765625
+        ],
+        [
+          338.0995788574219,
+          662.5230712890625
+        ],
+        [
+          318.953125,
+          662.5230712890625
+        ]
+      ]
+    },
+    {
+      "title": "Llama-2-chat",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          85.55859375,
+          73.64154052734375
+        ],
+        [
+          151.90618896484375,
+          73.64154052734375
+        ],
+        [
+          151.90618896484375,
+          84.55120849609375
+        ],
+        [
+          85.55859375,
+          84.55120849609375
+        ]
+      ]
+    },
+    {
+      "title": "B.2.2 Simulation",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          306.1443176269531,
+          71.537109375
+        ],
+        [
+          391.70703125,
+          71.537109375
+        ],
+        [
+          391.70703125,
+          84.7745361328125
+        ],
+        [
+          306.1443176269531,
+          84.7745361328125
+        ]
+      ]
+    },
+    {
+      "title": "B.2 BigTOM Prompts",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.716796875,
+          261.0693359375
+        ],
+        [
+          181.38214111328125,
+          261.0693359375
+        ],
+        [
+          181.38214111328125,
+          273.5379638671875
+        ],
+        [
+          70.716796875,
+          273.5379638671875
+        ]
+      ]
+    },
+    {
+      "title": "B.2.1 Perspective Taking",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.716796875,
+          307.1162109375
+        ],
+        [
+          193.525390625,
+          307.1162109375
+        ],
+        [
+          193.525390625,
+          318.4031982421875
+        ],
+        [
+          70.716796875,
+          318.4031982421875
+        ]
+      ]
+    },
+    {
+      "title": "GPT",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          85.849609375,
+          350.8133850097656
+        ],
+        [
+          102.81278228759766,
+          350.8133850097656
+        ],
+        [
+          102.81278228759766,
+          361.7230224609375
+        ],
+        [
+          85.849609375,
+          361.7230224609375
+        ]
+      ]
+    },
+    {
+      "title": "GPT",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          320.1171875,
+          300.0018310546875
+        ],
+        [
+          338.0995788574219,
+          300.0018310546875
+        ],
+        [
+          338.0995788574219,
+          310.9114990234375
+        ],
+        [
+          320.1171875,
+          310.9114990234375
+        ]
+      ]
+    },
+    {
+      "title": "Llama-2-chat",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          85.55859375,
+          617.1103515625
+        ],
+        [
+          151.91015625,
+          617.1103515625
+        ],
+        [
+          151.91015625,
+          628.3443298339844
+        ],
+        [
+          85.55859375,
+          628.3443298339844
+        ]
+      ]
+    },
+    {
+      "title": "Llama-2-chat",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          320.408203125,
+          653.2900390625
+        ],
+        [
+          387.341796875,
+          653.2900390625
+        ],
+        [
+          387.341796875,
+          665.1491851806641
+        ],
+        [
+          320.408203125,
+          665.1491851806641
+        ]
+      ]
+    },
+    {
+      "title": "C Single Prompts",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          70.134765625,
+          71.1259765625
+        ],
+        [
+          169.2766571044922,
+          71.1259765625
+        ],
+        [
+          169.2766571044922,
+          85.0487060546875
+        ],
+        [
+          70.134765625,
+          85.0487060546875
+        ]
+      ]
+    },
+    {
+      "title": "ToMI",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          86.17529296875,
+          353.0534973144531
+        ],
+        [
+          107.99458312988281,
+          353.0534973144531
+        ],
+        [
+          107.99458312988281,
+          363.963134765625
+        ],
+        [
+          86.17529296875,
+          363.963134765625
+        ]
+      ]
+    },
+    {
+      "title": "BigTOM",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          321.7350769042969,
+          73.6416015625
+        ],
+        [
+          356.494140625,
+          73.6416015625
+        ],
+        [
+          356.494140625,
+          84.55126953125
+        ],
+        [
+          321.7350769042969,
+          84.55126953125
+        ]
+      ]
+    },
+    {
+      "title": "D Domain Specific (Few-Shot) Prompts",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          70.42578125,
+          71.1259765625
+        ],
+        [
+          279.8797607421875,
+          71.1259765625
+        ],
+        [
+          279.8797607421875,
+          85.0487060546875
+        ],
+        [
+          70.42578125,
+          85.0487060546875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          86.140625,
+          293.9599609375
+        ],
+        [
+          107.09375,
+          293.9599609375
+        ],
+        [
+          107.09375,
+          301.3603515625
+        ],
+        [
+          86.140625,
+          301.3603515625
+        ]
+      ]
+    },
+    {
+      "title": "Story:",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          85.849609375,
+          492.1259765625
+        ],
+        [
+          113.34883880615234,
+          492.1259765625
+        ],
+        [
+          113.34883880615234,
+          502.32745361328125
+        ],
+        [
+          85.849609375,
+          502.32745361328125
+        ]
+      ]
+    },
+    {
+      "title": "BigTOM",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          321.7350769042969,
+          73.64154052734375
+        ],
+        [
+          356.78515625,
+          73.64154052734375
+        ],
+        [
+          356.78515625,
+          84.55120849609375
+        ],
+        [
+          321.7350769042969,
+          84.55120849609375
+        ]
+      ]
+    },
+    {
+      "title": "E Baseline Prompts",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          306.144287109375,
+          626.9775390625
+        ],
+        [
+          415.279296875,
+          626.9775390625
+        ],
+        [
+          415.279296875,
+          639.1893768310547
+        ],
+        [
+          306.144287109375,
+          639.1893768310547
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          321.28125,
+          702.6259765625
+        ],
+        [
+          353.875,
+          702.6259765625
+        ],
+        [
+          353.875,
+          711.6708984375
+        ],
+        [
+          321.28125,
+          711.6708984375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          84.39453125,
+          74.4150390625
+        ],
+        [
+          140.26953125,
+          74.4150390625
+        ],
+        [
+          140.26953125,
+          81.8154296875
+        ],
+        [
+          84.39453125,
+          81.8154296875
+        ]
+      ]
+    },
+    {
+      "title": "F Non-Instruction Tuned Models",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          70.42578125,
+          202.27734375
+        ],
+        [
+          248.52734375,
+          202.27734375
+        ],
+        [
+          248.52734375,
+          215.32421875
+        ],
+        [
+          70.42578125,
+          215.32421875
+        ]
+      ]
+    },
+    {
+      "title": "G Breakdown of Results Across Question\nTypes",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          68.6796875,
+          437.74713134765625
+        ],
+        [
+          289.0839538574219,
+          437.74713134765625
+        ],
+        [
+          289.0839538574219,
+          463.65167236328125
+        ],
+        [
+          68.6796875,
+          463.65167236328125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          104
+        ],
+        [
+          "Span",
+          48
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          340
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          302
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          93
+        ],
+        [
+          "Span",
+          38
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          223
+        ],
+        [
+          "TableCell",
+          79
+        ],
+        [
+          "Line",
+          74
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          333
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          231
+        ],
+        [
+          "Line",
+          82
+        ],
+        [
+          "TableCell",
+          44
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          270
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          247
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          253
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "ListItem",
+          21
+        ],
+        [
+          "Reference",
+          21
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          267
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "Reference",
+          22
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          237
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          129
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "Text",
+          26
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          25
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          193
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "ListItem",
+          22
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          55
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          362
+        ],
+        [
+          "Span",
+          154
+        ],
+        [
+          "Line",
+          49
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\18_Think_Twice_Perspective-Taking_Improves_Large_Language_Models_Theory_of_Mind_Capabilities"
+}

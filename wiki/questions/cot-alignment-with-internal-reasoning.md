@@ -38,6 +38,14 @@ versus harms is a prerequisite for trusting CoT-style scaffolds in high-stakes i
   improving competitive play. The authors pose the explicit open question: "how can external prompts
   be better aligned with a model's internal reasoning processes to ensure robust and interpretable
   behavior?"
+- [[sources/wilf-et-al-2024]] supplies the converse data point in theory-of-mind: a *generic*
+  "reason step by step" step is the wrong scaffold (its SimToM-Multi ablation, which swaps a
+  reasoning step in for perspective-taking, *collapses* performance, and 0-shot CoT does "not
+  perform reliably better than 0-shot"), whereas a *targeted, content-specific* two-pass scaffold —
+  asking the model to reconstruct the character's perspective first — yields large gains
+  ([[paradigms/simtom-perspective-taking-prompting]]). This suggests the alignment that matters is
+  not chain *length* but whether the prompted step matches the *specific* sub-computation the task
+  requires.
 
 ## Suggested Investigation (toward a new paradigm)
 

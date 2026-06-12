@@ -19,6 +19,7 @@ date_modified: 2026-06-12
 - [[paradigms/content-effects-on-reasoning]] — same logic, varied semantic content (psychological)
 - [[paradigms/false-belief-task]] — theory-of-mind tests incl. higher-order and perturbed variants (psychological)
 - [[paradigms/theory-of-mind-battery]] — five-test ToM battery (false belief / irony / faux pas / hinting / strange stories) on 3 LLMs vs. 1,907 humans; faux-pas likelihood + belief-likelihood variants surface hyperconservatism (psychological)
+- [[paradigms/simtom-perspective-taking-prompting]] — SimToM: two-stage perspective-taking → question-answering prompting (Simulation Theory) that elicits/improves LLM ToM; ablations isolate perspective-taking; oracle perspectives near-solve ToMI/BigTOM (psychological)
 - [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
 - [[paradigms/psychometric-inventory-administration]] — human trait/value/morality inventories given to LLMs via zero-shot NLI (psychological)
 - [[paradigms/narrow-psychometric-fine-tuning]] — fine-tune LLMs on inventory answer-keys to induce "dark" personas (psychological)
@@ -45,6 +46,7 @@ date_modified: 2026-06-12
 
 - [[theories/heuristics-and-biases]] — mental shortcuts predict systematic errors
 - [[theories/theory-of-mind]] — inferring others' unobservable mental states
+- [[theories/simulation-theory]] — ToM via two processes: perspective-taking ("step into their shoes") then question-answering; grounds SimToM
 - [[theories/performance-competence-distinction]] — performance ≠ competence (interpretation principle)
 - [[theories/ecological-rationality]] — heuristics mirror the training environment
 - [[theories/psychometric-test-standards]] — reliability/validity/fairness + the seven requirements for testing LLMs (the validity rubric)
@@ -98,6 +100,8 @@ date_modified: 2026-06-12
 - [[instruments/affect-grid]] — single-item valence×arousal emotion self-report (−100..+100); used identically on humans and agents
 - [[instruments/autism-spectrum-quotient]] — AQ-short (28-item) autistic-trait scale; persona-construction input
 - [[instruments/self-rating-depression-scale]] — Zung SDS (20-item) depression scale; persona / health-risk indicator
+- [[instruments/tomi]] — templated Sally–Anne false-belief benchmark (1st/2nd-order; binary MC)
+- [[instruments/bigtom]] — causal-template, GPT-4-generated Sally–Anne-style ToM benchmark (Forward Action/Belief; binary MC)
 
 ## Sources
 
@@ -118,6 +122,7 @@ date_modified: 2026-06-12
 - [[sources/kosinski-2024]] — CORE; primary false-belief-task study on 11 LLMs — ChatGPT-4 solves 75% (≈ 6-y-old); true-belief controls + reversals + 16-prompt scoring; ToM as emergent by-product of language; both sides of the genuine-vs-pattern-matching debate
 - [[sources/ullman-2023]] — CORE; primary rebuttal to Kosinski — eight trivial principle-preserving perturbations of the ToM vignettes flip GPT-3.5's belief attribution to the wrong answer; "skeptical zero-hypothesis", outliers > average successes, the benchmark paradox
 - [[sources/strachan-et-al-2024]] — CORE; comprehensive ToM battery (false belief / irony / faux pas / hinting / strange stories) on GPT-4/3.5/LLaMA2-70B vs. 1,907 humans; GPT-4 at/above human on all but faux pas; LLaMA2 faux-pas win "illusory" (ignorance bias); GPT faux-pas failure is hyperconservatism not failed inference; humans also fail half the false-belief perturbations (N=757)
+- [[sources/wilf-et-al-2024]] — CORE; SimToM — Simulation-Theory perspective-taking turned into a two-stage prompt that improves LLM ToM (ToMI/BigTOM) over 0-shot & CoT; ablations show the gain is perspective-taking *specifically* (not multi-step); oracle perspectives near-solve the benchmarks; hiding-vs-inferring limit on real-world (CosmosQA)
 
 ## Entities
 
@@ -138,6 +143,7 @@ date_modified: 2026-06-12
 - [[entities/michal-kosinski]] — sole author, LLM theory-of-mind / false-belief-task study, Stanford GSB
 - [[entities/tomer-ullman]] — sole author, ToM-robustness rebuttal (trivial alterations break LLM ToM), Harvard Psychology
 - [[entities/james-strachan]] — lead author, comprehensive LLM-vs-human ToM battery + hyperconservatism account, UKE Hamburg / IIT Genoa
+- [[entities/alex-wilf]] — lead author, SimToM perspective-taking prompting for LLM ToM, Carnegie Mellon
 
 ## Questions
 
@@ -155,6 +161,7 @@ date_modified: 2026-06-12
 - [[questions/yoking-science-to-proprietary-models]] — should behavioral AI science depend on closed, mutable commercial models?
 - [[questions/active-interaction-for-causal-and-directed-exploration]] — are causal reasoning & directed exploration gaps a consequence of passive text training?
 - [[questions/cot-alignment-with-internal-reasoning]] — can external CoT prompts be aligned with a model's internal reasoning so extended chains help rather than entrench errors?
+- [[questions/perspective-taking-hallucination-vs-inference]] — when a model takes another's perspective, when is it inferring vs. fabricating unstated mental states?
 
 ## Crosswalk
 

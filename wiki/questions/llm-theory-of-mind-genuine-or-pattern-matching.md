@@ -60,6 +60,15 @@ problem catalogued in [[theories/psychometric-test-standards]].
   human. The lesson for this question is that single-probe pass/fail conflates *competence* with a
   *commitment policy* — see [[paradigms/theory-of-mind-battery]] and
   [[theories/performance-competence-distinction]].
+- [[sources/wilf-et-al-2024]] adds the **elicitation** angle: prompting an LLM to *take the
+  character's perspective first* ([[paradigms/simtom-perspective-taking-prompting]]) substantially
+  raises false-belief accuracy, and human-annotated *oracle* perspectives nearly *solve* the
+  benchmarks — so a large part of the apparent ToM deficit is a perspective-taking deficit, not an
+  absence of the underlying inference. This complicates the pattern-matching pole (single-pass
+  failure understates competence; cf. [[theories/performance-competence-distinction]]) but does not
+  settle it: an *elicited* improvement on canonical synthetic items is itself untested under
+  [[sources/ullman-2023]]-style perturbations, so it could be re-routing a pattern-match rather than
+  invoking genuine mentalizing.
 - [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.
