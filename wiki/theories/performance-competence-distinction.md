@@ -65,3 +65,7 @@ argument from the presence of one." This is the load-bearing grounding of
 - [[sources/ong-2024]] — the asymmetric existence-proof sharpening
 - [[sources/binz-schulz-2022]] — demonstrates the principle empirically: GPT-3's vignette
   *performance* "crucially depend[s] on how a prompt is presented."
+- [[sources/kosinski-2024]] — applies the distinction to theory of mind: invokes Turing's
+  "behaving *as if*" against Searle's Chinese-room argument and explicitly declines to settle
+  whether LLMs *have* ToM, while cautioning that model failures "do not necessarily indicate a
+  lack of ability" (scoring-key limits, confabulation, administrator constraints).

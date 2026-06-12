@@ -28,6 +28,13 @@ problem catalogued in [[theories/psychometric-test-standards]].
 
 ## What Sources Say
 
+- [[sources/kosinski-2024]] is the primary "emergent ToM-like reasoning" pole: it reports
+  ChatGPT-4 solving 75% of false-belief tasks (≈ a 6-year-old), argues against random
+  responding (1-in-65,536 by chance), and uses true-belief controls, reversed scenarios, and
+  a sentence-by-sentence analysis (the model dynamically updates the ascribed belief as the
+  story unfolds) as evidence *against* pure templating. Yet it also concedes "successes of
+  LLMs do not automatically demonstrate their ability to track protagonists' beliefs" and
+  ends "We leave it to the reader" — so the paper stages, rather than settles, the question.
 - [[sources/liu-et-al-2025]] (§6.3) frames the debate directly: "GPT-4 solves around 75% of
   false-belief tasks, matching a 6-year-old's performance (Kosinski 2024; Strachan et al. 2024);
   some see emergent *ToM*-like reasoning (Kosinski 2024), but others argue it may be pattern

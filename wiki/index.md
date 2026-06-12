@@ -114,6 +114,7 @@ date_modified: 2026-06-12
 - [[sources/jia-et-al-2025]] — CORE; behavioral-game-theory (TQRE) evaluation of 22 LLMs' strategic reasoning depth (τ) across 13 matrix games; reasoning-style coding, CoT-effect, demographic-persona fairness audit
 - [[sources/huang-et-al-2025]] — CORE; EmotionBench — emotion-appraisal situation-induction on 7 LLMs vs. 1,266-person baseline; coins "emotional alignment"; models overreact, can't link situations, and feel pleased not jealous; emotion→toxicity (PoR)
 - [[sources/lei-et-al-2024]] — CORE; FairMindSim — altruistic-punishment game on GPT-3.5/4-Turbo/4o vs. 100-person baseline; GPT-4o enforces fairness more than humans & holds steadier fairness belief (BREM); humans richer emotions, β₁>β₂ (belief>reward)
+- [[sources/kosinski-2024]] — CORE; primary false-belief-task study on 11 LLMs — ChatGPT-4 solves 75% (≈ 6-y-old); true-belief controls + reversals + 16-prompt scoring; ToM as emergent by-product of language; both sides of the genuine-vs-pattern-matching debate
 
 ## Entities
 
@@ -131,6 +132,7 @@ date_modified: 2026-06-12
 - [[entities/marcel-binz]] — lead author, "Using cognitive psychology to understand GPT-3"; co-author CogBench, MPI Tübingen / Helmholtz Munich
 - [[entities/jingru-jia]] — lead author, behavioral-game-theory evaluation of LLM strategic reasoning, UIUC
 - [[entities/yu-lei]] — lead author, FairMindSim altruistic-punishment alignment study, Tsinghua
+- [[entities/michal-kosinski]] — sole author, LLM theory-of-mind / false-belief-task study, Stanford GSB
 
 ## Questions
 
