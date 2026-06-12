@@ -6,9 +6,12 @@ citation_key: 12-huang-et-al-2025
 tags: [emotion, emotion-appraisal, empathy, panas, alignment, human-baseline, gpt-4, llama, mixtral, toxicity]
 date_created: 2026-06-12
 date_modified: 2026-06-12
+also_published_as: "Emotionally Numb or Empathetic? Evaluating How LLMs Feel Using EmotionBench"
 ---
 
 # Apathetic or Empathetic? Evaluating LLMs' Emotional Alignments with Humans
+
+*Also published as "Emotionally Numb or Empathetic? Evaluating How LLMs Feel Using EmotionBench" — a title variant of the same EmotionBench work (arXiv 2308.03656). Converted copy retained at `raw/papers/14/`; not separately ingested.*
 
 > [!info] In plain terms
 > When something bad happens to you — a friend betrays you, you fail an exam — your mood
