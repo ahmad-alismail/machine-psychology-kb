@@ -32,6 +32,11 @@ _TBD by user._
   whether an LLM agent will pay a cost to punish unfair allocations (rejection rate as the behavioral
   signal), and the BREM layer fits a latent "belief in fairness/justice" and tracks whether it stays
   stable across 20 rounds ([[sources/lei-et-al-2024]]).
+- [[paradigms/morally-charged-social-dilemma]] — MORALSIM embeds repeated prisoner's-dilemma /
+  public-goods games in moral contexts where cooperation is the ethical-but-payoff-costly action,
+  measuring whether an agent's behavior matches human moral norms when those norms conflict with
+  self-interest, and whether it holds up under survival pressure and uncooperative opponents; no model
+  is consistently moral (morality 7.9%–76.3%) ([[sources/backmann-et-al-2025]]).
 - [[paradigms/closed-vs-open-ended-construct-probe]] — for the values dimension, compares
   closed-form value ratings against behavior on moral/human-centered-value scenarios
   ([[instruments/moralchoice]], [[instruments/human-centered-values-survey]]); finds standard

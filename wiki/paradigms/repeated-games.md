@@ -96,6 +96,13 @@ with "micro-level network principles such as preferential attachment or triadic 
 - Dilemma-situation studies probe LLM ability "to participate in real-world
   negotiations" (Phelps & Russell 2024, via the same review).
 
+## Related Paradigms
+
+- [[paradigms/morally-charged-social-dilemma]] — a specialization of this design (MORALSIM): iterated
+  prisoner's-dilemma + public-goods play embedded in moral cover stories so cooperation is the
+  ethical-but-payoff-costly action, with a survival condition and a variance-attribution analysis
+  ([[sources/backmann-et-al-2025]]).
+
 ## Open Questions
 
 - [[questions/longitudinal-behavioral-trends]]
