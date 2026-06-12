@@ -120,4 +120,3 @@ These instantiate the rubric in [[theories/psychometric-test-standards]].
   elicited self-report profile need *not* predict behavior.
 - [[questions/redefine-constructs-for-llms]] — when self-report and behavior diverge, which (if
   either) is the construct's true LLM operationalization?
-</content>

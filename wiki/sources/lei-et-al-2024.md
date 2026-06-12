@@ -125,5 +125,3 @@ humans and models, and check whether an agent's values *drift* over repeated int
   Depression Scale**; the wiki follows what is administered (AQ + SDS). The model name is rendered
   inconsistently in the converted PDF (BREM / "EREM" / "BERM"); the correct expansion is
   **Belief-Reward Alignment Behavior Evolution Model → BREM**.
-</content>
-</invoke>

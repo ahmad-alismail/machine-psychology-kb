@@ -83,6 +83,19 @@ apparent ToM deficit is a perspective-taking deficit, surfaced only when the two
 prompted separately. This reinforces [[theories/performance-competence-distinction]]: a single
 inference pass *understates* ToM competence.
 
+[[sources/guo-et-al-2026]] applies this construct in an *active, strategic* form rather than the
+passive false-belief setting: identifying a game's Nash equilibrium requires recursive opponent
+modeling, operationalized as **first-order ToM (FoToM)** prompting ("model what the opponent will do
+from their payoffs") and **second-order ToM (SoToM)** ("model what the opponent believes you will
+do"). The central finding refines the construct for LLMs: FoToM helps some models (gpt-4o,
+claude-3-5-sonnet) but not others, and SoToM "provides minimal additional gain," implying models can
+simulate at most one level of opponent reasoning rather than apply it recursively. The paper cites
+and corroborates [[sources/kosinski-2024]] (GPT-4's ~75% false-belief pass), reading its own results
+as evidence that ToM-like ability is "inconsistent and task-dependent rather than robust," and frames
+game-theoretic ToM as more demanding than passive false-belief tasks because it "demand[s]
+simultaneous opponent reasoning and decision optimization." See
+[[paradigms/compositional-game-reasoning]].
+
 > [!warning] Emergent reasoning or pattern-matching?
 > The survey ([[sources/liu-et-al-2025]] §6.3) records the central validity debate: "GPT-4
 > solves around 75% of false-belief tasks, matching a 6-year-old's performance (Kosinski 2024;
@@ -108,6 +121,8 @@ inference pass *understates* ToM competence.
 - [[paradigms/perspective-filtering-tom-pipeline]] — the cross-method family (SymbolicToM,
   SimToM, PercepToM, TimeToM) that filters a story to the target character's knowledge before
   answering
+- [[paradigms/compositional-game-reasoning]] — *active* strategic ToM via FoToM/SoToM opponent-modeling
+  prompts on game-theoretic tasks (vs. passive false-belief inference)
 
 ## Related Taxonomy
 
@@ -123,3 +138,4 @@ inference pass *understates* ToM competence.
 - [[sources/chen-et-al-2025]]
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]
+- [[sources/guo-et-al-2026]] — operationalizes ToM as FoToM/SoToM strategic prompting; finds it limited and non-recursive

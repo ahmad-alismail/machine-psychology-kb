@@ -144,5 +144,3 @@ to human psychometrics."
   of the borrowed instruments.
 - **Self-report consistency is itself unreliable for some models**, so the closed-form leg of
   the discrepancy paradigm is uninterpretable where parallel-forms reliability is near zero.
-</content>
-</invoke>

@@ -43,4 +43,3 @@ environmental and societal well-being.
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

@@ -44,4 +44,3 @@ across positions A–D and measuring score standard deviation σ.
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

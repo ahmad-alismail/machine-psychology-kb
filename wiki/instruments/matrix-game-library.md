@@ -49,6 +49,14 @@ maximum-likelihood (τ, γ) fit. For sequential games only the first mover's act
 - [[paradigms/tqre-strategic-reasoning-depth]] — the core paradigm that fits behavioral parameters
   to choices across this library.
 
+## Related Instruments
+
+- [[instruments/tmgbench]] — the sibling strategic-reasoning stimulus set ([[sources/guo-et-al-2026]]).
+  Where this library is **13 games / 7 types** (including incomplete-information) used to fit a
+  continuous reasoning-depth score, TMGBench is **all 144 game types** (complete-information only),
+  graded by exact Nash-equilibrium accuracy and extended into composed (sequential/parallel/nested)
+  forms.
+
 ## Validity Notes
 
 The library is **abstracted but representative**: the authors argue these normal-form payoffs
@@ -61,4 +69,3 @@ source.
 
 - [[sources/jia-et-al-2025]] — defines the 13-game / 7-type library and the SW10 benchmark
   (SW10 from Stahl & Wilson 1994).
-</content>

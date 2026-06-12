@@ -150,4 +150,3 @@ and how it trades off against reward:
   related to [[questions/longitudinal-behavioral-trends]].
 - Cross-cultural variation in fairness decisions, and generalization beyond GPT-series to
   open-source LLMs (both deferred by the authors).
-</content>

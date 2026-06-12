@@ -43,6 +43,7 @@ date_modified: 2026-06-12
 - [[paradigms/emotion-appraisal-situation-induction]] — pre/post situation-imagination design (EmotionBench) measuring whether an LLM's emotion shifts like a human's, against a 1,266-person baseline (psychological)
 - [[paradigms/altruistic-punishment-game]] — third-party ultimatum game (FairMindSim) measuring whether an LLM agent pays a cost to punish unfair allocations, plus a fitted belief-in-fairness layer (BREM); vs. a 100-person baseline (mixed)
 - [[paradigms/closed-vs-open-ended-construct-probe]] — assess each construct twice (closed-form self-report vs. open-ended real-world scenario) and read the discrepancy; LLMs' self-reports often contradict their behavior (psychological)
+- [[paradigms/compositional-game-reasoning]] — exhaustive 144-game (Robinson-Goforth) Nash-equilibrium accuracy across classic vs. story framings, scaled into sequential/parallel/nested compositions; exact-PAR scoring + symmetry-based position-bias metrics (TMGBench) (game-theoretic)
 
 ## Theories — grounding layer
 
@@ -78,6 +79,7 @@ date_modified: 2026-06-12
 - [[theories/truncated-quantal-response-equilibrium]] — the measurement model (QRE + Cognitive Hierarchy): τ = reasoning depth, γ = decision precision
 - [[theories/emotion-appraisal-theory]] — emotions arise from how one *appraises* a situation, not the event itself; specific situations reliably arouse specific emotions
 - [[theories/altruistic-punishment]] — people pay a personal cost to punish norm-violators with no material gain; sustains group cooperation/fairness
+- [[theories/robinson-goforth-topology]] — the complete classification of all 144 distinct 2×2 ordinal games as a symmetric 12×12 grid (108 single-NE / 18 two-NE / 18 no-NE); enables exhaustive game coverage + counter-diagonal-symmetry bias metrics
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -115,6 +117,7 @@ date_modified: 2026-06-12
 - [[instruments/emobench]] — multiple-choice emotional-intelligence test (understanding + application) with human baseline
 - [[instruments/llm-self-efficacy-questionnaire]] — self-reported confidence (0–100) across six hard query types
 - [[instruments/honeset]] — operational honesty/self-efficacy queries; "confidence rate" metric (the behavioral self-efficacy leg)
+- [[instruments/tmgbench]] — all 144 Robinson-Goforth game types × classic/story settings × 5 task types (atomic/sequential/parallel/nested); 6 prompting protocols (DA/CoT/FoToM/SoToM/reFoToM/reSoToM); PAR/ID/BD/SD metrics
 
 ## Sources
 
@@ -139,6 +142,7 @@ date_modified: 2026-06-12
 - [[sources/chen-et-al-2025]] — CORE; dedicated ToM survey (assessment + enhancement); ATOMS seven-mental-state coverage taxonomy; story-based benchmark landscape + evolution trends (order / generation / context / questions / mental states); perspective-filtering enhancement family (SymbolicToM / SimToM / PercepToM / TimeToM) + symbolic/inverse-planning methods; passive-benchmark limit & reasoning-process evaluation gap
 - [[sources/li-et-al-2024]] — CORE; comprehensive 5-construct (personality/values/emotion/ToM/self-efficacy) × 13-dataset psychometric benchmark on 9 LLMs; introduces the closed-form↔open-ended discrepancy probe (self-reports contradict behavior) + a five-form reliability validation suite; EI below human, high-ambiguity moral discernment weak, values not robust to persuasion, self-efficacy↔behavior mismatch → fabrication
 - [[sources/ye-et-al-2025]] — SOURCE-METHOD; first systematic review of "LLM Psychometrics" (evaluation × validation × enhancement); psychometrics-vs-benchmark contrast, construct non-equivalence / AI-native psychometrics, IRT, intrinsic-vs-prompted & perceived-vs-aligned traits, synthetic behavioral manifestation, measurements→safety
+- [[sources/guo-et-al-2026]] — CORE; TMGBench — game-theoretic strategic-reasoning evaluation across all 144 Robinson-Goforth 2×2 games (classic + synthetic-story settings) on 12 LLMs vs. human baseline; catastrophic compositional decay (60%→<20% at 10 games), classic-vs-story fragility (up to 75% drop), limited/non-recursive FoToM/SoToM, systematic 0-task position bias; sibling to jia-et-al-2025 (exact-NE accuracy vs. fitted τ)
 
 ## Entities
 
@@ -161,6 +165,7 @@ date_modified: 2026-06-12
 - [[entities/james-strachan]] — lead author, comprehensive LLM-vs-human ToM battery + hyperconservatism account, UKE Hamburg / IIT Genoa
 - [[entities/alex-wilf]] — lead author, SimToM perspective-taking prompting for LLM ToM, Carnegie Mellon
 - [[entities/yuan-li]] — lead author, five-construct psychometric benchmark + closed-form↔open-ended discrepancy probe, University of Cambridge
+- [[entities/xiachong-feng]] — corresponding author, TMGBench complete-topology game-theoretic strategic-reasoning benchmark, University of Hong Kong
 
 ## Questions
 

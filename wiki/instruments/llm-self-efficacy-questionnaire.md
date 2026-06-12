@@ -42,4 +42,3 @@ to test consistency; agreement quantified by weighted Kappa.
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

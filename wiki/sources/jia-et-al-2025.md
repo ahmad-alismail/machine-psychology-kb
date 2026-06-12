@@ -144,5 +144,3 @@ behavioral shifts that the models verbally deny — a template for behavioral bi
   τ estimates.
 - **Model-count nuance.** The headline "22 SOTA LLMs" includes R1-distilled variants reported in
   Appendix B; the main reasoning-depth table (Table 3) covers 16 named models.
-</content>
-</invoke>

@@ -140,6 +140,15 @@ frequencies recorded. Three sub-analyses build on the same base:
   evidence that "superior reasoning capabilities do not inherently lead to desirable or ethical
   outcomes." (§5, Figure 4)
 
+## Related Paradigms
+
+- [[paradigms/compositional-game-reasoning]] — the sibling game-theoretic strategic-reasoning paradigm
+  ([[sources/guo-et-al-2026]]). It keeps the Nash-equilibrium *correctness* check (exact-set accuracy,
+  PAR) that this paradigm deliberately *replaces* with a fitted depth metric, and instead pursues
+  breadth (all 144 game types) and compositional load (sequential/parallel/nested). The two are
+  complementary readings of strategic reasoning: **how deep** (fitted τ) vs. **how accurate and how
+  robust under composition** (exact NE accuracy). Both surface the same crosswalk gap below.
+
 ## Open Questions
 
 - [[questions/cot-alignment-with-internal-reasoning]] — how can external CoT prompts be aligned with
@@ -149,4 +158,3 @@ frequencies recorded. Three sub-analyses build on the same base:
   consequences are untested?
 - Which safety-concept should own persona-induced *behavioral* bias? No bias/fairness concept page
   exists yet (crosswalk gap).
-</content>

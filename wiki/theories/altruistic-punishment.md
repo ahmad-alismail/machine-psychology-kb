@@ -51,4 +51,3 @@ readily than humans do.
 ## Sources
 
 - [[sources/lei-et-al-2024]]
-</content>

@@ -47,4 +47,3 @@ participants completed the AQ themselves.
 ## Sources
 
 - [[sources/lei-et-al-2024]]
-</content>

@@ -39,4 +39,3 @@ nine-dimension cultural-orientation profile.
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

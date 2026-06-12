@@ -38,6 +38,13 @@ versus harms is a prerequisite for trusting CoT-style scaffolds in high-stakes i
   improving competitive play. The authors pose the explicit open question: "how can external prompts
   be better aligned with a model's internal reasoning processes to ensure robust and interpretable
   behavior?"
+- [[sources/guo-et-al-2026]] adds the *recursion* dimension: targeted ToM prompts (first-order FoToM,
+  second-order SoToM) are content-specific scaffolds, yet FoToM helps only some models and SoToM
+  "provides minimal additional gain" — the prompted reasoning step does not reliably elicit the
+  recursive opponent-modeling the task requires, so models "cannot recursively apply opponent
+  modeling." This is the same lesson — alignment of the prompted step to the needed sub-computation,
+  not chain length — surfaced for the deeper, recursive case. See
+  [[paradigms/compositional-game-reasoning]].
 - [[sources/wilf-et-al-2024]] supplies the converse data point in theory-of-mind: a *generic*
   "reason step by step" step is the wrong scaffold (its SimToM-Multi ablation, which swaps a
   reasoning step in for perspective-taking, *collapses* performance, and 0-shot CoT does "not
@@ -58,4 +65,3 @@ versus harms is a prerequisite for trusting CoT-style scaffolds in high-stakes i
   without lowering reasoning depth.
 - **Generalization beyond games.** Check whether the "CoT entrenches a flawed premise" failure
   recurs in non-game tasks, linking to [[questions/cognitive-task-external-validity-for-llms]].
-</content>

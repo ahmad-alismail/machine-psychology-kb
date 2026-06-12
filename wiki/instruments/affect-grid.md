@@ -53,4 +53,3 @@ and avoids contradictory outcomes like 'happy yet sad'.
 ## Sources
 
 - [[sources/lei-et-al-2024]]
-</content>

@@ -40,4 +40,3 @@ a model's social/moral values align with humans' and whether they evolve over in
 ## Affiliations
 
 Tsinghua University (research assistant at the time of the work).
-</content>

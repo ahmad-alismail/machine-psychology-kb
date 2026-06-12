@@ -46,4 +46,3 @@ an identical profile.
 ## Sources
 
 - [[sources/lei-et-al-2024]]
-</content>

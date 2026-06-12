@@ -38,4 +38,3 @@ characterize reasoning depth and to audit for context- and identity-induced bias
 ## Affiliations
 
 University of Illinois Urbana-Champaign.
-</content>

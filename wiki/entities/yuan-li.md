@@ -42,4 +42,3 @@ psychometric assumption of response consistency must be tested, not assumed, for
 
 - University of Cambridge.
 - Collaborators span University of Notre Dame, Carnegie Mellon, Stanford, and Lehigh.
-</content>

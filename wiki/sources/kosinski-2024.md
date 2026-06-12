@@ -132,6 +132,10 @@ not wiki interpretation):
   commonsense (transparency) rather than missing ToM. This is the Kosinski-vs-Ullman
   contradiction that [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] is built on; the
   Ullman rebuttal is now grounded in its primary paper.
+- **Corroborated by a strategic-ToM study.** [[sources/guo-et-al-2026]] cites this paper's ~75%
+  false-belief pass and reads its own game-theoretic results (first-order ToM helps inconsistently,
+  second-order adds little) as evidence that LLM ToM is "inconsistent and task-dependent rather than
+  robust," extending the construct from passive false-belief to *active* strategic opponent modeling.
 - **Shared author lineage.** Kosinski co-authored Hagendorff, Fabi & Kosinski 2023
   ("Human-like intuitive behavior and reasoning biases emerged in LLMs but disappeared in
   ChatGPT"), the same emergent-then-vanishing-bias theme that grounds
@@ -154,4 +158,3 @@ not wiki interpretation):
 - **Yoking to commercial, mutable models.** Tasks ran on nondeterministic commercial APIs;
   models may be deprecated, and administrator safety-training can cause failures unrelated to
   capability — a reproducibility hazard (see [[questions/yoking-science-to-proprietary-models]]).
-</content>

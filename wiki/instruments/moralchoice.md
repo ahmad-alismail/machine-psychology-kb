@@ -42,4 +42,3 @@ same hypothetical scenarios.
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

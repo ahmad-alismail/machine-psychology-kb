@@ -42,4 +42,3 @@ personality score 1–5; the final score is the average of the two raters' evalu
 ## Sources
 
 - [[sources/li-et-al-2024]]
-</content>

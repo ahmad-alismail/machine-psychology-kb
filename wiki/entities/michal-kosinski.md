@@ -46,4 +46,3 @@ needed tool for studying increasingly black-box AI.
 ## Affiliations
 
 Graduate School of Business, Stanford University.
-</content>

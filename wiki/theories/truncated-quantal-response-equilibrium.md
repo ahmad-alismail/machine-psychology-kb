@@ -65,4 +65,3 @@ meaningful measure of interactive sophistication" for stochastic, human-data-tra
 - [[sources/jia-et-al-2025]] — specifies and applies the TQRE model; builds on Rogers, Palfrey &
   Camerer (2009) and Wright & Leyton-Brown (2010) (heterogeneous QRE + cognitive hierarchies), with
   QRE from McKelvey & Palfrey (1995) and CH from Camerer, Ho & Chong (2004).
-</content>

@@ -42,6 +42,14 @@ NE to test rationality "falls into the circular reasoning fallacy." Behavioral g
 a non-circular alternative — fit a bounded-rationality model and *measure* the reasoning depth a
 model actually exhibits, instead of asking the yes/no question of whether it hit the equilibrium.
 
+A contrasting design keeps NE as the criterion: [[sources/guo-et-al-2026]] grades LLMs on whether
+they identify a game's *complete* Nash-equilibrium set (exact-set accuracy) across all 144 game types,
+rather than fitting a bounded-rationality model. The two are siblings with opposite measurement
+philosophies — fitted reasoning depth ([[paradigms/tqre-strategic-reasoning-depth]]) vs. exact-NE
+accuracy ([[paradigms/compositional-game-reasoning]]) — and the NE-accuracy line is precisely the
+"yes/no, did it hit the equilibrium?" approach this theory's relevance-note critiques as circular for
+stochastic LLMs.
+
 ## Paradigms Grounded in This Theory
 
 - [[paradigms/tqre-strategic-reasoning-depth]] — fits a behavioral-game-theory model (TQRE) to an
@@ -51,4 +59,3 @@ model actually exhibits, instead of asking the yes/no question of whether it hit
 
 - [[sources/jia-et-al-2025]] — adopts behavioral game theory (via TQRE) to evaluate LLM strategic
   reasoning; cites Camerer (1997, 2011), Camerer/Ho/Chong (2004), McKelvey/Palfrey (1995).
-</content>
