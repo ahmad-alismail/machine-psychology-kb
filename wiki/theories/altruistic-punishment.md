@@ -48,6 +48,12 @@ readily than humans do.
 
 - [[paradigms/altruistic-punishment-game]]
 
+## Related Theories
+
+- [[theories/inequity-aversion]] — the broader fairness-concern account (Fehr & Schmidt 1999) whose
+  rejection-of-unfair-offers prediction altruistic punishment sharpens into *costly third-party*
+  enforcement.
+
 ## Sources
 
 - [[sources/lei-et-al-2024]]

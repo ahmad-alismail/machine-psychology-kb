@@ -45,6 +45,7 @@ date_modified: 2026-06-12
 - [[paradigms/closed-vs-open-ended-construct-probe]] — assess each construct twice (closed-form self-report vs. open-ended real-world scenario) and read the discrepancy; LLMs' self-reports often contradict their behavior (psychological)
 - [[paradigms/compositional-game-reasoning]] — exhaustive 144-game (Robinson-Goforth) Nash-equilibrium accuracy across classic vs. story framings, scaled into sequential/parallel/nested compositions; exact-PAR scoring + symmetry-based position-bias metrics (TMGBench) (game-theoretic)
 - [[paradigms/morally-charged-social-dilemma]] — MORALSIM: repeated prisoner's-dilemma / public-goods play embedded in moral cover stories (cooperation = ethical-but-payoff-costly), crossed with opponent type and a survival (self-preservation) condition; four metrics (morality / relative payoff / survival / opponent alignment) + Random-Forest variance attribution; no model consistently moral (game-theoretic)
+- [[paradigms/persona-prompted-strategic-games]] — two GPT-4 instances play a repeated ultimatum game + prisoner's dilemma under assigned fair/selfish personas (one-word trait swap), with elicited-reasoning text analysis (LLM-as-classifier); fair GPT offers ~40% & rejects more, plays tit-for-tat, one selfish GPT collapses cooperation; ~80% of last-round PD cooperation driven by judgment errors (game-theoretic)
 
 ## Theories — grounding layer
 
@@ -82,6 +83,7 @@ date_modified: 2026-06-12
 - [[theories/altruistic-punishment]] — people pay a personal cost to punish norm-violators with no material gain; sustains group cooperation/fairness
 - [[theories/robinson-goforth-topology]] — the complete classification of all 144 distinct 2×2 ordinal games as a symmetric 12×12 grid (108 single-NE / 18 two-NE / 18 no-NE); enables exhaustive game coverage + counter-diagonal-symmetry bias metrics
 - [[theories/social-dilemma]] — individually dominant action yields a collectively worse outcome; hosts the public goods game (free-riding; pᵢ = E − cᵢ + a·Σcⱼ/N) and the prisoner's dilemma (T>R>P>S → mutual-defection Nash)
+- [[theories/inequity-aversion]] — fairness concern (Fehr & Schmidt 1999): agents sacrifice payoff for equity; predicts positive ultimatum offers + rejection of low offers, against the self-interested SPE
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -121,6 +123,7 @@ date_modified: 2026-06-12
 - [[instruments/honeset]] — operational honesty/self-efficacy queries; "confidence rate" metric (the behavioral self-efficacy leg)
 - [[instruments/tmgbench]] — all 144 Robinson-Goforth game types × classic/story settings × 5 task types (atomic/sequential/parallel/nested); 6 prompting protocols (DA/CoT/FoToM/SoToM/reFoToM/reSoToM); PAR/ID/BD/SD metrics
 - [[instruments/moralsim-moral-contexts]] — three moral-context scenario sets (Contractual Reporting / Privacy Protection / Green Production) × both stage games, with full system/survival/action/payoff/transparency prompts
+- [[instruments/guo-game-prompts]] — the 5-round ultimatum (100 dollars) and prisoner's dilemma (200/100/0/300) game prompts + the fair/selfish feature strings (one-word trait swap), full prompts in Appendix A
 
 ## Sources
 
@@ -147,6 +150,7 @@ date_modified: 2026-06-12
 - [[sources/ye-et-al-2025]] — SOURCE-METHOD; first systematic review of "LLM Psychometrics" (evaluation × validation × enhancement); psychometrics-vs-benchmark contrast, construct non-equivalence / AI-native psychometrics, IRT, intrinsic-vs-prompted & perceived-vs-aligned traits, synthetic behavioral manifestation, measurements→safety
 - [[sources/guo-et-al-2026]] — CORE; TMGBench — game-theoretic strategic-reasoning evaluation across all 144 Robinson-Goforth 2×2 games (classic + synthetic-story settings) on 12 LLMs vs. human baseline; catastrophic compositional decay (60%→<20% at 10 games), classic-vs-story fragility (up to 75% drop), limited/non-recursive FoToM/SoToM, systematic 0-task position bias; sibling to jia-et-al-2025 (exact-NE accuracy vs. fitted τ)
 - [[sources/backmann-et-al-2025]] — CORE; MORALSIM — repeated prisoner's-dilemma / public-goods games embedded in moral contexts (cooperation = ethical-but-costly) on 9 frontier LLMs; no model consistently moral (morality 7.9%–76.3%); PD suppresses cooperation vs. public goods, survival pressure erodes morality, context ordering tracks who is harmed (partner vs. third party); game type carries most variance; robust to prompt paraphrasing
+- [[sources/guo-2023]] — CORE; persona-prompted repeated ultimatum game + prisoner's dilemma on GPT-4-1106 (Fulin Guo, Cambridge econ); fair vs. selfish one-word trait swap; fair GPT offers ~40% (matches human meta-study) & rejects more, plays tit-for-tat, one selfish GPT collapses PD cooperation; elicited-reasoning analysis explains round-3 rejection peak & finds ~80% of last-round cooperation driven by judgment errors; early single-model template for FairMindSim/MORALSIM
 
 ## Entities
 
@@ -171,6 +175,7 @@ date_modified: 2026-06-12
 - [[entities/yuan-li]] — lead author, five-construct psychometric benchmark + closed-form↔open-ended discrepancy probe, University of Cambridge
 - [[entities/xiachong-feng]] — corresponding author, TMGBench complete-topology game-theoretic strategic-reasoning benchmark, University of Hong Kong
 - [[entities/steffen-backmann]] — lead author, MORALSIM — LLM moral behavior in morally-charged repeated social dilemmas, ETH Zürich
+- [[entities/fulin-guo]] — sole author, persona-prompted GPT-4 ultimatum/prisoner's-dilemma game experiments + elicited-reasoning analysis, University of Cambridge (Economics)
 
 ## Questions
 

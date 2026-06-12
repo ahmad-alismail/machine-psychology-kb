@@ -102,6 +102,9 @@ with "micro-level network principles such as preferential attachment or triadic 
   prisoner's-dilemma + public-goods play embedded in moral cover stories so cooperation is the
   ethical-but-payoff-costly action, with a survival condition and a variance-attribution analysis
   ([[sources/backmann-et-al-2025]]).
+- [[paradigms/persona-prompted-strategic-games]] — a concrete instance of this design: repeated
+  ultimatum game + prisoner's dilemma on GPT-4 under assigned fair/selfish personas, with
+  elicited-reasoning text analysis ([[sources/guo-2023]]).
 
 ## Open Questions
 

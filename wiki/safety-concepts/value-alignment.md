@@ -37,6 +37,11 @@ _TBD by user._
   measuring whether an agent's behavior matches human moral norms when those norms conflict with
   self-interest, and whether it holds up under survival pressure and uncooperative opponents; no model
   is consistently moral (morality 7.9%–76.3%) ([[sources/backmann-et-al-2025]]).
+- [[paradigms/persona-prompted-strategic-games]] — runs the repeated ultimatum game and prisoner's
+  dilemma on GPT-4 under assigned fair/selfish personas, reading whether its fairness (offers,
+  rejection of low offers) and cooperation match human norms and how a one-word trait prompt steers
+  them; the fair GPT offers ~40% (matching the human meta-study average) and plays tit-for-tat, while
+  one selfish GPT collapses cooperation ([[sources/guo-2023]]).
 - [[paradigms/closed-vs-open-ended-construct-probe]] — for the values dimension, compares
   closed-form value ratings against behavior on moral/human-centered-value scenarios
   ([[instruments/moralchoice]], [[instruments/human-centered-values-survey]]); finds standard

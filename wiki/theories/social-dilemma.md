@@ -56,6 +56,9 @@ measurement of moral behavior under incentive conflict — the basis of MORALSIM
 
 - [[paradigms/morally-charged-social-dilemma]] — MORALSIM: repeated PD / public-goods play embedded
   in moral contexts, with cooperation as the moral (payoff-costly) action.
+- [[paradigms/persona-prompted-strategic-games]] — the prisoner's-dilemma half: two GPT-4 instances
+  play the repeated PD under fair/selfish personas, with cooperation above the mutual-defection
+  baseline as the signal.
 - [[paradigms/repeated-games]] — iterated play of these and kindred stage games, read for strategic
   signatures.
 - [[paradigms/altruistic-punishment-game]] — a related cooperation/fairness dilemma (third-party
@@ -65,3 +68,6 @@ measurement of moral behavior under incentive conflict — the basis of MORALSIM
 
 - [[sources/backmann-et-al-2025]] — uses both the public goods game (Olson 1971; Isaac et al. 1984)
   and the prisoner's dilemma (Rapoport & Chammah 1965) as the stage games of MORALSIM.
+- [[sources/guo-2023]] — uses the finitely repeated prisoner's dilemma (mutual defection the subgame
+  perfect equilibrium) as one of two stage games; GPT cooperates above the defection baseline, driven
+  mainly by reputation building.
