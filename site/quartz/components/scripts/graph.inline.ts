@@ -70,7 +70,6 @@ type TweenNode = {
 
 async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const slug = simplifySlug(fullSlug)
-  const visited = getVisited()
   removeAllChildren(graph)
 
   let {
@@ -193,15 +192,32 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
-  // calculate color
+  // one distinct color per top-level wiki section (path), readable on light + dark
+  const sectionColors: Record<string, string> = {
+    theories: "#e8985e", // warm orange
+    paradigms: "#4c9f70", // green
+    "safety-concepts": "#d65f5f", // red
+    instruments: "#7b6cd9", // purple
+    crosswalk: "#d9a441", // amber
+    sources: "#4e93c4", // blue
+    entities: "#c264a8", // magenta
+    questions: "#5bb8b0", // teal
+  }
+
+  const sectionOf = (id: SimpleSlug): string => {
+    const idx = id.indexOf("/")
+    return idx === -1 ? id : id.slice(0, idx)
+  }
+
+  // calculate color: current node stays highlighted; every other node is
+  // colored by its path (top-level section); tags keep the tertiary accent.
   const color = (d: NodeData) => {
-    const isCurrent = d.id === slug
-    if (isCurrent) {
+    if (d.id === slug) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
-      return computedStyleMap["--gray"]
+      return sectionColors[sectionOf(d.id)] ?? computedStyleMap["--gray"]
     }
   }
 

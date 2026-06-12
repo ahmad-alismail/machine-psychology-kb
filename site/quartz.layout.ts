@@ -50,7 +50,15 @@ export const sharedPageComponents: SharedLayout = {
     // showTags: false — no nodes for tags/hashes.
     Component.ConditionalRender({
       component: Component.Graph({
-        localGraph: { depth: -1, showTags: false },
+        localGraph: {
+          depth: -1,
+          scale: 0.9,
+          repelForce: 0.5,
+          centerForce: 0.2,
+          linkDistance: 30,
+          fontSize: 0.5,
+          showTags: false,
+        },
         globalGraph: { showTags: false },
       }),
       condition: isHome,
