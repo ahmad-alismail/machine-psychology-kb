@@ -5,7 +5,7 @@ lens: psychological
 citation_key: 06-liu-et-al-2025
 tags: [survey, psychology-nlp, theory-of-mind, operant-conditioning, personality, evaluation-validity]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # The Mind in the Machine: A Survey of Incorporating Psychological Theories in LLMs (Liu et al. 2025)
@@ -116,9 +116,9 @@ it foregrounds as grounding behavioral evaluation/alignment, and links the rest:
   formalizes as the seven requirements for valid LLM psychological testing
   ([[theories/psychometric-test-standards]]) — the survey even cites Löhn et al. (2024) on
   whether human psychology maps onto LLMs "without distortion."
-- The ToM emergent-vs-pattern-matching debate it summarizes is the same Kosinski-vs-Strachan/
-  Ullman/Shapira controversy that motivates [[paradigms/false-belief-task]]'s contamination and
-  robustness concerns.
+- The ToM emergent-vs-pattern-matching debate it summarizes is the same
+  [[sources/kosinski-2024]]-vs-Strachan/[[sources/ullman-2023]]/Shapira controversy that motivates
+  [[paradigms/false-belief-task]]'s contamination and robustness concerns.
 
 ## Limitations
 

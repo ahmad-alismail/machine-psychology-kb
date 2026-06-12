@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [methodology, reliability, validity, fairness, measurement]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Psychometric Test Standards (Reliability · Validity · Fairness)
@@ -105,8 +105,8 @@ section of each paradigm page — most directly:
 
 - [[paradigms/false-belief-task]] — R3 (apparatus→text adaptation), R4 (canonical
   Sally–Anne contamination), R1 (alternate-forms / perturbation robustness); the
-  Kosinski 2023 vs. Ullman 2023 contradiction is the paper's motivating example of
-  non-standardization.
+  [[sources/kosinski-2024]] vs. [[sources/ullman-2023]] contradiction is the paper's motivating
+  example of non-standardization.
 - [[paradigms/psychometric-scale-reliability-stress-test]] — an empirical realization of the
   **R1 (reliability)** requirement: test–retest (biweekly across model versions), alternate-forms
   (item rephrasing), and internal consistency (perturbation robustness, low-variance distributions)

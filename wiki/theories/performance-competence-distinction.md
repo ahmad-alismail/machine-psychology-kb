@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [methodology, interpretation]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Performance–Competence Distinction
@@ -69,3 +69,9 @@ argument from the presence of one." This is the load-bearing grounding of
   "behaving *as if*" against Searle's Chinese-room argument and explicitly declines to settle
   whether LLMs *have* ToM, while cautioning that model failures "do not necessarily indicate a
   lack of ability" (scoring-key limits, confabulation, administrator constraints).
+- [[sources/ullman-2023]] — the inverse application: argues *averaged successes* are mere
+  *performance* while an *outlying failure* on a novel input exposes missing *competence* (the
+  multiplication analogy — "5\*5=25" a hundred times but failing "213\*261" shows no general
+  multiplication algorithm). Sharpens the Turing-Test critique via Block (1981): intelligence
+  attribution should weigh the *algorithm* generating a behavior, not only its input–output —
+  grounding the "skeptical zero-hypothesis" for machine intuitive psychology.

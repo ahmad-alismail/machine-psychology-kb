@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [psychometrics, personality, values, moral-foundations, bias, zero-shot-nli]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # AI Psychometrics: Assessing the Psychological Profiles of Large Language Models Through Psychometric Inventories (Pellert et al. 2024)
@@ -95,8 +95,8 @@ and [[instruments/gender-sex-diversity-beliefs-scale]].
   methodological tension; see the warning on
   [[paradigms/psychometric-inventory-administration]].
 - [[sources/hagendorff-et-al-2024]] is the field review that situates both.
-- The paper itself flags the Kosinski (2023) Theory-of-Mind claim and Ullman (2023) rebuttal
-  as a cautionary precedent for fragile psychometric results.
+- The paper itself flags the [[sources/kosinski-2024]] Theory-of-Mind claim and
+  [[sources/ullman-2023]] rebuttal as a cautionary precedent for fragile psychometric results.
 
 ## Limitations
 

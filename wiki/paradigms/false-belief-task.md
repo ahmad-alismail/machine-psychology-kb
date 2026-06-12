@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [social-cognition, theory-of-mind]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # False-Belief Task (Theory-of-Mind Tests)
@@ -16,11 +16,13 @@ date_modified: 2026-06-11
 > someone else knows and doesn't know — the same machinery a model would need to
 > *mislead* someone on purpose, which is why safety researchers care.
 
-> [!note] Primary source
+> [!note] Primary sources
 > Grounded in the primary paper [[sources/kosinski-2024]] (the bespoke 40-task battery,
 > true-belief controls, reversals, 16-prompt scoring, and sentence-by-sentence analysis come
-> from it) and the review [[sources/hagendorff-et-al-2024]]. Further enrich from additional
-> primaries (Ullman 2023; Strachan et al. 2024; Street et al. 2024; Hagendorff 2024a) when ingested.
+> from it), its primary rebuttal [[sources/ullman-2023]] (the perturbation layer — eight directed,
+> principle-preserving alterations that flip the answers), and the review
+> [[sources/hagendorff-et-al-2024]]. Further enrich from additional primaries (Strachan et al.
+> 2024; Street et al. 2024; Hagendorff 2024a) when ingested.
 
 ## Theoretical Grounding
 
@@ -65,10 +67,33 @@ per step), tracking how the probability of each diagnostic word evolves — show
 the model *dynamically updates* the ascribed belief as crucial information is revealed
 (Figs. 1–2) rather than pattern-matching a static template.
 
-Variants surveyed by the review: comparisons against children aged 7–10 (van Duijn et
-al. 2023), "higher-order theory of mind tasks requiring recursive reasoning about
-multiple mental states" (Street et al. 2024), and robustness checks using "distracting
-alterations in the tasks" (Ullman 2023).
+**The perturbation layer** ([[sources/ullman-2023]]) is the robustness control built directly on
+top of this elicitation. Ullman takes Kosinski's *exact* vignettes and prompts ("the exact same
+set-up … examining the probabilities of different completions") on GPT-3.5 and applies eight
+directed alterations that "do not violate the basic principles of Theory-of-Mind" yet should make
+the canonical false-belief answer wrong — four per task family:
+
+- *Unexpected Contents (Smarties)* — **1A Transparent Access** (the bag is "transparent plastic,"
+  so the contents are visible and the label redundant); **1B Uninformative Label** ("Sam cannot
+  read," so the "chocolate" label is meaningless to her); **1C Trustworthy Testimony** (a trusted
+  friend tells Sam "the bag in the room has popcorn in it, ignore the label" and "Sam believes her
+  friend"); **1D The Treachery of Late Labels** (Sam herself fills the bag with popcorn and writes
+  the "chocolate" label).
+- *Unexpected Transfer (Sally–Anne)* — **2A Transparent Access** (the basket/box become a "glass
+  chest" and "transparent plastic box," giving John perceptual access; errors persisted even when
+  John "looks carefully" and when the cat's tail sticks out); **2B Relationship Change** ("in"
+  changed to "on," so the cat sits *on* the basket/box in full view); **2C Trusted Communication**
+  ("Mark calls John to tell him he is going to move the cat to the box. John believes him");
+  **2D Querying the Mental States of the Additional Person** (the prompt asks where *Mark* — the
+  person who moved the cat — thinks it is and will look, a state the model should find *easier*).
+
+In each case a genuine mentalizer should flip the attribution to the now-correct answer; GPT-3.5
+instead keeps the canonical false-belief answer. The result is the wiki's reference instance of
+the [[paradigms/adversarial-vignette-perturbation]] logic applied to Theory-of-Mind.
+
+Other variants surveyed by the review: comparisons against children aged 7–10 (van Duijn et
+al. 2023) and "higher-order theory of mind tasks requiring recursive reasoning about
+multiple mental states" (Street et al. 2024).
 
 ## Scoring / Procedure
 
@@ -98,8 +123,8 @@ alterations in the tasks" (Ullman 2023).
 
 These concerns instantiate the psychometric requirements catalogued in
 [[theories/psychometric-test-standards]]; [[sources/loehn-et-al-2024]] uses this very
-paradigm — the Kosinski (2023) vs. Ullman (2023) contradiction, where trivial item
-changes flip the Theory-of-Mind verdict — as its motivating example that the field's
+paradigm — the [[sources/kosinski-2024]] vs. [[sources/ullman-2023]] contradiction, where trivial
+item changes flip the Theory-of-Mind verdict — as its motivating example that the field's
 results are "symptomatic of a general lack of standardization" (engaging R1
 alternate-forms reliability, R3 apparatus→text suitability, and R4 contamination).
 
@@ -110,9 +135,16 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   reversed versions), and **only LLMs trained before the tasks were published online (Feb
   2023) were studied** — the author further warns that any task administered via public API
   or published online "should be considered compromised" for future models.
-- **Robustness / surface-form sensitivity**: Ullman (2023) showed ToM successes degrade
-  under "distracting alterations" — passing unperturbed items is weak evidence; the
-  perturbation battery is part of the paradigm, not an optional extra.
+- **Robustness / surface-form sensitivity**: [[sources/ullman-2023]] showed GPT-3.5's ToM
+  successes flip under trivial principle-preserving alterations (see the perturbation layer above)
+  — passing unperturbed items is weak evidence, so the perturbation battery is part of the
+  paradigm, not an optional extra. Ullman frames two interpretive rules that follow: the
+  "zero-hypothesis for model evaluation in intuitive psychology should be skeptical," and
+  "outlying failure cases should outweigh average success rates" (the multiplication analogy — a
+  general algorithm is robust to simple input alterations, so a single instructive failure is not
+  averaged into a passing grade). A separate **reproducibility** hazard surfaced here: a *double
+  space* instead of a single space before "Sam finds the bag" by itself shifted GPT-3.5's
+  completion, a whitespace-level fragility that earlier caused Ullman to mis-report a flip.
 - **Construct validity**: belief-consistent answers can be produced by shallow cues
   (e.g., last-mentioned location); deconfounded foils and true-belief controls are
   required to implicate mentalizing specifically.
@@ -141,8 +173,15 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   to reliably infer unobservable mental states in others (Strachan et al. 2024;
   Holterman and Deemter 2023; Moghaddam and Honey 2023)" — via
   [[sources/hagendorff-et-al-2024]].
-- Robustness caveat: setups are fragile to task alterations (Ullman 2023, via the same
-  review).
+- **Primary perturbation result** ([[sources/ullman-2023]], §2, Figs. 1–2): all eight
+  principle-preserving alterations make GPT-3.5 keep the *wrong* canonical false-belief answer.
+  Belief-prompt probabilities of the canonical (incorrect) completion: 1A *chocolate* = 95%; 1B
+  = 98%; 1C = 97%; 1D = 87%; 2A *chest* = 94% (look-prompt 90%); 2B *basket* = 97% (look-prompt
+  74%); 2C = 97% (look-prompt 94%); 2D *basket* = 99% (look-prompt 54%, with *box* = 43% — a near
+  miss even when the queried agent is the one who moved the cat). The lone partial exception is the
+  1A *second* belief prompt, which did not flip (P_popcorn = 58%, P_chocolate = 36%). This is the
+  primary grounding for the "setups are fragile to task alterations" caveat the wiki previously
+  cited only via the review.
 - Corroborating the generational-pass result and the fragility caveat together,
   [[sources/liu-et-al-2025]] reports "GPT-4 solves around 75% of false-belief tasks, matching a
   6-year-old's performance (Kosinski 2024; Strachan et al. 2024)" while "minor prompt changes

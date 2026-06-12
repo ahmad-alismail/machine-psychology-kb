@@ -87,6 +87,14 @@ problem intact while changing the surface form:
   perturbations flipped or degraded its answers across all four tested twins
   ([[sources/binz-schulz-2022]]), grounding the paper's conclusion that vignette success alone
   cannot show GPT-3 would "pass as a human in a cognitive psychology experiment."
+- The **Theory-of-Mind instance** ([[sources/ullman-2023]]): GPT-3.5 passed Kosinski's canonical
+  false-belief vignettes, yet eight minimally-edited, principle-preserving twins (transparent
+  containers, an unreadable label, trusted testimony, self-written labels, an "in"→"on" swap,
+  querying the mover) each flipped the belief attribution to the wrong answer — the same
+  canonical-vs-perturbed divergence as the diagnostic. Detailed per-variation on
+  [[paradigms/false-belief-task]]. Ullman further surfaces a whitespace-level fragility (a single
+  vs. double space before a sentence shifted the completion) — a concrete reproducibility caveat
+  for this paradigm.
 
 ## Open Questions
 

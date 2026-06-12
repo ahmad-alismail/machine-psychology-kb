@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [psychometrics, personality, values, bias, zero-shot-nli]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Psychometric Inventory Administration to LLMs
@@ -106,8 +106,8 @@ cross-lingual pair); GBERT is German-only.
 
 - **Construct validity.** There is no evidence that a model's entailment probabilities over a
   Likert scale arise from the construct the inventory names; the source itself calls reusing
-  human inventories on AI an open question and cites the Kosinski (2023) vs. Ullman (2023)
-  Theory-of-Mind episode as a cautionary precedent.
+  human inventories on AI an open question and cites the [[sources/kosinski-2024]] vs.
+  [[sources/ullman-2023]] Theory-of-Mind episode as a cautionary precedent.
 - **Self-consistency / reliability.** Only partially demonstrated: the models implicitly
   reconstruct the ordinal scale on their own (no obvious bimodality in the response
   distributions), which the authors offer as "first evidence" of no obvious *lack* of

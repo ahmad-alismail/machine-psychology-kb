@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [theory-of-mind, construct-validity, robustness, open-problem]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Is an LLM's apparent Theory of Mind genuine reasoning or pattern-matching?
@@ -40,6 +40,16 @@ problem catalogued in [[theories/psychometric-test-standards]].
   some see emergent *ToM*-like reasoning (Kosinski 2024), but others argue it may be pattern
   matching (Strachan et al. 2024), noting that minor prompt changes can derail results (Shapira
   et al. 2024)." It calls for "more theory-grounded evaluation and clearer definitions."
+- [[sources/ullman-2023]] is the primary "pattern-matching" pole: it takes Kosinski's *exact*
+  vignettes on GPT-3.5 and shows that eight trivial, principle-preserving perturbations
+  (transparent containers, an unreadable label, trusted testimony, a self-written label, "in"→"on",
+  querying the mover) each flip the belief attribution to the wrong answer — evidence that the
+  "mind-reading" was surface-level. It argues the "zero-hypothesis … should be skeptical," that
+  "outlying failure cases should outweigh average success rates," and that one can "jump over the
+  horns" of Kosinski's dilemma — holding ToM tests valid for humans while doubting an LLM that
+  passes, since mental-state inference weighs the *algorithm* generating a behavior, not only its
+  input–output. It also names the **benchmark paradox**: publishing a systematic
+  variation-generator lets an LLM train against it and pass without acquiring ToM.
 - [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.

@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [methodology, critique, psychometrics, reliability, validity]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Is Machine Psychology Here? On Requirements for Using Human Psychological Tests on LLMs (Löhn, Kiehne, et al. 2024)
@@ -74,8 +74,8 @@ until re-validated. The seven requirements live on [[theories/psychometric-test-
 - **Redefine constructs for LLMs.** The paper's central recommendation: "redefine
   psychological constructs specifically for large language models rather than adopting
   them from human psychology." → [[questions/redefine-constructs-for-llms]]
-- **The Kosinski (2023) vs. Ullman (2023) Theory-of-Mind contradiction** — trivial item
-  changes flip the verdict — is "symptomatic of a general lack of standardization." (§1.)
+- **The [[sources/kosinski-2024]] vs. [[sources/ullman-2023]] Theory-of-Mind contradiction** —
+  trivial item changes flip the verdict — is "symptomatic of a general lack of standardization." (§1.)
 - **Individual vs. population is unresolved**: LLMs have been equated with both; their
   stochasticity and millions-of-authors training data cast doubt on individuality, while
   Park et al. (2023) find population-like response distributions on some items but

@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [inference-framework, typology, capabilities, evaluation-validity]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # GPT-ology (Inferences about the LLM)
@@ -80,7 +80,7 @@ know?". Research sub-lines Ong surveys:
   checkpoints," so retesting after an update "might already change the results." (See
   [[questions/yoking-science-to-proprietary-models]].)
 - **Prompt brittleness.** Performance is "susceptible to seemingly innocuous changes in the stimuli
-  prompts" — reversed answer order, trivial alterations (Ullman 2023). Mathematically this
+  prompts" — reversed answer order, trivial alterations ([[sources/ullman-2023]]). Mathematically this
   "suggests that the model is overfitting"; cognitively, "a learnt stimulus-response (memorization),
   rather than true conceptual understanding."
 - **Contamination / data leakage.** If a canonical item (Sally-Anne, K-T fallacy) is in the

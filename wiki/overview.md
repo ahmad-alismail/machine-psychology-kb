@@ -24,8 +24,8 @@ game-theoretic) so that AI researchers can **understand and apply** them to **de
 evaluate misaligned behaviors and dangerous capabilities**.
 
 ## How the wiki is organized
-The [[theories]] ground the [[paradigms]] (experiments), which use the
-[[instruments]] and detect the [[safety-concepts]] (dangerous behaviors). The crosswalk
+The theories ground the paradigms (experiments), which use the
+instruments and detect the safety-concepts (dangerous behaviors). The crosswalk
 coverage map shows which behaviors have experiments and which don't.
 
 ## Start here

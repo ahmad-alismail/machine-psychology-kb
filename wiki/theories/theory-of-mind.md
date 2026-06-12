@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [social-cognition]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Theory of Mind
@@ -52,11 +52,14 @@ distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spok
 > Strachan et al. 2024); some see emergent *ToM*-like reasoning, but others argue it may be
 > pattern matching, noting that minor prompt changes can derail results (Shapira et al. 2024)."
 > The primary source [[sources/kosinski-2024]] sits on *both* sides of this debate: it reports
-> the 75% pass result yet itself catalogs the counter-evidence (Ullman 2023 — trivial
+> the 75% pass result yet itself catalogs the counter-evidence ([[sources/ullman-2023]] — trivial
 > alterations break ToM; Shapira et al. 2023; Kim et al. 2023 / FANToM) and ends "We leave it
-> to the reader" to decide whether LLMs have reached ToM. This is the same fragility that
-> drives the contamination and robustness concerns on [[paradigms/false-belief-task]]; see
-> [[questions/llm-theory-of-mind-genuine-or-pattern-matching]].
+> to the reader" to decide whether LLMs have reached ToM. [[sources/ullman-2023]] is the primary
+> robustness rebuttal: on GPT-3.5, eight principle-preserving perturbations of Kosinski's own
+> vignettes flip the belief attribution to the wrong answer, and the author argues the
+> "zero-hypothesis … should be skeptical" and that "outlying failure cases should outweigh average
+> success rates." This is the same fragility that drives the contamination and robustness concerns
+> on [[paradigms/false-belief-task]]; see [[questions/llm-theory-of-mind-genuine-or-pattern-matching]].
 
 ## Paradigms Grounded in This Theory
 
@@ -64,6 +67,7 @@ distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spok
 
 ## Sources
 
+- [[sources/ullman-2023]]
 - [[sources/kosinski-2024]]
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]

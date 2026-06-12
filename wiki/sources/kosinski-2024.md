@@ -127,10 +127,11 @@ not wiki interpretation):
   reviews. This ingest grounds those pages in the primary paper.
 - **Both sides of the validity debate are in the paper.** Kosinski reports the
   generational-pass result *and* catalogs the counter-evidence that LLM ToM is "inconsistent
-  and brittle": Ullman 2023 (trivial alterations break ToM), Shapira et al. 2023, Kim et al.
-  2023 (FANToM), with Pi et al. 2024 (SCALPEL) arguing some failures reflect missing
+  and brittle": [[sources/ullman-2023]] (trivial alterations break ToM), Shapira et al. 2023, Kim
+  et al. 2023 (FANToM), with Pi et al. 2024 (SCALPEL) arguing some failures reflect missing
   commonsense (transparency) rather than missing ToM. This is the Kosinski-vs-Ullman
-  contradiction that [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] is built on.
+  contradiction that [[questions/llm-theory-of-mind-genuine-or-pattern-matching]] is built on; the
+  Ullman rebuttal is now grounded in its primary paper.
 - **Shared author lineage.** Kosinski co-authored Hagendorff, Fabi & Kosinski 2023
   ("Human-like intuitive behavior and reasoning biases emerged in LLMs but disappeared in
   ChatGPT"), the same emergent-then-vanishing-bias theme that grounds

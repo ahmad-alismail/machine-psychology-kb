@@ -115,6 +115,7 @@ date_modified: 2026-06-12
 - [[sources/huang-et-al-2025]] — CORE; EmotionBench — emotion-appraisal situation-induction on 7 LLMs vs. 1,266-person baseline; coins "emotional alignment"; models overreact, can't link situations, and feel pleased not jealous; emotion→toxicity (PoR)
 - [[sources/lei-et-al-2024]] — CORE; FairMindSim — altruistic-punishment game on GPT-3.5/4-Turbo/4o vs. 100-person baseline; GPT-4o enforces fairness more than humans & holds steadier fairness belief (BREM); humans richer emotions, β₁>β₂ (belief>reward)
 - [[sources/kosinski-2024]] — CORE; primary false-belief-task study on 11 LLMs — ChatGPT-4 solves 75% (≈ 6-y-old); true-belief controls + reversals + 16-prompt scoring; ToM as emergent by-product of language; both sides of the genuine-vs-pattern-matching debate
+- [[sources/ullman-2023]] — CORE; primary rebuttal to Kosinski — eight trivial principle-preserving perturbations of the ToM vignettes flip GPT-3.5's belief attribution to the wrong answer; "skeptical zero-hypothesis", outliers > average successes, the benchmark paradox
 
 ## Entities
 
@@ -133,6 +134,7 @@ date_modified: 2026-06-12
 - [[entities/jingru-jia]] — lead author, behavioral-game-theory evaluation of LLM strategic reasoning, UIUC
 - [[entities/yu-lei]] — lead author, FairMindSim altruistic-punishment alignment study, Tsinghua
 - [[entities/michal-kosinski]] — sole author, LLM theory-of-mind / false-belief-task study, Stanford GSB
+- [[entities/tomer-ullman]] — sole author, ToM-robustness rebuttal (trivial alterations break LLM ToM), Harvard Psychology
 
 ## Questions
 
