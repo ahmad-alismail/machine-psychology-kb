@@ -4,7 +4,7 @@ field: machine-psychology
 lens: na
 tags: []
 date_created: 2026-06-10
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Wiki Index
@@ -36,6 +36,7 @@ date_modified: 2026-06-11
 - [[paradigms/personality-steering-interventions]] — three increasingly directive prompt strategies (environment / assigned personality / embodied character) that shift an LLM's measured trait distribution (psychological)
 - [[paradigms/adversarial-vignette-perturbation]] — canonical vignettes paired with minimally-perturbed "adversarial" twins as a contamination / surface-form-robustness control (psychological)
 - [[paradigms/interventional-causal-inference-task]] — common-cause vs. causal-chain intervene-vs-observe inference (seeing ≠ doing; do-operator) (psychological)
+- [[paradigms/tqre-strategic-reasoning-depth]] — fit a behavioral-game-theory (TQRE) model to LLM choices across a matrix-game library to recover strategic reasoning depth (τ); persona-intervention fairness audit (game-theoretic)
 
 ## Theories — grounding layer
 
@@ -62,6 +63,8 @@ date_modified: 2026-06-11
 - [[theories/cognitive-consistency-theory]] — individuals seek consistency; inconsistency → "state of tension" (cognitive dissonance)
 - [[theories/self-perception-theory]] — people infer attitudes from their own prior behavior; grounds Foot-in-the-Door
 - [[theories/interventionist-causal-inference]] — observing ≠ doing; Pearl's do-operator deletes arrows into an intervened variable
+- [[theories/behavioral-game-theory]] — relaxes Nash's full-rationality assumption: bounded, stochastic, finite-depth strategic reasoning
+- [[theories/truncated-quantal-response-equilibrium]] — the measurement model (QRE + Cognitive Hierarchy): τ = reasoning depth, γ = decision precision
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -82,6 +85,7 @@ date_modified: 2026-06-11
 - [[instruments/ipip-neo-300]] — IPIP-NEO-300 Big Five inventory (300 items, facet-level)
 - [[instruments/refined-advbench]] — 60-question / 6-category jailbreak test set (refined AdvBench) + GPT-4 judge
 - [[instruments/cognitive-reflection-test]] — CRT 3-item intuitive-vs-reflective deliberation probe
+- [[instruments/matrix-game-library]] — 13 normal-form games (7 types; complete/incomplete info) + SW10 human-reasoning benchmark
 
 ## Sources
 
@@ -96,6 +100,7 @@ date_modified: 2026-06-11
 - [[sources/ong-2024]] — CORE; typology of three LLM cognitive-science paradigms (GPT-ology / computational-model / silicon-sampling) + Outstanding Issues on validity & reproducibility
 - [[sources/huang-et-al-2024]] — CORE; reliability stress-test of the BFI on 4 LLMs across 2,500 perturbed settings (reliable, not random) + persona steering; stresses reliability ≠ validity
 - [[sources/binz-schulz-2022]] — CORE; foundational cognitive-psychology probing of GPT-3 (decision-making/exploration/two-step/causal) + the contamination & surface-form critique; precursor to CogBench
+- [[sources/jia-et-al-2025]] — CORE; behavioral-game-theory (TQRE) evaluation of 22 LLMs' strategic reasoning depth (τ) across 13 matrix games; reasoning-style coding, CoT-effect, demographic-persona fairness audit
 
 ## Entities
 
@@ -111,6 +116,7 @@ date_modified: 2026-06-11
 - [[entities/desmond-ong]] — sole author, LLM-paradigm typology, UT Austin (Psychology)
 - [[entities/jen-tse-huang]] — lead author, reliability of psychological scales on LLMs, CUHK / Tencent AI Lab
 - [[entities/marcel-binz]] — lead author, "Using cognitive psychology to understand GPT-3"; co-author CogBench, MPI Tübingen / Helmholtz Munich
+- [[entities/jingru-jia]] — lead author, behavioral-game-theory evaluation of LLM strategic reasoning, UIUC
 
 ## Questions
 
@@ -127,6 +133,7 @@ date_modified: 2026-06-11
 - [[questions/incremental-compliance-pressure-generalization]] — does foot-in-the-door escalation generalize beyond jailbreaking to other gradual-compliance failures?
 - [[questions/yoking-science-to-proprietary-models]] — should behavioral AI science depend on closed, mutable commercial models?
 - [[questions/active-interaction-for-causal-and-directed-exploration]] — are causal reasoning & directed exploration gaps a consequence of passive text training?
+- [[questions/cot-alignment-with-internal-reasoning]] — can external CoT prompts be aligned with a model's internal reasoning so extended chains help rather than entrench errors?
 
 ## Crosswalk
 

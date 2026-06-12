@@ -4,7 +4,7 @@ field: machine-psychology
 lens: na
 tags: []
 date_created: 2026-06-10
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Operations Log
@@ -13,6 +13,13 @@ date_modified: 2026-06-11
 > Each entry starts with `## [YYYY-MM-DD] <op> | <title>`.
 
 <!-- new entries prepended above the older ones, newest at the top -->
+
+## [2026-06-12] ingest-agentic | LLM Strategic Reasoning: Agentic Study through Behavioral Game Theory (Jia et al. 2025)
+- Gate: CORE — evaluates 22 LLMs' *strategic-reasoning behavior* with a behavioral-game-theory framework (TQRE), treating each model as an experimental subject and fitting a cognitively grounded reasoning-depth metric (τ) to its choice frequencies. AI framing is the source's own throughout. Optional CORE "Relevance to Machine Psychology" note included (the reusable behavioral-evaluation + fairness-audit method).
+- Review: agent-approved (pass 1). Integrator notes applied: (a) main reasoning-depth table (Table 3) covers 16 NAMED models — the headline "22 SOTA LLMs" includes R1-distilled variants reported only in Appendix B (recorded as a Limitation on the source page); (b) SW10 = Stahl & Wilson (1994) human-reasoning benchmark matrix, kept distinct from the 13-game library; (c) contamination of canonical games (Prisoner's Dilemma, SW10) marked as a wiki-flag — the authors do NOT raise it; (d) τ ("reasoning depth") vs. γ ("decision precision") kept distinct per the source, which separates γ "to avoid conflating shallow reasoning with stochastic execution"; (e) native vocabulary preserved verbatim (TQRE, maximin, "opponent oriented," "strategic trust," "circular reasoning fallacy").
+- Pages created: sources/jia-et-al-2025, theories/behavioral-game-theory, theories/truncated-quantal-response-equilibrium, paradigms/tqre-strategic-reasoning-depth, instruments/matrix-game-library, entities/jingru-jia, questions/cot-alignment-with-internal-reasoning
+- Pages updated: questions/traits-predict-downstream-behavior (capability-metric parallel to the trait→behavior arrow), index.md
+- Notes: citation_key = 20-jia-et-al-2025 (first-author surname "Jia", 3+ authors → jia-et-al; numeric prefix 20 fixed; filename drops the "20-" per convention). BibTeX provided by user, pasted verbatim. 1 NEW paradigm added (lens game-theoretic; folds in CoT-style coding + CoT-prompting effect + demographic-persona OLS audit) → coverage map should be refreshed (run /map; still ungenerated). 2 NEW theories (behavioral-game-theory, TQRE). No new safety-concept page created: reasoning depth is a capability characterization, and persona-induced *behavioral* bias remains a future bias/fairness scaffold candidate (consistent with prior ingests — flagged on the paradigm page as a crosswalk gap). Lint counter = 1 (post-commit → 2; not divisible by 10, no /lint suggested). git add / git commit deliberately NOT run (per request).
 
 ## [2026-06-12] ingest-agentic | Using cognitive psychology to understand GPT-3 (Binz & Schulz 2022)
 - Gate: CORE — subjects GPT-3 to a battery of canonical cognitive-psychology experiments (decision-making, information search, deliberation, causal reasoning); AI framing is the source's own throughout. No SOURCE-METHOD bridge required (optional CORE "Relevance to Machine Psychology" note included: the contamination + surface-form methodological caution). This is the foundational precursor to CogBench (coda-forno-et-al-2024).

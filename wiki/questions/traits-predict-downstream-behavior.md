@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [construct-validity, predictive-validity, open-problem]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Do LLM psychometric profiles predict downstream behavior?
@@ -54,6 +54,13 @@ an early-warning instrument rather than a personality parlor trick.
   [[sources/hartley-et-al-2024]]: huang verifies the persona registers on the *scale*, hartley
   shows a persona shifts a *behavioural* parameter — neither alone closes the trait → behavior
   arrow.
+
+- [[sources/jia-et-al-2025]] raises a **parallel arrow for a capability metric rather than a
+  trait**: it recovers a model's *strategic reasoning depth* (τ) via
+  [[paradigms/tqre-strategic-reasoning-depth]], but cautions that "a higher score is better" should
+  not be assumed and that "superior reasoning capabilities do not inherently lead to desirable or
+  ethical outcomes." So even a behaviorally-fitted capability score leaves the
+  metric → real-world-behavior arrow open — the same gap this question names for trait scores.
 
 ## Suggested Investigation (toward a new paradigm)
 
