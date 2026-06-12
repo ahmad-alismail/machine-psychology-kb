@@ -49,6 +49,12 @@ argument from the presence of one." This is the load-bearing grounding of
 
 ## Paradigms Grounded in This Theory
 
+- [[paradigms/theory-of-mind-battery]] — the wiki's clearest empirical instance of the
+  distinction: [[sources/strachan-et-al-2024]] shows GPT's faux-pas failure is **performance**, not
+  missing **competence** — reworded as a likelihood question ("is it *more likely* …?") GPT-4
+  answers perfectly, so the default yes/no failure reflects an "overly conservative approach" to
+  commitment (hyperconservatism), not an inability to compute the inference. The authors name the
+  result a "dissociation between competence and performance."
 - [[paradigms/llm-as-computational-model]] — its existence-proof inference *is* the
   asymmetric version of this distinction; [[paradigms/gpt-ology]] inherits the same
   caveat on negative capability results.
@@ -69,6 +75,10 @@ argument from the presence of one." This is the load-bearing grounding of
   "behaving *as if*" against Searle's Chinese-room argument and explicitly declines to settle
   whether LLMs *have* ToM, while cautioning that model failures "do not necessarily indicate a
   lack of ability" (scoring-key limits, confabulation, administrator constraints).
+- [[sources/strachan-et-al-2024]] — the load-bearing empirical instance: GPT's faux-pas failure is
+  *performance* (epistemic caution about committing), not absent *competence*; reframing the probe
+  as a likelihood question recovers perfect performance. Coins the "dissociation between competence
+  and performance" reading and the **hyperconservatism** account.
 - [[sources/ullman-2023]] — the inverse application: argues *averaged successes* are mere
   *performance* while an *outlying failure* on a novel input exposes missing *competence* (the
   multiplication analogy — "5\*5=25" a hundred times but failing "213\*261" shows no general

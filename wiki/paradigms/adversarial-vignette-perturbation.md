@@ -95,6 +95,13 @@ problem intact while changing the surface form:
   [[paradigms/false-belief-task]]. Ullman further surfaces a whitespace-level fragility (a single
   vs. double space before a sentence shifted the completion) — a concrete reproducibility caveat
   for this paradigm.
+- **The human-baselined instance** ([[sources/strachan-et-al-2024]], SI4): Strachan et al.
+  replicated the Ullman ToM perturbations and reproduced the GPT failures — but ran the *same*
+  perturbations on a human sample (*N* = 757) and found "human participants … also failed on half
+  of these perturbations." Adding a human baseline to the perturbation logic shows a flipped answer
+  under a meaning-preserving (but physically-altered) edit is not automatically an LLM-specific
+  brittleness — exactly the **construct-ambiguity-of-a-flipped-answer** caveat above, now with
+  empirical teeth. Detailed on [[paradigms/false-belief-task]].
 
 ## Open Questions
 

@@ -18,6 +18,7 @@ date_modified: 2026-06-12
 - [[paradigms/heuristics-and-biases-battery]] — cognitive-bias vignettes as decision-process probes (psychological)
 - [[paradigms/content-effects-on-reasoning]] — same logic, varied semantic content (psychological)
 - [[paradigms/false-belief-task]] — theory-of-mind tests incl. higher-order and perturbed variants (psychological)
+- [[paradigms/theory-of-mind-battery]] — five-test ToM battery (false belief / irony / faux pas / hinting / strange stories) on 3 LLMs vs. 1,907 humans; faux-pas likelihood + belief-likelihood variants surface hyperconservatism (psychological)
 - [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
 - [[paradigms/psychometric-inventory-administration]] — human trait/value/morality inventories given to LLMs via zero-shot NLI (psychological)
 - [[paradigms/narrow-psychometric-fine-tuning]] — fine-tune LLMs on inventory answer-keys to induce "dark" personas (psychological)
@@ -116,6 +117,7 @@ date_modified: 2026-06-12
 - [[sources/lei-et-al-2024]] — CORE; FairMindSim — altruistic-punishment game on GPT-3.5/4-Turbo/4o vs. 100-person baseline; GPT-4o enforces fairness more than humans & holds steadier fairness belief (BREM); humans richer emotions, β₁>β₂ (belief>reward)
 - [[sources/kosinski-2024]] — CORE; primary false-belief-task study on 11 LLMs — ChatGPT-4 solves 75% (≈ 6-y-old); true-belief controls + reversals + 16-prompt scoring; ToM as emergent by-product of language; both sides of the genuine-vs-pattern-matching debate
 - [[sources/ullman-2023]] — CORE; primary rebuttal to Kosinski — eight trivial principle-preserving perturbations of the ToM vignettes flip GPT-3.5's belief attribution to the wrong answer; "skeptical zero-hypothesis", outliers > average successes, the benchmark paradox
+- [[sources/strachan-et-al-2024]] — CORE; comprehensive ToM battery (false belief / irony / faux pas / hinting / strange stories) on GPT-4/3.5/LLaMA2-70B vs. 1,907 humans; GPT-4 at/above human on all but faux pas; LLaMA2 faux-pas win "illusory" (ignorance bias); GPT faux-pas failure is hyperconservatism not failed inference; humans also fail half the false-belief perturbations (N=757)
 
 ## Entities
 
@@ -135,6 +137,7 @@ date_modified: 2026-06-12
 - [[entities/yu-lei]] — lead author, FairMindSim altruistic-punishment alignment study, Tsinghua
 - [[entities/michal-kosinski]] — sole author, LLM theory-of-mind / false-belief-task study, Stanford GSB
 - [[entities/tomer-ullman]] — sole author, ToM-robustness rebuttal (trivial alterations break LLM ToM), Harvard Psychology
+- [[entities/james-strachan]] — lead author, comprehensive LLM-vs-human ToM battery + hyperconservatism account, UKE Hamburg / IIT Genoa
 
 ## Questions
 

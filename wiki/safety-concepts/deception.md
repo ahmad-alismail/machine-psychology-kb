@@ -27,6 +27,10 @@ _TBD by user._
   (tracking others' beliefs) that deception requires; the review pairs it with work on
   inducing false beliefs (Hagendorff 2024a) and honesty/helpfulness tradeoffs (Liu et
   al. 2024).
+- [[paradigms/theory-of-mind-battery]] — extends the mentalizing substrate beyond false belief
+  (faux pas, irony, hinting, strange stories): representing what another agent does/doesn't know
+  and how an utterance will land is the machinery for inducing false beliefs
+  ([[sources/strachan-et-al-2024]]).
 - [[paradigms/sender-receiver-deception-game]] — an economic game measuring *demonstrated*
   self-serving deception (deceptive lies vs. prosocial honesty); dark-fine-tuned LLMs lie more
   ([[sources/lulla-et-al-2025]]).

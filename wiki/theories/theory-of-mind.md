@@ -41,6 +41,15 @@ probe of LLM social intelligence: deployed chat agents "should become versed in 
 human communicators." Safety edge: the same capacity underwrites the "emerging capability
 of LLMs to induce false beliefs in other agents" — i.e., [[safety-concepts/deception]].
 
+[[sources/strachan-et-al-2024]] is the primary study extending this construct beyond false belief
+to a **battery** of human ToM tests (irony, faux pas, hinting, strange stories) on GPT-4, GPT-3.5
+and LLaMA2-70B against a 1,907-person baseline. It both grounds the wiki's previously second-hand
+"Strachan 2024" references (GPT-4 at or above human ToM levels) and refines the construct: ToM is
+treated, per Apperly (2012), as "an interconnected set of notions," and the paper's central finding
+is a **dissociation between competence and performance** — GPT can compute and rank a mentalistic
+inference yet refrains from committing to it ("hyperconservatism"), so a single yes/no probe can
+mistake epistemic caution for a failure of mentalizing. See [[paradigms/theory-of-mind-battery]].
+
 [[sources/liu-et-al-2025]] names ToM as its primary social-cognition evaluation theory and
 catalogs the benchmark family built on it — **ToMBench** (Chen et al. 2024c), **OpenToM** (Xu
 et al. 2024a), **HI-TOM** (Wu et al. 2023), and **FANToM** (Kim et al. 2023) — "each probing
@@ -64,10 +73,13 @@ distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spok
 ## Paradigms Grounded in This Theory
 
 - [[paradigms/false-belief-task]]
+- [[paradigms/theory-of-mind-battery]] — the multi-test battery (irony, faux pas, hinting, strange
+  stories) extending the construct beyond false belief
 
 ## Sources
 
 - [[sources/ullman-2023]]
 - [[sources/kosinski-2024]]
+- [[sources/strachan-et-al-2024]]
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]

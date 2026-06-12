@@ -21,8 +21,12 @@ date_modified: 2026-06-12
 > true-belief controls, reversals, 16-prompt scoring, and sentence-by-sentence analysis come
 > from it), its primary rebuttal [[sources/ullman-2023]] (the perturbation layer — eight directed,
 > principle-preserving alterations that flip the answers), and the review
-> [[sources/hagendorff-et-al-2024]]. Further enrich from additional primaries (Strachan et al.
-> 2024; Street et al. 2024; Hagendorff 2024a) when ingested.
+> [[sources/strachan-et-al-2024]] (the false-belief member of a comprehensive ToM battery, and
+> the primary for the human-baselined perturbation control where *humans also fail half the
+> perturbations*), and the review [[sources/hagendorff-et-al-2024]]. Further enrich from
+> additional primaries (Street et al. 2024; Hagendorff 2024a) when ingested. The
+> non-false-belief members of the Strachan battery (faux pas, irony, hinting, strange stories)
+> live on [[paradigms/theory-of-mind-battery]].
 
 ## Theoretical Grounding
 
@@ -91,6 +95,15 @@ In each case a genuine mentalizer should flip the attribution to the now-correct
 instead keeps the canonical false-belief answer. The result is the wiki's reference instance of
 the [[paradigms/adversarial-vignette-perturbation]] logic applied to Theory-of-Mind.
 
+**The human control on the perturbations** ([[sources/strachan-et-al-2024]], SI4): Strachan et al.
+replicated these perturbation variants and "replicated the poor performance of GPT models found in
+previous studies," but added the control [[sources/ullman-2023]] lacked — running the same
+perturbations on a fresh human sample (*N* = 757) — and found that "human participants … also failed
+on half of these perturbations." This complicates reading the perturbation failures as a clean
+LLM-specific *absence* of Theory-of-Mind: because the alterations also change the physical properties
+of the scene (transparency), it is "difficult to establish whether LLMs (and humans) failed because
+they were sticking to the familiar script … or because they did not consider physical principles."
+
 Other variants surveyed by the review: comparisons against children aged 7–10 (van Duijn et
 al. 2023) and "higher-order theory of mind tasks requiring recursive reasoning about
 multiple mental states" (Street et al. 2024).
@@ -149,8 +162,9 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   (e.g., last-mentioned location); deconfounded foils and true-belief controls are
   required to implicate mentalizing specifically.
 - **Generational drift**: early models failed (Sap et al. 2022), later models pass
-  (Strachan et al. 2024; Holterman & van Deemter 2023; Moghaddam & Honey 2023) — results
-  must be indexed to model generation and elicitation conditions.
+  ([[sources/strachan-et-al-2024]] — GPT-4 at ceiling on false belief; Holterman & van Deemter
+  2023; Moghaddam & Honey 2023) — results must be indexed to model generation and elicitation
+  conditions.
 
 ## Evidence
 
@@ -182,6 +196,13 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   1A *second* belief prompt, which did not flip (P_popcorn = 58%, P_chocolate = 36%). This is the
   primary grounding for the "setups are fragile to task alterations" caveat the wiki previously
   cited only via the review.
+- **Humans fail the perturbations too** ([[sources/strachan-et-al-2024]], SI4): a replication of
+  these perturbation variants reproduced the poor GPT performance but, running them on a human
+  sample (*N* = 757), found "human participants … also failed on half of these perturbations" —
+  so the perturbation failure is not unambiguously an LLM-specific absence of ToM; it may be a
+  shared script-stickiness or neglect of physical principles (transparency). This source is also
+  the primary for the result, cited verbatim above via the reviews, that GPT-4 reaches ceiling on
+  the *unperturbed* false-belief test.
 - Corroborating the generational-pass result and the fragility caveat together,
   [[sources/liu-et-al-2025]] reports "GPT-4 solves around 75% of false-belief tasks, matching a
   6-year-old's performance (Kosinski 2024; Strachan et al. 2024)" while "minor prompt changes

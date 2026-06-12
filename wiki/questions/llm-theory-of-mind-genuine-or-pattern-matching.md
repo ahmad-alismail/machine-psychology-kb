@@ -50,6 +50,16 @@ problem catalogued in [[theories/psychometric-test-standards]].
   passes, since mental-state inference weighs the *algorithm* generating a behavior, not only its
   input–output. It also names the **benchmark paradox**: publishing a systematic
   variation-generator lets an LLM train against it and pass without acquiring ToM.
+- [[sources/strachan-et-al-2024]] is the primary that **complicates both poles**. It corroborates
+  the emergent reading (GPT-4 at or above human levels across a *battery* of ToM tests) and
+  replicates Ullman's perturbation failures — but, by running those perturbations on a human sample
+  (*N* = 757), shows "human participants … also failed on half of these perturbations," so a flipped
+  answer is not automatically LLM-specific pattern-matching. It further shows GPT's faux-pas
+  "failure" is **hyperconservatism** (epistemic caution about committing), not failed inference:
+  reworded as a likelihood question, GPT-4 answers perfectly and integrates story information like a
+  human. The lesson for this question is that single-probe pass/fail conflates *competence* with a
+  *commitment policy* — see [[paradigms/theory-of-mind-battery]] and
+  [[theories/performance-competence-distinction]].
 - [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.
