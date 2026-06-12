@@ -40,6 +40,11 @@ These are load-bearing — the wiki is internally consistent and a new paper mus
 - **BibTeX**: for arXiv, a canonical `@misc{...}` entry. For sources with no official export
   (system cards, lab blog posts, manually-dropped PDFs), the BibTeX block stays blank — leave the
   template's `TBD BY USER` placeholder untouched rather than fabricating an entry.
+- **No duplicates**: in LINK mode the script refuses to re-ingest a paper already in the wiki. It
+  checks the resolved arXiv id against every `wiki/sources/*.md` (the BibTeX `eprint`/`url` carry it)
+  and the deterministic `<authorkey>-<year>.md` source filename. On a hit it exits non-zero **before
+  downloading** — overriding requires an explicit `--force`. The number is still strictly `max+1`;
+  duplicate detection never reuses or backfills a number.
 
 ## Step 1 — Determine mode and stage the file
 
@@ -69,6 +74,11 @@ subagent from the converted markdown, because a raw PDF has no reliable machine-
 
 If the script exits with an error (e.g. a non-arXiv URL in LINK mode), relay its message: the user
 should download that PDF into `staging-area/` by hand and re-run in MANUAL mode.
+
+If the script exits with a `DUPLICATE:` message, the paper is already in the wiki — **stop here**.
+Relay the message (it names the existing source page) and do not convert or ingest. Only re-run with
+`--force` appended if the user confirms they want to re-ingest anyway (e.g. the metadata genuinely
+points at a different paper that merely collides on author/year).
 
 ## Step 2 — Convert with marker (background + poll)
 
@@ -172,6 +182,10 @@ Give the user a tight summary:
 
 - **Non-arXiv URL in LINK mode** — the script errors out cleanly. Tell the user to drop the PDF into
   `staging-area/` and re-run in MANUAL mode (BibTeX will be left blank, per convention).
+- **Duplicate paper (LINK mode)** — the script exits with a `DUPLICATE:` message before downloading.
+  Relay it and stop; the paper is already ingested. Re-run with `--force` only on explicit user
+  confirmation. (No detection in MANUAL mode — a raw PDF has no pre-conversion metadata to match on;
+  the number-collision guard still applies.)
 - **marker produces no markdown** — surface stderr, stop before ingest. Nothing to integrate.
 - **Subagent returns REVISE twice / can't resolve** — `/ingest-agentic` already escalates this to the
   user; relay it and stop before committing a half-integrated source.

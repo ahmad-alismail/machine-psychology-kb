@@ -38,6 +38,12 @@
     }
   }
 
+  // Landing-page graph (embedded in afterBody → .center) is doubled in height
+  // relative to the sidebar graphs on every other page.
+  .center & > .graph-outer {
+    height: 500px;
+  }
+
   & > .global-graph-outer {
     position: fixed;
     z-index: 9999;

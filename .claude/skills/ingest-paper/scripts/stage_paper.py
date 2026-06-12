@@ -91,6 +91,40 @@ def first_author_surname_cap(authors):
 
 
 # --------------------------------------------------------------------------- #
+# duplicate detection (LINK mode)
+# --------------------------------------------------------------------------- #
+def find_duplicate(arxiv_id, source_filename, sources_dir):
+    """Has this paper already been ingested? Two signals, strongest first.
+
+    1. DEFINITIVE: the bare arXiv id appears in some wiki/sources/*.md (the
+       LINK-ingest source page embeds it in the BibTeX `eprint`/`url`).
+    2. COLLISION: the deterministic source filename (<authorkey>-<year>.md)
+       already exists. Either it's the same paper, or a different paper by the
+       same first-author/year that would clash on filename — both need a human.
+
+    Returns (kind, existing_path) where kind is 'arxiv-id' | 'filename', or None.
+    """
+    if not os.path.isdir(sources_dir):
+        return None
+    id_re = re.compile(re.escape(arxiv_id) + r"(v\d+)?\b")
+    for name in sorted(os.listdir(sources_dir)):
+        if not name.endswith(".md"):
+            continue
+        path = os.path.join(sources_dir, name)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                text = f.read()
+        except OSError:
+            continue
+        if id_re.search(text):
+            return ("arxiv-id", path.replace("\\", "/"))
+    collision = os.path.join(sources_dir, source_filename)
+    if os.path.isfile(collision):
+        return ("filename", collision.replace("\\", "/"))
+    return None
+
+
+# --------------------------------------------------------------------------- #
 # arXiv
 # --------------------------------------------------------------------------- #
 def parse_arxiv_id(url):
@@ -157,7 +191,7 @@ def download(url, dest):
 # --------------------------------------------------------------------------- #
 # modes
 # --------------------------------------------------------------------------- #
-def run_link(url, staging_dir, papers_dir):
+def run_link(url, staging_dir, papers_dir, sources_dir, force=False):
     arxiv_id = parse_arxiv_id(url)
     if not arxiv_id:
         raise SystemExit(
@@ -170,8 +204,27 @@ def run_link(url, staging_dir, papers_dir):
     log(f"title: {meta['title']}")
     log(f"authors: {meta['authors']}  year: {meta['year']}")
 
-    number = next_number(staging_dir)
     akey = author_key(meta["authors"], meta["year"])
+    source_filename = f"{akey}.md"
+
+    dup = find_duplicate(arxiv_id, source_filename, sources_dir)
+    if dup:
+        kind, existing = dup
+        if not force:
+            reason = (
+                f"arXiv id {arxiv_id} already appears in {existing}"
+                if kind == "arxiv-id"
+                else f"a source page already exists at {existing}"
+            )
+            raise SystemExit(
+                f"DUPLICATE: this paper looks already ingested ({reason}). "
+                "Nothing was downloaded. If this is a genuinely different paper "
+                "that merely collides on author/year, or you intend to re-ingest "
+                "on purpose, re-run with --force."
+            )
+        log(f"WARNING: duplicate signal ({kind} -> {existing}); proceeding due to --force")
+
+    number = next_number(staging_dir)
     citation_key = f"{number}-{akey}"
     fname = f"{number}_{title_to_filename(meta['title'])}_{first_author_surname_cap(meta['authors'])}_{meta['year']}.pdf"
     pdf_path = os.path.join(staging_dir, fname)
@@ -251,10 +304,18 @@ def main():
     g.add_argument("--file", help="path to a PDF already in the staging dir")
     ap.add_argument("--staging-dir", default="staging-area")
     ap.add_argument("--papers-dir", default="raw/papers")
+    ap.add_argument("--sources-dir", default="wiki/sources")
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="proceed even if the paper looks already ingested (LINK mode)",
+    )
     args = ap.parse_args()
 
     if args.url:
-        plan = run_link(args.url, args.staging_dir, args.papers_dir)
+        plan = run_link(
+            args.url, args.staging_dir, args.papers_dir, args.sources_dir, args.force
+        )
     else:
         plan = run_manual(args.file, args.staging_dir, args.papers_dir)
 
