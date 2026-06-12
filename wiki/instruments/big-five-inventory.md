@@ -36,6 +36,8 @@ Administered to LLMs via the zero-shot NLI scheme of
 - [[paradigms/psychometric-scale-reliability-stress-test]] — the scale whose reliability is
   stress-tested across 2,500 perturbed configurations.
 - [[paradigms/personality-steering-interventions]] — re-administered after persona interventions.
+- [[paradigms/closed-vs-open-ended-construct-probe]] — the closed-form self-report leg paired
+  against the open-ended [[instruments/big-five-vignette-test]].
 
 ## Validity Notes
 
@@ -49,8 +51,14 @@ Administered to LLMs via the zero-shot NLI scheme of
   cautioning that reliability does **not** establish validity. It tests both ascending and
   **descending** choice-order labelings as a perturbation; the canonical 5-point administration
   above (1 = disagree strongly) is the default, not the descending variant.
+- [[sources/li-et-al-2024]] finds the BFI self-report can **contradict** behavior on the matched
+  [[instruments/big-five-vignette-test]] (e.g. Mixtral-8\*7b extraversion 2 on BFI vs. 5 on the
+  vignette), and reports varying internal consistency (σ) across models — Llama3-8b and
+  Mistral-7b near human-level, GPT-4 and Mixtral-8\*7b higher (esp. openness), so some models'
+  BFI personalities cannot be reliably determined.
 
 ## Sources
 
 - [[sources/pellert-et-al-2024]]
 - [[sources/huang-et-al-2024]]
+- [[sources/li-et-al-2024]]

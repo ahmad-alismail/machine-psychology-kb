@@ -41,6 +41,9 @@ five runs at temperature 1; scores aggregated to composite + three subscales.
 ## Used In (paradigms)
 
 - [[paradigms/narrow-psychometric-fine-tuning]] — pre/post measure of induced dark traits.
+- [[paradigms/psychometric-inventory-administration]] — in [[sources/li-et-al-2024]] the SD3
+  (12 rating-scale items, 1–5) is the self-reported "socially aversive" personality measure
+  (Machiavellianism, narcissism, psychopathy) alongside the BFI.
 
 ## Validity Notes
 
@@ -56,3 +59,5 @@ five runs at temperature 1; scores aggregated to composite + three subscales.
 ## Sources
 
 - [[sources/lulla-et-al-2025]]
+- [[sources/li-et-al-2024]] — uses a 12-item SD3 as the self-reported dark-personality measure
+  within a multi-construct psychometric benchmark.

@@ -42,6 +42,7 @@ date_modified: 2026-06-12
 - [[paradigms/tqre-strategic-reasoning-depth]] — fit a behavioral-game-theory (TQRE) model to LLM choices across a matrix-game library to recover strategic reasoning depth (τ); persona-intervention fairness audit (game-theoretic)
 - [[paradigms/emotion-appraisal-situation-induction]] — pre/post situation-imagination design (EmotionBench) measuring whether an LLM's emotion shifts like a human's, against a 1,266-person baseline (psychological)
 - [[paradigms/altruistic-punishment-game]] — third-party ultimatum game (FairMindSim) measuring whether an LLM agent pays a cost to punish unfair allocations, plus a fitted belief-in-fairness layer (BREM); vs. a 100-person baseline (mixed)
+- [[paradigms/closed-vs-open-ended-construct-probe]] — assess each construct twice (closed-form self-report vs. open-ended real-world scenario) and read the discrepancy; LLMs' self-reports often contradict their behavior (psychological)
 
 ## Theories — grounding layer
 
@@ -104,6 +105,13 @@ date_modified: 2026-06-12
 - [[instruments/self-rating-depression-scale]] — Zung SDS (20-item) depression scale; persona / health-risk indicator
 - [[instruments/tomi]] — templated Sally–Anne false-belief benchmark (1st/2nd-order; binary MC)
 - [[instruments/bigtom]] — causal-template, GPT-4-generated Sally–Anne-style ToM benchmark (Forward Action/Belief; binary MC)
+- [[instruments/big-five-vignette-test]] — 5 open-ended Big-Five vignettes (LLM-as-judge scored); the behavioral counterpart to the BFI
+- [[instruments/globe-culture-questionnaire]] — GLOBE 9-dimension cultural-orientation rating scale (1–7)
+- [[instruments/moralchoice]] — 1,767 moral-dilemma alternative-choice items (low/high ambiguity)
+- [[instruments/human-centered-values-survey]] — value-conflict choices with a persuasion-adversarial twin
+- [[instruments/emobench]] — multiple-choice emotional-intelligence test (understanding + application) with human baseline
+- [[instruments/llm-self-efficacy-questionnaire]] — self-reported confidence (0–100) across six hard query types
+- [[instruments/honeset]] — operational honesty/self-efficacy queries; "confidence rate" metric (the behavioral self-efficacy leg)
 
 ## Sources
 
@@ -126,6 +134,7 @@ date_modified: 2026-06-12
 - [[sources/strachan-et-al-2024]] — CORE; comprehensive ToM battery (false belief / irony / faux pas / hinting / strange stories) on GPT-4/3.5/LLaMA2-70B vs. 1,907 humans; GPT-4 at/above human on all but faux pas; LLaMA2 faux-pas win "illusory" (ignorance bias); GPT faux-pas failure is hyperconservatism not failed inference; humans also fail half the false-belief perturbations (N=757)
 - [[sources/wilf-et-al-2024]] — CORE; SimToM — Simulation-Theory perspective-taking turned into a two-stage prompt that improves LLM ToM (ToMI/BigTOM) over 0-shot & CoT; ablations show the gain is perspective-taking *specifically* (not multi-step); oracle perspectives near-solve the benchmarks; hiding-vs-inferring limit on real-world (CosmosQA)
 - [[sources/chen-et-al-2025]] — CORE; dedicated ToM survey (assessment + enhancement); ATOMS seven-mental-state coverage taxonomy; story-based benchmark landscape + evolution trends (order / generation / context / questions / mental states); perspective-filtering enhancement family (SymbolicToM / SimToM / PercepToM / TimeToM) + symbolic/inverse-planning methods; passive-benchmark limit & reasoning-process evaluation gap
+- [[sources/li-et-al-2024]] — CORE; comprehensive 5-construct (personality/values/emotion/ToM/self-efficacy) × 13-dataset psychometric benchmark on 9 LLMs; introduces the closed-form↔open-ended discrepancy probe (self-reports contradict behavior) + a five-form reliability validation suite; EI below human, high-ambiguity moral discernment weak, values not robust to persuasion, self-efficacy↔behavior mismatch → fabrication
 
 ## Entities
 
@@ -147,6 +156,7 @@ date_modified: 2026-06-12
 - [[entities/tomer-ullman]] — sole author, ToM-robustness rebuttal (trivial alterations break LLM ToM), Harvard Psychology
 - [[entities/james-strachan]] — lead author, comprehensive LLM-vs-human ToM battery + hyperconservatism account, UKE Hamburg / IIT Genoa
 - [[entities/alex-wilf]] — lead author, SimToM perspective-taking prompting for LLM ToM, Carnegie Mellon
+- [[entities/yuan-li]] — lead author, five-construct psychometric benchmark + closed-form↔open-ended discrepancy probe, University of Cambridge
 
 ## Questions
 

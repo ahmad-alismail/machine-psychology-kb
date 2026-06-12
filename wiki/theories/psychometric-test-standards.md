@@ -112,6 +112,34 @@ section of each paradigm page — most directly:
   (item rephrasing), and internal consistency (perturbation robustness, low-variance distributions)
   on the BFI. It explicitly leaves **R2 (validity)** unmet, illustrating "reliability is necessary
   but insufficient for validity."
+- [[paradigms/closed-vs-open-ended-construct-probe]] — applies the standards across five
+  constructs and 13 datasets; its self-report↔behavior discrepancy is a direct probe of whether
+  response *format* is a construct-irrelevant source of variance (R5 fairness / R2 validity).
+
+### Five forms of reliability across a multi-construct benchmark
+
+[[sources/li-et-al-2024]] operationalizes the reliability pillar as a concrete five-form suite,
+applied across all five of its psychological dimensions — a broader empirical realization of R1
+than the single-scale stress-test above. The five forms, in the source's own vocabulary:
+
+- **Internal Consistency** — homogeneity among items measuring the same aspect, quantified by
+  the standard deviation σ; low internal consistency "invalidat[es] evaluation results."
+- **Parallel Forms Reliability** — whether two equivalent test versions (built by paraphrasing
+  or altering objects) yield consistent results; low values mean the model is "overly sensitive
+  to variations such as paraphrasing."
+- **Inter-Rater Reliability** — agreement between the two LLM raters (GPT-4, Llama3-70b) used to
+  score open-ended items, via weighted Kappa or a proposed **agreement rate (AR)**; high values
+  (κ = 0.86 personality; AR > 0.8 ToM) validate the LLM-as-judge process for those cases.
+- **Option Position Robustness** — invariance of multiple-choice outcomes to option arrangement,
+  via a **match rate (MR)**; low values mean the assessment is "prone to errors caused by
+  position bias."
+- **Adversarial Attack Robustness** — invariance to prompts "infused with adversarial elements,"
+  e.g. persuasion-based attacks on value adherence; low values signal a model "easily misled by
+  deceptive inputs."
+
+The paper thereby "challenges the assumption of consistent responses—central to human
+psychometrics," showing several constructs/models fail one or more reliability forms (e.g.
+self-efficacy parallel-forms κ near 0 on inverse framing), so their scores are uninterpretable.
 
 ## Sources
 
@@ -120,3 +148,6 @@ section of each paradigm page — most directly:
 - [[sources/huang-et-al-2024]] — empirically demonstrates a reliability assessment (R1) of the BFI
   on four LLMs; defers validity (R2). Uses Internal Consistency Reliability (Cronbach 1951) and
   Test-Retest Reliability (Guttman 1945); notes its perturbations preclude Cronbach's alpha.
+- [[sources/li-et-al-2024]] — realizes a five-form reliability suite (internal consistency,
+  parallel forms, inter-rater, option-position, adversarial-attack robustness) across five
+  constructs and 13 datasets; reliance on LLM-as-judge for open-ended scoring.

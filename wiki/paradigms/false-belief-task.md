@@ -227,6 +227,17 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   state to probing the *action decision* that mental state implies. All these remain **passive**
   benchmarks (the LLM observes rather than acts), which the survey flags as a structural limit.
 
+- The multi-construct psychometric benchmark [[sources/li-et-al-2024]] reuses this paradigm as
+  one of three ToM tests (alongside the Strange Stories and Imposing Memory advanced-ToM tasks of
+  van Duijn et al. 2023), and contributes an explicit **parallel-forms reliability** control for
+  it: "swapping labels on the container and its contents in the scenario" (a label-swap of the
+  Smarties/unexpected-contents setup) to "mitigate biases from word order and language tendencies."
+  GPT-4 and Llama3-70b stay strong across all ToM tests; ChatGPT, GLM4, and Mixtral-8\*7b are
+  variable (e.g. GLM4 good on unexpected-contents but weak on unexpected-transfer; Mixtral-8\*7b
+  low match-rate MR on the label-swapped task — "poor consistency and randomness"). Llama3-8b and
+  Mistral-7b show low position-bias MR. This is an independent instance of the contamination /
+  surface-form controls this paradigm requires, on a different model set.
+
 ## Open Questions
 
 - [[questions/longitudinal-behavioral-trends]]

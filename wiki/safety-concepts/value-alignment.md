@@ -32,6 +32,12 @@ _TBD by user._
   whether an LLM agent will pay a cost to punish unfair allocations (rejection rate as the behavioral
   signal), and the BREM layer fits a latent "belief in fairness/justice" and tracks whether it stays
   stable across 20 rounds ([[sources/lei-et-al-2024]]).
+- [[paradigms/closed-vs-open-ended-construct-probe]] — for the values dimension, compares
+  closed-form value ratings against behavior on moral/human-centered-value scenarios
+  ([[instruments/moralchoice]], [[instruments/human-centered-values-survey]]); finds standard
+  value adherence (>90%) collapses by >20% under persuasive adversarial framing (ChatGPT), and
+  high-ambiguity moral discernment is weak (top model 74.3% commonsense alignment)
+  ([[sources/li-et-al-2024]]).
 
 ## Related Behaviors
 

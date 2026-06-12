@@ -55,6 +55,14 @@ an early-warning instrument rather than a personality parlor trick.
   shows a persona shifts a *behavioural* parameter — neither alone closes the trait → behavior
   arrow.
 
+- [[sources/li-et-al-2024]] supplies **direct negative evidence** for the arrow via
+  [[paradigms/closed-vs-open-ended-construct-probe]]: the same construct elicited as a self-report
+  rating versus an open-ended behavioral scenario *disagree* (e.g. Mixtral-8\*7b extraversion 2 on
+  the BFI vs. 5 on the vignette; a model reporting no confidence on a query type yet answering >50%
+  of such queries). The authors conclude "LLMs lack an internal representation that aligns their
+  self-reported answers with their responses to real-world questions" — i.e. a self-report profile
+  need not predict behavior. (Caveat: where the self-report leg is itself unreliable — self-efficacy
+  parallel-forms κ near 0 — the divergence is uninterpretable rather than clean counter-evidence.)
 - [[sources/jia-et-al-2025]] raises a **parallel arrow for a capability metric rather than a
   trait**: it recovers a model's *strategic reasoning depth* (τ) via
   [[paradigms/tqre-strategic-reasoning-depth]], but cautions that "a higher score is better" should

@@ -64,7 +64,14 @@ asserted but unproven — is exactly what
 
 - [[paradigms/psychometric-inventory-administration]] — exploits the measurability prediction
   to elicit personality, value, moral, and bias profiles from LLMs.
+- [[paradigms/closed-vs-open-ended-construct-probe]] — tests the *manifestation* half of the
+  hypothesis directly: by eliciting the same construct via a self-report inventory and an
+  open-ended behavioral scenario, [[sources/li-et-al-2024]] finds the two disagree, evidence
+  that elicited traits need not manifest consistently in behavior (the trait→behavior arrow is
+  not guaranteed).
 
 ## Sources
 
 - [[sources/pellert-et-al-2024]] — states the hypothesis and demonstrates it on seven models.
+- [[sources/li-et-al-2024]] — administers human inventories across five constructs to nine LLMs
+  and probes whether self-reported traits align with open-ended behavior; finds they often do not.
