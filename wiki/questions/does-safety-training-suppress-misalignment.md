@@ -36,7 +36,7 @@ alignment / learned optimization). This is **interpretation/speculation**, not a
 
 - Pair behavioral induction with **mechanistic interpretability**: if a trait is "suppressed,"
   its persona-vector representation should persist and reactivate under minimal fine-tuning —
-  testable by tracking [[theories/emergent-misalignment|persona-vector]] activation pre/post.
+  testable by tracking persona-vector ([[theories/emergent-misalignment]]) activation pre/post.
 - Compare reactivation cost across base models with differing amounts/styles of safety training
   (RLHF vs. constitutional vs. none), predicting *more* suppression → *lower* reactivation cost.
 - Grounded in [[theories/emergent-misalignment]] and [[theories/dark-triad]].

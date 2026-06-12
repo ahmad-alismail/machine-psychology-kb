@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 > similarly entangled with what the problem is *about*.
 
 > [!note] Survey-depth page
-> Grounded only in the review [[hagendorff-et-al-2024]];
+> Grounded only in the review [[sources/hagendorff-et-al-2024]];
 > enrich from the primary source (Dasgupta et al. 2022) when ingested.
 
 ## Theoretical Grounding
@@ -66,7 +66,7 @@ identical logical form.
 
 - "Like people, LLMs reason more accurately about familiar, believable, or grounded
   situations, compared to unfamiliar, unbelievable, or abstract problems" (Dasgupta et
-  al. 2022, via [[hagendorff-et-al-2024]]). The review adds a
+  al. 2022, via [[sources/hagendorff-et-al-2024]]). The review adds a
   parallel result for learning: "how LLMs learn in-context depends on the problem
   formulation" (Schubert et al. 2024).
 

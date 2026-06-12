@@ -89,7 +89,7 @@ mechanistically (persona vectors, feature steering).
 ## Relationship to Other Sources
 
 - Shares an author (Thilo Hagendorff, [[entities/thilo-hagendorff]]) and the "machine
-  psychology" framing with [[hagendorff-et-al-2024]]; extends Hagendorff's earlier finding
+  psychology" framing with [[sources/hagendorff-et-al-2024]]; extends Hagendorff's earlier finding
   that eliciting Machiavellian traits via prompting triggers deception (Hagendorff 2024).
 - Complements [[sources/pellert-et-al-2024]], which *measures* dark traits in off-the-shelf
   models with the Short Dark Tetrad ([[instruments/short-dark-tetrad]]); this paper instead

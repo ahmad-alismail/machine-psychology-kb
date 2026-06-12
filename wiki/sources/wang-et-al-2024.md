@@ -97,7 +97,7 @@ generalizes beyond jailbreaking (e.g. gradual goal-shifting, eroded refusals).
 
 ## Relationship to Other Sources
 
-- Adopts the "machine psychology" framing of [[hagendorff-et-al-2024]] and the human-experiment
+- Adopts the "machine psychology" framing of [[sources/hagendorff-et-al-2024]] and the human-experiment
   replication evidence (Aher et al. 2022; Akata et al. 2023) to justify a psychological account
   of LLM behavior.
 - Distinct construct from [[sources/lulla-et-al-2025]]'s deception game: that work measures

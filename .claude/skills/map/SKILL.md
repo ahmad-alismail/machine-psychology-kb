@@ -65,10 +65,16 @@ date_modified: <today>
 
 Legend: ✓ = targeted · ~ = weak/indirect · (blank) = no experiment yet
 
-| Behavior \ Paradigm | <col headers: [[paradigms/x\|ABBR]]> |
+| Behavior \ Paradigm | <col headers: plain ABBR, no wikilinks> |
 |---|:--:| ... |
 | [[safety-concepts/...]] | ✓ | ~ | | ... |
 ...
+
+## Paradigm abbreviations
+<one row per column abbreviation, mapping it to the full page link>
+| ABBR | Paradigm |
+|---|---|
+| FBT | [[paradigms/false-belief-task]] |
 
 ## Lens of each paradigm
 | Paradigm | Lens |
@@ -82,8 +88,11 @@ agentic-scenario designs.>
 ```
 
 Conventions:
-- Use a short uppercase abbreviation for each column header (e.g. `FBT`, `CBP`),
-  rendered as `[[paradigms/false-belief-task\|FBT]]`.
+- Use a short uppercase abbreviation as each column header — plain text only
+  (e.g. `FBT`, `CBP`), **never** an aliased wikilink. The full `[[paradigms/...]]`
+  links live in the `## Paradigm abbreviations` legend below the matrix, one per
+  abbreviation. (Aliased wikilinks — display text after a vertical bar inside the
+  double brackets — are not used anywhere in this wiki.)
 - Order rows so that better-covered behaviors sit near the top and fully-uncovered
   ones group at the bottom — this makes the gap block visually obvious.
 - A behavior is a **gap** iff its entire row is blank (no `✓` and no `~`). Count gaps

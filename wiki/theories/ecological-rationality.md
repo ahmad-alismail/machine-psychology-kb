@@ -25,7 +25,7 @@ should reshape the heuristics.
 
 ## Relevance to Machine Psychology
 
-[[hagendorff-et-al-2024]] proposes understanding LLMs
+[[sources/hagendorff-et-al-2024]] proposes understanding LLMs
 "through the problem they are trained to solve, similarly to how behavioral scientists
 attempt to understand human cognition through the lens of ecological rationality." Worked
 example from the paper: emergent in-context learning traces back to "data distributional
@@ -39,4 +39,4 @@ training-data structure as the LLM's "ecology."
 
 ## Sources
 
-- [[hagendorff-et-al-2024]]
+- [[sources/hagendorff-et-al-2024]]

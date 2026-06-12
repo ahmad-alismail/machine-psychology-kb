@@ -28,7 +28,7 @@ Tversky & Kahneman 1981; Cheng & Holyoak 1985).
 
 ## Relevance to Machine Psychology
 
-[[hagendorff-et-al-2024]] calls the framework "fertile ground"
+[[sources/hagendorff-et-al-2024]] calls the framework "fertile ground"
 for examining shortcuts in LLMs, "whose capabilities now overlap more with the human
 abilities this literature studies": if an LLM shows a classic bias pattern, that reveals
 the decision procedure it actually uses, independent of benchmark accuracy.
@@ -47,5 +47,5 @@ selection, a mixed bias profile read off response-by-response rather than from a
 
 ## Sources
 
-- [[hagendorff-et-al-2024]]
+- [[sources/hagendorff-et-al-2024]]
 - [[sources/binz-schulz-2022]] — primary GPT-3 application of the canonical bias vignettes.

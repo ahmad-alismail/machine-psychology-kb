@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 > reasoning gains, or the model has simply memorized the famous puzzles.
 
 > [!note] Survey-depth page
-> Grounded in the review [[hagendorff-et-al-2024]] and now enriched from the primary source
+> Grounded in the review [[sources/hagendorff-et-al-2024]] and now enriched from the primary source
 > [[sources/binz-schulz-2022]]; further enrich from Hagendorff et al. 2023 when ingested. The
 > paired contamination-control method is split out into
 > [[paradigms/adversarial-vignette-perturbation]].

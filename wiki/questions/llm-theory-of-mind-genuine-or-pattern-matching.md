@@ -33,7 +33,7 @@ problem catalogued in [[theories/psychometric-test-standards]].
   some see emergent *ToM*-like reasoning (Kosinski 2024), but others argue it may be pattern
   matching (Strachan et al. 2024), noting that minor prompt changes can derail results (Shapira
   et al. 2024)." It calls for "more theory-grounded evaluation and clearer definitions."
-- [[hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
+- [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.
 

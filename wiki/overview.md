@@ -24,13 +24,12 @@ game-theoretic) so that AI researchers can **understand and apply** them to **de
 evaluate misaligned behaviors and dangerous capabilities**.
 
 ## How the wiki is organized
-A [[theories|theory]] grounds a [[paradigms|paradigm]] (experiment), which uses
-[[instruments|instruments]] and detects a [[safety-concepts|safety-concept]] (a
-dangerous behavior). The crosswalk coverage map shows which behaviors have experiments
-and which don't.
+The [[theories]] ground the [[paradigms]] (experiments), which use the
+[[instruments]] and detect the [[safety-concepts]] (dangerous behaviors). The crosswalk
+coverage map shows which behaviors have experiments and which don't.
 
 ## Start here
-- **Navigate the content**: [[index|the content catalog]] lists every page by type.
-- **The field's charter** (method + interpretive cautions): [[hagendorff-et-al-2024]].
+- **Navigate the content**: the [[index]] lists every page by type.
+- **The field's charter** (method + interpretive cautions): [[sources/hagendorff-et-al-2024]].
 - **See coverage and gaps**: the crosswalk coverage map (which dangerous behaviors still
   have no experiment).

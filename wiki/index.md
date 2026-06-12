@@ -94,7 +94,7 @@ date_modified: 2026-06-12
 
 ## Sources
 
-- [[hagendorff-et-al-2024]] — CORE; field-defining review
+- [[sources/hagendorff-et-al-2024]] — CORE; field-defining review
 - [[sources/loehn-et-al-2024]] — CORE; seven requirements for valid LLM psychological testing + audit of 25 studies
 - [[sources/pellert-et-al-2024]] — CORE; "AI psychometrics" — human inventories on LLMs via zero-shot NLI
 - [[sources/lulla-et-al-2025]] — CORE; Dark Triad "model organisms of misalignment" induced in LLMs by narrow fine-tuning

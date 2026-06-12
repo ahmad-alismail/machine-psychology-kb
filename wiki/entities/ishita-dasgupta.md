@@ -17,12 +17,12 @@ date_modified: 2026-06-11
 ## Profile
 
 Google DeepMind; shared first author of
-[[hagendorff-et-al-2024]].
+[[sources/hagendorff-et-al-2024]].
 
 ## Key Contributions
 
 - Co-coined and framed "machine psychology" as a field
-  ([[hagendorff-et-al-2024]]).
+  ([[sources/hagendorff-et-al-2024]]).
 - Primary author of the content-effects study (Dasgupta et al. 2022) grounding
   [[paradigms/content-effects-on-reasoning]].
 

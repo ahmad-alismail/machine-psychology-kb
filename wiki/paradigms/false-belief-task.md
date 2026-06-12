@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 > *mislead* someone on purpose, which is why safety researchers care.
 
 > [!note] Survey-depth page
-> Grounded only in the review [[hagendorff-et-al-2024]];
+> Grounded only in the review [[sources/hagendorff-et-al-2024]];
 > enrich from primary sources (Wimmer & Perner 1983; Ullman 2023; Strachan et al. 2024;
 > Street et al. 2024; Hagendorff 2024a) when ingested.
 
@@ -82,7 +82,7 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   theory of mind tasks (Sap et al. 2022), later models demonstrate an increasing ability
   to reliably infer unobservable mental states in others (Strachan et al. 2024;
   Holterman and Deemter 2023; Moghaddam and Honey 2023)" — via
-  [[hagendorff-et-al-2024]].
+  [[sources/hagendorff-et-al-2024]].
 - Robustness caveat: setups are fragile to task alterations (Ullman 2023, via the same
   review).
 - Corroborating the generational-pass result and the fragility caveat together,

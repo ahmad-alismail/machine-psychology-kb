@@ -28,7 +28,7 @@ require recursion — beliefs about beliefs about beliefs.
 
 ## Relevance to Machine Psychology
 
-[[hagendorff-et-al-2024]] treats theory of mind as a core
+[[sources/hagendorff-et-al-2024]] treats theory of mind as a core
 probe of LLM social intelligence: deployed chat agents "should become versed in modeling
 human communicators." Safety edge: the same capacity underwrites the "emerging capability
 of LLMs to induce false beliefs in other agents" — i.e., [[safety-concepts/deception]].
@@ -52,5 +52,5 @@ distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spok
 
 ## Sources
 
-- [[hagendorff-et-al-2024]]
+- [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]

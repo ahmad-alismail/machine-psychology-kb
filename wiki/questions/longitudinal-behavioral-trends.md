@@ -23,7 +23,7 @@ development of reasoning abilities in LLMs" and anticipate risks.
 
 ## What Sources Say
 
-[[hagendorff-et-al-2024]] proposes exactly this: "once test
+[[sources/hagendorff-et-al-2024]] proposes exactly this: "once test
 settings for machine psychology are established, researchers can investigate how LLMs
 develop over time by applying the same tasks multiple times, yielding longitudinal data
 … increasingly important for AI safety and AI alignment research to predict future

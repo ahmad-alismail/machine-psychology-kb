@@ -30,7 +30,7 @@ questions about which specific behaviors should be considered misaligned and und
 such as strategic reasoning, moral flexibility, and outcome-based decision-making are not
 entirely maladaptive. Causing harm may be justified under utilitarian principles ... and
 strategic thinking may be necessary for competitive or high-stakes environments." This connects
-to the [[paradigms/process-dissociation-moral-dilemmas|congruent/incongruent dilemma]] design,
+to the congruent/incongruent dilemma design of [[paradigms/process-dissociation-moral-dilemmas]],
 where high *incongruent* harm endorsement can reflect principled utilitarianism rather than
 antisocial flexibility — so the same behavioral score can read as "dark" or "rational"
 depending on framing.

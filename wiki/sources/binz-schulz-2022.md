@@ -127,7 +127,7 @@ later packaged by [[instruments/cogbench]].
 - **Direct precursor to [[sources/coda-forno-et-al-2024]] (CogBench)**, which reuses the
   horizon- and two-step-task prompting protocols established here and turns this paper's
   single-task probes into a standardized 35-model battery. Schulz is senior author of both.
-- Catalogued in [[hagendorff-et-al-2024]] as "among the first to use this paradigm to better
+- Catalogued in [[sources/hagendorff-et-al-2024]] as "among the first to use this paradigm to better
   understand the decision-making processes of LLMs" — the [[paradigms/heuristics-and-biases-battery]]
   page is enriched from this primary source.
 - Supplies the mechanism ("trivial alterations … can break LLM performance") that

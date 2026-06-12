@@ -58,5 +58,5 @@ Open-source: github.com/juliancodaforno/CogBench. Applied to 35 LLMs in the orig
 ## Sources
 
 - [[sources/coda-forno-et-al-2024]] — primary source (CogBench).
-- [[hagendorff-et-al-2024]] — review that surfaced CogBench as the procedural-generation
+- [[sources/hagendorff-et-al-2024]] — review that surfaced CogBench as the procedural-generation
   contamination antidote.

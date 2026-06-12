@@ -15,8 +15,11 @@ Pages with **no inbound wikilinks** from any other page. Exclude `index.md`, `lo
 `overview.md`, and `crosswalk/coverage-map.md` (these are entry points, not orphans).
 
 ### 2. Broken Wikilinks
-Scan every page for `[[folder/page]]` / `[[folder/page|alias]]` links and verify the
-target file exists in `wiki/`. Report each broken link with its source page.
+Scan every page for `[[folder/page]]` links and verify the target file exists in
+`wiki/`. Report each broken link with its source page. **Aliased wikilinks are banned**
+in this wiki — any link that places display text after a vertical bar inside the
+double brackets is itself a violation: flag it for rewording so the link text equals
+the target.
 
 ### 3. Missing "In plain terms" Callout
 Every wiki page **must** open with a `> [!info] In plain terms` callout immediately

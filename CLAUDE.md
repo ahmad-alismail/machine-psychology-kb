@@ -68,7 +68,7 @@ wiki/
 ## Conventions
 
 - **File naming**: kebab-case, no spaces (`false-belief-task.md`, `hagendorff-et-al-2024.md`).
-- **Wikilinks**: Obsidian format with folder — `[[paradigms/false-belief-task]]` or `[[safety-concepts/deception]]`.
+- **Wikilinks**: Obsidian format with folder — `[[paradigms/false-belief-task]]` or `[[safety-concepts/deception]]`. **Never use aliased links** — putting display text after a vertical bar inside the double brackets is banned; the link text must equal the target, so reword the surrounding prose instead.
 - **Citations**: inline wikilinks to source pages — `[[sources/pellert-et-al-2024]]`.
 - **Raw sources are immutable**: never modify files in `raw/`.
 - **Wiki pages are LLM-owned**: the LLM creates, updates, and maintains all of `wiki/`.

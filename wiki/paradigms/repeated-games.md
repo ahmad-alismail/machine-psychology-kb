@@ -17,7 +17,7 @@ date_modified: 2026-06-11
 > question.
 
 > [!note] Survey-depth page
-> Grounded only in the review [[hagendorff-et-al-2024]];
+> Grounded only in the review [[sources/hagendorff-et-al-2024]];
 > enrich from primary sources (Akata et al. 2023; Phelps & Russell 2024) when ingested.
 
 ## Theoretical Grounding
@@ -92,7 +92,7 @@ with "micro-level network principles such as preferential attachment or triadic 
 ## Evidence
 
 - LLMs playing repeated games reveal "persistent behavioral signatures in the models"
-  (Akata et al. 2023, via [[hagendorff-et-al-2024]]).
+  (Akata et al. 2023, via [[sources/hagendorff-et-al-2024]]).
 - Dilemma-situation studies probe LLM ability "to participate in real-world
   negotiations" (Phelps & Russell 2024, via the same review).
 

@@ -24,7 +24,7 @@ bias profiles are overconfident.
 
 ## What Sources Say
 
-[[hagendorff-et-al-2024]]: human-like heuristics and biases
+[[sources/hagendorff-et-al-2024]]: human-like heuristics and biases
 "have largely disappeared in the latest generation of LLMs" (citing Chen et al. 2023;
 Hagendorff et al. 2023), but the review immediately offers two deflationary readings —
 the stimuli "possibly no longer challenge the growing reasoning abilities in LLMs," and

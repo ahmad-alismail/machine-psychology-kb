@@ -27,7 +27,7 @@ elicitation conditions) have been ruled out.
 
 ## Relevance to Machine Psychology
 
-[[hagendorff-et-al-2024]] flags this as one of two key
+[[sources/hagendorff-et-al-2024]] flags this as one of two key
 interpretive principles for LLM experiments (citing Firestone 2020; Lampinen 2022):
 "does the absence of behavior Y indicate the absence of the construct X?" In practice,
 omitting elicitation scaffolds such as chain-of-thought or few-shot examples "can lead
@@ -61,7 +61,7 @@ argument from the presence of one." This is the load-bearing grounding of
 
 ## Sources
 
-- [[hagendorff-et-al-2024]]
+- [[sources/hagendorff-et-al-2024]]
 - [[sources/ong-2024]] — the asymmetric existence-proof sharpening
 - [[sources/binz-schulz-2022]] — demonstrates the principle empirically: GPT-3's vignette
   *performance* "crucially depend[s] on how a prompt is presented."

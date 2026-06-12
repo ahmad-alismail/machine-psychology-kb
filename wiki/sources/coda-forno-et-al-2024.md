@@ -106,7 +106,7 @@ machine psychology, so no wiki-authored AI bridge is required.
   which measures LLM risk via cumulative-prospect-theory certainty equivalents; CogBench
   measures risk behaviorally (average inflation attempts) instead.
 - Reuses prompting protocols from Binz & Schulz (2023) for the horizon and two-step tasks.
-- Surfaced in this wiki originally via the [[hagendorff-et-al-2024]] review, which cited
+- Surfaced in this wiki originally via the [[sources/hagendorff-et-al-2024]] review, which cited
   CogBench as the procedural-generation antidote to contamination.
 
 ## Limitations
