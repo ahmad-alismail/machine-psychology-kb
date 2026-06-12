@@ -38,6 +38,7 @@ date_modified: 2026-06-12
 - [[paradigms/interventional-causal-inference-task]] — common-cause vs. causal-chain intervene-vs-observe inference (seeing ≠ doing; do-operator) (psychological)
 - [[paradigms/tqre-strategic-reasoning-depth]] — fit a behavioral-game-theory (TQRE) model to LLM choices across a matrix-game library to recover strategic reasoning depth (τ); persona-intervention fairness audit (game-theoretic)
 - [[paradigms/emotion-appraisal-situation-induction]] — pre/post situation-imagination design (EmotionBench) measuring whether an LLM's emotion shifts like a human's, against a 1,266-person baseline (psychological)
+- [[paradigms/altruistic-punishment-game]] — third-party ultimatum game (FairMindSim) measuring whether an LLM agent pays a cost to punish unfair allocations, plus a fitted belief-in-fairness layer (BREM); vs. a 100-person baseline (mixed)
 
 ## Theories — grounding layer
 
@@ -67,6 +68,7 @@ date_modified: 2026-06-12
 - [[theories/behavioral-game-theory]] — relaxes Nash's full-rationality assumption: bounded, stochastic, finite-depth strategic reasoning
 - [[theories/truncated-quantal-response-equilibrium]] — the measurement model (QRE + Cognitive Hierarchy): τ = reasoning depth, γ = decision precision
 - [[theories/emotion-appraisal-theory]] — emotions arise from how one *appraises* a situation, not the event itself; specific situations reliably arouse specific emotions
+- [[theories/altruistic-punishment]] — people pay a personal cost to punish norm-violators with no material gain; sustains group cooperation/fairness
 
 ## Safety-Concepts — behaviors we hunt
 
@@ -74,6 +76,7 @@ date_modified: 2026-06-12
 - [[safety-concepts/risk-taking]] — scaffold, content TBD by user
 - [[safety-concepts/jailbreaking]] — scaffold, content TBD by user
 - [[safety-concepts/emotion-induced-toxicity]] — scaffold, content TBD by user
+- [[safety-concepts/value-alignment]] — scaffold, content TBD by user
 
 ## Instruments
 
@@ -91,6 +94,9 @@ date_modified: 2026-06-12
 - [[instruments/matrix-game-library]] — 13 normal-form games (7 types; complete/incomplete info) + SW10 human-reasoning benchmark
 - [[instruments/panas]] — Positive and Negative Affect Schedule (20-item mood scale; primary EmotionBench measure)
 - [[instruments/emotionbench-situation-set]] — 428 emotion-eliciting situations (36 factors / 8 emotions) + 8 emotion-specific "challenging benchmark" scales
+- [[instruments/affect-grid]] — single-item valence×arousal emotion self-report (−100..+100); used identically on humans and agents
+- [[instruments/autism-spectrum-quotient]] — AQ-short (28-item) autistic-trait scale; persona-construction input
+- [[instruments/self-rating-depression-scale]] — Zung SDS (20-item) depression scale; persona / health-risk indicator
 
 ## Sources
 
@@ -107,6 +113,7 @@ date_modified: 2026-06-12
 - [[sources/binz-schulz-2022]] — CORE; foundational cognitive-psychology probing of GPT-3 (decision-making/exploration/two-step/causal) + the contamination & surface-form critique; precursor to CogBench
 - [[sources/jia-et-al-2025]] — CORE; behavioral-game-theory (TQRE) evaluation of 22 LLMs' strategic reasoning depth (τ) across 13 matrix games; reasoning-style coding, CoT-effect, demographic-persona fairness audit
 - [[sources/huang-et-al-2025]] — CORE; EmotionBench — emotion-appraisal situation-induction on 7 LLMs vs. 1,266-person baseline; coins "emotional alignment"; models overreact, can't link situations, and feel pleased not jealous; emotion→toxicity (PoR)
+- [[sources/lei-et-al-2024]] — CORE; FairMindSim — altruistic-punishment game on GPT-3.5/4-Turbo/4o vs. 100-person baseline; GPT-4o enforces fairness more than humans & holds steadier fairness belief (BREM); humans richer emotions, β₁>β₂ (belief>reward)
 
 ## Entities
 
@@ -123,6 +130,7 @@ date_modified: 2026-06-12
 - [[entities/jen-tse-huang]] — lead author, reliability of psychological scales on LLMs, CUHK / Tencent AI Lab
 - [[entities/marcel-binz]] — lead author, "Using cognitive psychology to understand GPT-3"; co-author CogBench, MPI Tübingen / Helmholtz Munich
 - [[entities/jingru-jia]] — lead author, behavioral-game-theory evaluation of LLM strategic reasoning, UIUC
+- [[entities/yu-lei]] — lead author, FairMindSim altruistic-punishment alignment study, Tsinghua
 
 ## Questions
 
