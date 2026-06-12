@@ -17,9 +17,12 @@ date_modified: 2026-06-12
 ## Profile
 
 The Chinese University of Hong Kong (CSE); first author of [[sources/huang-et-al-2024]]
-(partially completed while interning at Tencent AI Lab). Co-authors: Wenxiang Jiao (Tencent
-AI Lab, corresponding), Man Ho Lam, Eric John Li, Wenxuan Wang (corresponding), Michael R.
-Lyu (all CUHK). Maintains the LLMPersonality codebase (github.com/CUHK-ARISE/LLMPersonality).
+(partially completed while interning at Tencent AI Lab) and of [[sources/huang-et-al-2025]]
+(EmotionBench). Co-authors across the two: Wenxiang Jiao (Tencent AI Lab, corresponding), Man Ho
+Lam, Eric John Li, Wenxuan Wang (corresponding), Michael R. Lyu (all CUHK), plus Shujie Ren
+(Tianjin Medical University, Inst. of Psychology) and Zhaopeng Tu (Tencent AI Lab) on EmotionBench.
+Maintains the LLMPersonality (github.com/CUHK-ARISE/LLMPersonality) and EmotionBench
+(github.com/CUHK-ARISE/EmotionBench) codebases.
 
 ## Key Contributions
 
@@ -30,9 +33,15 @@ Lyu (all CUHK). Maintains the LLMPersonality codebase (github.com/CUHK-ARISE/LLM
 - Demonstrated **persona steerability** of LLM personality via three increasingly directive
   prompt strategies, with the model placing opposite trait poles at opposite ends
   ([[paradigms/personality-steering-interventions]]).
+- **EmotionBench** ([[sources/huang-et-al-2025]], "Apathetic or Empathetic?") — coined the
+  construct **emotional alignment** and built the pre/post situation-induction framework that
+  measures whether an LLM's emotional state shifts like a human's, against a 1,266-person baseline
+  ([[paradigms/emotion-appraisal-situation-induction]]).
 - Earlier work (Huang et al. 2024b, "On the Humanity of Conversational AI") applied thirteen
-  personality/ability tests to LLMs, and EmotionBench (Huang et al. 2024a) on LLM emotion
-  appraisals — both cited as method precedents in this paper.
+  personality/ability tests to LLMs — cited as a method precedent. Note: in cross-references this
+  EmotionBench paper is self-cited as "Huang et al. 2024a" and the thirteen-scale paper as
+  "Huang et al. 2024b"; the wiki's [[sources/huang-et-al-2024]] is the separate EMNLP-2024
+  *reliability* study.
 
 ## Conceptual Framework
 

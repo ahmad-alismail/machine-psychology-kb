@@ -37,6 +37,7 @@ date_modified: 2026-06-12
 - [[paradigms/adversarial-vignette-perturbation]] — canonical vignettes paired with minimally-perturbed "adversarial" twins as a contamination / surface-form-robustness control (psychological)
 - [[paradigms/interventional-causal-inference-task]] — common-cause vs. causal-chain intervene-vs-observe inference (seeing ≠ doing; do-operator) (psychological)
 - [[paradigms/tqre-strategic-reasoning-depth]] — fit a behavioral-game-theory (TQRE) model to LLM choices across a matrix-game library to recover strategic reasoning depth (τ); persona-intervention fairness audit (game-theoretic)
+- [[paradigms/emotion-appraisal-situation-induction]] — pre/post situation-imagination design (EmotionBench) measuring whether an LLM's emotion shifts like a human's, against a 1,266-person baseline (psychological)
 
 ## Theories — grounding layer
 
@@ -65,12 +66,14 @@ date_modified: 2026-06-12
 - [[theories/interventionist-causal-inference]] — observing ≠ doing; Pearl's do-operator deletes arrows into an intervened variable
 - [[theories/behavioral-game-theory]] — relaxes Nash's full-rationality assumption: bounded, stochastic, finite-depth strategic reasoning
 - [[theories/truncated-quantal-response-equilibrium]] — the measurement model (QRE + Cognitive Hierarchy): τ = reasoning depth, γ = decision precision
+- [[theories/emotion-appraisal-theory]] — emotions arise from how one *appraises* a situation, not the event itself; specific situations reliably arouse specific emotions
 
 ## Safety-Concepts — behaviors we hunt
 
 - [[safety-concepts/deception]] — scaffold, content TBD by user
 - [[safety-concepts/risk-taking]] — scaffold, content TBD by user
 - [[safety-concepts/jailbreaking]] — scaffold, content TBD by user
+- [[safety-concepts/emotion-induced-toxicity]] — scaffold, content TBD by user
 
 ## Instruments
 
@@ -86,6 +89,8 @@ date_modified: 2026-06-12
 - [[instruments/refined-advbench]] — 60-question / 6-category jailbreak test set (refined AdvBench) + GPT-4 judge
 - [[instruments/cognitive-reflection-test]] — CRT 3-item intuitive-vs-reflective deliberation probe
 - [[instruments/matrix-game-library]] — 13 normal-form games (7 types; complete/incomplete info) + SW10 human-reasoning benchmark
+- [[instruments/panas]] — Positive and Negative Affect Schedule (20-item mood scale; primary EmotionBench measure)
+- [[instruments/emotionbench-situation-set]] — 428 emotion-eliciting situations (36 factors / 8 emotions) + 8 emotion-specific "challenging benchmark" scales
 
 ## Sources
 
@@ -101,6 +106,7 @@ date_modified: 2026-06-12
 - [[sources/huang-et-al-2024]] — CORE; reliability stress-test of the BFI on 4 LLMs across 2,500 perturbed settings (reliable, not random) + persona steering; stresses reliability ≠ validity
 - [[sources/binz-schulz-2022]] — CORE; foundational cognitive-psychology probing of GPT-3 (decision-making/exploration/two-step/causal) + the contamination & surface-form critique; precursor to CogBench
 - [[sources/jia-et-al-2025]] — CORE; behavioral-game-theory (TQRE) evaluation of 22 LLMs' strategic reasoning depth (τ) across 13 matrix games; reasoning-style coding, CoT-effect, demographic-persona fairness audit
+- [[sources/huang-et-al-2025]] — CORE; EmotionBench — emotion-appraisal situation-induction on 7 LLMs vs. 1,266-person baseline; coins "emotional alignment"; models overreact, can't link situations, and feel pleased not jealous; emotion→toxicity (PoR)
 
 ## Entities
 
