@@ -27,6 +27,10 @@ Cybernetics (Tübingen) / Helmholtz Munich; senior author of [[sources/coda-forn
   [[paradigms/heuristics-and-biases-battery]]) and the source of the horizon/two-step prompting
   protocols CogBench reuses, as well as the contamination + surface-form critique
   ([[paradigms/adversarial-vignette-perturbation]]).
+- Senior author of [[sources/akata-et-al-2023]], **"Playing repeated games with Large Language
+  Models"** — a behavioral game theory for machines, finding LLMs excel at self-interested but
+  fail at coordination games and that social chain-of-thought repairs it
+  ([[paradigms/repeated-games]]).
 
 ## Conceptual Framework
 

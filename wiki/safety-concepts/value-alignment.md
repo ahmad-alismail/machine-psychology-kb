@@ -42,6 +42,11 @@ _TBD by user._
   rejection of low offers) and cooperation match human norms and how a one-word trait prompt steers
   them; the fair GPT offers ~40% (matching the human meta-study average) and plays tit-for-tat, while
   one selfish GPT collapses cooperation ([[sources/guo-2023]]).
+- [[paradigms/repeated-games]] — five LLMs play finitely repeated 2×2 games (Prisoner's Dilemma,
+  Battle of the Sexes, and the full family sweep), reading whether a model behaves like a "truly
+  social and well-aligned machine"; GPT-4 is unforgivingly selfish in the PD and fails to coordinate
+  in the BoS, and social chain-of-thought prompting repairs the coordination failure
+  ([[sources/akata-et-al-2023]]).
 - [[paradigms/closed-vs-open-ended-construct-probe]] — for the values dimension, compares
   closed-form value ratings against behavior on moral/human-centered-value scenarios
   ([[instruments/moralchoice]], [[instruments/human-centered-values-survey]]); finds standard

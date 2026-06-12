@@ -71,3 +71,6 @@ measurement of moral behavior under incentive conflict — the basis of MORALSIM
 - [[sources/guo-2023]] — uses the finitely repeated prisoner's dilemma (mutual defection the subgame
   perfect equilibrium) as one of two stage games; GPT cooperates above the defection baseline, driven
   mainly by reputation building.
+- [[sources/akata-et-al-2023]] — uses the canonical Prisoner's Dilemma as one of two zoom-in stage
+  games (and the PD family across the full 2×2 sweep); GPT-4 is "unforgiving," defecting after a
+  single defection rather than rebuilding cooperation.

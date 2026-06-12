@@ -41,6 +41,14 @@ up algorithms that are passively fed with data but instead let agents directly i
 with the world." They also note larger models *might* "acquire more robust and sophisticated
 reasoning abilities," leaving the scale-vs-interaction question open.
 
+[[sources/akata-et-al-2023]] adds a strategic-planning instance of the same conjecture. In repeated
+games, GPT-4 "did not adjust its behavior in the last round of games or when faced with varying
+probabilities of continuation, unlike human players," which the authors read as a sign that it "may
+lack mechanisms for backward induction and long-term strategic planning, primarily focusing on
+immediate context due to its training on next-token prediction." Backward induction — reasoning
+*backward* from the known final round — is another ability that may not be acquirable from passive
+text, tying the repeated-games failure mode ([[paradigms/repeated-games]]) to the same root cause.
+
 ## Suggested Investigation (toward a new paradigm)
 
 - **Re-test across training regimes.** Run [[paradigms/interventional-causal-inference-task]] and the

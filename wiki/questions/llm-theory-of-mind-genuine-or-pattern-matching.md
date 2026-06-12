@@ -69,6 +69,14 @@ problem catalogued in [[theories/psychometric-test-standards]].
   settle it: an *elicited* improvement on canonical synthetic items is itself untested under
   [[sources/ullman-2023]]-style perturbations, so it could be re-routing a pattern-match rather than
   invoking genuine mentalizing.
+- [[sources/akata-et-al-2023]] reframes the question as **prediction vs. action**: in a repeated
+  Battle of the Sexes, GPT-4 *correctly predicts* a turn-taking partner's next move (from round 5 as a
+  player, round 3 as an observer) yet does *not act* on the resulting convention — so an apparent ToM
+  failure (failed coordination) coexists with intact predictive mentalizing. This is a distinct failure
+  mode from the false-belief debate: not "can the model infer the belief?" but "does inferring it change
+  what the model does?" The authors liken it to the social/non-social dissociation in autistic children
+  (Swettenham 1996), and show that **social chain-of-thought** prompting closes the gap. See
+  [[paradigms/repeated-games]].
 - [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.

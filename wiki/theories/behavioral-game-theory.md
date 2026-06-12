@@ -54,8 +54,13 @@ stochastic LLMs.
 
 - [[paradigms/tqre-strategic-reasoning-depth]] — fits a behavioral-game-theory model (TQRE) to an
   LLM's choice frequencies to recover strategic reasoning depth.
+- [[paradigms/repeated-games]] — uses tightly controlled, theoretically well-understood iterated
+  games to read social-behavioral signatures (cooperation, coordination) off LLM move sequences —
+  what [[sources/akata-et-al-2023]] calls "a behavioural game theory for machines."
 
 ## Sources
 
 - [[sources/jia-et-al-2025]] — adopts behavioral game theory (via TQRE) to evaluate LLM strategic
   reasoning; cites Camerer (1997, 2011), Camerer/Ho/Chong (2004), McKelvey/Palfrey (1995).
+- [[sources/akata-et-al-2023]] — frames its iterated-game study of LLMs as a "behavioural game
+  theory for machines" (Camerer 2011).

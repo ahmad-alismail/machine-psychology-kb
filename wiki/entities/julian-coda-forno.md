@@ -31,6 +31,9 @@ Jane X. Wang (Google DeepMind), Eric Schulz ([[entities/eric-schulz]]).
 - Prior single-task machine-psychology work: "Inducing anxiety in large language models increases
   exploration and bias" (Coda-Forno et al. 2023) and "Meta-in-context learning in large language
   models" (Coda-Forno et al. 2024).
+- Co-author of [[sources/akata-et-al-2023]], **"Playing repeated games with Large Language
+  Models"** — behavioral game theory for machines via finitely repeated 2×2 games
+  ([[paradigms/repeated-games]]).
 
 ## Conceptual Framework
 

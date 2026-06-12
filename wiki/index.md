@@ -21,7 +21,7 @@ date_modified: 2026-06-12
 - [[paradigms/theory-of-mind-battery]] — five-test ToM battery (false belief / irony / faux pas / hinting / strange stories) on 3 LLMs vs. 1,907 humans; faux-pas likelihood + belief-likelihood variants surface hyperconservatism (psychological)
 - [[paradigms/simtom-perspective-taking-prompting]] — SimToM: two-stage perspective-taking → question-answering prompting (Simulation Theory) that elicits/improves LLM ToM; ablations isolate perspective-taking; oracle perspectives near-solve ToMI/BigTOM (psychological)
 - [[paradigms/perspective-filtering-tom-pipeline]] — cross-method family (SymbolicToM / SimToM / PercepToM / TimeToM) that filters a story to the target character's knowledge before answering; pipeline error-propagation hazard (psychological)
-- [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
+- [[paradigms/repeated-games]] — five LLMs play finitely repeated (10-round) 2×2 games across six families + canonical PD/BoS zoom-ins, vs. each other, hand-coded strategies, and 195 humans; reveals selfish-yes/coordination-no signatures, the predict-vs-act ToM dissociation, and social-chain-of-thought as a repair (Akata et al. 2023) (game-theoretic)
 - [[paradigms/psychometric-inventory-administration]] — human trait/value/morality inventories given to LLMs via zero-shot NLI (psychological)
 - [[paradigms/narrow-psychometric-fine-tuning]] — fine-tune LLMs on inventory answer-keys to induce "dark" personas (psychological)
 - [[paradigms/process-dissociation-moral-dilemmas]] — congruent vs. incongruent harm dilemmas separating moral flexibility from utilitarianism (psychological)
@@ -151,6 +151,7 @@ date_modified: 2026-06-12
 - [[sources/guo-et-al-2026]] — CORE; TMGBench — game-theoretic strategic-reasoning evaluation across all 144 Robinson-Goforth 2×2 games (classic + synthetic-story settings) on 12 LLMs vs. human baseline; catastrophic compositional decay (60%→<20% at 10 games), classic-vs-story fragility (up to 75% drop), limited/non-recursive FoToM/SoToM, systematic 0-task position bias; sibling to jia-et-al-2025 (exact-NE accuracy vs. fitted τ)
 - [[sources/backmann-et-al-2025]] — CORE; MORALSIM — repeated prisoner's-dilemma / public-goods games embedded in moral contexts (cooperation = ethical-but-costly) on 9 frontier LLMs; no model consistently moral (morality 7.9%–76.3%); PD suppresses cooperation vs. public goods, survival pressure erodes morality, context ordering tracks who is harmed (partner vs. third party); game type carries most variance; robust to prompt paraphrasing
 - [[sources/guo-2023]] — CORE; persona-prompted repeated ultimatum game + prisoner's dilemma on GPT-4-1106 (Fulin Guo, Cambridge econ); fair vs. selfish one-word trait swap; fair GPT offers ~40% (matches human meta-study) & rejects more, plays tit-for-tat, one selfish GPT collapses PD cooperation; elicited-reasoning analysis explains round-3 rejection peak & finds ~80% of last-round cooperation driven by judgment errors; early single-model template for FairMindSim/MORALSIM
+- [[sources/akata-et-al-2023]] — CORE; "a behavioural game theory for machines" — five LLMs play finitely repeated 2×2 games across six families (144 types / 1,224 games) + canonical PD & Battle-of-the-Sexes zoom-ins, vs. each other, hand-coded strategies, and 195 humans; GPT-4 best overall (0.854) but "unforgiving" in PD and fails to coordinate in BoS ("a behavioural flaw"); predict-vs-act ToM dissociation; social-chain-of-thought (SCoT) repairs coordination & makes humans judge it more human; the primary source the repeated-games hub awaited
 
 ## Entities
 
@@ -176,6 +177,7 @@ date_modified: 2026-06-12
 - [[entities/xiachong-feng]] — corresponding author, TMGBench complete-topology game-theoretic strategic-reasoning benchmark, University of Hong Kong
 - [[entities/steffen-backmann]] — lead author, MORALSIM — LLM moral behavior in morally-charged repeated social dilemmas, ETH Zürich
 - [[entities/fulin-guo]] — sole author, persona-prompted GPT-4 ultimatum/prisoner's-dilemma game experiments + elicited-reasoning analysis, University of Cambridge (Economics)
+- [[entities/elif-akata]] — lead author, "Playing repeated games with LLMs" — behavioral game theory for machines, Helmholtz Munich / MPI Biological Cybernetics / Univ. Tübingen
 
 ## Questions
 

@@ -58,8 +58,12 @@ structure). See [[paradigms/compositional-game-reasoning]] and [[instruments/tmg
 
 - [[paradigms/compositional-game-reasoning]] — uses the 144-type grid for exhaustive coverage and its
   counter-diagonal symmetry for the bias/significance metrics.
+- [[paradigms/repeated-games]] — sweeps the six 2×2-game families (144 distinct types) so an LLM's
+  cooperation/coordination strengths are mapped across the whole space rather than one famous game.
 
 ## Sources
 
 - [[sources/guo-et-al-2026]] — adopts the Robinson-Goforth topology (Robinson & Goforth 2005) as the
   complete game-coverage framework and exploits its symmetry for bias measurement.
+- [[sources/akata-et-al-2023]] — uses the same six-family / all-known-2×2-games taxonomy (Robinson &
+  Goforth 2005) for its exhaustive families sweep, in iterated (10-round) rather than single-shot play.

@@ -96,6 +96,15 @@ game-theoretic ToM as more demanding than passive false-belief tasks because it 
 simultaneous opponent reasoning and decision optimization." See
 [[paradigms/compositional-game-reasoning]].
 
+[[sources/akata-et-al-2023]] uses ToM as the *interpretive lens* for an LLM coordination failure rather
+than as the object of measurement. In a repeated Battle of the Sexes, GPT-4 fails to coordinate with a
+turn-taking partner, yet when asked to *predict* the partner's next move it does so correctly (from round
+5 as a player, round 3 as a detached observer) — a **prediction-vs-action dissociation** the authors
+explicitly liken to the social/non-social divergence seen in autistic children (Swettenham 1996). Their
+**social chain-of-thought (SCoT)** repair — prompting the model to predict and reason about the opponent
+before acting — is framed as "a more explicit way to force an LLM to engage in theory of mind," and
+recovers coordination (round 5). See [[paradigms/repeated-games]].
+
 > [!warning] Emergent reasoning or pattern-matching?
 > The survey ([[sources/liu-et-al-2025]] §6.3) records the central validity debate: "GPT-4
 > solves around 75% of false-belief tasks, matching a 6-year-old's performance (Kosinski 2024;
@@ -123,6 +132,8 @@ simultaneous opponent reasoning and decision optimization." See
   answering
 - [[paradigms/compositional-game-reasoning]] — *active* strategic ToM via FoToM/SoToM opponent-modeling
   prompts on game-theoretic tasks (vs. passive false-belief inference)
+- [[paradigms/repeated-games]] — the predict-vs-act dissociation in iterated coordination games, and
+  social chain-of-thought as a ToM-engaging prompt repair
 
 ## Related Taxonomy
 
@@ -139,3 +150,4 @@ simultaneous opponent reasoning and decision optimization." See
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]
 - [[sources/guo-et-al-2026]] — operationalizes ToM as FoToM/SoToM strategic prompting; finds it limited and non-recursive
+- [[sources/akata-et-al-2023]] — uses ToM to interpret a coordination failure (predict-vs-act dissociation) and SCoT as a ToM-engaging repair
