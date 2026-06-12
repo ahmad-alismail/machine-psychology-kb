@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [construct-validity, methodology, open-problem]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Should psychological constructs be redefined specifically for LLMs?
@@ -41,6 +41,15 @@ test taker.
   corresponding tests for LLMs**, and notes the linked problem of **unknown response
   processes**: it is unclear whether the internal processes generating human and LLM
   responses are comparable at all.
+- [[sources/ye-et-al-2025]] — reframes the question as **construct equivalence**, "structurally
+  analogous to the 'imposed etic' issue in cross-cultural psychometrics" (Berry 1969), and
+  supplies the *empirical answer the question was waiting on*: human factor structures repeatedly
+  fail to transfer (Big Five not cleanly separable — Sühr et al. 2023; HEXACO factors "absent" —
+  Peereboom et al. 2024; self-reports do not fit Schwartz — Ye et al. 2025b), constituting
+  "evidence of construct non-equivalence." It documents the field's response — **AI-native
+  psychometrics** (bottom-up value systems that "outperform Schwartz's system"; the TRAIT and CSI
+  instruments) — and the caveat that such constructs may be tool-, task-, and model-dependent.
+  The theory-grounded home for this is [[theories/construct-equivalence]].
 
 ## Suggested Investigation (toward a new paradigm)
 

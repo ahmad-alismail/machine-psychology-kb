@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [methodology, open-problem, units-of-analysis]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # Is an LLM an individual or a population?
@@ -54,6 +54,22 @@ considered population separately") and the meaning of any reported result.
   makes it sample a different slice of the trained-on population. Whether that licenses treating
   the model as a stand-in population (à la silicon sampling) or just a re-posed individual is left
   open.
+- [[sources/ye-et-al-2025]] turns the dichotomy into an explicit methodological fork tied to
+  reliability. Because LLM measurement faces a **dual challenge** — "the instability of the
+  instrument (due to flawed design) and the stochastic nature of the subject (due to models'
+  context sensitivity)" — the survey distinguishes (a) the **"LLM as a population"** reading
+  (one model = many prompt-diversified responses; reliability = within-model internal consistency,
+  e.g. Cronbach's α, that the test reliably captures "the latent traits of that specific
+  model-population") from (b) the **single-entity** reading (reliability = stability of one
+  model's outputs via parallel-forms, option-position, and adversarial-attack robustness). It
+  adds the mechanistic gloss (§8.4): the single-entity reading targets **intrinsic** alignment in
+  default settings, the population reading targets **steerability** of the **prompted** pathway —
+  so "future research must explicitly define whether the target construct is the model's inherent
+  disposition (alignment) or its adaptive capacity (simulation)," because the two "rely on
+  different underlying mechanisms and require different validation strategies." It also surfaces
+  the linked **norming gap** (§8.8): "the appropriate reference population for LLMs remains
+  undefined," so raw scores lack the population context that makes human scores interpretable —
+  [[theories/item-response-theory]]'s unified scale is the candidate remedy.
 - [[sources/ong-2024]] frames the same split as a choice between two conceptualizations that "are
   distinct and will affect experimental design and inferences": an LLM's output as **samples from
   an underlying distribution** that approximates real human distributions, versus output as a

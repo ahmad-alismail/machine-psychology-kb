@@ -4,7 +4,7 @@ field: machine-psychology
 lens: psychological
 tags: [psychometrics, trait-acquisition, foundations, machine-behavior]
 date_created: 2026-06-11
-date_modified: 2026-06-11
+date_modified: 2026-06-12
 ---
 
 # AI Psychometrics (Trait-Sedimentation Hypothesis)
@@ -41,6 +41,30 @@ speaking" — one "must not fall into the trap of anthropomorphizing AI models t
 prediction machines"; and because LLM traits are "purely based on language," they are "far
 more narrow than the rich mental world of humans."
 
+### Synthetic behavioral manifestation (the ontological guardrail)
+
+[[sources/ye-et-al-2025]] sharpens this boundary condition into the field's working definition
+of what an LLM "trait" *is*. Treating LLM psychometrics as "a methodological borrowing focused
+on behavioral manifestation," it does "not posit that LLMs possess subjective experience,
+sentience, or developmental histories." Instead, "a *construct* in the context of LLMs … mean[s]
+a *synthetic behavioral manifestation*: systematic response patterns measurable via psychometric
+frameworks, rather than a claim about an underlying genuine psychological state." This is the
+acquisition/manifestation hypothesis above, restated to forbid the anthropomorphic reading:
+the X-ray reveals *response patterns*, not a mind.
+
+### Intrinsic vs. prompted expression (two mechanisms, one output)
+
+Mechanistic evidence (Han et al. 2025b, surveyed by [[sources/ye-et-al-2025]]) complicates the
+"one profile per model" picture: LLMs express values through "two distinct pathways: *intrinsic
+expression*, reflecting values learned during training, and *prompted expression*, elicited by
+specific instructions," relying on "partially distinct internal components (e.g., value vectors
+and neurons)." Intrinsic mechanisms "promote stability and lexical diversity," while prompted
+mechanisms "primarily strengthen instruction following." The consequence — "similar outputs may
+arise from different processes" — is a direct caution for [[paradigms/psychometric-inventory-administration]]:
+a measured profile may reflect the model's sedimented disposition *or* merely its compliance
+with the test framing, and the two need different validation strategies (see
+[[questions/llm-individual-or-population]] on the single-entity vs. population reading).
+
 ### A brief history
 
 The program has roots in the GOFAI era: Evans (1964) solved a geometric-analogy subtask from
@@ -75,3 +99,6 @@ asserted but unproven — is exactly what
 - [[sources/pellert-et-al-2024]] — states the hypothesis and demonstrates it on seven models.
 - [[sources/li-et-al-2024]] — administers human inventories across five constructs to nine LLMs
   and probes whether self-reported traits align with open-ended behavior; finds they often do not.
+- [[sources/ye-et-al-2025]] — supplies the "synthetic behavioral manifestation" guardrail on what
+  an LLM construct is, and the intrinsic-vs-prompted-expression mechanism showing similar outputs
+  can arise from different internal processes.

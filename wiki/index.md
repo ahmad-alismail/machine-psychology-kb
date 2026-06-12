@@ -53,7 +53,10 @@ date_modified: 2026-06-12
 - [[theories/performance-competence-distinction]] — performance ≠ competence (interpretation principle)
 - [[theories/ecological-rationality]] — heuristics mirror the training environment
 - [[theories/psychometric-test-standards]] — reliability/validity/fairness + the seven requirements for testing LLMs (the validity rubric)
-- [[theories/ai-psychometrics]] — LLMs "sediment" human traits from training text; inventories bring them to light
+- [[theories/construct-oriented-evaluation]] — measure the latent construct (causal) vs. rank task performance (representativist); the case for behavioral over benchmark evaluation
+- [[theories/item-response-theory]] — latent-ability + item-difficulty measurement model; adaptive testing, unified human–LLM scale, DIF for bias
+- [[theories/construct-equivalence]] — does a human construct mean the same for an LLM? The "imposed etic" problem + evidence of non-equivalence → AI-native psychometrics
+- [[theories/ai-psychometrics]] — LLMs "sediment" human traits from training text; inventories bring them to light (synthetic behavioral manifestation; intrinsic vs. prompted expression)
 - [[theories/schwartz-basic-values]] — 10/19 cross-cultural basic human values
 - [[theories/moral-foundations-theory]] — morality rests on foundations weighted differently by political ideology
 - [[theories/dark-triad]] — narcissism/psychopathy/Machiavellianism share a "dark core" with affective dissonance at its center
@@ -135,6 +138,7 @@ date_modified: 2026-06-12
 - [[sources/wilf-et-al-2024]] — CORE; SimToM — Simulation-Theory perspective-taking turned into a two-stage prompt that improves LLM ToM (ToMI/BigTOM) over 0-shot & CoT; ablations show the gain is perspective-taking *specifically* (not multi-step); oracle perspectives near-solve the benchmarks; hiding-vs-inferring limit on real-world (CosmosQA)
 - [[sources/chen-et-al-2025]] — CORE; dedicated ToM survey (assessment + enhancement); ATOMS seven-mental-state coverage taxonomy; story-based benchmark landscape + evolution trends (order / generation / context / questions / mental states); perspective-filtering enhancement family (SymbolicToM / SimToM / PercepToM / TimeToM) + symbolic/inverse-planning methods; passive-benchmark limit & reasoning-process evaluation gap
 - [[sources/li-et-al-2024]] — CORE; comprehensive 5-construct (personality/values/emotion/ToM/self-efficacy) × 13-dataset psychometric benchmark on 9 LLMs; introduces the closed-form↔open-ended discrepancy probe (self-reports contradict behavior) + a five-form reliability validation suite; EI below human, high-ambiguity moral discernment weak, values not robust to persuasion, self-efficacy↔behavior mismatch → fabrication
+- [[sources/ye-et-al-2025]] — SOURCE-METHOD; first systematic review of "LLM Psychometrics" (evaluation × validation × enhancement); psychometrics-vs-benchmark contrast, construct non-equivalence / AI-native psychometrics, IRT, intrinsic-vs-prompted & perceived-vs-aligned traits, synthetic behavioral manifestation, measurements→safety
 
 ## Entities
 
@@ -175,6 +179,7 @@ date_modified: 2026-06-12
 - [[questions/active-interaction-for-causal-and-directed-exploration]] — are causal reasoning & directed exploration gaps a consequence of passive text training?
 - [[questions/cot-alignment-with-internal-reasoning]] — can external CoT prompts be aligned with a model's internal reasoning so extended chains help rather than entrench errors?
 - [[questions/perspective-taking-hallucination-vs-inference]] — when a model takes another's perspective, when is it inferring vs. fabricating unstated mental states?
+- [[questions/perceived-vs-aligned-traits]] — does a trait/value score report the value an observer reads off the text, or the one a reader personally aligns with? Judge-subjectivity in open-ended scoring
 
 ## Crosswalk
 
