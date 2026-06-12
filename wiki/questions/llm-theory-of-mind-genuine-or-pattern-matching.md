@@ -72,6 +72,16 @@ problem catalogued in [[theories/psychometric-test-standards]].
 - [[sources/hagendorff-et-al-2024]] and [[paradigms/false-belief-task]] document the same Kosinski-vs-
   Ullman contradiction as the motivating case that ToM results are fragile to "distracting
   alterations" in the items.
+- [[sources/chen-et-al-2025]] surveys both sides ("some studies suggest that LLMs demonstrate
+  promising signs of ToM competence … while others contend that these abilities are often
+  superficial and unstable") and adds two design-level levers on the question. First, it argues
+  "simply assessing the correctness of answers is insufficient, benchmarks should facilitate the
+  evaluation of **reasoning processes**" — a multiple-choice pass cannot distinguish genuine
+  mentalizing from a lucky final answer. Second, it notes the enhancement methods that *boost*
+  apparent ToM ([[paradigms/perspective-filtering-tom-pipeline]]) are **pipelines** prone to
+  error propagation, so an improvement could reflect a better scaffold rather than better
+  mentalizing — motivating joint/iterative architectures and active (agentic) rather than
+  passive evaluation as cleaner tests of the underlying ability.
 
 ## Suggested Investigation (toward a new paradigm)
 

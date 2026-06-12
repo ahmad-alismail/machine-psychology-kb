@@ -40,6 +40,8 @@ action**. Templates are authored by humans; the surface text is **generated usin
 
 - [[paradigms/simtom-perspective-taking-prompting]] — measurement substrate for perspective-
   taking prompting.
+- [[paradigms/perspective-filtering-tom-pipeline]] — also a shared substrate for the broader
+  perspective-filtering enhancement family (e.g. TimeToM; [[sources/chen-et-al-2025]]).
 
 ## Validity Notes
 
@@ -57,3 +59,4 @@ action**. Templates are authored by humans; the surface text is **generated usin
 ## Sources
 
 - [[sources/wilf-et-al-2024]]
+- [[sources/chen-et-al-2025]]

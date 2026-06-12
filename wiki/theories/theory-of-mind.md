@@ -55,6 +55,23 @@ catalogs the benchmark family built on it — **ToMBench** (Chen et al. 2024c), 
 et al. 2024a), **HI-TOM** (Wu et al. 2023), and **FANToM** (Kim et al. 2023) — "each probing
 distinct facets of *ToM*," with Soubki et al. (2024) extending the tests to spoken dialogue.
 
+[[sources/chen-et-al-2025]] is the dedicated ToM **survey** that maps this construct's full
+evaluation-and-enhancement landscape. Two structural contributions: (1) it organizes ToM into
+the seven mental states of the [[theories/atoms-mental-states]] framework (Beaudoin et al. 2020)
+and uses them to audit benchmark coverage — finding that **beliefs are the most extensively
+studied mental state** while the other six (intentions, desires, emotions, knowledge, percepts,
+non-literal communications) are under-tested; and (2) it consolidates the prompt-based
+*enhancement* methods (SymbolicToM, SimToM, PercepToM, TimeToM) into one family
+([[paradigms/perspective-filtering-tom-pipeline]]) that all "identify the perceptions of the
+target character first, and then prompt LLMs … based on a limited story." It defines the
+recurring vocabulary — **orders** (how many mental-state attributions a question needs:
+first-order "Where will Sally look?", second-order "Where does Anne think Sally will look?") and
+**true-belief vs false-belief** questions — and stresses that benchmarks have "grown
+increasingly complex," shifting from narrative to conversation, multiple-choice to open-ended,
+and template-generated to built-from-scratch (to fight contamination). It also flags that all
+story-based benchmarks are **passive** (the LLM is an observer, not an agent), making
+active/situated ToM evaluation an open direction.
+
 [[sources/wilf-et-al-2024]] is the primary study that *intervenes* on this construct rather than
 only measuring it: it grounds ToM in a specific cognitive-science theory of mind-reading —
 [[theories/simulation-theory]] — and shows that prompting an LLM to **take the character's
@@ -88,6 +105,14 @@ inference pass *understates* ToM competence.
   stories) extending the construct beyond false belief
 - [[paradigms/simtom-perspective-taking-prompting]] — a prompting *intervention* (grounded in
   [[theories/simulation-theory]]) that elicits and improves ToM via separate perspective-taking
+- [[paradigms/perspective-filtering-tom-pipeline]] — the cross-method family (SymbolicToM,
+  SimToM, PercepToM, TimeToM) that filters a story to the target character's knowledge before
+  answering
+
+## Related Taxonomy
+
+- [[theories/atoms-mental-states]] — the seven-mental-state ATOMS framework used as the
+  coverage yardstick for ToM benchmarks
 
 ## Sources
 
@@ -95,5 +120,6 @@ inference pass *understates* ToM competence.
 - [[sources/kosinski-2024]]
 - [[sources/strachan-et-al-2024]]
 - [[sources/wilf-et-al-2024]]
+- [[sources/chen-et-al-2025]]
 - [[sources/hagendorff-et-al-2024]]
 - [[sources/liu-et-al-2025]]

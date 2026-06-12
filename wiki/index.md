@@ -20,6 +20,7 @@ date_modified: 2026-06-12
 - [[paradigms/false-belief-task]] — theory-of-mind tests incl. higher-order and perturbed variants (psychological)
 - [[paradigms/theory-of-mind-battery]] — five-test ToM battery (false belief / irony / faux pas / hinting / strange stories) on 3 LLMs vs. 1,907 humans; faux-pas likelihood + belief-likelihood variants surface hyperconservatism (psychological)
 - [[paradigms/simtom-perspective-taking-prompting]] — SimToM: two-stage perspective-taking → question-answering prompting (Simulation Theory) that elicits/improves LLM ToM; ablations isolate perspective-taking; oracle perspectives near-solve ToMI/BigTOM (psychological)
+- [[paradigms/perspective-filtering-tom-pipeline]] — cross-method family (SymbolicToM / SimToM / PercepToM / TimeToM) that filters a story to the target character's knowledge before answering; pipeline error-propagation hazard (psychological)
 - [[paradigms/repeated-games]] — iterated games revealing strategic signatures (game-theoretic)
 - [[paradigms/psychometric-inventory-administration]] — human trait/value/morality inventories given to LLMs via zero-shot NLI (psychological)
 - [[paradigms/narrow-psychometric-fine-tuning]] — fine-tune LLMs on inventory answer-keys to induce "dark" personas (psychological)
@@ -47,6 +48,7 @@ date_modified: 2026-06-12
 - [[theories/heuristics-and-biases]] — mental shortcuts predict systematic errors
 - [[theories/theory-of-mind]] — inferring others' unobservable mental states
 - [[theories/simulation-theory]] — ToM via two processes: perspective-taking ("step into their shoes") then question-answering; grounds SimToM
+- [[theories/atoms-mental-states]] — ATOMS: the seven mental states of ToM (beliefs/intentions/desires/emotions/knowledge/percepts/non-literal communication); coverage yardstick for benchmarks
 - [[theories/performance-competence-distinction]] — performance ≠ competence (interpretation principle)
 - [[theories/ecological-rationality]] — heuristics mirror the training environment
 - [[theories/psychometric-test-standards]] — reliability/validity/fairness + the seven requirements for testing LLMs (the validity rubric)
@@ -123,6 +125,7 @@ date_modified: 2026-06-12
 - [[sources/ullman-2023]] — CORE; primary rebuttal to Kosinski — eight trivial principle-preserving perturbations of the ToM vignettes flip GPT-3.5's belief attribution to the wrong answer; "skeptical zero-hypothesis", outliers > average successes, the benchmark paradox
 - [[sources/strachan-et-al-2024]] — CORE; comprehensive ToM battery (false belief / irony / faux pas / hinting / strange stories) on GPT-4/3.5/LLaMA2-70B vs. 1,907 humans; GPT-4 at/above human on all but faux pas; LLaMA2 faux-pas win "illusory" (ignorance bias); GPT faux-pas failure is hyperconservatism not failed inference; humans also fail half the false-belief perturbations (N=757)
 - [[sources/wilf-et-al-2024]] — CORE; SimToM — Simulation-Theory perspective-taking turned into a two-stage prompt that improves LLM ToM (ToMI/BigTOM) over 0-shot & CoT; ablations show the gain is perspective-taking *specifically* (not multi-step); oracle perspectives near-solve the benchmarks; hiding-vs-inferring limit on real-world (CosmosQA)
+- [[sources/chen-et-al-2025]] — CORE; dedicated ToM survey (assessment + enhancement); ATOMS seven-mental-state coverage taxonomy; story-based benchmark landscape + evolution trends (order / generation / context / questions / mental states); perspective-filtering enhancement family (SymbolicToM / SimToM / PercepToM / TimeToM) + symbolic/inverse-planning methods; passive-benchmark limit & reasoning-process evaluation gap
 
 ## Entities
 

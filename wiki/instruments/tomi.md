@@ -39,6 +39,12 @@ second-order questions and disambiguates container locations.
 
 - [[paradigms/simtom-perspective-taking-prompting]] — measurement substrate for perspective-
   taking prompting (False Belief = first- + second-order; All = all ten types).
+- [[paradigms/perspective-filtering-tom-pipeline]] — also the shared substrate for SymbolicToM,
+  PercepToM, and TimeToM ([[sources/chen-et-al-2025]]).
+
+ToMi has spawned variants documented by [[sources/chen-et-al-2025]]: **Percept-ToMi** (Jung et
+al. 2024) annotates characters' perceptions, and **T4D ("Thinking for Doing")** (Zhou et al.
+2023a) transforms it from *inferring* mental states to probing an agent's *action decisions*.
 
 ## Validity Notes
 
@@ -55,3 +61,4 @@ second-order questions and disambiguates container locations.
 ## Sources
 
 - [[sources/wilf-et-al-2024]]
+- [[sources/chen-et-al-2025]]

@@ -216,6 +216,16 @@ alternate-forms reliability, R3 apparatus→text suitability, and R4 contaminati
   6-year-old's performance (Kosinski 2024; Strachan et al. 2024)" while "minor prompt changes
   can derail results (Shapira et al. 2024)" — and consolidates the dedicated benchmark family
   (ToMBench, OpenToM, HI-TOM, FANToM) that operationalizes this paradigm at scale.
+- The dedicated ToM survey [[sources/chen-et-al-2025]] charts how this paradigm has scaled and
+  diversified: from the canonical Sally–Anne / Smarties tests, story-based benchmarks expanded
+  in **order** (1st → 2nd → up to 4th-order in HI-TOM), shifted **context** from narrative to
+  multi-turn conversation (FANTOM, NegotiationToM) and from synthetic to built-from-scratch
+  (TOMBENCH, to fight contamination), broadened **questions** from multiple-choice to
+  open-ended and from a single individual to a group, and extended **mental states** beyond
+  beliefs (per [[theories/atoms-mental-states]]). It also names **T4D ("Thinking for Doing")**
+  (Zhou et al. 2023a), a variant that repurposes ToMi from *inferring* a character's mental
+  state to probing the *action decision* that mental state implies. All these remain **passive**
+  benchmarks (the LLM observes rather than acts), which the survey flags as a structural limit.
 
 ## Open Questions
 

@@ -71,7 +71,10 @@ can be far more *competent* at theory of mind than a single-pass probe reveals.
 
 - [[paradigms/simtom-perspective-taking-prompting]] — the two-stage perspective-taking →
   question-answering prompting framework (SimToM)
+- [[paradigms/perspective-filtering-tom-pipeline]] — SimToM as one member of the broader
+  perspective-filtering enhancement family ([[sources/chen-et-al-2025]])
 
 ## Sources
 
 - [[sources/wilf-et-al-2024]]
+- [[sources/chen-et-al-2025]]

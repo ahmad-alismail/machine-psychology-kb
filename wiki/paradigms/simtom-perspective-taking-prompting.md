@@ -24,6 +24,9 @@ date_modified: 2026-06-12
 > Grounded entirely in [[sources/wilf-et-al-2024]] (the SimToM framework, all four ablations,
 > the oracle analysis, and the CosmosQA extension come from it). It reuses the existing
 > [[instruments/tomi]] and [[instruments/bigtom]] benchmarks as its measurement substrate.
+> SimToM is one member of the broader **perspective-filtering** family —
+> [[paradigms/perspective-filtering-tom-pipeline]] — that the survey [[sources/chen-et-al-2025]]
+> groups with SymbolicToM, PercepToM, and TimeToM.
 
 ## Theoretical Grounding
 
